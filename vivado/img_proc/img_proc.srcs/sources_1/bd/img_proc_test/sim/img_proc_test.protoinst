@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"img_proc_test": {
+			"proto_instances": {
+			}
+		}
+	}
+}
