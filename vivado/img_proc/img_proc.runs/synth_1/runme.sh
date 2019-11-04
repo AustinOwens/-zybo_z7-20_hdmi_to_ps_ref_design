@@ -20,7 +20,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/austin/Desktop/projects/zybo/img_proc/vivado/img_proc/img_proc.runs/synth_1'
+HD_PWD='/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -36,4 +36,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log img_proc_test_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source img_proc_test_wrapper.tcl
+EAStep vivado -log img_proc_baseline_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source img_proc_baseline_wrapper.tcl

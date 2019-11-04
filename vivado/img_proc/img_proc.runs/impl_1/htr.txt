@@ -6,4 +6,4 @@
 # Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 #
 
-vivado -log img_proc_test_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source img_proc_test_wrapper.tcl -notrace
+vivado -log img_proc_baseline_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source img_proc_baseline_wrapper.tcl -notrace

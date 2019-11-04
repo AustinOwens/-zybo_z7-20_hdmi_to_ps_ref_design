@@ -1,0 +1,348 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2700185 on Thu Oct 24 18:45:48 MDT 2019
+# IP Build 2699827 on Thu Oct 24 21:16:38 MDT 2019
+# Start of session at: Sun Nov  3 17:17:34 2019
+# Process ID: 4656
+# Current directory: /home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/synth_1
+# Command line: vivado -log img_proc_baseline_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source img_proc_baseline_wrapper.tcl
+# Log file: /home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/synth_1/img_proc_baseline_wrapper.vds
+# Journal file: /home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source img_proc_baseline_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/austin/Desktop/projects/zybo/zybo_img_proc/vhdl/digilent/vivado-library'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2019.2/data/ip'.
+Command: synth_design -top img_proc_baseline_wrapper -part xc7z020clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 4677 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2036.184 ; gain = 200.684 ; free physical = 19914 ; free virtual = 27423
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'img_proc_baseline_wrapper' [/home/austin/Desktop/projects/zybo/zybo_img_proc_baseline/vivado/img_proc_baseline/img_proc_baseline.srcs/sources_1/imports/hdl/img_proc_baseline_wrapper.vhd:32]
+INFO: [Synth 8-3491] module 'IOBUF' declared at '/tools/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:36196' bound to instance 'hdmi_in_ddc_scl_iobuf' of component 'IOBUF' [/home/austin/Desktop/projects/zybo/zybo_img_proc_baseline/vivado/img_proc_baseline/img_proc_baseline.srcs/sources_1/imports/hdl/img_proc_baseline_wrapper.vhd:69]
+INFO: [Synth 8-6157] synthesizing module 'IOBUF' [/tools/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:36196]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (1#1) [/tools/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:36196]
+INFO: [Synth 8-3491] module 'IOBUF' declared at '/tools/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:36196' bound to instance 'hdmi_in_ddc_sda_iobuf' of component 'IOBUF' [/home/austin/Desktop/projects/zybo/zybo_img_proc_baseline/vivado/img_proc_baseline/img_proc_baseline.srcs/sources_1/imports/hdl/img_proc_baseline_wrapper.vhd:76]
+INFO: [Synth 8-3491] module 'img_proc_baseline' declared at '/home/austin/Desktop/projects/zybo/zybo_img_proc_baseline/vivado/img_proc_baseline/img_proc_baseline.srcs/sources_1/bd/img_proc_baseline/synth/img_proc_baseline.vhd:14' bound to instance 'img_proc_baseline_i' of component 'img_proc_baseline' [/home/austin/Desktop/projects/zybo/zybo_img_proc_baseline/vivado/img_proc_baseline/img_proc_baseline.srcs/sources_1/imports/hdl/img_proc_baseline_wrapper.vhd:83]
+INFO: [Synth 8-638] synthesizing module 'img_proc_baseline' [/home/austin/Desktop/projects/zybo/zybo_img_proc_baseline/vivado/img_proc_baseline/img_proc_baseline.srcs/sources_1/bd/img_proc_baseline/synth/img_proc_baseline.vhd:40]
+INFO: [Synth 8-3491] module 'img_proc_baseline_clk_wiz_0_0' declared at '/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/synth_1/.Xil/Vivado-4656-austin-ubuntu/realtime/img_proc_baseline_clk_wiz_0_0_stub.vhdl:5' bound to instance 'clk_wiz_0' of component 'img_proc_baseline_clk_wiz_0_0' [/home/austin/Desktop/projects/zybo/zybo_img_proc_baseline/vivado/img_proc_baseline/img_proc_baseline.srcs/sources_1/bd/img_proc_baseline/synth/img_proc_baseline.vhd:154]
+INFO: [Synth 8-638] synthesizing module 'img_proc_baseline_clk_wiz_0_0' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/synth_1/.Xil/Vivado-4656-austin-ubuntu/realtime/img_proc_baseline_clk_wiz_0_0_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'img_proc_baseline_dvi2rgb_0_1' declared at '/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/synth_1/.Xil/Vivado-4656-austin-ubuntu/realtime/img_proc_baseline_dvi2rgb_0_1_stub.vhdl:5' bound to instance 'dvi2rgb_0' of component 'img_proc_baseline_dvi2rgb_0_1' [/home/austin/Desktop/projects/zybo/zybo_img_proc_baseline/vivado/img_proc_baseline/img_proc_baseline.srcs/sources_1/bd/img_proc_baseline/synth/img_proc_baseline.vhd:161]
+INFO: [Synth 8-638] synthesizing module 'img_proc_baseline_dvi2rgb_0_1' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/synth_1/.Xil/Vivado-4656-austin-ubuntu/realtime/img_proc_baseline_dvi2rgb_0_1_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'img_proc_baseline_rgb2dvi_0_0' declared at '/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/synth_1/.Xil/Vivado-4656-austin-ubuntu/realtime/img_proc_baseline_rgb2dvi_0_0_stub.vhdl:5' bound to instance 'rgb2dvi_0' of component 'img_proc_baseline_rgb2dvi_0_0' [/home/austin/Desktop/projects/zybo/zybo_img_proc_baseline/vivado/img_proc_baseline/img_proc_baseline.srcs/sources_1/bd/img_proc_baseline/synth/img_proc_baseline.vhd:184]
+INFO: [Synth 8-638] synthesizing module 'img_proc_baseline_rgb2dvi_0_0' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/synth_1/.Xil/Vivado-4656-austin-ubuntu/realtime/img_proc_baseline_rgb2dvi_0_0_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'img_proc_baseline_xlconstant_0_0' declared at '/home/austin/Desktop/projects/zybo/zybo_img_proc_baseline/vivado/img_proc_baseline/img_proc_baseline.srcs/sources_1/bd/img_proc_baseline/ip/img_proc_baseline_xlconstant_0_0/synth/img_proc_baseline_xlconstant_0_0.v:57' bound to instance 'xlconstant_0' of component 'img_proc_baseline_xlconstant_0_0' [/home/austin/Desktop/projects/zybo/zybo_img_proc_baseline/vivado/img_proc_baseline/img_proc_baseline.srcs/sources_1/bd/img_proc_baseline/synth/img_proc_baseline.vhd:197]
+INFO: [Synth 8-6157] synthesizing module 'img_proc_baseline_xlconstant_0_0' [/home/austin/Desktop/projects/zybo/zybo_img_proc_baseline/vivado/img_proc_baseline/img_proc_baseline.srcs/sources_1/bd/img_proc_baseline/ip/img_proc_baseline_xlconstant_0_0/synth/img_proc_baseline_xlconstant_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_6_xlconstant' [/home/austin/Desktop/projects/zybo/zybo_img_proc_baseline/vivado/img_proc_baseline/img_proc_baseline.srcs/sources_1/bd/img_proc_baseline/ipshared/34f7/hdl/xlconstant_v1_1_vl_rfs.v:23]
+	Parameter CONST_VAL bound to: 1 - type: integer 
+	Parameter CONST_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_6_xlconstant' (2#1) [/home/austin/Desktop/projects/zybo/zybo_img_proc_baseline/vivado/img_proc_baseline/img_proc_baseline.srcs/sources_1/bd/img_proc_baseline/ipshared/34f7/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'img_proc_baseline_xlconstant_0_0' (3#1) [/home/austin/Desktop/projects/zybo/zybo_img_proc_baseline/vivado/img_proc_baseline/img_proc_baseline.srcs/sources_1/bd/img_proc_baseline/ip/img_proc_baseline_xlconstant_0_0/synth/img_proc_baseline_xlconstant_0_0.v:57]
+INFO: [Synth 8-256] done synthesizing module 'img_proc_baseline' (4#1) [/home/austin/Desktop/projects/zybo/zybo_img_proc_baseline/vivado/img_proc_baseline/img_proc_baseline.srcs/sources_1/bd/img_proc_baseline/synth/img_proc_baseline.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'img_proc_baseline_wrapper' (5#1) [/home/austin/Desktop/projects/zybo/zybo_img_proc_baseline/vivado/img_proc_baseline/img_proc_baseline.srcs/sources_1/imports/hdl/img_proc_baseline_wrapper.vhd:32]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2101.902 ; gain = 266.402 ; free physical = 19950 ; free virtual = 27460
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2101.902 ; gain = 266.402 ; free physical = 19945 ; free virtual = 27455
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2101.902 ; gain = 266.402 ; free physical = 19945 ; free virtual = 27455
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2110.809 ; gain = 0.000 ; free physical = 19938 ; free virtual = 27448
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/austin/Desktop/projects/zybo/zybo_img_proc_baseline/vivado/img_proc_baseline/img_proc_baseline.srcs/sources_1/bd/img_proc_baseline/ip/img_proc_baseline_dvi2rgb_0_1/img_proc_baseline_dvi2rgb_0_1/img_proc_baseline_dvi2rgb_0_1_in_context.xdc] for cell 'img_proc_baseline_i/dvi2rgb_0'
+Finished Parsing XDC File [/home/austin/Desktop/projects/zybo/zybo_img_proc_baseline/vivado/img_proc_baseline/img_proc_baseline.srcs/sources_1/bd/img_proc_baseline/ip/img_proc_baseline_dvi2rgb_0_1/img_proc_baseline_dvi2rgb_0_1/img_proc_baseline_dvi2rgb_0_1_in_context.xdc] for cell 'img_proc_baseline_i/dvi2rgb_0'
+Parsing XDC File [/home/austin/Desktop/projects/zybo/zybo_img_proc_baseline/vivado/img_proc_baseline/img_proc_baseline.srcs/sources_1/bd/img_proc_baseline/ip/img_proc_baseline_rgb2dvi_0_0/img_proc_baseline_rgb2dvi_0_0/img_proc_baseline_rgb2dvi_0_0_in_context.xdc] for cell 'img_proc_baseline_i/rgb2dvi_0'
+Finished Parsing XDC File [/home/austin/Desktop/projects/zybo/zybo_img_proc_baseline/vivado/img_proc_baseline/img_proc_baseline.srcs/sources_1/bd/img_proc_baseline/ip/img_proc_baseline_rgb2dvi_0_0/img_proc_baseline_rgb2dvi_0_0/img_proc_baseline_rgb2dvi_0_0_in_context.xdc] for cell 'img_proc_baseline_i/rgb2dvi_0'
+Parsing XDC File [/home/austin/Desktop/projects/zybo/zybo_img_proc_baseline/vivado/img_proc_baseline/img_proc_baseline.srcs/sources_1/bd/img_proc_baseline/ip/img_proc_baseline_clk_wiz_0_0/img_proc_baseline_clk_wiz_0_0/img_proc_baseline_clk_wiz_0_0_in_context.xdc] for cell 'img_proc_baseline_i/clk_wiz_0'
+Finished Parsing XDC File [/home/austin/Desktop/projects/zybo/zybo_img_proc_baseline/vivado/img_proc_baseline/img_proc_baseline.srcs/sources_1/bd/img_proc_baseline/ip/img_proc_baseline_clk_wiz_0_0/img_proc_baseline_clk_wiz_0_0/img_proc_baseline_clk_wiz_0_0_in_context.xdc] for cell 'img_proc_baseline_i/clk_wiz_0'
+Parsing XDC File [/home/austin/Desktop/projects/zybo/zybo_img_proc/vhdl/Zybo-Z7-Master.xdc]
+Finished Parsing XDC File [/home/austin/Desktop/projects/zybo/zybo_img_proc/vhdl/Zybo-Z7-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/austin/Desktop/projects/zybo/zybo_img_proc/vhdl/Zybo-Z7-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/img_proc_baseline_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/img_proc_baseline_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2197.652 ; gain = 0.000 ; free physical = 19857 ; free virtual = 27367
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2197.652 ; gain = 0.000 ; free physical = 19857 ; free virtual = 27367
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 2197.652 ; gain = 362.152 ; free physical = 19922 ; free virtual = 27432
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 2197.652 ; gain = 362.152 ; free physical = 19921 ; free virtual = 27431
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_in_clk_n. (constraint file  /home/austin/Desktop/projects/zybo/zybo_img_proc_baseline/vivado/img_proc_baseline/img_proc_baseline.srcs/sources_1/bd/img_proc_baseline/ip/img_proc_baseline_dvi2rgb_0_1/img_proc_baseline_dvi2rgb_0_1/img_proc_baseline_dvi2rgb_0_1_in_context.xdc, line 2).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_in_clk_n. (constraint file  /home/austin/Desktop/projects/zybo/zybo_img_proc_baseline/vivado/img_proc_baseline/img_proc_baseline.srcs/sources_1/bd/img_proc_baseline/ip/img_proc_baseline_dvi2rgb_0_1/img_proc_baseline_dvi2rgb_0_1/img_proc_baseline_dvi2rgb_0_1_in_context.xdc, line 3).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_in_clk_p. (constraint file  /home/austin/Desktop/projects/zybo/zybo_img_proc_baseline/vivado/img_proc_baseline/img_proc_baseline.srcs/sources_1/bd/img_proc_baseline/ip/img_proc_baseline_dvi2rgb_0_1/img_proc_baseline_dvi2rgb_0_1/img_proc_baseline_dvi2rgb_0_1_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_in_clk_p. (constraint file  /home/austin/Desktop/projects/zybo/zybo_img_proc_baseline/vivado/img_proc_baseline/img_proc_baseline.srcs/sources_1/bd/img_proc_baseline/ip/img_proc_baseline_dvi2rgb_0_1/img_proc_baseline_dvi2rgb_0_1/img_proc_baseline_dvi2rgb_0_1_in_context.xdc, line 5).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_in_data_n[0]. (constraint file  /home/austin/Desktop/projects/zybo/zybo_img_proc_baseline/vivado/img_proc_baseline/img_proc_baseline.srcs/sources_1/bd/img_proc_baseline/ip/img_proc_baseline_dvi2rgb_0_1/img_proc_baseline_dvi2rgb_0_1/img_proc_baseline_dvi2rgb_0_1_in_context.xdc, line 6).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_in_data_n[0]. (constraint file  /home/austin/Desktop/projects/zybo/zybo_img_proc_baseline/vivado/img_proc_baseline/img_proc_baseline.srcs/sources_1/bd/img_proc_baseline/ip/img_proc_baseline_dvi2rgb_0_1/img_proc_baseline_dvi2rgb_0_1/img_proc_baseline_dvi2rgb_0_1_in_context.xdc, line 7).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_in_data_n[1]. (constraint file  /home/austin/Desktop/projects/zybo/zybo_img_proc_baseline/vivado/img_proc_baseline/img_proc_baseline.srcs/sources_1/bd/img_proc_baseline/ip/img_proc_baseline_dvi2rgb_0_1/img_proc_baseline_dvi2rgb_0_1/img_proc_baseline_dvi2rgb_0_1_in_context.xdc, line 8).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_in_data_n[1]. (constraint file  /home/austin/Desktop/projects/zybo/zybo_img_proc_baseline/vivado/img_proc_baseline/img_proc_baseline.srcs/sources_1/bd/img_proc_baseline/ip/img_proc_baseline_dvi2rgb_0_1/img_proc_baseline_dvi2rgb_0_1/img_proc_baseline_dvi2rgb_0_1_in_context.xdc, line 9).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_in_data_n[2]. (constraint file  /home/austin/Desktop/projects/zybo/zybo_img_proc_baseline/vivado/img_proc_baseline/img_proc_baseline.srcs/sources_1/bd/img_proc_baseline/ip/img_proc_baseline_dvi2rgb_0_1/img_proc_baseline_dvi2rgb_0_1/img_proc_baseline_dvi2rgb_0_1_in_context.xdc, line 10).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_in_data_n[2]. (constraint file  /home/austin/Desktop/projects/zybo/zybo_img_proc_baseline/vivado/img_proc_baseline/img_proc_baseline.srcs/sources_1/bd/img_proc_baseline/ip/img_proc_baseline_dvi2rgb_0_1/img_proc_baseline_dvi2rgb_0_1/img_proc_baseline_dvi2rgb_0_1_in_context.xdc, line 11).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_in_data_p[0]. (constraint file  /home/austin/Desktop/projects/zybo/zybo_img_proc_baseline/vivado/img_proc_baseline/img_proc_baseline.srcs/sources_1/bd/img_proc_baseline/ip/img_proc_baseline_dvi2rgb_0_1/img_proc_baseline_dvi2rgb_0_1/img_proc_baseline_dvi2rgb_0_1_in_context.xdc, line 12).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_in_data_p[0]. (constraint file  /home/austin/Desktop/projects/zybo/zybo_img_proc_baseline/vivado/img_proc_baseline/img_proc_baseline.srcs/sources_1/bd/img_proc_baseline/ip/img_proc_baseline_dvi2rgb_0_1/img_proc_baseline_dvi2rgb_0_1/img_proc_baseline_dvi2rgb_0_1_in_context.xdc, line 13).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_in_data_p[1]. (constraint file  /home/austin/Desktop/projects/zybo/zybo_img_proc_baseline/vivado/img_proc_baseline/img_proc_baseline.srcs/sources_1/bd/img_proc_baseline/ip/img_proc_baseline_dvi2rgb_0_1/img_proc_baseline_dvi2rgb_0_1/img_proc_baseline_dvi2rgb_0_1_in_context.xdc, line 14).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_in_data_p[1]. (constraint file  /home/austin/Desktop/projects/zybo/zybo_img_proc_baseline/vivado/img_proc_baseline/img_proc_baseline.srcs/sources_1/bd/img_proc_baseline/ip/img_proc_baseline_dvi2rgb_0_1/img_proc_baseline_dvi2rgb_0_1/img_proc_baseline_dvi2rgb_0_1_in_context.xdc, line 15).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_in_data_p[2]. (constraint file  /home/austin/Desktop/projects/zybo/zybo_img_proc_baseline/vivado/img_proc_baseline/img_proc_baseline.srcs/sources_1/bd/img_proc_baseline/ip/img_proc_baseline_dvi2rgb_0_1/img_proc_baseline_dvi2rgb_0_1/img_proc_baseline_dvi2rgb_0_1_in_context.xdc, line 16).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_in_data_p[2]. (constraint file  /home/austin/Desktop/projects/zybo/zybo_img_proc_baseline/vivado/img_proc_baseline/img_proc_baseline.srcs/sources_1/bd/img_proc_baseline/ip/img_proc_baseline_dvi2rgb_0_1/img_proc_baseline_dvi2rgb_0_1/img_proc_baseline_dvi2rgb_0_1_in_context.xdc, line 17).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_out_clk_n. (constraint file  /home/austin/Desktop/projects/zybo/zybo_img_proc_baseline/vivado/img_proc_baseline/img_proc_baseline.srcs/sources_1/bd/img_proc_baseline/ip/img_proc_baseline_rgb2dvi_0_0/img_proc_baseline_rgb2dvi_0_0/img_proc_baseline_rgb2dvi_0_0_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_out_clk_n. (constraint file  /home/austin/Desktop/projects/zybo/zybo_img_proc_baseline/vivado/img_proc_baseline/img_proc_baseline.srcs/sources_1/bd/img_proc_baseline/ip/img_proc_baseline_rgb2dvi_0_0/img_proc_baseline_rgb2dvi_0_0/img_proc_baseline_rgb2dvi_0_0_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_out_clk_p. (constraint file  /home/austin/Desktop/projects/zybo/zybo_img_proc_baseline/vivado/img_proc_baseline/img_proc_baseline.srcs/sources_1/bd/img_proc_baseline/ip/img_proc_baseline_rgb2dvi_0_0/img_proc_baseline_rgb2dvi_0_0/img_proc_baseline_rgb2dvi_0_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_out_clk_p. (constraint file  /home/austin/Desktop/projects/zybo/zybo_img_proc_baseline/vivado/img_proc_baseline/img_proc_baseline.srcs/sources_1/bd/img_proc_baseline/ip/img_proc_baseline_rgb2dvi_0_0/img_proc_baseline_rgb2dvi_0_0/img_proc_baseline_rgb2dvi_0_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_out_data_n[0]. (constraint file  /home/austin/Desktop/projects/zybo/zybo_img_proc_baseline/vivado/img_proc_baseline/img_proc_baseline.srcs/sources_1/bd/img_proc_baseline/ip/img_proc_baseline_rgb2dvi_0_0/img_proc_baseline_rgb2dvi_0_0/img_proc_baseline_rgb2dvi_0_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_out_data_n[0]. (constraint file  /home/austin/Desktop/projects/zybo/zybo_img_proc_baseline/vivado/img_proc_baseline/img_proc_baseline.srcs/sources_1/bd/img_proc_baseline/ip/img_proc_baseline_rgb2dvi_0_0/img_proc_baseline_rgb2dvi_0_0/img_proc_baseline_rgb2dvi_0_0_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_out_data_n[1]. (constraint file  /home/austin/Desktop/projects/zybo/zybo_img_proc_baseline/vivado/img_proc_baseline/img_proc_baseline.srcs/sources_1/bd/img_proc_baseline/ip/img_proc_baseline_rgb2dvi_0_0/img_proc_baseline_rgb2dvi_0_0/img_proc_baseline_rgb2dvi_0_0_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_out_data_n[1]. (constraint file  /home/austin/Desktop/projects/zybo/zybo_img_proc_baseline/vivado/img_proc_baseline/img_proc_baseline.srcs/sources_1/bd/img_proc_baseline/ip/img_proc_baseline_rgb2dvi_0_0/img_proc_baseline_rgb2dvi_0_0/img_proc_baseline_rgb2dvi_0_0_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_out_data_n[2]. (constraint file  /home/austin/Desktop/projects/zybo/zybo_img_proc_baseline/vivado/img_proc_baseline/img_proc_baseline.srcs/sources_1/bd/img_proc_baseline/ip/img_proc_baseline_rgb2dvi_0_0/img_proc_baseline_rgb2dvi_0_0/img_proc_baseline_rgb2dvi_0_0_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_out_data_n[2]. (constraint file  /home/austin/Desktop/projects/zybo/zybo_img_proc_baseline/vivado/img_proc_baseline/img_proc_baseline.srcs/sources_1/bd/img_proc_baseline/ip/img_proc_baseline_rgb2dvi_0_0/img_proc_baseline_rgb2dvi_0_0/img_proc_baseline_rgb2dvi_0_0_in_context.xdc, line 10).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_out_data_p[0]. (constraint file  /home/austin/Desktop/projects/zybo/zybo_img_proc_baseline/vivado/img_proc_baseline/img_proc_baseline.srcs/sources_1/bd/img_proc_baseline/ip/img_proc_baseline_rgb2dvi_0_0/img_proc_baseline_rgb2dvi_0_0/img_proc_baseline_rgb2dvi_0_0_in_context.xdc, line 11).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_out_data_p[0]. (constraint file  /home/austin/Desktop/projects/zybo/zybo_img_proc_baseline/vivado/img_proc_baseline/img_proc_baseline.srcs/sources_1/bd/img_proc_baseline/ip/img_proc_baseline_rgb2dvi_0_0/img_proc_baseline_rgb2dvi_0_0/img_proc_baseline_rgb2dvi_0_0_in_context.xdc, line 12).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_out_data_p[1]. (constraint file  /home/austin/Desktop/projects/zybo/zybo_img_proc_baseline/vivado/img_proc_baseline/img_proc_baseline.srcs/sources_1/bd/img_proc_baseline/ip/img_proc_baseline_rgb2dvi_0_0/img_proc_baseline_rgb2dvi_0_0/img_proc_baseline_rgb2dvi_0_0_in_context.xdc, line 13).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_out_data_p[1]. (constraint file  /home/austin/Desktop/projects/zybo/zybo_img_proc_baseline/vivado/img_proc_baseline/img_proc_baseline.srcs/sources_1/bd/img_proc_baseline/ip/img_proc_baseline_rgb2dvi_0_0/img_proc_baseline_rgb2dvi_0_0/img_proc_baseline_rgb2dvi_0_0_in_context.xdc, line 14).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_out_data_p[2]. (constraint file  /home/austin/Desktop/projects/zybo/zybo_img_proc_baseline/vivado/img_proc_baseline/img_proc_baseline.srcs/sources_1/bd/img_proc_baseline/ip/img_proc_baseline_rgb2dvi_0_0/img_proc_baseline_rgb2dvi_0_0/img_proc_baseline_rgb2dvi_0_0_in_context.xdc, line 15).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_out_data_p[2]. (constraint file  /home/austin/Desktop/projects/zybo/zybo_img_proc_baseline/vivado/img_proc_baseline/img_proc_baseline.srcs/sources_1/bd/img_proc_baseline/ip/img_proc_baseline_rgb2dvi_0_0/img_proc_baseline_rgb2dvi_0_0/img_proc_baseline_rgb2dvi_0_0_in_context.xdc, line 16).
+Applied set_property IO_BUFFER_TYPE = NONE for sys_clock. (constraint file  /home/austin/Desktop/projects/zybo/zybo_img_proc_baseline/vivado/img_proc_baseline/img_proc_baseline.srcs/sources_1/bd/img_proc_baseline/ip/img_proc_baseline_clk_wiz_0_0/img_proc_baseline_clk_wiz_0_0/img_proc_baseline_clk_wiz_0_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_clock. (constraint file  /home/austin/Desktop/projects/zybo/zybo_img_proc_baseline/vivado/img_proc_baseline/img_proc_baseline.srcs/sources_1/bd/img_proc_baseline/ip/img_proc_baseline_clk_wiz_0_0/img_proc_baseline_clk_wiz_0_0/img_proc_baseline_clk_wiz_0_0_in_context.xdc, line 4).
+Applied set_property DONT_TOUCH = true for img_proc_baseline_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for img_proc_baseline_i/dvi2rgb_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for img_proc_baseline_i/rgb2dvi_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for img_proc_baseline_i/clk_wiz_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for img_proc_baseline_i/xlconstant_0. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 2197.652 ; gain = 362.152 ; free physical = 19922 ; free virtual = 27432
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 2197.652 ; gain = 362.152 ; free physical = 19921 ; free virtual = 27432
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 2197.652 ; gain = 362.152 ; free physical = 19918 ; free virtual = 27431
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 2197.652 ; gain = 362.152 ; free physical = 19797 ; free virtual = 27310
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 2197.652 ; gain = 362.152 ; free physical = 19797 ; free virtual = 27310
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 2197.652 ; gain = 362.152 ; free physical = 19792 ; free virtual = 27305
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 2197.652 ; gain = 362.152 ; free physical = 19790 ; free virtual = 27303
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 2197.652 ; gain = 362.152 ; free physical = 19789 ; free virtual = 27302
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 2197.652 ; gain = 362.152 ; free physical = 19788 ; free virtual = 27301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 2197.652 ; gain = 362.152 ; free physical = 19788 ; free virtual = 27301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 2197.652 ; gain = 362.152 ; free physical = 19788 ; free virtual = 27301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 2197.652 ; gain = 362.152 ; free physical = 19788 ; free virtual = 27301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+------------------------------+----------+
+|      |BlackBox name                 |Instances |
++------+------------------------------+----------+
+|1     |img_proc_baseline_clk_wiz_0_0 |         1|
+|2     |img_proc_baseline_dvi2rgb_0_1 |         1|
+|3     |img_proc_baseline_rgb2dvi_0_0 |         1|
++------+------------------------------+----------+
+
+Report Cell Usage: 
++------+-------------------------------------+------+
+|      |Cell                                 |Count |
++------+-------------------------------------+------+
+|1     |img_proc_baseline_clk_wiz_0_0_bbox_0 |     1|
+|2     |img_proc_baseline_dvi2rgb_0_1_bbox_1 |     1|
+|3     |img_proc_baseline_rgb2dvi_0_0_bbox_2 |     1|
+|4     |IBUF                                 |     1|
+|5     |IOBUF                                |     2|
+|6     |OBUF                                 |     1|
++------+-------------------------------------+------+
+
+Report Instance Areas: 
++------+----------------------+---------------------------------+------+
+|      |Instance              |Module                           |Cells |
++------+----------------------+---------------------------------+------+
+|1     |top                   |                                 |    48|
+|2     |  img_proc_baseline_i |img_proc_baseline                |    44|
+|3     |    xlconstant_0      |img_proc_baseline_xlconstant_0_0 |     0|
++------+----------------------+---------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 2197.652 ; gain = 362.152 ; free physical = 19788 ; free virtual = 27301
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 2197.652 ; gain = 266.402 ; free physical = 19848 ; free virtual = 27361
+Synthesis Optimization Complete : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 2197.652 ; gain = 362.152 ; free physical = 19848 ; free virtual = 27361
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2197.652 ; gain = 0.000 ; free physical = 19838 ; free virtual = 27351
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2198.434 ; gain = 0.000 ; free physical = 19862 ; free virtual = 27375
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+37 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:25 . Memory (MB): peak = 2198.434 ; gain = 615.438 ; free physical = 19985 ; free virtual = 27498
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2198.434 ; gain = 0.000 ; free physical = 19985 ; free virtual = 27498
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/synth_1/img_proc_baseline_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file img_proc_baseline_wrapper_utilization_synth.rpt -pb img_proc_baseline_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Nov  3 17:18:07 2019...

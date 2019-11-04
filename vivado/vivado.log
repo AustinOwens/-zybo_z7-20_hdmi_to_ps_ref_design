@@ -2,47 +2,138 @@
 # Vivado v2019.2 (64-bit)
 # SW Build 2700185 on Thu Oct 24 18:45:48 MDT 2019
 # IP Build 2699827 on Thu Oct 24 21:16:38 MDT 2019
-# Start of session at: Sun Nov  3 13:12:51 2019
-# Process ID: 4299
-# Current directory: /home/austin/Desktop/projects/zybo/img_proc/vivado
+# Start of session at: Sun Nov  3 17:16:16 2019
+# Process ID: 4123
+# Current directory: /home/austin/Desktop/projects/zybo/zybo_img_proc/vivado
 # Command line: vivado
-# Log file: /home/austin/Desktop/projects/zybo/img_proc/vivado/vivado.log
-# Journal file: /home/austin/Desktop/projects/zybo/img_proc/vivado/vivado.jou
+# Log file: /home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/vivado.log
+# Journal file: /home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project /home/austin/Desktop/projects/zybo/img_proc/vivado/img_proc/img_proc.xpr
+open_project /home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.xpr
+INFO: [Project 1-313] Project file moved from '/home/austin/Desktop/projects/zybo/zybo_img_proc_baseline/vivado/img_proc_baseline' since last save.
+WARNING: [Project 1-312] File not found as '/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc_baseline/img_proc_baseline.bd'; using path '/home/austin/Desktop/projects/zybo/zybo_img_proc_baseline/vivado/img_proc_baseline/img_proc_baseline.srcs/sources_1/bd/img_proc_baseline/img_proc_baseline.bd' instead.
+WARNING: [Project 1-312] File not found as '/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/imports/hdl/img_proc_baseline_wrapper.vhd'; using path '/home/austin/Desktop/projects/zybo/zybo_img_proc_baseline/vivado/img_proc_baseline/img_proc_baseline.srcs/sources_1/imports/hdl/img_proc_baseline_wrapper.vhd' instead.
 Scanning sources...
 Finished scanning sources
+WARNING: [Project 1-509] GeneratedRun file for 'synth_1' not found
+WARNING: [Project 1-509] GeneratedRun file for 'img_proc_baseline_clk_wiz_0_0_synth_1' not found
+WARNING: [Project 1-509] GeneratedRun file for 'img_proc_baseline_dvi2rgb_0_1_synth_1' not found
+WARNING: [Project 1-509] GeneratedRun file for 'img_proc_baseline_rgb2dvi_0_0_synth_1' not found
+WARNING: [Project 1-509] GeneratedRun file for 'impl_1' not found
+WARNING: [filemgmt 56-2] IPUserFilesDir: Could not find the directory '/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.ip_user_files', nor could it be found using path '/home/austin/Desktop/projects/zybo/zybo_img_proc_baseline/vivado/img_proc_baseline/img_proc_baseline.ip_user_files'.
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/austin/Desktop/projects/zybo/img_proc/vhdl/digilent/vivado-library'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/austin/Desktop/projects/zybo/zybo_img_proc/vhdl/digilent/vivado-library'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2019.2/data/ip'.
-WARNING: [BD 41-1661] One or more IPs have been locked in the design 'img_proc_test.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
-List of locked IPs:
-img_proc_test_dvi2rgb_0_1
-
-open_project: Time (s): cpu = 00:00:24 ; elapsed = 00:00:21 . Memory (MB): peak = 6899.980 ; gain = 334.266 ; free physical = 27177 ; free virtual = 31126
 update_compile_order -fileset sources_1
-open_bd_design {/home/austin/Desktop/projects/zybo/img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/img_proc.bd}
-Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
-WARNING: [BD 41-176] The physical port 'S_AXI_GP2_rd_socket' specified in the portmap, is not found on the block! 
-WARNING: [BD 41-176] The physical port 'S_AXI_GP2_wr_socket' specified in the portmap, is not found on the block! 
-WARNING: [BD 41-176] The physical port 'S_AXI_GP3_rd_socket' specified in the portmap, is not found on the block! 
-WARNING: [BD 41-176] The physical port 'S_AXI_GP3_wr_socket' specified in the portmap, is not found on the block! 
+open_bd_design {/home/austin/Desktop/projects/zybo/zybo_img_proc_baseline/vivado/img_proc_baseline/img_proc_baseline.srcs/sources_1/bd/img_proc_baseline/img_proc_baseline.bd}
 Adding component instance block -- digilentinc.com:ip:dvi2rgb:2.0 - dvi2rgb_0
-Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_0
-Adding component instance block -- xilinx.com:ip:v_tc:6.2 - v_tc_0
-Adding component instance block -- xilinx.com:ip:v_vid_in_axi4s:4.0 - v_vid_in_axi4s_0
-Adding component instance block -- xilinx.com:ip:axis_subset_converter:1.1 - axis_subset_converter_0
-Adding component instance block -- xilinx.com:ip:axi_vdma:6.3 - axi_vdma_0
-Adding component instance block -- xilinx.com:ip:v_tc:6.2 - v_tc_1
 Adding component instance block -- digilentinc.com:ip:rgb2dvi:1.4 - rgb2dvi_0
-Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph
-Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
-Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_50M
-Adding component instance block -- xilinx.com:ip:v_axi4s_vid_out:4.0 - v_axi4s_vid_out_0
-Successfully read diagram <img_proc> from BD file </home/austin/Desktop/projects/zybo/img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/img_proc.bd>
-open_bd_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 7087.066 ; gain = 0.000 ; free physical = 27012 ; free virtual = 31055
-close_bd_design [get_bd_designs img_proc]
-Wrote  : </home/austin/Desktop/projects/zybo/img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/ui/bd_4a8ff72.ui> 
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Successfully read diagram <img_proc_baseline> from BD file </home/austin/Desktop/projects/zybo/zybo_img_proc_baseline/vivado/img_proc_baseline/img_proc_baseline.srcs/sources_1/bd/img_proc_baseline/img_proc_baseline.bd>
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 15
+[Sun Nov  3 17:17:21 2019] Launched img_proc_baseline_clk_wiz_0_0_synth_1, img_proc_baseline_dvi2rgb_0_1_synth_1, img_proc_baseline_rgb2dvi_0_0_synth_1, synth_1...
+Run output will be captured here:
+img_proc_baseline_clk_wiz_0_0_synth_1: /home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/img_proc_baseline_clk_wiz_0_0_synth_1/runme.log
+img_proc_baseline_dvi2rgb_0_1_synth_1: /home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/img_proc_baseline_dvi2rgb_0_1_synth_1/runme.log
+img_proc_baseline_rgb2dvi_0_0_synth_1: /home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/img_proc_baseline_rgb2dvi_0_0_synth_1/runme.log
+synth_1: /home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/synth_1/runme.log
+[Sun Nov  3 17:17:22 2019] Launched impl_1...
+Run output will be captured here: /home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.2
+  **** Build date : Oct 24 2019 at 19:23:45
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+[?1034h
+
+****** Xilinx cs_server v2019.2.0
+  **** Build date : Oct 24 2019-18:51:27
+    ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.
+
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210351A825A0A
+set_property PROGRAM.FILE {/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/impl_1/img_proc_baseline_wrapper.bit} [get_hw_devices xc7z020_1]
+set_property PROBES.FILE {/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/impl_1/img_proc_baseline_wrapper.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/impl_1/img_proc_baseline_wrapper.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/impl_1/img_proc_baseline_wrapper.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 2 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"img_proc_baseline_i/dvi2rgb_0/U0/GenerateDebug.ILA_PixClkx"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"img_proc_baseline_i/dvi2rgb_0/U0/GenerateDebug.ILA_RefClkx"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"img_proc_baseline_i/dvi2rgb_0/U0/GenerateDebug.ILA_PixClkx"}]
+ERROR: [Labtools 27-3428] Ila core [hw_ila_1] clock has stopped. Unable to arm ILA core.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"img_proc_baseline_i/dvi2rgb_0/U0/GenerateDebug.ILA_PixClkx"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2019-Nov-03 17:23:04
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"img_proc_baseline_i/dvi2rgb_0/U0/GenerateDebug.ILA_PixClkx"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"img_proc_baseline_i/dvi2rgb_0/U0/GenerateDebug.ILA_PixClkx"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2019-Nov-03 17:23:04
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"img_proc_baseline_i/dvi2rgb_0/U0/GenerateDebug.ILA_PixClkx"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2019-Nov-03 17:23:07
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"img_proc_baseline_i/dvi2rgb_0/U0/GenerateDebug.ILA_PixClkx"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"img_proc_baseline_i/dvi2rgb_0/U0/GenerateDebug.ILA_PixClkx"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2019-Nov-03 17:23:07
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"img_proc_baseline_i/dvi2rgb_0/U0/GenerateDebug.ILA_PixClkx"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2019-Nov-03 17:23:08
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"img_proc_baseline_i/dvi2rgb_0/U0/GenerateDebug.ILA_PixClkx"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"img_proc_baseline_i/dvi2rgb_0/U0/GenerateDebug.ILA_PixClkx"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2019-Nov-03 17:23:08
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"img_proc_baseline_i/dvi2rgb_0/U0/GenerateDebug.ILA_PixClkx"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2019-Nov-03 17:23:11
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"img_proc_baseline_i/dvi2rgb_0/U0/GenerateDebug.ILA_PixClkx"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"img_proc_baseline_i/dvi2rgb_0/U0/GenerateDebug.ILA_PixClkx"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2019-Nov-03 17:23:11
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"img_proc_baseline_i/dvi2rgb_0/U0/GenerateDebug.ILA_PixClkx"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2019-Nov-03 17:24:29
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"img_proc_baseline_i/dvi2rgb_0/U0/GenerateDebug.ILA_PixClkx"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"img_proc_baseline_i/dvi2rgb_0/U0/GenerateDebug.ILA_PixClkx"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2019-Nov-03 17:24:29
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"img_proc_baseline_i/dvi2rgb_0/U0/GenerateDebug.ILA_PixClkx"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2019-Nov-03 17:24:31
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"img_proc_baseline_i/dvi2rgb_0/U0/GenerateDebug.ILA_PixClkx"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"img_proc_baseline_i/dvi2rgb_0/U0/GenerateDebug.ILA_PixClkx"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2019-Nov-03 17:24:31
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"img_proc_baseline_i/dvi2rgb_0/U0/GenerateDebug.ILA_PixClkx"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2019-Nov-03 17:24:33
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"img_proc_baseline_i/dvi2rgb_0/U0/GenerateDebug.ILA_PixClkx"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"img_proc_baseline_i/dvi2rgb_0/U0/GenerateDebug.ILA_PixClkx"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2019-Nov-03 17:24:33
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"img_proc_baseline_i/dvi2rgb_0/U0/GenerateDebug.ILA_PixClkx"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2019-Nov-03 17:25:51
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"img_proc_baseline_i/dvi2rgb_0/U0/GenerateDebug.ILA_PixClkx"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"img_proc_baseline_i/dvi2rgb_0/U0/GenerateDebug.ILA_PixClkx"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2019-Nov-03 17:25:51
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"img_proc_baseline_i/dvi2rgb_0/U0/GenerateDebug.ILA_RefClkx"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_2' trigger was armed at 2019-Nov-03 17:26:20
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"img_proc_baseline_i/dvi2rgb_0/U0/GenerateDebug.ILA_RefClkx"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"img_proc_baseline_i/dvi2rgb_0/U0/GenerateDebug.ILA_RefClkx"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_2' triggered at 2019-Nov-03 17:26:20
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.hw/backup/hw_ila_data_2.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+open_bd_design {/home/austin/Desktop/projects/zybo/zybo_img_proc_baseline/vivado/img_proc_baseline/img_proc_baseline.srcs/sources_1/bd/img_proc_baseline/img_proc_baseline.bd}
+save_wave_config {/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+save_wave_config {/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.hw/hw_1/wave/hw_ila_data_2/hw_ila_data_2.wcfg}
 exit
-INFO: [Common 17-206] Exiting Vivado at Sun Nov  3 13:14:54 2019...
+INFO: [Common 17-206] Exiting Vivado at Sun Nov  3 17:26:47 2019...

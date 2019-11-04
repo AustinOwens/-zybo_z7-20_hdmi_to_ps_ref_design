@@ -20,7 +20,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/austin/Desktop/projects/zybo/img_proc/vivado/img_proc/img_proc.runs/impl_1'
+HD_PWD='/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -38,6 +38,6 @@ EAStep()
 
 # pre-commands:
 /bin/touch .init_design.begin.rst
-EAStep vivado -log img_proc_test_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source img_proc_test_wrapper.tcl -notrace
+EAStep vivado -log img_proc_baseline_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source img_proc_baseline_wrapper.tcl -notrace
 
 
