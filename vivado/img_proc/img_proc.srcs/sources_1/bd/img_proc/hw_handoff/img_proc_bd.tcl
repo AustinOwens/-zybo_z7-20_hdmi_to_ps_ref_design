@@ -1,6 +1,6 @@
 
 ################################################################
-# This is a generated script based on design: img_proc_baseline
+# This is a generated script based on design: img_proc
 #
 # Though there are limitations about the generated script,
 # the main purpose of this utility is to make learning
@@ -35,7 +35,7 @@ if { [string first $scripts_vivado_version $current_vivado_version] == -1 } {
 ################################################################
 
 # To test this script, run the following commands from Vivado Tcl console:
-# source img_proc_baseline_script.tcl
+# source img_proc_script.tcl
 
 # If there is no project opened, this script will create a
 # project, but make sure you do not have an existing project
@@ -50,7 +50,7 @@ if { $list_projs eq "" } {
 
 # CHANGE DESIGN NAME HERE
 variable design_name
-set design_name img_proc_baseline
+set design_name img_proc
 
 # If you do not already have an existing IP Integrator design open,
 # you can create a design using the following command:
@@ -164,7 +164,10 @@ proc create_root_design { parentCell } {
 
 
   # Create ports
-  set async_reset [ create_bd_port -dir I async_reset ]
+  set async_reset [ create_bd_port -dir I -type rst async_reset ]
+  set_property -dict [ list \
+   CONFIG.POLARITY {ACTIVE_HIGH} \
+ ] $async_reset
   set hdmi_in_hpd [ create_bd_port -dir O -from 0 -to 0 hdmi_in_hpd ]
   set sys_clock [ create_bd_port -dir I -type clk -freq_hz 125000000 sys_clock ]
   set_property -dict [ list \
@@ -198,6 +201,7 @@ proc create_root_design { parentCell } {
   set_property -dict [ list \
    CONFIG.IIC_BOARD_INTERFACE {hdmi_in_ddc} \
    CONFIG.TMDS_BOARD_INTERFACE {hdmi_in} \
+   CONFIG.kClkRange {1} \
  ] $dvi2rgb_0
 
   # Create instance: rgb2dvi_0, and set properties
@@ -216,9 +220,9 @@ proc create_root_design { parentCell } {
   connect_bd_intf_net -intf_net rgb2dvi_0_TMDS [get_bd_intf_ports hdmi_out] [get_bd_intf_pins rgb2dvi_0/TMDS]
 
   # Create port connections
-  connect_bd_net -net Net [get_bd_ports async_reset] [get_bd_pins clk_wiz_0/reset] [get_bd_pins dvi2rgb_0/aRst] [get_bd_pins rgb2dvi_0/aRst]
   connect_bd_net -net clk_wiz_0_clk_out1 [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins dvi2rgb_0/RefClk]
   connect_bd_net -net dvi2rgb_0_PixelClk [get_bd_pins dvi2rgb_0/PixelClk] [get_bd_pins rgb2dvi_0/PixelClk]
+  connect_bd_net -net reset_rtl_1 [get_bd_ports async_reset] [get_bd_pins clk_wiz_0/reset] [get_bd_pins dvi2rgb_0/aRst] [get_bd_pins rgb2dvi_0/aRst]
   connect_bd_net -net sys_clock_1 [get_bd_ports sys_clock] [get_bd_pins clk_wiz_0/clk_in1]
   connect_bd_net -net xlconstant_0_dout [get_bd_ports hdmi_in_hpd] [get_bd_pins xlconstant_0/dout]
 

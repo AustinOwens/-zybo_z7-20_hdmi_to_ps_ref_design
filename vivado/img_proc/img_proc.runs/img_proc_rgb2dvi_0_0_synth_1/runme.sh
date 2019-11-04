@@ -20,7 +20,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/austin/Desktop/projects/zybo/zybo_img_proc_baseline/vivado/img_proc_baseline/img_proc_baseline.runs/img_proc_baseline_rgb2dvi_0_0_synth_1'
+HD_PWD='/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/img_proc_rgb2dvi_0_0_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -36,4 +36,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log img_proc_baseline_rgb2dvi_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source img_proc_baseline_rgb2dvi_0_0.tcl
+EAStep vivado -log img_proc_rgb2dvi_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source img_proc_rgb2dvi_0_0.tcl

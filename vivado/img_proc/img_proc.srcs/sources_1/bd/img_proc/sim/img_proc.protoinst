@@ -1,7 +1,7 @@
 {
 	"version": "1.0",
 	"modules": {
-		"img_proc_baseline": {
+		"img_proc": {
 			"proto_instances": {
 			}
 		}

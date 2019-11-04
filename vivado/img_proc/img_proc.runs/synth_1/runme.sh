@@ -36,4 +36,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log img_proc_baseline_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source img_proc_baseline_wrapper.tcl
+EAStep vivado -log img_proc_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source img_proc_wrapper.tcl

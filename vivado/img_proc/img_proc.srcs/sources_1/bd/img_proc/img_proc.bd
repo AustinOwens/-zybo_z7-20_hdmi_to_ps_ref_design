@@ -1,9 +1,9 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0xDF643CB69223195B",
+      "boundary_crc": "0xDF643CB6F31A8409",
       "device": "xc7z020clg400-1",
-      "name": "img_proc_baseline",
+      "name": "img_proc",
       "synth_flow_mode": "Hierarchical",
       "tool_version": "2019.2",
       "validated": "true"
@@ -34,7 +34,7 @@
         "direction": "I",
         "parameters": {
           "CLK_DOMAIN": {
-            "value": "img_proc_baseline_sys_clock",
+            "value": "img_proc_sys_clock",
             "value_src": "default"
           },
           "FREQ_HZ": {
@@ -49,31 +49,44 @@
           }
         }
       },
+      "async_reset": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_HIGH"
+          }
+        }
+      },
       "hdmi_in_hpd": {
         "direction": "O",
         "left": "0",
         "right": "0"
-      },
-      "async_reset": {
-        "direction": "I"
       }
     },
     "components": {
       "dvi2rgb_0": {
         "vlnv": "digilentinc.com:ip:dvi2rgb:2.0",
-        "xci_name": "img_proc_baseline_dvi2rgb_0_1",
+        "xci_name": "img_proc_dvi2rgb_0_0",
         "parameters": {
           "IIC_BOARD_INTERFACE": {
             "value": "hdmi_in_ddc"
           },
           "TMDS_BOARD_INTERFACE": {
             "value": "hdmi_in"
+          },
+          "kClkRange": {
+            "value": "1"
           }
         }
       },
       "rgb2dvi_0": {
         "vlnv": "digilentinc.com:ip:rgb2dvi:1.4",
-        "xci_name": "img_proc_baseline_rgb2dvi_0_0",
+        "xci_name": "img_proc_rgb2dvi_0_0",
         "parameters": {
           "TMDS_BOARD_INTERFACE": {
             "value": "hdmi_out"
@@ -82,7 +95,7 @@
       },
       "clk_wiz_0": {
         "vlnv": "xilinx.com:ip:clk_wiz:6.0",
-        "xci_name": "img_proc_baseline_clk_wiz_0_0",
+        "xci_name": "img_proc_clk_wiz_0_0",
         "parameters": {
           "CLKOUT1_DRIVES": {
             "value": "BUFG"
@@ -139,14 +152,14 @@
       },
       "xlconstant_0": {
         "vlnv": "xilinx.com:ip:xlconstant:1.1",
-        "xci_name": "img_proc_baseline_xlconstant_0_0"
+        "xci_name": "img_proc_xlconstant_0_0"
       }
     },
     "interface_nets": {
-      "rgb2dvi_0_TMDS": {
+      "dvi2rgb_0_RGB": {
         "interface_ports": [
-          "hdmi_out",
-          "rgb2dvi_0/TMDS"
+          "dvi2rgb_0/RGB",
+          "rgb2dvi_0/RGB"
         ]
       },
       "hdmi_in_1": {
@@ -161,10 +174,10 @@
           "dvi2rgb_0/DDC"
         ]
       },
-      "dvi2rgb_0_RGB": {
+      "rgb2dvi_0_TMDS": {
         "interface_ports": [
-          "dvi2rgb_0/RGB",
-          "rgb2dvi_0/RGB"
+          "hdmi_out",
+          "rgb2dvi_0/TMDS"
         ]
       }
     },
@@ -173,6 +186,14 @@
         "ports": [
           "sys_clock",
           "clk_wiz_0/clk_in1"
+        ]
+      },
+      "reset_rtl_1": {
+        "ports": [
+          "async_reset",
+          "clk_wiz_0/reset",
+          "rgb2dvi_0/aRst",
+          "dvi2rgb_0/aRst"
         ]
       },
       "clk_wiz_0_clk_out1": {
@@ -191,14 +212,6 @@
         "ports": [
           "dvi2rgb_0/PixelClk",
           "rgb2dvi_0/PixelClk"
-        ]
-      },
-      "Net": {
-        "ports": [
-          "async_reset",
-          "rgb2dvi_0/aRst",
-          "dvi2rgb_0/aRst",
-          "clk_wiz_0/reset"
         ]
       }
     }

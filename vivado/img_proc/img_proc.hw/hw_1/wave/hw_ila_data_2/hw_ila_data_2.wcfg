@@ -10,59 +10,57 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="1025fs"></ZoomEndTime>
+      <ZoomEndTime time="6fs"></ZoomEndTime>
       <Cursor1Time time="0fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="403"></NameColumnWidth>
-      <ValueColumnWidth column_width="134"></ValueColumnWidth>
+      <ValueColumnWidth column_width="130"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="6" />
-   <wave_markers>
-   </wave_markers>
-   <wvobject type="logic" fp_name="img_proc_baseline_i/dvi2rgb_0/U0/dbg_rDlyRst">
+   <wvobject type="logic" fp_name="img_proc_i/dvi2rgb_0/U0/dbg_rDlyRst">
       <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">img_proc_baseline_i/dvi2rgb_0/U0/dbg_rDlyRst</obj_property>
+      <obj_property name="ElementShortName">img_proc_i/dvi2rgb_0/U0/dbg_rDlyRst</obj_property>
       <obj_property name="ObjectShortName">dbg_rDlyRst</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
-   <wvobject type="logic" fp_name="img_proc_baseline_i/dvi2rgb_0/U0/dbg_rRdyRst">
+   <wvobject type="logic" fp_name="img_proc_i/dvi2rgb_0/U0/dbg_rRdyRst">
       <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">img_proc_baseline_i/dvi2rgb_0/U0/dbg_rRdyRst</obj_property>
+      <obj_property name="ElementShortName">img_proc_i/dvi2rgb_0/U0/dbg_rRdyRst</obj_property>
       <obj_property name="ObjectShortName">dbg_rRdyRst</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
-   <wvobject type="logic" fp_name="img_proc_baseline_i/dvi2rgb_0/U0/dbg_rMMCM_Reset">
+   <wvobject type="logic" fp_name="img_proc_i/dvi2rgb_0/U0/dbg_rMMCM_Reset">
       <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">img_proc_baseline_i/dvi2rgb_0/U0/dbg_rMMCM_Reset</obj_property>
+      <obj_property name="ElementShortName">img_proc_i/dvi2rgb_0/U0/dbg_rMMCM_Reset</obj_property>
       <obj_property name="ObjectShortName">dbg_rMMCM_Reset</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
-   <wvobject type="logic" fp_name="img_proc_baseline_i/dvi2rgb_0/U0/dbg_rBUFR_Rst">
+   <wvobject type="logic" fp_name="img_proc_i/dvi2rgb_0/U0/dbg_rBUFR_Rst">
       <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">img_proc_baseline_i/dvi2rgb_0/U0/dbg_rBUFR_Rst</obj_property>
+      <obj_property name="ElementShortName">img_proc_i/dvi2rgb_0/U0/dbg_rBUFR_Rst</obj_property>
       <obj_property name="ObjectShortName">dbg_rBUFR_Rst</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
-   <wvobject type="logic" fp_name="img_proc_baseline_i/dvi2rgb_0/U0/dbg_rMMCM_Locked">
+   <wvobject type="logic" fp_name="img_proc_i/dvi2rgb_0/U0/dbg_rMMCM_Locked">
       <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">img_proc_baseline_i/dvi2rgb_0/U0/dbg_rMMCM_Locked</obj_property>
+      <obj_property name="ElementShortName">img_proc_i/dvi2rgb_0/U0/dbg_rMMCM_Locked</obj_property>
       <obj_property name="ObjectShortName">dbg_rMMCM_Locked</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
-   <wvobject type="logic" fp_name="img_proc_baseline_i/dvi2rgb_0/U0/dbg_Clocking_aLocked">
+   <wvobject type="logic" fp_name="img_proc_i/dvi2rgb_0/U0/dbg_Clocking_aLocked">
       <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">img_proc_baseline_i/dvi2rgb_0/U0/dbg_Clocking_aLocked</obj_property>
+      <obj_property name="ElementShortName">img_proc_i/dvi2rgb_0/U0/dbg_Clocking_aLocked</obj_property>
       <obj_property name="ObjectShortName">dbg_Clocking_aLocked</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
       <obj_property name="LABELRADIX">true</obj_property>

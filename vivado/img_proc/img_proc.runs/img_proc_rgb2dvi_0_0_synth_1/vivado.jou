@@ -2,11 +2,11 @@
 # Vivado v2019.2 (64-bit)
 # SW Build 2700185 on Thu Oct 24 18:45:48 MDT 2019
 # IP Build 2699827 on Thu Oct 24 21:16:38 MDT 2019
-# Start of session at: Sun Nov  3 15:47:26 2019
-# Process ID: 29951
-# Current directory: /home/austin/Desktop/projects/zybo/zybo_img_proc_baseline/vivado/img_proc_baseline/img_proc_baseline.runs/img_proc_baseline_rgb2dvi_0_0_synth_1
-# Command line: vivado -log img_proc_baseline_rgb2dvi_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source img_proc_baseline_rgb2dvi_0_0.tcl
-# Log file: /home/austin/Desktop/projects/zybo/zybo_img_proc_baseline/vivado/img_proc_baseline/img_proc_baseline.runs/img_proc_baseline_rgb2dvi_0_0_synth_1/img_proc_baseline_rgb2dvi_0_0.vds
-# Journal file: /home/austin/Desktop/projects/zybo/zybo_img_proc_baseline/vivado/img_proc_baseline/img_proc_baseline.runs/img_proc_baseline_rgb2dvi_0_0_synth_1/vivado.jou
+# Start of session at: Sun Nov  3 18:01:56 2019
+# Process ID: 32169
+# Current directory: /home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/img_proc_rgb2dvi_0_0_synth_1
+# Command line: vivado -log img_proc_rgb2dvi_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source img_proc_rgb2dvi_0_0.tcl
+# Log file: /home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/img_proc_rgb2dvi_0_0_synth_1/img_proc_rgb2dvi_0_0.vds
+# Journal file: /home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/img_proc_rgb2dvi_0_0_synth_1/vivado.jou
 #-----------------------------------------------------------
-source img_proc_baseline_rgb2dvi_0_0.tcl -notrace
+source img_proc_rgb2dvi_0_0.tcl -notrace
