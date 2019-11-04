@@ -2,8 +2,8 @@
 # Vivado v2019.2 (64-bit)
 # SW Build 2700185 on Thu Oct 24 18:45:48 MDT 2019
 # IP Build 2699827 on Thu Oct 24 21:16:38 MDT 2019
-# Start of session at: Sun Nov  3 18:14:10 2019
-# Process ID: 7817
+# Start of session at: Mon Nov  4 01:34:30 2019
+# Process ID: 32678
 # Current directory: /home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/synth_1
 # Command line: vivado -log img_proc_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source img_proc_wrapper.tcl
 # Log file: /home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/synth_1/img_proc_wrapper.vds

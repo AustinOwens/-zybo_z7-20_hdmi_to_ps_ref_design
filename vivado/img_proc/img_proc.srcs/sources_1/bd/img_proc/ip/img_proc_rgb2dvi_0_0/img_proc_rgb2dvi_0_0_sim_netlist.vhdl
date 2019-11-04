@@ -1,10 +1,10 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.2 (lin64) Build 2700185 Thu Oct 24 18:45:48 MDT 2019
--- Date        : Sun Nov  3 18:02:33 2019
+-- Date        : Sun Nov  3 22:07:24 2019
 -- Host        : austin-ubuntu running 64-bit Ubuntu 18.04.3 LTS
--- Command     : write_vhdl -force -mode funcsim
---               /home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/ip/img_proc_rgb2dvi_0_0/img_proc_rgb2dvi_0_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top img_proc_rgb2dvi_0_0 -prefix
+--               img_proc_rgb2dvi_0_0_ img_proc_rgb2dvi_0_0_sim_netlist.vhdl
 -- Design      : img_proc_rgb2dvi_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -22,8 +22,6 @@ entity img_proc_rgb2dvi_0_0_OutputSERDES is
     PixelClk : in STD_LOGIC;
     aRst : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of img_proc_rgb2dvi_0_0_OutputSERDES : entity is "OutputSERDES";
 end img_proc_rgb2dvi_0_0_OutputSERDES;
 
 architecture STRUCTURE of img_proc_rgb2dvi_0_0_OutputSERDES is
@@ -659,8 +657,6 @@ entity img_proc_rgb2dvi_0_0_SyncAsync is
     PixelClk : in STD_LOGIC;
     AS : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of img_proc_rgb2dvi_0_0_SyncAsync : entity is "SyncAsync";
 end img_proc_rgb2dvi_0_0_SyncAsync;
 
 architecture STRUCTURE of img_proc_rgb2dvi_0_0_SyncAsync is
@@ -702,104 +698,6 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity img_proc_rgb2dvi_0_0_SyncAsync_6 is
-  port (
-    AR : out STD_LOGIC_VECTOR ( 0 to 0 );
-    \oSyncStages_reg[0]_0\ : in STD_LOGIC;
-    AS : in STD_LOGIC_VECTOR ( 0 to 0 )
-  );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of img_proc_rgb2dvi_0_0_SyncAsync_6 : entity is "SyncAsync";
-end img_proc_rgb2dvi_0_0_SyncAsync_6;
-
-architecture STRUCTURE of img_proc_rgb2dvi_0_0_SyncAsync_6 is
-  signal oSyncStages : STD_LOGIC_VECTOR ( 1 downto 0 );
-  attribute async_reg : string;
-  attribute async_reg of oSyncStages : signal is "true";
-  attribute ASYNC_REG_boolean : boolean;
-  attribute ASYNC_REG_boolean of \oSyncStages_reg[0]\ : label is std.standard.true;
-  attribute KEEP : string;
-  attribute KEEP of \oSyncStages_reg[0]\ : label is "yes";
-  attribute ASYNC_REG_boolean of \oSyncStages_reg[1]\ : label is std.standard.true;
-  attribute KEEP of \oSyncStages_reg[1]\ : label is "yes";
-begin
-  AR(0) <= oSyncStages(1);
-\oSyncStages_reg[0]\: unisim.vcomponents.FDPE
-    generic map(
-      INIT => '1'
-    )
-        port map (
-      C => \oSyncStages_reg[0]_0\,
-      CE => '1',
-      D => '0',
-      PRE => AS(0),
-      Q => oSyncStages(0)
-    );
-\oSyncStages_reg[1]\: unisim.vcomponents.FDPE
-    generic map(
-      INIT => '1'
-    )
-        port map (
-      C => \oSyncStages_reg[0]_0\,
-      CE => '1',
-      D => oSyncStages(0),
-      PRE => AS(0),
-      Q => oSyncStages(1)
-    );
-end STRUCTURE;
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
-library UNISIM;
-use UNISIM.VCOMPONENTS.ALL;
-entity \img_proc_rgb2dvi_0_0_SyncAsync__parameterized1\ is
-  port (
-    D : out STD_LOGIC_VECTOR ( 0 to 0 );
-    \oSyncStages_reg[0]_0\ : in STD_LOGIC;
-    \oSyncStages_reg[0]_1\ : in STD_LOGIC_VECTOR ( 0 to 0 )
-  );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \img_proc_rgb2dvi_0_0_SyncAsync__parameterized1\ : entity is "SyncAsync";
-end \img_proc_rgb2dvi_0_0_SyncAsync__parameterized1\;
-
-architecture STRUCTURE of \img_proc_rgb2dvi_0_0_SyncAsync__parameterized1\ is
-  signal oSyncStages : STD_LOGIC_VECTOR ( 1 downto 0 );
-  attribute async_reg : string;
-  attribute async_reg of oSyncStages : signal is "true";
-  attribute ASYNC_REG_boolean : boolean;
-  attribute ASYNC_REG_boolean of \oSyncStages_reg[0]\ : label is std.standard.true;
-  attribute KEEP : string;
-  attribute KEEP of \oSyncStages_reg[0]\ : label is "yes";
-  attribute ASYNC_REG_boolean of \oSyncStages_reg[1]\ : label is std.standard.true;
-  attribute KEEP of \oSyncStages_reg[1]\ : label is "yes";
-begin
-  D(0) <= oSyncStages(1);
-\oSyncStages_reg[0]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => \oSyncStages_reg[0]_0\,
-      CE => '1',
-      D => \oSyncStages_reg[0]_1\(0),
-      Q => oSyncStages(0),
-      R => '0'
-    );
-\oSyncStages_reg[1]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => \oSyncStages_reg[0]_0\,
-      CE => '1',
-      D => oSyncStages(0),
-      Q => oSyncStages(1),
-      R => '0'
-    );
-end STRUCTURE;
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
-library UNISIM;
-use UNISIM.VCOMPONENTS.ALL;
 entity img_proc_rgb2dvi_0_0_TMDS_Encoder is
   port (
     SR : out STD_LOGIC_VECTOR ( 0 to 0 );
@@ -810,8 +708,6 @@ entity img_proc_rgb2dvi_0_0_TMDS_Encoder is
     vid_pVDE : in STD_LOGIC;
     vid_pData : in STD_LOGIC_VECTOR ( 7 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of img_proc_rgb2dvi_0_0_TMDS_Encoder : entity is "TMDS_Encoder";
 end img_proc_rgb2dvi_0_0_TMDS_Encoder;
 
 architecture STRUCTURE of img_proc_rgb2dvi_0_0_TMDS_Encoder is
@@ -4597,11 +4493,9 @@ use UNISIM.VCOMPONENTS.ALL;
 entity img_proc_rgb2dvi_0_0_ResetBridge is
   port (
     \out\ : out STD_LOGIC_VECTOR ( 0 to 0 );
-    in0 : in STD_LOGIC;
+    aRst : in STD_LOGIC;
     PixelClk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of img_proc_rgb2dvi_0_0_ResetBridge : entity is "ResetBridge";
 end img_proc_rgb2dvi_0_0_ResetBridge;
 
 architecture STRUCTURE of img_proc_rgb2dvi_0_0_ResetBridge is
@@ -4609,203 +4503,12 @@ architecture STRUCTURE of img_proc_rgb2dvi_0_0_ResetBridge is
   attribute RTL_KEEP : string;
   attribute RTL_KEEP of aRst_int : signal is "true";
 begin
-  aRst_int <= in0;
+  aRst_int <= aRst;
 SyncAsyncx: entity work.img_proc_rgb2dvi_0_0_SyncAsync
      port map (
       AS(0) => aRst_int,
       PixelClk => PixelClk,
       \out\(0) => \out\(0)
-    );
-end STRUCTURE;
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
-library UNISIM;
-use UNISIM.VCOMPONENTS.ALL;
-entity img_proc_rgb2dvi_0_0_ResetBridge_5 is
-  port (
-    AR : out STD_LOGIC_VECTOR ( 0 to 0 );
-    aRst : in STD_LOGIC;
-    \oSyncStages_reg[0]\ : in STD_LOGIC
-  );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of img_proc_rgb2dvi_0_0_ResetBridge_5 : entity is "ResetBridge";
-end img_proc_rgb2dvi_0_0_ResetBridge_5;
-
-architecture STRUCTURE of img_proc_rgb2dvi_0_0_ResetBridge_5 is
-  signal aRst_int : STD_LOGIC;
-  attribute RTL_KEEP : string;
-  attribute RTL_KEEP of aRst_int : signal is "true";
-begin
-  aRst_int <= aRst;
-SyncAsyncx: entity work.img_proc_rgb2dvi_0_0_SyncAsync_6
-     port map (
-      AR(0) => AR(0),
-      AS(0) => aRst_int,
-      \oSyncStages_reg[0]_0\ => \oSyncStages_reg[0]\
-    );
-end STRUCTURE;
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
-library UNISIM;
-use UNISIM.VCOMPONENTS.ALL;
-entity img_proc_rgb2dvi_0_0_ClockGen is
-  port (
-    SerialClk : out STD_LOGIC;
-    PixelClk : out STD_LOGIC;
-    in0 : out STD_LOGIC;
-    aRst : in STD_LOGIC;
-    \oSyncStages_reg[0]\ : in STD_LOGIC
-  );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of img_proc_rgb2dvi_0_0_ClockGen : entity is "ClockGen";
-end img_proc_rgb2dvi_0_0_ClockGen;
-
-architecture STRUCTURE of img_proc_rgb2dvi_0_0_ClockGen is
-  signal CLKFBIN : STD_LOGIC;
-  signal RST : STD_LOGIC;
-  signal aPixelClkLckd : STD_LOGIC;
-  signal oOut : STD_LOGIC;
-  signal pLockWasLost0_n_0 : STD_LOGIC;
-  signal \pLocked_q_reg_n_0_[0]\ : STD_LOGIC;
-  signal \pLocked_q_reg_n_0_[1]\ : STD_LOGIC;
-  signal pRst : STD_LOGIC;
-  signal p_1_in : STD_LOGIC;
-  signal \NLW_GenPLL.DVI_ClkGenerator_CLKOUT2_UNCONNECTED\ : STD_LOGIC;
-  signal \NLW_GenPLL.DVI_ClkGenerator_CLKOUT3_UNCONNECTED\ : STD_LOGIC;
-  signal \NLW_GenPLL.DVI_ClkGenerator_CLKOUT4_UNCONNECTED\ : STD_LOGIC;
-  signal \NLW_GenPLL.DVI_ClkGenerator_CLKOUT5_UNCONNECTED\ : STD_LOGIC;
-  signal \NLW_GenPLL.DVI_ClkGenerator_DRDY_UNCONNECTED\ : STD_LOGIC;
-  signal \NLW_GenPLL.DVI_ClkGenerator_DO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 15 downto 0 );
-  attribute box_type : string;
-  attribute box_type of \GenPLL.DVI_ClkGenerator\ : label is "PRIMITIVE";
-begin
-\GenPLL.DVI_ClkGenerator\: unisim.vcomponents.PLLE2_ADV
-    generic map(
-      BANDWIDTH => "OPTIMIZED",
-      CLKFBOUT_MULT => 10,
-      CLKFBOUT_PHASE => 0.000000,
-      CLKIN1_PERIOD => 6.250000,
-      CLKIN2_PERIOD => 0.000000,
-      CLKOUT0_DIVIDE => 2,
-      CLKOUT0_DUTY_CYCLE => 0.500000,
-      CLKOUT0_PHASE => 0.000000,
-      CLKOUT1_DIVIDE => 10,
-      CLKOUT1_DUTY_CYCLE => 0.500000,
-      CLKOUT1_PHASE => 0.000000,
-      CLKOUT2_DIVIDE => 1,
-      CLKOUT2_DUTY_CYCLE => 0.500000,
-      CLKOUT2_PHASE => 0.000000,
-      CLKOUT3_DIVIDE => 1,
-      CLKOUT3_DUTY_CYCLE => 0.500000,
-      CLKOUT3_PHASE => 0.000000,
-      CLKOUT4_DIVIDE => 1,
-      CLKOUT4_DUTY_CYCLE => 0.500000,
-      CLKOUT4_PHASE => 0.000000,
-      CLKOUT5_DIVIDE => 1,
-      CLKOUT5_DUTY_CYCLE => 0.500000,
-      CLKOUT5_PHASE => 0.000000,
-      COMPENSATION => "INTERNAL",
-      DIVCLK_DIVIDE => 1,
-      IS_CLKINSEL_INVERTED => '0',
-      IS_PWRDWN_INVERTED => '0',
-      IS_RST_INVERTED => '0',
-      REF_JITTER1 => 0.010000,
-      REF_JITTER2 => 0.000000,
-      STARTUP_WAIT => "FALSE"
-    )
-        port map (
-      CLKFBIN => CLKFBIN,
-      CLKFBOUT => CLKFBIN,
-      CLKIN1 => \oSyncStages_reg[0]\,
-      CLKIN2 => '0',
-      CLKINSEL => '1',
-      CLKOUT0 => SerialClk,
-      CLKOUT1 => PixelClk,
-      CLKOUT2 => \NLW_GenPLL.DVI_ClkGenerator_CLKOUT2_UNCONNECTED\,
-      CLKOUT3 => \NLW_GenPLL.DVI_ClkGenerator_CLKOUT3_UNCONNECTED\,
-      CLKOUT4 => \NLW_GenPLL.DVI_ClkGenerator_CLKOUT4_UNCONNECTED\,
-      CLKOUT5 => \NLW_GenPLL.DVI_ClkGenerator_CLKOUT5_UNCONNECTED\,
-      DADDR(6 downto 0) => B"0000000",
-      DCLK => '0',
-      DEN => '0',
-      DI(15 downto 0) => B"0000000000000000",
-      DO(15 downto 0) => \NLW_GenPLL.DVI_ClkGenerator_DO_UNCONNECTED\(15 downto 0),
-      DRDY => \NLW_GenPLL.DVI_ClkGenerator_DRDY_UNCONNECTED\,
-      DWE => '0',
-      LOCKED => aPixelClkLckd,
-      PWRDWN => '0',
-      RST => RST
-    );
-LockLostReset: entity work.img_proc_rgb2dvi_0_0_ResetBridge_5
-     port map (
-      AR(0) => pRst,
-      aRst => aRst,
-      \oSyncStages_reg[0]\ => \oSyncStages_reg[0]\
-    );
-PLL_LockSyncAsync: entity work.\img_proc_rgb2dvi_0_0_SyncAsync__parameterized1\
-     port map (
-      D(0) => oOut,
-      \oSyncStages_reg[0]_0\ => \oSyncStages_reg[0]\,
-      \oSyncStages_reg[0]_1\(0) => aPixelClkLckd
-    );
-aRst_int_inferred_i_1: unisim.vcomponents.LUT1
-    generic map(
-      INIT => X"1"
-    )
-        port map (
-      I0 => aPixelClkLckd,
-      O => in0
-    );
-pLockWasLost0: unisim.vcomponents.LUT3
-    generic map(
-      INIT => X"70"
-    )
-        port map (
-      I0 => \pLocked_q_reg_n_0_[1]\,
-      I1 => \pLocked_q_reg_n_0_[0]\,
-      I2 => p_1_in,
-      O => pLockWasLost0_n_0
-    );
-pLockWasLost_reg: unisim.vcomponents.FDPE
-     port map (
-      C => \oSyncStages_reg[0]\,
-      CE => '1',
-      D => pLockWasLost0_n_0,
-      PRE => pRst,
-      Q => RST
-    );
-\pLocked_q_reg[0]\: unisim.vcomponents.FDCE
-    generic map(
-      INIT => '1'
-    )
-        port map (
-      C => \oSyncStages_reg[0]\,
-      CE => '1',
-      CLR => pRst,
-      D => oOut,
-      Q => \pLocked_q_reg_n_0_[0]\
-    );
-\pLocked_q_reg[1]\: unisim.vcomponents.FDCE
-    generic map(
-      INIT => '1'
-    )
-        port map (
-      C => \oSyncStages_reg[0]\,
-      CE => '1',
-      CLR => pRst,
-      D => \pLocked_q_reg_n_0_[0]\,
-      Q => \pLocked_q_reg_n_0_[1]\
-    );
-\pLocked_q_reg[2]\: unisim.vcomponents.FDCE
-    generic map(
-      INIT => '1'
-    )
-        port map (
-      C => \oSyncStages_reg[0]\,
-      CE => '1',
-      CLR => pRst,
-      D => \pLocked_q_reg_n_0_[1]\,
-      Q => p_1_in
     );
 end STRUCTURE;
 library IEEE;
@@ -4827,8 +4530,6 @@ entity img_proc_rgb2dvi_0_0_rgb2dvi is
     PixelClk : in STD_LOGIC;
     SerialClk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of img_proc_rgb2dvi_0_0_rgb2dvi : entity is "rgb2dvi";
   attribute kClkPrimitive : string;
   attribute kClkPrimitive of img_proc_rgb2dvi_0_0_rgb2dvi : entity is "PLL";
   attribute kClkRange : integer;
@@ -4842,33 +4543,22 @@ entity img_proc_rgb2dvi_0_0_rgb2dvi is
   attribute kD2Swap : string;
   attribute kD2Swap of img_proc_rgb2dvi_0_0_rgb2dvi : entity is "FALSE";
   attribute kGenerateSerialClk : string;
-  attribute kGenerateSerialClk of img_proc_rgb2dvi_0_0_rgb2dvi : entity is "TRUE";
+  attribute kGenerateSerialClk of img_proc_rgb2dvi_0_0_rgb2dvi : entity is "FALSE";
   attribute kRstActiveHigh : string;
   attribute kRstActiveHigh of img_proc_rgb2dvi_0_0_rgb2dvi : entity is "TRUE";
 end img_proc_rgb2dvi_0_0_rgb2dvi;
 
 architecture STRUCTURE of img_proc_rgb2dvi_0_0_rgb2dvi is
   signal \DataEncoders[0].DataEncoder_n_0\ : STD_LOGIC;
-  signal PixelClkIO : STD_LOGIC;
-  signal SerialClkIO : STD_LOGIC;
-  signal aRstLck : STD_LOGIC;
   signal \pDataOutRaw[0]\ : STD_LOGIC_VECTOR ( 9 downto 0 );
   signal \pDataOutRaw[1]\ : STD_LOGIC_VECTOR ( 9 downto 0 );
   signal \pDataOutRaw[2]\ : STD_LOGIC_VECTOR ( 9 downto 0 );
   signal pRstLck : STD_LOGIC;
 begin
-\ClockGenInternal.ClockGenX\: entity work.img_proc_rgb2dvi_0_0_ClockGen
-     port map (
-      PixelClk => PixelClkIO,
-      SerialClk => SerialClkIO,
-      aRst => aRst,
-      in0 => aRstLck,
-      \oSyncStages_reg[0]\ => PixelClk
-    );
 ClockSerializer: entity work.img_proc_rgb2dvi_0_0_OutputSERDES
      port map (
-      PixelClk => PixelClkIO,
-      SerialClk => SerialClkIO,
+      PixelClk => PixelClk,
+      SerialClk => SerialClk,
       TMDS_Clk_n => TMDS_Clk_n,
       TMDS_Clk_p => TMDS_Clk_p,
       aRst => pRstLck
@@ -4885,8 +4575,8 @@ ClockSerializer: entity work.img_proc_rgb2dvi_0_0_OutputSERDES
     );
 \DataEncoders[0].DataSerializer\: entity work.img_proc_rgb2dvi_0_0_OutputSERDES_0
      port map (
-      PixelClk => PixelClkIO,
-      SerialClk => SerialClkIO,
+      PixelClk => PixelClk,
+      SerialClk => SerialClk,
       TMDS_Data_n(0) => TMDS_Data_n(0),
       TMDS_Data_p(0) => TMDS_Data_p(0),
       aRst => pRstLck,
@@ -4901,8 +4591,8 @@ ClockSerializer: entity work.img_proc_rgb2dvi_0_0_OutputSERDES
     );
 \DataEncoders[1].DataSerializer\: entity work.img_proc_rgb2dvi_0_0_OutputSERDES_2
      port map (
-      PixelClk => PixelClkIO,
-      SerialClk => SerialClkIO,
+      PixelClk => PixelClk,
+      SerialClk => SerialClk,
       TMDS_Data_n(0) => TMDS_Data_n(1),
       TMDS_Data_p(0) => TMDS_Data_p(1),
       \out\(0) => pRstLck,
@@ -4917,8 +4607,8 @@ ClockSerializer: entity work.img_proc_rgb2dvi_0_0_OutputSERDES
     );
 \DataEncoders[2].DataSerializer\: entity work.img_proc_rgb2dvi_0_0_OutputSERDES_4
      port map (
-      PixelClk => PixelClkIO,
-      SerialClk => SerialClkIO,
+      PixelClk => PixelClk,
+      SerialClk => SerialClk,
       TMDS_Data_n(0) => TMDS_Data_n(2),
       TMDS_Data_p(0) => TMDS_Data_p(2),
       \out\(0) => pRstLck,
@@ -4927,7 +4617,7 @@ ClockSerializer: entity work.img_proc_rgb2dvi_0_0_OutputSERDES
 LockLostReset: entity work.img_proc_rgb2dvi_0_0_ResetBridge
      port map (
       PixelClk => PixelClk,
-      in0 => aRstLck,
+      aRst => aRst,
       \out\(0) => pRstLck
     );
 end STRUCTURE;
@@ -4946,7 +4636,8 @@ entity img_proc_rgb2dvi_0_0 is
     vid_pVDE : in STD_LOGIC;
     vid_pHSync : in STD_LOGIC;
     vid_pVSync : in STD_LOGIC;
-    PixelClk : in STD_LOGIC
+    PixelClk : in STD_LOGIC;
+    SerialClk : in STD_LOGIC
   );
   attribute NotValidForBitStream : boolean;
   attribute NotValidForBitStream of img_proc_rgb2dvi_0_0 : entity is true;
@@ -4972,13 +4663,15 @@ architecture STRUCTURE of img_proc_rgb2dvi_0_0 is
   attribute kD2Swap : string;
   attribute kD2Swap of U0 : label is "FALSE";
   attribute kGenerateSerialClk : string;
-  attribute kGenerateSerialClk of U0 : label is "TRUE";
+  attribute kGenerateSerialClk of U0 : label is "FALSE";
   attribute kRstActiveHigh : string;
   attribute kRstActiveHigh of U0 : label is "TRUE";
   attribute x_interface_info : string;
   attribute x_interface_info of PixelClk : signal is "xilinx.com:signal:clock:1.0 PixelClk CLK";
   attribute x_interface_parameter : string;
-  attribute x_interface_parameter of PixelClk : signal is "XIL_INTERFACENAME PixelClk, FREQ_HZ 100000000, PHASE 0.000, CLK_DOMAIN img_proc_dvi2rgb_0_0_PixelClk, INSERT_VIP 0";
+  attribute x_interface_parameter of PixelClk : signal is "XIL_INTERFACENAME PixelClk, FREQ_HZ 100000000, PHASE 0.000, CLK_DOMAIN img_proc_axi_dynclk_0_0_PXL_CLK_O, INSERT_VIP 0";
+  attribute x_interface_info of SerialClk : signal is "xilinx.com:signal:clock:1.0 SerialClk CLK";
+  attribute x_interface_parameter of SerialClk : signal is "XIL_INTERFACENAME SerialClk, ASSOCIATED_RESET aRst:aRst_n:pRst:pRst_n, FREQ_HZ 100000000, PHASE 0.000, CLK_DOMAIN img_proc_axi_dynclk_0_0_PXL_CLK_5X_O, INSERT_VIP 0";
   attribute x_interface_info of TMDS_Clk_n : signal is "digilentinc.com:interface:tmds:1.0 TMDS CLK_N, xilinx.com:signal:clock:1.0 TMDS_Clk_n CLK";
   attribute x_interface_parameter of TMDS_Clk_n : signal is "XIL_INTERFACENAME TMDS_Clk_n, ASSOCIATED_RESET aRst_n, FREQ_HZ 100000000, PHASE 0.000, INSERT_VIP 0";
   attribute x_interface_info of TMDS_Clk_p : signal is "digilentinc.com:interface:tmds:1.0 TMDS CLK_P, xilinx.com:signal:clock:1.0 TMDS_Clk_p CLK";
@@ -4995,7 +4688,7 @@ begin
 U0: entity work.img_proc_rgb2dvi_0_0_rgb2dvi
      port map (
       PixelClk => PixelClk,
-      SerialClk => '0',
+      SerialClk => SerialClk,
       TMDS_Clk_n => TMDS_Clk_n,
       TMDS_Clk_p => TMDS_Clk_p,
       TMDS_Data_n(2 downto 0) => TMDS_Data_n(2 downto 0),

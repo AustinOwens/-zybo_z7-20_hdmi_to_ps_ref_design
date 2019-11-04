@@ -64,7 +64,8 @@ ENTITY img_proc_rgb2dvi_0_0 IS
     vid_pVDE : IN STD_LOGIC;
     vid_pHSync : IN STD_LOGIC;
     vid_pVSync : IN STD_LOGIC;
-    PixelClk : IN STD_LOGIC
+    PixelClk : IN STD_LOGIC;
+    SerialClk : IN STD_LOGIC
   );
 END img_proc_rgb2dvi_0_0;
 
@@ -103,7 +104,9 @@ ARCHITECTURE img_proc_rgb2dvi_0_0_arch OF img_proc_rgb2dvi_0_0 IS
   ATTRIBUTE CHECK_LICENSE_TYPE OF img_proc_rgb2dvi_0_0_arch : ARCHITECTURE IS "img_proc_rgb2dvi_0_0,rgb2dvi,{}";
   ATTRIBUTE X_INTERFACE_INFO : STRING;
   ATTRIBUTE X_INTERFACE_PARAMETER : STRING;
-  ATTRIBUTE X_INTERFACE_PARAMETER OF PixelClk: SIGNAL IS "XIL_INTERFACENAME PixelClk, FREQ_HZ 100000000, PHASE 0.000, CLK_DOMAIN img_proc_dvi2rgb_0_0_PixelClk, INSERT_VIP 0";
+  ATTRIBUTE X_INTERFACE_PARAMETER OF SerialClk: SIGNAL IS "XIL_INTERFACENAME SerialClk, ASSOCIATED_RESET aRst:aRst_n:pRst:pRst_n, FREQ_HZ 100000000, PHASE 0.000, CLK_DOMAIN img_proc_axi_dynclk_0_0_PXL_CLK_5X_O, INSERT_VIP 0";
+  ATTRIBUTE X_INTERFACE_INFO OF SerialClk: SIGNAL IS "xilinx.com:signal:clock:1.0 SerialClk CLK";
+  ATTRIBUTE X_INTERFACE_PARAMETER OF PixelClk: SIGNAL IS "XIL_INTERFACENAME PixelClk, FREQ_HZ 100000000, PHASE 0.000, CLK_DOMAIN img_proc_axi_dynclk_0_0_PXL_CLK_O, INSERT_VIP 0";
   ATTRIBUTE X_INTERFACE_INFO OF PixelClk: SIGNAL IS "xilinx.com:signal:clock:1.0 PixelClk CLK";
   ATTRIBUTE X_INTERFACE_INFO OF vid_pVSync: SIGNAL IS "xilinx.com:interface:vid_io:1.0 RGB VSYNC";
   ATTRIBUTE X_INTERFACE_INFO OF vid_pHSync: SIGNAL IS "xilinx.com:interface:vid_io:1.0 RGB HSYNC";
@@ -120,7 +123,7 @@ ARCHITECTURE img_proc_rgb2dvi_0_0_arch OF img_proc_rgb2dvi_0_0 IS
 BEGIN
   U0 : rgb2dvi
     GENERIC MAP (
-      kGenerateSerialClk => true,
+      kGenerateSerialClk => false,
       kClkPrimitive => "PLL",
       kRstActiveHigh => true,
       kClkRange => 1,
@@ -141,6 +144,6 @@ BEGIN
       vid_pHSync => vid_pHSync,
       vid_pVSync => vid_pVSync,
       PixelClk => PixelClk,
-      SerialClk => '0'
+      SerialClk => SerialClk
     );
 END img_proc_rgb2dvi_0_0_arch;
