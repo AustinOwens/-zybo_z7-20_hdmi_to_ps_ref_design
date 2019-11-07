@@ -1,0 +1,7 @@
+//arch = zynq; split = false; format = BIN
+the_ROM_image:
+{
+	[bootloader]/home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/zynq_fsbl/executable.elf
+	/home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/bitstream/img_proc_wrapper.bit
+	/home/austin/Desktop/projects/zybo/u-boot-xlnx/u-boot.elf
+}

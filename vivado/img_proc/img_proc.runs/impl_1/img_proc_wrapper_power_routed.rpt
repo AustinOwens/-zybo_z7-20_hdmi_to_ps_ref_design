@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.2 (lin64) Build 2700185 Thu Oct 24 18:45:48 MDT 2019
-| Date             : Mon Nov  4 01:39:03 2019
+| Date             : Wed Nov  6 00:23:47 2019
 | Host             : austin-ubuntu running 64-bit Ubuntu 18.04.3 LTS
 | Command          : report_power -file img_proc_wrapper_power_routed.rpt -pb img_proc_wrapper_power_summary_routed.pb -rpx img_proc_wrapper_power_routed.rpx
 | Design           : img_proc_wrapper
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 2.088        |
+| Total On-Chip Power (W)  | 2.048        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 1.932        |
-| Device Static (W)        | 0.157        |
+| Dynamic (W)              | 1.893        |
+| Device Static (W)        | 0.155        |
 | Effective TJA (C/W)      | 11.5         |
-| Max Ambient (C)          | 60.9         |
-| Junction Temperature (C) | 49.1         |
+| Max Ambient (C)          | 61.4         |
+| Junction Temperature (C) | 48.6         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,24 +52,24 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.105 |        8 |       --- |             --- |
-| Slice Logic              |     0.027 |    35998 |       --- |             --- |
-|   LUT as Logic           |     0.023 |    11131 |     53200 |           20.92 |
-|   Register               |     0.002 |    19063 |    106400 |           17.92 |
-|   CARRY4                 |     0.002 |      482 |     13300 |            3.62 |
-|   F7/F8 Muxes            |    <0.001 |      392 |     53200 |            0.74 |
+| Clocks                   |     0.092 |        8 |       --- |             --- |
+| Slice Logic              |     0.016 |    30371 |       --- |             --- |
+|   LUT as Logic           |     0.013 |     9253 |     53200 |           17.39 |
+|   Register               |     0.002 |    16401 |    106400 |           15.41 |
+|   CARRY4                 |     0.001 |      390 |     13300 |            2.93 |
 |   LUT as Distributed RAM |    <0.001 |       66 |     17400 |            0.38 |
 |   BUFG                   |    <0.001 |        2 |        32 |            6.25 |
-|   Others                 |    <0.001 |     1518 |       --- |             --- |
-|   LUT as Shift Register  |    <0.001 |      778 |     17400 |            4.47 |
+|   F7/F8 Muxes            |    <0.001 |      331 |     53200 |            0.62 |
+|   Others                 |    <0.001 |     1342 |       --- |             --- |
+|   LUT as Shift Register  |    <0.001 |      539 |     17400 |            3.10 |
 |   BUFR                   |     0.000 |        1 |        88 |            1.14 |
-| Signals                  |     0.041 |    25846 |       --- |             --- |
+| Signals                  |     0.026 |    21866 |       --- |             --- |
 | Block RAM                |     0.006 |      9.5 |       140 |            6.79 |
 | MMCM                     |     0.176 |        2 |         4 |           50.00 |
-| I/O                      |     0.166 |       19 |       125 |           15.20 |
+| I/O                      |     0.165 |       23 |       125 |           18.40 |
 | PS7                      |     1.410 |        1 |       --- |             --- |
-| Static Power             |     0.157 |          |           |                 |
-| Total                    |     2.088 |          |           |                 |
+| Static Power             |     0.155 |          |           |                 |
+| Total                    |     2.048 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -79,7 +79,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.203 |       0.185 |      0.018 |
+| Vccint    |       1.000 |     0.165 |       0.147 |      0.018 |
 | Vccaux    |       1.800 |     0.130 |       0.114 |      0.017 |
 | Vcco33    |       3.300 |     0.041 |       0.040 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -92,7 +92,7 @@ Table of Contents
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
 | MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |
-| Vccpint   |       1.000 |     0.764 |       0.729 |      0.035 |
+| Vccpint   |       1.000 |     0.763 |       0.729 |      0.035 |
 | Vccpaux   |       1.800 |     0.061 |       0.051 |      0.010 |
 | Vccpll    |       1.800 |     0.017 |       0.014 |      0.003 |
 | Vcco_ddr  |       1.350 |     0.413 |       0.411 |      0.002 |
@@ -160,26 +160,26 @@ Table of Contents
 +--------------------------+-----------+
 | Name                     | Power (W) |
 +--------------------------+-----------+
-| img_proc_wrapper         |     1.932 |
+| img_proc_wrapper         |     1.893 |
 |   dbg_hub                |     0.005 |
 |     inst                 |     0.005 |
 |       BSCANID.u_xsdbm_id |     0.005 |
-|   img_proc_i             |     1.926 |
-|     axi_dynclk_0         |     0.112 |
-|       U0                 |     0.112 |
-|     hdmi_decode          |     0.143 |
-|       dvi2rgb_0          |     0.139 |
+|   img_proc_i             |     1.888 |
+|     axi_dynclk_0         |     0.113 |
+|       U0                 |     0.113 |
+|     hdmi_decode          |     0.145 |
+|       dvi2rgb_0          |     0.141 |
 |       v_vid_in_axi4s_0   |     0.004 |
 |     hdmi_encode          |     0.139 |
 |       rgb2dvi_0          |     0.134 |
-|       v_axi4s_vid_out_0  |     0.004 |
-|     processing_system7_0 |     1.414 |
-|       inst               |     1.414 |
-|     vdma                 |     0.118 |
-|       axi_interconnect_0 |     0.048 |
+|       v_axi4s_vid_out_0  |     0.005 |
+|     processing_system7_0 |     1.413 |
+|       inst               |     1.413 |
+|     vdma                 |     0.079 |
+|       axi_interconnect_0 |     0.010 |
 |       axi_interconnect_1 |     0.005 |
-|       axi_vdma_0         |     0.041 |
-|       v_tc_0             |     0.011 |
+|       axi_vdma_0         |     0.044 |
+|       v_tc_0             |     0.007 |
 |       v_tc_1             |     0.013 |
 +--------------------------+-----------+
 

@@ -2,10 +2,10 @@
 <Root MajorVersion="0" MinorVersion="39">
   <CompositeFile CompositeFileTopName="img_proc" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1572860065"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1572860065"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1572860065"/>
-    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1572860065"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1573028322"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1573028322"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1573028322"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1573028322"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip/img_proc_dvi2rgb_0_0/img_proc_dvi2rgb_0_0.xci" Type="IP">
         <Instance HierarchyPath="hdmi_decode/dvi2rgb_0"/>
@@ -161,8 +161,8 @@
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip/img_proc_auto_pc_5/img_proc_auto_pc_5.xci" Type="IP">
-        <Instance HierarchyPath="vdma/axi_interconnect_0/s00_couplers/auto_pc"/>
+      <File Name="ip/img_proc_axi_gpio_0_1/img_proc_axi_gpio_0_1.xci" Type="IP">
+        <Instance HierarchyPath="vdma/axi_gpio_1"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
@@ -170,7 +170,7 @@
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="ip/img_proc_auto_pc_0/img_proc_auto_pc_0.xci" Type="IP">
-        <Instance HierarchyPath="vdma/axi_interconnect_0/m00_couplers/auto_pc"/>
+        <Instance HierarchyPath="vdma/axi_interconnect_0/s00_couplers/auto_pc"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
@@ -178,38 +178,6 @@
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="ip/img_proc_auto_pc_1/img_proc_auto_pc_1.xci" Type="IP">
-        <Instance HierarchyPath="vdma/axi_interconnect_0/m01_couplers/auto_pc"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="ip/img_proc_auto_pc_2/img_proc_auto_pc_2.xci" Type="IP">
-        <Instance HierarchyPath="vdma/axi_interconnect_0/m02_couplers/auto_pc"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="ip/img_proc_auto_pc_3/img_proc_auto_pc_3.xci" Type="IP">
-        <Instance HierarchyPath="vdma/axi_interconnect_0/m03_couplers/auto_pc"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="ip/img_proc_auto_pc_4/img_proc_auto_pc_4.xci" Type="IP">
-        <Instance HierarchyPath="vdma/axi_interconnect_0/m04_couplers/auto_pc"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="ip/img_proc_auto_pc_6/img_proc_auto_pc_6.xci" Type="IP">
         <Instance HierarchyPath="vdma/axi_interconnect_1/m00_couplers/auto_pc"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>

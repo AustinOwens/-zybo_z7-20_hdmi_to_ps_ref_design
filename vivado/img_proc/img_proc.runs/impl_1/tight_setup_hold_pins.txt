@@ -1,20 +1,16 @@
 +--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
 |       Launch Clock       |      Capture Clock       |                                                 Pin                                                      |
 +--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
-|               clk_fpga_0 |               clk_fpga_0 |img_proc_i/vdma/axi_interconnect_0/xbar/inst/gen_samd.crossbar_samd/gen_slave_slots[0].gen_si_write.wdata_router_w/wrouter_aw_fifo/m_valid_i_reg/D|
 |               clk_fpga_0 |                     Net1 |                 img_proc_i/hdmi_encode/v_axi4s_vid_out_0/inst/FORMATTER_INST/fivid_reset_full_frame_reg/D|
 |               clk_fpga_0 |                     Net1 |                     img_proc_i/hdmi_encode/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state_reg[0]/S|
-|               clk_fpga_0 |                     Net1 |                                img_proc_i/hdmi_encode/v_axi4s_vid_out_0/inst/SYNC_INST/fifo_sof_dly_reg/R|
-|               clk_fpga_0 |                     Net1 |                             img_proc_i/hdmi_encode/v_axi4s_vid_out_0/inst/SYNC_INST/fifo_eol_re_dly_reg/R|
 |               clk_fpga_0 |                     Net1 |                                img_proc_i/hdmi_encode/v_axi4s_vid_out_0/inst/SYNC_INST/fifo_eol_dly_reg/R|
-|               clk_fpga_0 |                     Net1 |                     img_proc_i/hdmi_encode/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state_reg[1]/R|
-|               clk_fpga_0 |                     Net1 |                     img_proc_i/hdmi_encode/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state_reg[3]/R|
-|               clk_fpga_0 |                     Net1 |                               img_proc_i/hdmi_encode/v_axi4s_vid_out_0/inst/SYNC_INST/vtg_vsync_dly_reg/R|
+|               clk_fpga_0 |                     Net1 |                             img_proc_i/hdmi_encode/v_axi4s_vid_out_0/inst/SYNC_INST/fifo_eol_re_dly_reg/R|
 |               clk_fpga_0 |                     Net1 |                     img_proc_i/hdmi_encode/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state_reg[2]/R|
-|               clk_fpga_0 |                     Net1 |                                  img_proc_i/hdmi_encode/v_axi4s_vid_out_0/inst/SYNC_INST/vtg_de_dly_reg/R|
 |               clk_fpga_0 |                     Net1 |                                 img_proc_i/hdmi_encode/v_axi4s_vid_out_0/inst/SYNC_INST/vtg_sof_dly_reg/R|
+|               clk_fpga_0 |                     Net1 |                     img_proc_i/hdmi_encode/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state_reg[3]/R|
+|               clk_fpga_0 |                     Net1 |                     img_proc_i/hdmi_encode/v_axi4s_vid_out_0/inst/SYNC_INST/FSM_sequential_state_reg[1]/R|
+|               clk_fpga_0 |                     Net1 |                               img_proc_i/hdmi_encode/v_axi4s_vid_out_0/inst/SYNC_INST/vtg_vsync_dly_reg/R|
+|               clk_fpga_0 |                     Net1 |                                  img_proc_i/hdmi_encode/v_axi4s_vid_out_0/inst/SYNC_INST/vtg_de_dly_reg/R|
+|               clk_fpga_0 |                     Net1 |                                img_proc_i/hdmi_encode/v_axi4s_vid_out_0/inst/SYNC_INST/fifo_sof_dly_reg/R|
 |               clk_fpga_0 |                     Net1 |                                img_proc_i/hdmi_encode/v_axi4s_vid_out_0/inst/SYNC_INST/vtg_vsync_bp_reg/D|
-|               clk_fpga_0 |                     Net1 |                                  img_proc_i/hdmi_encode/v_axi4s_vid_out_0/inst/SYNC_INST/sof_ignore_reg/D|
-|               clk_fpga_0 |               clk_fpga_0 |img_proc_i/vdma/axi_interconnect_0/xbar/inst/gen_samd.crossbar_samd/gen_slave_slots[0].gen_si_write.wdata_router_w/wrouter_aw_fifo/FSM_onehot_state_reg[0]/D|
-|               clk_fpga_0 |               clk_fpga_0 |img_proc_i/vdma/axi_interconnect_0/xbar/inst/gen_samd.crossbar_samd/gen_slave_slots[0].gen_si_write.wdata_router_w/wrouter_aw_fifo/FSM_onehot_state_reg[3]/D|
 +--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+

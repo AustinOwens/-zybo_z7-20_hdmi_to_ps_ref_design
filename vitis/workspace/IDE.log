@@ -1,0 +1,19 @@
+00:22:20 INFO  : Launching XSCT server: xsct -n  -interactive /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/temp_xsdb_launch_script.tcl
+00:22:22 INFO  : Registering command handlers for Vitis TCF services
+00:22:22 INFO  : XSCT server has started successfully.
+00:22:22 INFO  : plnx-install-location is set to ''
+00:22:22 INFO  : Successfully done setting XSCT server connection channel  
+00:22:22 INFO  : Successfully done query RDI_DATADIR 
+00:22:22 INFO  : Successfully done setting workspace for the tool. 
+00:26:09 INFO  : Successfully done sdx_reload_mss "/home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/zynq_fsbl/zynq_fsbl_bsp/system.mss"
+00:26:09 INFO  : Successfully done sdx_reload_mss "/home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/ps7_cortexa9_0/standalone_domain/bsp/system.mss"
+00:33:45 INFO  : Invoking Bootgen: bootgen -image output.bif -arch zynq -o /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/resources/BOOT.bin
+00:33:45 INFO  : Creating new bif file /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/output.bif
+00:33:47 INFO  : Bootgen command execution is done.
+00:40:44 INFO  : Successfully done sdx_reload_mss "/home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/zynq_fsbl/zynq_fsbl_bsp/system.mss"
+00:40:44 INFO  : Successfully done sdx_reload_mss "/home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/ps7_cortexa9_0/standalone_domain/bsp/system.mss"
+00:42:26 INFO  : Invoking Bootgen: bootgen -image output.bif -arch zynq -o /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/BOOT.bin
+00:42:27 INFO  : Bootgen command execution is done.
+00:43:08 INFO  : Invoking Bootgen: bootgen -image output.bif -arch zynq -o /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/resources/BOOT.bin
+00:43:08 INFO  : Creating new bif file /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/resources/output.bif
+00:43:10 INFO  : Bootgen command execution is done.

@@ -1,0 +1,6 @@
+00:43:42 **** Incremental Build of configuration Debug for project img_proc ****
+make all 
+make: Nothing to be done for 'all'.
+
+00:43:42 Build Finished (took 409ms)
+

@@ -1,0 +1,4 @@
+TRACE::2019-11-06.00:35:48::SCWLinux:: Copying the user libraries. 
+TRACE::2019-11-06.00:35:48::SCWLinux::Skipping the Petalinux build as image is already given.
+TRACE::2019-11-06.00:41:15::SCWLinux:: Copying the user libraries. 
+TRACE::2019-11-06.00:41:15::SCWLinux::Skipping the Petalinux build as image is already given.

@@ -1,17 +1,18 @@
 {
    "ActiveEmotionalView":"Default View",
    "Default View_ScaleFactor":"1.0",
-   "Default View_TopLeft":"-582,-207",
+   "Default View_TopLeft":"-334,-60",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.0.21  2019-05-29 bk=1.5064 VDI=41 GEI=36 GUI=JA:9.0 TLS
 #  -string -flagsOSRD
-preplace port M_AXIS_MM2S -pg 1 -lvl 4 -x 1100 -y 20 -defaultsOSRD
+preplace port M_AXIS_MM2S -pg 1 -lvl 4 -x 1180 -y 20 -defaultsOSRD
 preplace port S_AXIS_S2MM -pg 1 -lvl 0 -x 0 -y 90 -defaultsOSRD
-preplace port M04_AXI -pg 1 -lvl 4 -x 1100 -y 340 -defaultsOSRD
+preplace port M04_AXI -pg 1 -lvl 4 -x 1180 -y 340 -defaultsOSRD
 preplace port S00_AXI -pg 1 -lvl 0 -x 0 -y 150 -defaultsOSRD
-preplace port M03_AXI -pg 1 -lvl 4 -x 1100 -y 320 -defaultsOSRD
-preplace port M00_AXI -pg 1 -lvl 4 -x 1100 -y 170 -defaultsOSRD
-preplace port vtiming_out -pg 1 -lvl 4 -x 1100 -y 460 -defaultsOSRD
+preplace port M03_AXI -pg 1 -lvl 4 -x 1180 -y 320 -defaultsOSRD
+preplace port M00_AXI -pg 1 -lvl 4 -x 1180 -y 170 -defaultsOSRD
+preplace port vtiming_out -pg 1 -lvl 4 -x 1180 -y 460 -defaultsOSRD
+preplace port GPIO -pg 1 -lvl 4 -x 1180 -y 300 -defaultsOSRD
 preplace port axi_resetn -pg 1 -lvl 0 -x 0 -y 230 -defaultsOSRD
 preplace port m_axi_mm2s_aclk -pg 1 -lvl 0 -x 0 -y 170 -defaultsOSRD
 preplace port ARESETN -pg 1 -lvl 0 -x 0 -y 190 -defaultsOSRD
@@ -21,34 +22,37 @@ preplace port s_axi_aclken -pg 1 -lvl 0 -x 0 -y 620 -defaultsOSRD
 preplace port vsync_in -pg 1 -lvl 0 -x 0 -y 580 -defaultsOSRD
 preplace port active_video_in -pg 1 -lvl 0 -x 0 -y 540 -defaultsOSRD
 preplace port clk1 -pg 1 -lvl 0 -x 0 -y 520 -defaultsOSRD
-preplace inst axi_vdma_0 -pg 1 -lvl 2 -x 560 -y 140 -defaultsOSRD
+preplace inst axi_vdma_0 -pg 1 -lvl 2 -x 600 -y 110 -defaultsOSRD
 preplace inst axi_interconnect_0 -pg 1 -lvl 1 -x 190 -y 310 -defaultsOSRD
-preplace inst axi_interconnect_1 -pg 1 -lvl 3 -x 930 -y 170 -defaultsOSRD
-preplace inst v_tc_0 -pg 1 -lvl 2 -x 560 -y 610 -defaultsOSRD
-preplace inst v_tc_1 -pg 1 -lvl 3 -x 930 -y 480 -defaultsOSRD
-preplace netloc axi_resetn_1 1 0 3 20 640 350 350 770
-preplace netloc m_axi_mm2s_aclk_1 1 0 3 40 630 370 360 760
+preplace inst axi_interconnect_1 -pg 1 -lvl 3 -x 1000 -y 170 -defaultsOSRD
+preplace inst v_tc_0 -pg 1 -lvl 2 -x 600 -y 610 -defaultsOSRD
+preplace inst v_tc_1 -pg 1 -lvl 3 -x 1000 -y 480 -defaultsOSRD
+preplace inst axi_gpio_1 -pg 1 -lvl 2 -x 600 -y 330 -defaultsOSRD
+preplace netloc axi_resetn_1 1 0 3 40 90 350 430 820
+preplace netloc m_axi_mm2s_aclk_1 1 0 3 30 80 400 440 810
 preplace netloc ARESETN_1 1 0 1 NJ 190
 preplace netloc clk_1 1 0 2 NJ 600 NJ
 preplace netloc hsync_in_1 1 0 2 NJ 560 NJ
-preplace netloc s_axi_aclken_1 1 0 3 NJ 620 340 780 780
+preplace netloc s_axi_aclken_1 1 0 3 NJ 620 370 780 830
 preplace netloc vsync_in_1 1 0 2 NJ 580 NJ
 preplace netloc active_video_in_1 1 0 2 NJ 540 NJ
-preplace netloc clk1_1 1 0 3 30J 530 360J 420 NJ
-preplace netloc Conn4 1 2 2 750J 20 NJ
-preplace netloc Conn5 1 0 2 NJ 90 NJ
-preplace netloc axi_interconnect_0_M00_AXI 1 1 1 340 70n
-preplace netloc Conn7 1 1 3 NJ 340 NJ 340 NJ
+preplace netloc clk1_1 1 0 3 30J 530 410J 420 NJ
 preplace netloc Conn8 1 0 1 NJ 150
-preplace netloc Conn9 1 1 3 NJ 320 NJ 320 NJ
-preplace netloc axi_vdma_0_M_AXI_MM2S 1 2 1 N 80
-preplace netloc axi_vdma_0_M_AXI_S2MM 1 2 1 N 100
+preplace netloc axi_interconnect_0_M01_AXI 1 1 1 390 280n
 preplace netloc Conn1 1 3 1 NJ 170
-preplace netloc axi_interconnect_0_M01_AXI 1 1 1 340 280n
-preplace netloc axi_interconnect_0_M02_AXI 1 1 2 NJ 300 750
+preplace netloc Conn4 1 2 2 790J 20 NJ
+preplace netloc Conn9 1 1 3 370J 250 790J 320 NJ
+preplace netloc axi_vdma_0_M_AXI_S2MM 1 2 1 810 70n
+preplace netloc Conn5 1 0 2 20J 60 NJ
 preplace netloc Conn2 1 3 1 NJ 460
-levelinfo -pg 1 0 190 560 930 1100
-pagesize -pg 1 -db -bbox -sgen -180 0 1260 790
+preplace netloc axi_interconnect_0_M02_AXI 1 1 2 380J 410 800
+preplace netloc Conn7 1 1 3 360J 240 800J 340 NJ
+preplace netloc axi_interconnect_0_M00_AXI 1 1 1 340 40n
+preplace netloc axi_vdma_0_M_AXI_MM2S 1 2 1 820 50n
+preplace netloc axi_interconnect_0_M05_AXI 1 1 1 410 310n
+preplace netloc Conn3 1 2 2 NJ 330 1150J
+levelinfo -pg 1 0 190 600 1000 1180
+pagesize -pg 1 -db -bbox -sgen -180 -20 1340 790
 "
 }
-
+0

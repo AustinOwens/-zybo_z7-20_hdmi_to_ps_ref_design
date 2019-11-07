@@ -1,7 +1,7 @@
 --Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2019.2 (lin64) Build 2700185 Thu Oct 24 18:45:48 MDT 2019
---Date        : Mon Nov  4 01:34:24 2019
+--Date        : Wed Nov  6 00:18:27 2019
 --Host        : austin-ubuntu running 64-bit Ubuntu 18.04.3 LTS
 --Command     : generate_target img_proc_wrapper.bd
 --Design      : img_proc_wrapper
@@ -44,7 +44,8 @@ entity img_proc_wrapper is
     hdmi_out_clk_n : out STD_LOGIC;
     hdmi_out_clk_p : out STD_LOGIC;
     hdmi_out_data_n : out STD_LOGIC_VECTOR ( 2 downto 0 );
-    hdmi_out_data_p : out STD_LOGIC_VECTOR ( 2 downto 0 )
+    hdmi_out_data_p : out STD_LOGIC_VECTOR ( 2 downto 0 );
+    led_tri_o : out STD_LOGIC_VECTOR ( 3 downto 0 )
   );
 end img_proc_wrapper;
 
@@ -52,20 +53,6 @@ architecture STRUCTURE of img_proc_wrapper is
   component img_proc is
   port (
     hdmi_in_hpd : out STD_LOGIC_VECTOR ( 0 to 0 );
-    hdmi_out_clk_p : out STD_LOGIC;
-    hdmi_out_clk_n : out STD_LOGIC;
-    hdmi_out_data_p : out STD_LOGIC_VECTOR ( 2 downto 0 );
-    hdmi_out_data_n : out STD_LOGIC_VECTOR ( 2 downto 0 );
-    hdmi_in_ddc_scl_i : in STD_LOGIC;
-    hdmi_in_ddc_scl_o : out STD_LOGIC;
-    hdmi_in_ddc_scl_t : out STD_LOGIC;
-    hdmi_in_ddc_sda_i : in STD_LOGIC;
-    hdmi_in_ddc_sda_o : out STD_LOGIC;
-    hdmi_in_ddc_sda_t : out STD_LOGIC;
-    hdmi_in_clk_p : in STD_LOGIC;
-    hdmi_in_clk_n : in STD_LOGIC;
-    hdmi_in_data_p : in STD_LOGIC_VECTOR ( 2 downto 0 );
-    hdmi_in_data_n : in STD_LOGIC_VECTOR ( 2 downto 0 );
     FIXED_IO_mio : inout STD_LOGIC_VECTOR ( 53 downto 0 );
     FIXED_IO_ddr_vrn : inout STD_LOGIC;
     FIXED_IO_ddr_vrp : inout STD_LOGIC;
@@ -86,7 +73,22 @@ architecture STRUCTURE of img_proc_wrapper is
     DDR_dm : inout STD_LOGIC_VECTOR ( 3 downto 0 );
     DDR_dq : inout STD_LOGIC_VECTOR ( 31 downto 0 );
     DDR_dqs_n : inout STD_LOGIC_VECTOR ( 3 downto 0 );
-    DDR_dqs_p : inout STD_LOGIC_VECTOR ( 3 downto 0 )
+    DDR_dqs_p : inout STD_LOGIC_VECTOR ( 3 downto 0 );
+    hdmi_in_ddc_scl_i : in STD_LOGIC;
+    hdmi_in_ddc_scl_o : out STD_LOGIC;
+    hdmi_in_ddc_scl_t : out STD_LOGIC;
+    hdmi_in_ddc_sda_i : in STD_LOGIC;
+    hdmi_in_ddc_sda_o : out STD_LOGIC;
+    hdmi_in_ddc_sda_t : out STD_LOGIC;
+    hdmi_in_clk_p : in STD_LOGIC;
+    hdmi_in_clk_n : in STD_LOGIC;
+    hdmi_in_data_p : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    hdmi_in_data_n : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    hdmi_out_clk_p : out STD_LOGIC;
+    hdmi_out_clk_n : out STD_LOGIC;
+    hdmi_out_data_p : out STD_LOGIC_VECTOR ( 2 downto 0 );
+    hdmi_out_data_n : out STD_LOGIC_VECTOR ( 2 downto 0 );
+    led_tri_o : out STD_LOGIC_VECTOR ( 3 downto 0 )
   );
   end component img_proc;
   component IOBUF is
@@ -155,6 +157,7 @@ img_proc_i: component img_proc
       hdmi_out_clk_n => hdmi_out_clk_n,
       hdmi_out_clk_p => hdmi_out_clk_p,
       hdmi_out_data_n(2 downto 0) => hdmi_out_data_n(2 downto 0),
-      hdmi_out_data_p(2 downto 0) => hdmi_out_data_p(2 downto 0)
+      hdmi_out_data_p(2 downto 0) => hdmi_out_data_p(2 downto 0),
+      led_tri_o(3 downto 0) => led_tri_o(3 downto 0)
     );
 end STRUCTURE;
