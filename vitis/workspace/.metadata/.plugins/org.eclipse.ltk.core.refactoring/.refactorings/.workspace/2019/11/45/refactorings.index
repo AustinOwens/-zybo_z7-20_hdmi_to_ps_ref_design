@@ -1,2 +1,4 @@
 1573029580162	Delete resource 'img_proc_bsp/resources/BOOT.bin'
 1573029623238	Delete resource 'img_proc_bsp/resources/uImage'
+1573191559121	Delete resource 'img_proc/src/helloworld.c'
+1573196060635	Delete resource 'img_proc_system/Debug/sd_card_temp'

@@ -1,7 +1,7 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.2 (lin64) Build 2700185 Thu Oct 24 18:45:48 MDT 2019
-// Date        : Sun Nov  3 23:31:41 2019
+// Date        : Thu Nov  7 23:49:39 2019
 // Host        : austin-ubuntu running 64-bit Ubuntu 18.04.3 LTS
 // Command     : write_verilog -force -mode funcsim
 //               /home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/ip/img_proc_v_tc_0_1/img_proc_v_tc_0_1_sim_netlist.v
@@ -49,7 +49,7 @@ module img_proc_v_tc_0_1
     fsync_out);
   (* x_interface_info = "xilinx.com:signal:clock:1.0 clk_intf CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME clk_intf, ASSOCIATED_BUSIF vtiming_in:vtiming_out, ASSOCIATED_RESET resetn, ASSOCIATED_CLKEN clken, FREQ_HZ 100000000, PHASE 0.000, CLK_DOMAIN img_proc_axi_dynclk_0_0_PXL_CLK_O, INSERT_VIP 0" *) input clk;
   (* x_interface_info = "xilinx.com:signal:clockenable:1.0 clken_intf CE" *) (* x_interface_parameter = "XIL_INTERFACENAME clken_intf, POLARITY ACTIVE_LOW" *) input clken;
-  (* x_interface_info = "xilinx.com:signal:clock:1.0 s_axi_aclk_intf CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME s_axi_aclk_intf, ASSOCIATED_BUSIF ctrl, ASSOCIATED_RESET s_axi_aresetn, ASSOCIATED_CLKEN s_axi_aclken, FREQ_HZ 200000000, PHASE 0.000, CLK_DOMAIN img_proc_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *) input s_axi_aclk;
+  (* x_interface_info = "xilinx.com:signal:clock:1.0 s_axi_aclk_intf CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME s_axi_aclk_intf, ASSOCIATED_BUSIF ctrl, ASSOCIATED_RESET s_axi_aresetn, ASSOCIATED_CLKEN s_axi_aclken, FREQ_HZ 2e+08, PHASE 0.000, CLK_DOMAIN img_proc_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *) input s_axi_aclk;
   (* x_interface_info = "xilinx.com:signal:clockenable:1.0 s_axi_aclken_intf CE" *) (* x_interface_parameter = "XIL_INTERFACENAME s_axi_aclken_intf, POLARITY ACTIVE_LOW" *) input s_axi_aclken;
   input gen_clken;
   (* x_interface_info = "xilinx.com:interface:video_timing:2.0 vtiming_out HSYNC" *) output hsync_out;
@@ -59,7 +59,7 @@ module img_proc_v_tc_0_1
   (* x_interface_info = "xilinx.com:interface:video_timing:2.0 vtiming_out ACTIVE_VIDEO" *) output active_video_out;
   (* x_interface_info = "xilinx.com:signal:reset:1.0 resetn_intf RST" *) (* x_interface_parameter = "XIL_INTERFACENAME resetn_intf, POLARITY ACTIVE_LOW, INSERT_VIP 0" *) input resetn;
   (* x_interface_info = "xilinx.com:signal:reset:1.0 s_axi_aresetn_intf RST" *) (* x_interface_parameter = "XIL_INTERFACENAME s_axi_aresetn_intf, POLARITY ACTIVE_LOW, INSERT_VIP 0" *) input s_axi_aresetn;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 ctrl AWADDR" *) (* x_interface_parameter = "XIL_INTERFACENAME ctrl, DATA_WIDTH 32, PROTOCOL AXI4LITE, FREQ_HZ 200000000, ID_WIDTH 0, ADDR_WIDTH 9, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 0, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 8, NUM_WRITE_OUTSTANDING 8, MAX_BURST_LENGTH 1, PHASE 0.000, CLK_DOMAIN img_proc_processing_system7_0_0_FCLK_CLK0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *) input [8:0]s_axi_awaddr;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 ctrl AWADDR" *) (* x_interface_parameter = "XIL_INTERFACENAME ctrl, DATA_WIDTH 32, PROTOCOL AXI4LITE, FREQ_HZ 2e+08, ID_WIDTH 0, ADDR_WIDTH 9, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 0, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 8, NUM_WRITE_OUTSTANDING 8, MAX_BURST_LENGTH 1, PHASE 0.000, CLK_DOMAIN img_proc_processing_system7_0_0_FCLK_CLK0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *) input [8:0]s_axi_awaddr;
   (* x_interface_info = "xilinx.com:interface:aximm:1.0 ctrl AWVALID" *) input s_axi_awvalid;
   (* x_interface_info = "xilinx.com:interface:aximm:1.0 ctrl AWREADY" *) output s_axi_awready;
   (* x_interface_info = "xilinx.com:interface:aximm:1.0 ctrl WDATA" *) input [31:0]s_axi_wdata;

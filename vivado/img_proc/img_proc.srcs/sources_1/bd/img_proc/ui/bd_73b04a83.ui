@@ -1,0 +1,39 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.0",
+   "Default View_TopLeft":"-530,-117",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0.21  2019-05-29 bk=1.5064 VDI=41 GEI=36 GUI=JA:9.0 TLS
+#  -string -flagsOSRD
+preplace port hdmi_in -pg 1 -lvl 0 -x 0 -y 500 -defaultsOSRD
+preplace port hdmi_in_ddc -pg 1 -lvl 3 -x 790 -y 550 -defaultsOSRD
+preplace port M_AXIS -pg 1 -lvl 3 -x 790 -y 160 -defaultsOSRD
+preplace port aRst -pg 1 -lvl 0 -x 0 -y 270 -defaultsOSRD
+preplace port vid_pVSync -pg 1 -lvl 3 -x 790 -y 390 -defaultsOSRD
+preplace port vid_pVDE -pg 1 -lvl 3 -x 790 -y 410 -defaultsOSRD
+preplace port vid_pHSync -pg 1 -lvl 3 -x 790 -y 370 -defaultsOSRD
+preplace port PixelClk -pg 1 -lvl 3 -x 790 -y 570 -defaultsOSRD
+preplace port RefClk -pg 1 -lvl 0 -x 0 -y 230 -defaultsOSRD
+preplace port vid_io_in_reset -pg 1 -lvl 0 -x 0 -y 210 -defaultsOSRD
+preplace port aclken -pg 1 -lvl 0 -x 0 -y 190 -defaultsOSRD
+preplace inst dvi2rgb_0 -pg 1 -lvl 2 -x 570 -y 530 -defaultsOSRD
+preplace inst v_vid_in_axi4s_0 -pg 1 -lvl 1 -x 240 -y 180 -defaultsOSRD
+preplace inst axis_subset_converter_0 -pg 1 -lvl 2 -x 570 -y 160 -defaultsOSRD
+preplace netloc aRst_1 1 0 2 30 10 390
+preplace netloc dvi2rgb_0_vid_pVSync 1 0 3 80 370 400J 340 760
+preplace netloc dvi2rgb_0_vid_pVDE 1 0 3 50 390 NJ 390 750
+preplace netloc dvi2rgb_0_vid_pHSync 1 0 3 70 360 NJ 360 740
+preplace netloc dvi2rgb_0_PixelClk 1 0 3 90 350 NJ 350 770
+preplace netloc RefClk_1 1 0 2 20 400 410
+preplace netloc vid_io_in_reset_1 1 0 1 NJ 210
+preplace netloc dvi2rgb_0_vid_pData 1 0 3 60 380 NJ 380 730
+preplace netloc aclken_1 1 0 1 40 190n
+preplace netloc axis_subset_converter_0_M_AXIS 1 2 1 NJ 160
+preplace netloc Conn2 1 2 1 NJ 550
+preplace netloc v_vid_in_axi4s_0_video_out 1 1 1 N 140
+preplace netloc Conn1 1 0 2 NJ 500 NJ
+levelinfo -pg 1 0 240 570 790
+pagesize -pg 1 -db -bbox -sgen -160 0 930 670
+"
+}
+0

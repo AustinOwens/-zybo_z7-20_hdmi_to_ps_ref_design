@@ -1,0 +1,762 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2700185 on Thu Oct 24 18:45:48 MDT 2019
+# IP Build 2699827 on Thu Oct 24 21:16:38 MDT 2019
+# Start of session at: Sun Nov  3 18:24:47 2019
+# Process ID: 15612
+# Current directory: /home/austin/Desktop/projects/zybo/zybo_img_proc/vivado
+# Command line: vivado
+# Log file: /home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/vivado.log
+# Journal file: /home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.xpr
+update_compile_order -fileset sources_1
+open_bd_design {/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/img_proc.bd}
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:processing_system7:5.5 processing_system7_0
+endgroup
+set_property location {3 613 -69} [get_bd_cells processing_system7_0]
+apply_bd_automation -rule xilinx.com:bd_rule:processing_system7 -config {make_external "FIXED_IO, DDR" apply_board_preset "1" Master "Disable" Slave "Disable" }  [get_bd_cells processing_system7_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axis_interconnect:2.1 axis_interconnect_0
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_interconnect:2.1 axi_interconnect_0
+endgroup
+undo
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_interconnect:2.1 axi_interconnect_0
+endgroup
+set_property location {1.5 337 -81} [get_bd_cells axi_interconnect_0]
+connect_bd_intf_net [get_bd_intf_pins processing_system7_0/M_AXI_GP0] -boundary_type upper [get_bd_intf_pins axi_interconnect_0/S00_AXI]
+connect_bd_net [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins processing_system7_0/M_AXI_GP0_ACLK]
+set_property location {3 899 142} [get_bd_cells dvi2rgb_0]
+startgroup
+set_property -dict [list CONFIG.PCW_FPGA0_PERIPHERAL_FREQMHZ {200}] [get_bd_cells processing_system7_0]
+endgroup
+delete_bd_objs [get_bd_nets clk_wiz_0_clk_out1]
+connect_bd_net [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins dvi2rgb_0/RefClk]
+delete_bd_objs [get_bd_nets sys_clock_1] [get_bd_cells clk_wiz_0]
+undo
+delete_bd_objs [get_bd_nets sys_clock_1] [get_bd_cells clk_wiz_0]
+delete_bd_objs [get_bd_ports sys_clock]
+regenerate_bd_layout
+connect_bd_net [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins axi_interconnect_0/ACLK]
+connect_bd_net [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins axi_interconnect_0/S00_ACLK]
+connect_bd_net [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins axi_interconnect_0/M00_ACLK]
+connect_bd_net [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins axi_interconnect_0/M01_ACLK]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:proc_sys_reset:5.0 proc_sys_reset_0
+endgroup
+set_property location {0.5 -224 310} [get_bd_cells proc_sys_reset_0]
+connect_bd_net [get_bd_pins proc_sys_reset_0/interconnect_aresetn] [get_bd_pins axi_interconnect_0/ARESETN]
+connect_bd_net [get_bd_pins proc_sys_reset_0/peripheral_aresetn] [get_bd_pins axi_interconnect_0/S00_ARESETN]
+connect_bd_net [get_bd_pins axi_interconnect_0/M00_ARESETN] [get_bd_pins proc_sys_reset_0/peripheral_aresetn]
+connect_bd_net [get_bd_pins axi_interconnect_0/M01_ARESETN] [get_bd_pins proc_sys_reset_0/peripheral_aresetn]
+delete_bd_objs [get_bd_nets reset_rtl_1]
+connect_bd_net [get_bd_pins proc_sys_reset_0/peripheral_reset] [get_bd_pins dvi2rgb_0/aRst]
+connect_bd_net [get_bd_pins proc_sys_reset_0/peripheral_reset] [get_bd_pins rgb2dvi_0/aRst]
+delete_bd_objs [get_bd_ports async_reset]
+connect_bd_net [get_bd_pins processing_system7_0/FCLK_RESET0_N] [get_bd_pins proc_sys_reset_0/ext_reset_in]
+connect_bd_net [get_bd_pins proc_sys_reset_0/slowest_sync_clk] [get_bd_pins processing_system7_0/FCLK_CLK0]
+regenerate_bd_layout
+validate_bd_design
+startgroup
+set_property -dict [list CONFIG.PCW_USE_S_AXI_HP0 {1}] [get_bd_cells processing_system7_0]
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_interconnect:2.1 axi_interconnect_1
+endgroup
+set_property location {1 231 270} [get_bd_cells axi_interconnect_1]
+set_property -dict [list CONFIG.NUM_MI {1}] [get_bd_cells axi_interconnect_1]
+set_property -dict [list CONFIG.NUM_SI {2} CONFIG.NUM_MI {1}] [get_bd_cells axi_interconnect_1]
+connect_bd_intf_net -boundary_type upper [get_bd_intf_pins axi_interconnect_1/M00_AXI] [get_bd_intf_pins processing_system7_0/S_AXI_HP0]
+delete_bd_objs [get_bd_intf_nets axi_interconnect_1_M00_AXI]
+connect_bd_intf_net [get_bd_intf_pins processing_system7_0/S_AXI_HP0] -boundary_type upper [get_bd_intf_pins axi_interconnect_1/M00_AXI]
+set_property location {1 98 794} [get_bd_cells axi_interconnect_1]
+set_property location {1 143 805} [get_bd_cells axi_interconnect_1]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_vdma:6.3 axi_vdma_0
+endgroup
+set_property location {0.5 -44 776} [get_bd_cells axi_vdma_0]
+connect_bd_intf_net -boundary_type upper [get_bd_intf_pins axi_interconnect_1/S00_AXI] [get_bd_intf_pins axi_vdma_0/M_AXI_MM2S]
+connect_bd_intf_net -boundary_type upper [get_bd_intf_pins axi_interconnect_1/S01_AXI] [get_bd_intf_pins axi_vdma_0/M_AXI_S2MM]
+set_property location {1 -40 770} [get_bd_cells axi_vdma_0]
+set_property location {1 -40 760} [get_bd_cells axi_vdma_0]
+set_property location {1 -40 770} [get_bd_cells axi_vdma_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:v_axi4s_vid_out:4.0 v_axi4s_vid_out_0
+endgroup
+set_property location {3 539 1100} [get_bd_cells v_axi4s_vid_out_0]
+connect_bd_intf_net [get_bd_intf_pins axi_vdma_0/M_AXIS_MM2S] [get_bd_intf_pins v_axi4s_vid_out_0/video_in]
+delete_bd_objs [get_bd_intf_nets dvi2rgb_0_RGB]
+connect_bd_intf_net [get_bd_intf_pins v_axi4s_vid_out_0/vid_io_out] [get_bd_intf_pins rgb2dvi_0/RGB]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:v_tc:6.2 v_tc_0
+endgroup
+set_property location {2 163 1120} [get_bd_cells v_tc_0]
+connect_bd_intf_net [get_bd_intf_pins v_axi4s_vid_out_0/vtiming_in] [get_bd_intf_pins v_tc_0/vtiming_out]
+startgroup
+set_property -dict [list CONFIG.NUM_MI {6}] [get_bd_cells axi_interconnect_0]
+endgroup
+connect_bd_intf_net -boundary_type upper [get_bd_intf_pins axi_interconnect_0/M02_AXI] [get_bd_intf_pins v_tc_0/ctrl]
+regenerate_bd_layout
+connect_bd_net [get_bd_pins axi_interconnect_0/M02_ACLK] [get_bd_pins processing_system7_0/FCLK_CLK0]
+connect_bd_net [get_bd_pins axi_interconnect_0/M03_ACLK] [get_bd_pins processing_system7_0/FCLK_CLK0]
+connect_bd_net [get_bd_pins axi_interconnect_0/M04_ACLK] [get_bd_pins processing_system7_0/FCLK_CLK0]
+connect_bd_net [get_bd_pins axi_interconnect_0/M05_ACLK] [get_bd_pins processing_system7_0/FCLK_CLK0]
+connect_bd_net [get_bd_pins axi_interconnect_1/ACLK] [get_bd_pins v_axi4s_vid_out_0/aclk]
+startgroup
+set_property -dict [list CONFIG.C_HAS_ASYNC_CLK {1}] [get_bd_cells v_axi4s_vid_out_0]
+endgroup
+connect_bd_net [get_bd_pins v_axi4s_vid_out_0/aclken] [get_bd_pins v_axi4s_vid_out_0/vid_io_out_ce]
+connect_bd_net [get_bd_pins v_axi4s_vid_out_0/vid_io_out_reset] [get_bd_pins proc_sys_reset_0/peripheral_reset]
+regenerate_bd_layout
+startgroup
+set_property -dict [list CONFIG.enable_generation {false}] [get_bd_cells v_tc_0]
+delete_bd_objs [get_bd_intf_nets v_tc_0_vtiming_out]
+endgroup
+startgroup
+set_property -dict [list CONFIG.enable_detection {false} CONFIG.enable_generation {true}] [get_bd_cells v_tc_0]
+endgroup
+connect_bd_intf_net [get_bd_intf_pins v_tc_0/vtiming_out] [get_bd_intf_pins v_axi4s_vid_out_0/vtiming_in]
+connect_bd_net [get_bd_pins v_axi4s_vid_out_0/vid_io_out_clk] [get_bd_pins v_tc_0/clk]
+connect_bd_net [get_bd_pins v_tc_0/clken] [get_bd_pins v_tc_0/s_axi_aclken]
+connect_bd_net [get_bd_pins v_tc_0/clken] [get_bd_pins v_tc_0/gen_clken]
+connect_bd_net [get_bd_pins v_tc_0/resetn] [get_bd_pins v_tc_0/s_axi_aresetn]
+connect_bd_net [get_bd_pins axi_vdma_0/axi_resetn] [get_bd_pins v_tc_0/resetn]
+connect_bd_net [get_bd_pins v_tc_0/s_axi_aclk] [get_bd_pins axi_vdma_0/s_axi_lite_aclk]
+connect_bd_net [get_bd_pins axi_vdma_0/m_axi_mm2s_aclk] [get_bd_pins v_tc_0/s_axi_aclk]
+connect_bd_net [get_bd_pins axi_vdma_0/m_axis_mm2s_aclk] [get_bd_pins v_tc_0/s_axi_aclk]
+connect_bd_net [get_bd_pins axi_vdma_0/m_axi_s2mm_aclk] [get_bd_pins v_tc_0/s_axi_aclk]
+connect_bd_net [get_bd_pins axi_vdma_0/s_axis_s2mm_aclk] [get_bd_pins v_tc_0/s_axi_aclk]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:v_vid_in_axi4s:4.0 v_vid_in_axi4s_0
+endgroup
+set_property location {7 2282 630} [get_bd_cells v_vid_in_axi4s_0]
+set_property location {7.5 2847 616} [get_bd_cells v_vid_in_axi4s_0]
+connect_bd_net [get_bd_pins dvi2rgb_0/vid_pData] [get_bd_pins v_vid_in_axi4s_0/vid_data]
+regenerate_bd_layout
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axis_subset_converter:1.1 axis_subset_converter_0
+endgroup
+set_property location {8.5 2669 595} [get_bd_cells axis_subset_converter_0]
+set_property location {8 2737 159} [get_bd_cells axis_subset_converter_0]
+connect_bd_intf_net [get_bd_intf_pins v_vid_in_axi4s_0/video_out] [get_bd_intf_pins axis_subset_converter_0/S_AXIS]
+connect_bd_intf_net [get_bd_intf_pins axis_subset_converter_0/M_AXIS] [get_bd_intf_pins axi_vdma_0/S_AXIS_S2MM]
+regenerate_bd_layout
+set_property location {1 319 518} [get_bd_cells dvi2rgb_0]
+set_property location {1 144 650} [get_bd_cells dvi2rgb_0]
+set_property location {2 599 584} [get_bd_cells v_vid_in_axi4s_0]
+set_property location {3 953 530} [get_bd_cells axis_subset_converter_0]
+set_property location {4 1311 544} [get_bd_cells axi_vdma_0]
+set_property location {5 1727 591} [get_bd_cells axi_interconnect_1]
+set_property location {6 2119 591} [get_bd_cells processing_system7_0]
+connect_bd_net [get_bd_pins axi_interconnect_0/M05_ARESETN] [get_bd_pins proc_sys_reset_0/peripheral_aresetn]
+connect_bd_net [get_bd_pins axi_interconnect_0/M04_ARESETN] [get_bd_pins proc_sys_reset_0/peripheral_aresetn]
+connect_bd_net [get_bd_pins axi_interconnect_0/M03_ARESETN] [get_bd_pins proc_sys_reset_0/peripheral_aresetn]
+connect_bd_net [get_bd_pins axi_interconnect_0/M02_ARESETN] [get_bd_pins proc_sys_reset_0/peripheral_aresetn]
+connect_bd_intf_net [get_bd_intf_pins axi_vdma_0/S_AXI_LITE] -boundary_type upper [get_bd_intf_pins axi_interconnect_0/M00_AXI]
+copy_bd_objs /  [get_bd_cells {v_tc_0}]
+set_property location {8 2817 698} [get_bd_cells v_tc_1]
+delete_bd_objs [get_bd_intf_nets v_tc_0_vtiming_out]
+disconnect_bd_net /Net2 [get_bd_pins v_tc_0/s_axi_aclken]
+delete_bd_objs [get_bd_nets Net2]
+disconnect_bd_net /Net3 [get_bd_pins v_tc_0/resetn]
+delete_bd_objs [get_bd_nets Net3]
+disconnect_bd_net /Net4 [get_bd_pins v_tc_0/s_axi_aclk]
+delete_bd_objs [get_bd_nets Net1]
+delete_bd_objs [get_bd_intf_nets axi_interconnect_0_M02_AXI]
+connect_bd_intf_net -boundary_type upper [get_bd_intf_pins axi_interconnect_0/M01_AXI] [get_bd_intf_pins v_tc_0/ctrl]
+connect_bd_intf_net -boundary_type upper [get_bd_intf_pins axi_interconnect_0/M02_AXI] [get_bd_intf_pins v_tc_1/ctrl]
+set_property location {8 2894 617} [get_bd_cells v_tc_1]
+set_property location {8 2860 640} [get_bd_cells v_tc_1]
+set_property location {8 2860 662} [get_bd_cells v_tc_1]
+set_property location {8 2858 683} [get_bd_cells v_tc_1]
+set_property location {8 2852 683} [get_bd_cells v_tc_1]
+set_property location {8 2848 678} [get_bd_cells v_tc_1]
+set_property location {8 2842 670} [get_bd_cells v_tc_1]
+set_property location {8 2846 679} [get_bd_cells v_tc_1]
+set_property location {8 2849 685} [get_bd_cells v_tc_1]
+set_property location {8 2851 697} [get_bd_cells v_tc_1]
+set_property location {8 2846 662} [get_bd_cells v_tc_1]
+set_property location {8 2848 675} [get_bd_cells v_tc_1]
+set_property location {8 2840 680} [get_bd_cells v_tc_1]
+set_property location {8 2840 690} [get_bd_cells v_tc_1]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_0
+endgroup
+set_property location {10.5 3418 811} [get_bd_cells axi_gpio_0]
+set_property location {9 3198 818} [get_bd_cells axi_gpio_0]
+connect_bd_intf_net -boundary_type upper [get_bd_intf_pins axi_interconnect_0/M04_AXI] [get_bd_intf_pins axi_gpio_0/S_AXI]
+delete_bd_objs [get_bd_nets xlconstant_0_dout] [get_bd_cells xlconstant_0]
+startgroup
+set_property -dict [list CONFIG.C_GPIO_WIDTH {1} CONFIG.C_ALL_OUTPUTS {1}] [get_bd_cells axi_gpio_0]
+endgroup
+connect_bd_net [get_bd_ports hdmi_in_hpd] [get_bd_pins axi_gpio_0/gpio_io_o]
+set_property location {8 2884 571} [get_bd_cells v_tc_1]
+set_property location {8 2853 591} [get_bd_cells v_tc_1]
+set_property location {8 2848 608} [get_bd_cells v_tc_1]
+set_property location {8 2848 624} [get_bd_cells v_tc_1]
+set_property location {8 2840 610} [get_bd_cells v_tc_1]
+connect_bd_net [get_bd_pins axi_interconnect_1/ACLK] [get_bd_pins axi_interconnect_1/S00_ACLK] -boundary_type upper
+connect_bd_net [get_bd_pins axi_interconnect_1/S00_ACLK] [get_bd_pins axi_interconnect_1/M00_ACLK] -boundary_type upper
+connect_bd_net [get_bd_pins axi_interconnect_1/M00_ACLK] [get_bd_pins axi_interconnect_1/S01_ACLK] -boundary_type upper
+connect_bd_net [get_bd_pins axi_interconnect_1/S01_ARESETN] [get_bd_pins axi_interconnect_1/M00_ARESETN] -boundary_type upper
+connect_bd_net [get_bd_pins axi_interconnect_1/M00_ARESETN] [get_bd_pins axi_interconnect_1/S00_ARESETN] -boundary_type upper
+connect_bd_net [get_bd_pins axi_interconnect_1/S00_ARESETN] [get_bd_pins axi_interconnect_1/ARESETN] -boundary_type upper
+connect_bd_net [get_bd_pins axi_interconnect_1/ARESETN] [get_bd_pins axi_vdma_0/axi_resetn]
+connect_bd_net [get_bd_pins axi_vdma_0/s_axis_s2mm_aclk] [get_bd_pins v_tc_1/s_axi_aclk]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_HP0_ACLK] [get_bd_pins processing_system7_0/FCLK_CLK0]
+set_property location {6 2169 796} [get_bd_cells processing_system7_0]
+undo
+connect_bd_net [get_bd_pins axi_interconnect_1/S01_ACLK] [get_bd_pins processing_system7_0/FCLK_CLK0]
+connect_bd_net [get_bd_pins axi_gpio_0/s_axi_aclk] [get_bd_pins processing_system7_0/FCLK_CLK0]
+connect_bd_net [get_bd_pins axi_gpio_0/s_axi_aresetn] [get_bd_pins proc_sys_reset_0/peripheral_reset]
+set_property location {7 2651 550} [get_bd_cells axi_interconnect_0]
+undo
+disconnect_bd_net /proc_sys_reset_0_peripheral_aresetn [get_bd_pins axi_interconnect_0/M05_ARESETN]
+connect_bd_net [get_bd_pins axi_interconnect_0/M05_ARESETN] [get_bd_pins proc_sys_reset_0/peripheral_reset]
+undo
+undo
+disconnect_bd_net /proc_sys_reset_0_peripheral_reset [get_bd_pins axi_gpio_0/s_axi_aresetn]
+connect_bd_net [get_bd_pins axi_gpio_0/s_axi_aresetn] [get_bd_pins proc_sys_reset_0/peripheral_reset]
+set_property location {10 3673 302} [get_bd_cells rgb2dvi_0]
+connect_bd_net [get_bd_pins axi_vdma_0/axi_resetn] [get_bd_pins proc_sys_reset_0/peripheral_reset]
+startgroup
+set_property -dict [list CONFIG.enable_detection {true} CONFIG.enable_generation {false}] [get_bd_cells v_tc_0]
+endgroup
+connect_bd_net [get_bd_pins v_tc_0/s_axi_aclk] [get_bd_pins axi_vdma_0/s_axi_lite_aclk]
+connect_bd_net [get_bd_pins v_tc_0/active_video_in] [get_bd_pins dvi2rgb_0/vid_pVDE]
+set_property location {7 2543 561} [get_bd_cells axi_interconnect_0]
+undo
+set_property location {7 2573 570} [get_bd_cells axi_interconnect_0]
+connect_bd_net [get_bd_pins v_tc_1/s_axi_aclk] [get_bd_pins processing_system7_0/FCLK_CLK0]
+connect_bd_net [get_bd_pins axis_subset_converter_0/aclk] [get_bd_pins processing_system7_0/FCLK_CLK0]
+connect_bd_net [get_bd_pins v_vid_in_axi4s_0/aclk] [get_bd_pins processing_system7_0/FCLK_CLK0]
+delete_bd_objs [get_bd_nets dvi2rgb_0_PixelClk]
+connect_bd_net [get_bd_pins v_axi4s_vid_out_0/vid_io_out_clk] [get_bd_pins rgb2dvi_0/PixelClk]
+startgroup
+create_bd_cell -type ip -vlnv digilentinc.com:ip:axi_dynclk:1.0 axi_dynclk_0
+endgroup
+set_property location {7 2346 -62} [get_bd_cells axi_dynclk_0]
+connect_bd_net [get_bd_pins axi_dynclk_0/PXL_CLK_O] [get_bd_pins v_axi4s_vid_out_0/vid_io_out_clk]
+startgroup
+set_property -dict [list CONFIG.PCW_EN_CLK1_PORT {1}] [get_bd_cells processing_system7_0]
+endgroup
+connect_bd_net [get_bd_pins processing_system7_0/FCLK_CLK1] [get_bd_pins axi_dynclk_0/REF_CLK_I]
+connect_bd_net [get_bd_pins axi_dynclk_0/s00_axi_aclk] [get_bd_pins processing_system7_0/FCLK_CLK0]
+connect_bd_net [get_bd_pins axi_dynclk_0/s00_axi_aresetn] [get_bd_pins proc_sys_reset_0/peripheral_reset]
+connect_bd_intf_net -boundary_type upper [get_bd_intf_pins axi_interconnect_0/M03_AXI] [get_bd_intf_pins axi_dynclk_0/s00_axi]
+save_bd_design
+startgroup
+set_property -dict [list CONFIG.PCW_FPGA1_PERIPHERAL_FREQMHZ {100} CONFIG.PCW_QSPI_GRP_SINGLE_SS_ENABLE {1}] [get_bd_cells processing_system7_0]
+endgroup
+startgroup
+set_property -dict [list CONFIG.C_HAS_ASYNC_CLK {1}] [get_bd_cells v_vid_in_axi4s_0]
+endgroup
+startgroup
+set_property -dict [list CONFIG.M_HAS_TLAST.VALUE_SRC USER CONFIG.S_TUSER_WIDTH.VALUE_SRC USER CONFIG.M_TUSER_WIDTH.VALUE_SRC USER CONFIG.S_HAS_TLAST.VALUE_SRC USER CONFIG.S_TDATA_NUM_BYTES.VALUE_SRC USER CONFIG.M_TDATA_NUM_BYTES.VALUE_SRC USER] [get_bd_cells axis_subset_converter_0]
+set_property -dict [list CONFIG.S_TDATA_NUM_BYTES {3} CONFIG.M_TDATA_NUM_BYTES {3} CONFIG.S_TUSER_WIDTH {1} CONFIG.M_TUSER_WIDTH {1} CONFIG.S_HAS_TLAST {1} CONFIG.M_HAS_TLAST {1} CONFIG.TDATA_REMAP {tdata[23:16],tdata[7:0],tdata[15:8]} CONFIG.TUSER_REMAP {tuser[0:0]} CONFIG.TLAST_REMAP {tlast[0]}] [get_bd_cells axis_subset_converter_0]
+endgroup
+startgroup
+set_property -dict [list CONFIG.c_include_s2mm_dre {1} CONFIG.c_include_mm2s_dre {1}] [get_bd_cells axi_vdma_0]
+endgroup
+startgroup
+set_property -dict [list CONFIG.kGenerateSerialClk {false}] [get_bd_cells rgb2dvi_0]
+endgroup
+connect_bd_net [get_bd_pins rgb2dvi_0/SerialClk] [get_bd_pins axi_dynclk_0/PXL_CLK_5X_O]
+connect_bd_net [get_bd_pins v_tc_1/clken] [get_bd_pins v_tc_1/s_axi_aclken]
+connect_bd_net [get_bd_pins v_tc_1/clken] [get_bd_pins v_tc_1/gen_clken]
+connect_bd_net [get_bd_pins v_tc_1/s_axi_aresetn] [get_bd_pins v_tc_1/resetn]
+connect_bd_net [get_bd_pins v_tc_1/s_axi_aresetn] [get_bd_pins proc_sys_reset_0/peripheral_reset]
+connect_bd_net [get_bd_pins v_axi4s_vid_out_0/vid_io_out_ce] [get_bd_pins v_tc_1/clken]
+connect_bd_net [get_bd_pins v_tc_1/clk] [get_bd_pins processing_system7_0/FCLK_CLK0]
+connect_bd_net [get_bd_pins dvi2rgb_0/vid_pHSync] [get_bd_pins v_tc_0/hblank_in]
+connect_bd_net [get_bd_pins dvi2rgb_0/vid_pVSync] [get_bd_pins v_tc_0/vsync_in]
+connect_bd_net [get_bd_pins dvi2rgb_0/vid_pVSync] [get_bd_pins v_vid_in_axi4s_0/vid_vsync]
+validate_bd_design
+connect_bd_net [get_bd_pins v_vid_in_axi4s_0/vid_io_in_clk] [get_bd_pins v_tc_0/clk]
+connect_bd_net [get_bd_pins dvi2rgb_0/PixelClk] [get_bd_pins v_vid_in_axi4s_0/vid_io_in_clk]
+validate_bd_design
+validate_bd_design
+disconnect_bd_net /proc_sys_reset_0_peripheral_reset [get_bd_pins proc_sys_reset_0/peripheral_reset]
+connect_bd_net [get_bd_pins proc_sys_reset_0/peripheral_reset] [get_bd_pins v_vid_in_axi4s_0/vid_io_in_reset]
+connect_bd_net [get_bd_pins v_axi4s_vid_out_0/vid_io_out_reset] [get_bd_pins proc_sys_reset_0/peripheral_reset]
+validate_bd_design
+validate_bd_design
+disconnect_bd_net /proc_sys_reset_0_peripheral_reset1 [get_bd_pins proc_sys_reset_0/peripheral_reset]
+validate_bd_design
+connect_bd_net [get_bd_pins v_vid_in_axi4s_0/vid_active_video] [get_bd_pins dvi2rgb_0/vid_pVDE]
+connect_bd_net [get_bd_pins v_tc_0/hsync_in] [get_bd_pins v_vid_in_axi4s_0/vid_hsync]
+delete_bd_objs [get_bd_nets dvi2rgb_0_vid_pHSync]
+disconnect_bd_net /dvi2rgb_0_vid_pVSync [get_bd_pins dvi2rgb_0/vid_pVSync]
+connect_bd_net [get_bd_pins dvi2rgb_0/vid_pHSync] [get_bd_pins v_tc_0/hsync_in]
+connect_bd_net [get_bd_pins dvi2rgb_0/vid_pVSync] [get_bd_pins v_tc_0/vsync_in]
+connect_bd_net [get_bd_pins v_vid_in_axi4s_0/aresetn] [get_bd_pins proc_sys_reset_0/peripheral_aresetn]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_0
+endgroup
+set_property location {2 625 458} [get_bd_cells xlconstant_0]
+connect_bd_net [get_bd_pins xlconstant_0/dout] [get_bd_pins v_vid_in_axi4s_0/vid_io_in_ce]
+connect_bd_net [get_bd_pins xlconstant_0/dout] [get_bd_pins v_vid_in_axi4s_0/aclken]
+connect_bd_net [get_bd_pins xlconstant_0/dout] [get_bd_pins v_vid_in_axi4s_0/axis_enable]
+set_property location {0.5 340 716} [get_bd_cells dvi2rgb_0]
+undo
+set_property location {2 1140 540} [get_bd_cells v_vid_in_axi4s_0]
+set_property location {2 1140 550} [get_bd_cells v_vid_in_axi4s_0]
+set_property location {2 1140 540} [get_bd_cells v_vid_in_axi4s_0]
+set_property location {2 1140 550} [get_bd_cells v_vid_in_axi4s_0]
+set_property location {2 1140 540} [get_bd_cells v_vid_in_axi4s_0]
+set_property location {3 1460 520} [get_bd_cells axis_subset_converter_0]
+set_property location {-27 631} [get_bd_intf_ports hdmi_in]
+set_property location {290 635} [get_bd_intf_ports hdmi_in]
+validate_bd_design
+validate_bd_design -force
+save_bd_design
+assign_bd_address [get_bd_addr_segs {axi_vdma_0/S_AXI_LITE/Reg }]
+assign_bd_address [get_bd_addr_segs {v_tc_0/ctrl/Reg }]
+assign_bd_address [get_bd_addr_segs {v_tc_1/ctrl/Reg }]
+assign_bd_address [get_bd_addr_segs {axi_gpio_0/S_AXI/Reg }]
+assign_bd_address [get_bd_addr_segs {axi_dynclk_0/s00_axi/reg0 }]
+save_bd_design
+validate_bd_design
+validate_bd_design -force
+assign_bd_address [get_bd_addr_segs {processing_system7_0/S_AXI_HP0/HP0_DDR_LOWOCM }]
+save_bd_design
+validate_bd_design
+validate_bd_design -force
+startgroup
+set_property -dict [list CONFIG.c_m_axis_mm2s_tdata_width {24}] [get_bd_cells axi_vdma_0]
+endgroup
+save_bd_design
+validate_bd_design
+disconnect_bd_net /proc_sys_reset_0_peripheral_reset1 [get_bd_pins axi_interconnect_1/S01_ARESETN]
+disconnect_bd_net /proc_sys_reset_0_peripheral_reset1 [get_bd_pins axi_interconnect_1/M00_ARESETN]
+disconnect_bd_net /proc_sys_reset_0_peripheral_reset1 [get_bd_pins axi_interconnect_1/S00_ARESETN]
+disconnect_bd_net /proc_sys_reset_0_peripheral_reset1 [get_bd_pins axi_interconnect_1/ARESETN]
+connect_bd_net [get_bd_pins axi_interconnect_1/ARESETN] [get_bd_pins proc_sys_reset_0/peripheral_aresetn]
+connect_bd_net [get_bd_pins axi_interconnect_1/M00_ARESETN] [get_bd_pins proc_sys_reset_0/peripheral_aresetn]
+connect_bd_net [get_bd_pins axi_interconnect_1/S00_ARESETN] [get_bd_pins proc_sys_reset_0/peripheral_aresetn]
+connect_bd_net [get_bd_pins axi_interconnect_1/S01_ARESETN] [get_bd_pins proc_sys_reset_0/peripheral_aresetn]
+disconnect_bd_net /proc_sys_reset_0_peripheral_reset1 [get_bd_pins axi_vdma_0/axi_resetn]
+disconnect_bd_net /proc_sys_reset_0_peripheral_reset1 [get_bd_pins v_tc_1/resetn]
+disconnect_bd_net /proc_sys_reset_0_peripheral_reset1 [get_bd_pins v_tc_1/s_axi_aresetn]
+connect_bd_net [get_bd_pins v_tc_1/resetn] [get_bd_pins v_tc_1/s_axi_aresetn]
+connect_bd_net [get_bd_pins v_tc_1/s_axi_aresetn] [get_bd_pins proc_sys_reset_0/peripheral_aresetn]
+undo
+connect_bd_net [get_bd_pins v_tc_1/s_axi_aresetn] [get_bd_pins axi_vdma_0/axi_resetn]
+connect_bd_net [get_bd_pins axi_vdma_0/axi_resetn] [get_bd_pins proc_sys_reset_0/peripheral_aresetn]
+connect_bd_net [get_bd_pins axis_subset_converter_0/aresetn] [get_bd_pins proc_sys_reset_0/peripheral_aresetn]
+delete_bd_objs [get_bd_nets proc_sys_reset_0_peripheral_reset1]
+startgroup
+set_property -dict [list CONFIG.SyncRst.POLARITY {ACTIVE_LOW} CONFIG.AsyncRst.POLARITY {ACTIVE_LOW}] [get_bd_cells dvi2rgb_0]
+endgroup
+connect_bd_net [get_bd_pins dvi2rgb_0/aRst] [get_bd_pins axi_gpio_0/s_axi_aresetn]
+connect_bd_net [get_bd_pins axi_dynclk_0/s00_axi_aresetn] [get_bd_pins dvi2rgb_0/aRst]
+connect_bd_net [get_bd_pins v_axi4s_vid_out_0/aresetn] [get_bd_pins proc_sys_reset_0/peripheral_aresetn]
+connect_bd_net [get_bd_pins rgb2dvi_0/aRst] [get_bd_pins proc_sys_reset_0/peripheral_reset]
+connect_bd_net [get_bd_pins v_vid_in_axi4s_0/vid_io_in_reset] [get_bd_pins proc_sys_reset_0/peripheral_reset]
+connect_bd_net [get_bd_pins v_tc_0/clken] [get_bd_pins v_tc_0/s_axi_aclken]
+connect_bd_net [get_bd_pins v_tc_0/s_axi_aclken] [get_bd_pins v_tc_0/det_clken]
+connect_bd_net [get_bd_pins v_tc_0/det_clken] [get_bd_pins v_axi4s_vid_out_0/aclken]
+connect_bd_net [get_bd_pins v_tc_0/resetn] [get_bd_pins v_tc_0/s_axi_aresetn]
+connect_bd_net [get_bd_pins v_tc_0/s_axi_aresetn] [get_bd_pins proc_sys_reset_0/peripheral_aresetn]
+copy_bd_objs /  [get_bd_cells {xlconstant_0}]
+set_property location {10 3952 343} [get_bd_cells xlconstant_1]
+set_property location {8 3654 -28} [get_bd_cells xlconstant_1]
+connect_bd_net [get_bd_pins xlconstant_1/dout] [get_bd_pins v_axi4s_vid_out_0/fid]
+set_property location {9 3923 351} [get_bd_cells xlconstant_1]
+set_property location {8.5 3824 355} [get_bd_cells xlconstant_1]
+undo
+set_property location {8.5 3982 356} [get_bd_cells xlconstant_1]
+undo
+set_property location {9 4168 349} [get_bd_cells xlconstant_1]
+connect_bd_net [get_bd_pins v_axi4s_vid_out_0/vid_io_out_reset] [get_bd_pins proc_sys_reset_0/peripheral_reset]
+save_bd_design
+validate_bd_design
+validate_bd_design -force
+regenerate_bd_layout
+save_bd_design
+make_wrapper -files [get_files /home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/img_proc.bd] -top
+import_files -force -norecurse /home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/hdl/img_proc_wrapper.vhd
+validate_bd_design -force
+validate_bd_design -force
+connect_bd_net [get_bd_pins dvi2rgb_0/aRst] [get_bd_pins proc_sys_reset_0/peripheral_aresetn]
+validate_bd_design
+validate_bd_design -force
+connect_bd_net [get_bd_pins xlconstant_0/dout] [get_bd_pins v_tc_0/clken]
+validate_bd_design
+regenerate_bd_layout
+regenerate_bd_layout
+connect_bd_intf_net [get_bd_intf_pins v_tc_1/vtiming_out] [get_bd_intf_pins v_axi4s_vid_out_0/vtiming_in]
+save_bd_design
+validate_bd_design
+make_wrapper -files [get_files /home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/img_proc.bd] -top
+import_files -force -norecurse /home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/hdl/img_proc_wrapper.vhd
+open_bd_design {/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/img_proc.bd}
+regenerate_bd_layout
+reset_run synth_1
+reset_run img_proc_rgb2dvi_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+open_hw_manager
+open_run impl_1
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/impl_1/img_proc_wrapper.bit} [get_hw_devices xc7z020_1]
+set_property PROBES.FILE {/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/impl_1/img_proc_wrapper.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/impl_1/img_proc_wrapper.ltx} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/impl_1/img_proc_wrapper.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/impl_1/img_proc_wrapper.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/impl_1/img_proc_wrapper.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"img_proc_i/dvi2rgb_0/U0/GenerateDebug.ILA_PixClkx"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"img_proc_i/dvi2rgb_0/U0/GenerateDebug.ILA_RefClkx"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"img_proc_i/dvi2rgb_0/U0/GenerateDebug.ILA_PixClkx"}]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"img_proc_i/dvi2rgb_0/U0/GenerateDebug.ILA_RefClkx"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"img_proc_i/dvi2rgb_0/U0/GenerateDebug.ILA_RefClkx"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"img_proc_i/dvi2rgb_0/U0/GenerateDebug.ILA_RefClkx"}]]
+open_bd_design {/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/img_proc.bd}
+regenerate_bd_layout
+regenerate_bd_layout
+validate_bd_design -force
+validate_bd_design -force
+regenerate_bd_layout
+regenerate_bd_layout
+regenerate_bd_layout
+regenerate_bd_layout
+disconnect_bd_net /processing_system7_0_FCLK_CLK0 [get_bd_pins v_tc_1/clk]
+connect_bd_net [get_bd_pins v_tc_1/clk] [get_bd_pins axi_dynclk_0/PXL_CLK_O]
+regenerate_bd_layout
+validate_bd_design
+regenerate_bd_layout
+regenerate_bd_layout
+regenerate_bd_layout
+validate_bd_design -force
+regenerate_bd_layout
+validate_bd_design -force
+make_wrapper -files [get_files /home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/img_proc.bd] -top
+import_files -force -norecurse /home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/hdl/img_proc_wrapper.vhd
+reset_run synth_1
+reset_run img_proc_v_tc_0_1_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/img_proc.bd]
+refresh_design
+open_bd_design {/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/img_proc.bd}
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:ila:6.2 ila_0
+endgroup
+set_property location {8 2720 710} [get_bd_cells ila_0]
+regenerate_bd_layout
+set_property location {7 2624 738} [get_bd_cells ila_0]
+set_property -dict [list CONFIG.C_NUM_OF_PROBES {1} CONFIG.C_ENABLE_ILA_AXI_MON {false} CONFIG.C_MONITOR_TYPE {Native}] [get_bd_cells ila_0]
+set_property location {7 2568 610} [get_bd_cells ila_0]
+set_property location {7 2444 514} [get_bd_cells ila_0]
+copy_bd_objs /  [get_bd_cells {ila_0}]
+set_property location {4 1178 1747} [get_bd_cells ila_0]
+set_property -dict [list CONFIG.C_PROBE0_MU_CNT {3} CONFIG.ALL_PROBE_SAME_MU_CNT {3}] [get_bd_cells ila_0]
+set_property -dict [list CONFIG.C_NUM_OF_PROBES {3} CONFIG.C_PROBE0_MU_CNT {1} CONFIG.ALL_PROBE_SAME_MU_CNT {1}] [get_bd_cells ila_0]
+connect_bd_net [get_bd_pins ila_0/clk] [get_bd_pins processing_system7_0/FCLK_CLK0]
+connect_bd_net [get_bd_pins ila_0/probe0] [get_bd_pins proc_sys_reset_0/peripheral_aresetn]
+connect_bd_net [get_bd_pins ila_0/probe1] [get_bd_pins processing_system7_0/FCLK_RESET0_N]
+connect_bd_net [get_bd_pins dvi2rgb_0/aPixelClkLckd] [get_bd_pins ila_0/probe2]
+set_property -dict [list CONFIG.C_NUM_OF_PROBES {44} CONFIG.C_ENABLE_ILA_AXI_MON {true} CONFIG.C_MONITOR_TYPE {AXI}] [get_bd_cells ila_1]
+set_property location {4 1077 717} [get_bd_cells ila_1]
+delete_bd_objs [get_bd_cells ila_1]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:ila:6.2 ila_1
+endgroup
+set_property location {7 2463 928} [get_bd_cells ila_1]
+set_property location {7 2844 1753} [get_bd_cells ila_1]
+set_property location {7 2795 523} [get_bd_cells ila_1]
+set_property -dict [list CONFIG.C_SLOT_0_AXI_ID_WIDTH.VALUE_SRC PROPAGATED] [get_bd_cells ila_1]
+set_property -dict [list CONFIG.C_NUM_OF_PROBES {4} CONFIG.C_ENABLE_ILA_AXI_MON {false} CONFIG.C_MONITOR_TYPE {Native}] [get_bd_cells ila_1]
+connect_bd_net [get_bd_pins ila_1/clk] [get_bd_pins processing_system7_0/FCLK_CLK0]
+connect_bd_net [get_bd_pins ila_1/probe3] [get_bd_pins v_axi4s_vid_out_0/status]
+connect_bd_net [get_bd_pins ila_1/probe0] [get_bd_pins v_axi4s_vid_out_0/locked]
+connect_bd_net [get_bd_pins ila_1/probe1] [get_bd_pins v_axi4s_vid_out_0/overflow]
+connect_bd_net [get_bd_pins ila_1/probe2] [get_bd_pins v_axi4s_vid_out_0/underflow]
+startgroup
+set_property -dict [list CONFIG.C_PROBE3_WIDTH {31}] [get_bd_cells ila_1]
+endgroup
+startgroup
+set_property -dict [list CONFIG.C_PROBE3_WIDTH {32}] [get_bd_cells ila_1]
+endgroup
+startgroup
+set_property -dict [list CONFIG.C_NUM_OF_PROBES {5}] [get_bd_cells ila_1]
+endgroup
+delete_bd_objs [get_bd_nets v_axi4s_vid_out_0_status]
+startgroup
+set_property -dict [list CONFIG.C_PROBE4_WIDTH {32} CONFIG.C_PROBE3_WIDTH {11}] [get_bd_cells ila_1]
+endgroup
+connect_bd_net [get_bd_pins ila_1/probe3] [get_bd_pins v_axi4s_vid_out_0/fifo_read_level]
+connect_bd_net [get_bd_pins ila_1/probe4] [get_bd_pins v_axi4s_vid_out_0/status]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:ila:6.2 ila_2
+endgroup
+set_property location {8 2898 105} [get_bd_cells ila_2]
+set_property -dict [list CONFIG.C_NUM_OF_PROBES {2} CONFIG.C_ENABLE_ILA_AXI_MON {false} CONFIG.C_MONITOR_TYPE {Native}] [get_bd_cells ila_2]
+connect_bd_net [get_bd_pins ila_2/clk] [get_bd_pins processing_system7_0/FCLK_CLK0]
+connect_bd_net [get_bd_pins ila_2/probe1] [get_bd_pins axi_dynclk_0/LOCKED_O]
+connect_bd_net [get_bd_pins ila_2/probe0] [get_bd_pins axi_dynclk_0/PXL_CLK_O]
+startgroup
+set_property -dict [list CONFIG.C_NUM_OF_PROBES {3}] [get_bd_cells ila_2]
+endgroup
+delete_bd_objs [get_bd_nets axi_dynclk_0_LOCKED_O]
+connect_bd_net [get_bd_pins ila_2/probe2] [get_bd_pins axi_dynclk_0/LOCKED_O]
+connect_bd_net [get_bd_pins ila_2/probe1] [get_bd_pins axi_dynclk_0/PXL_CLK_5X_O]
+regenerate_bd_layout
+save_bd_design
+create_bd_cell -type hier hier_0
+move_bd_cells [get_bd_cells hier_0] [get_bd_cells xlconstant_0]
+undo
+set_property location {3 789 480} [get_bd_cells hier_0]
+delete_bd_objs [get_bd_cells hier_0]
+regenerate_bd_layout
+validate_bd_design
+validate_bd_design -force
+make_wrapper -files [get_files /home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/img_proc.bd] -top
+import_files -force -norecurse /home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/hdl/img_proc_wrapper.vhd
+regenerate_bd_layout
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+regenerate_bd_layout
+close_design
+open_run impl_1
+open_bd_design {/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/img_proc.bd}
+close_bd_design [get_bd_designs img_proc]
+close_design
+open_bd_design {/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/img_proc.bd}
+delete_bd_objs [get_bd_nets axi_dynclk_0_PXL_CLK_5X_O]
+undo
+delete_bd_objs [get_bd_nets axi_dynclk_0_PXL_CLK_5X_O]
+startgroup
+set_property -dict [list CONFIG.C_NUM_OF_PROBES {2}] [get_bd_cells ila_2]
+delete_bd_objs [get_bd_nets axi_dynclk_0_LOCKED_O]
+endgroup
+connect_bd_net [get_bd_pins ila_2/probe1] [get_bd_pins axi_dynclk_0/LOCKED_O]
+startgroup
+set_property -dict [list CONFIG.kGenerateSerialClk {true}] [get_bd_cells rgb2dvi_0]
+endgroup
+regenerate_bd_layout
+regenerate_bd_layout
+validate_bd_design
+validate_bd_design -force
+save_bd_design
+regenerate_bd_layout
+regenerate_bd_layout
+make_wrapper -files [get_files /home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/img_proc.bd] -top
+import_files -force -norecurse /home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/hdl/img_proc_wrapper.vhd
+regenerate_bd_layout
+reset_run synth_1
+reset_run img_proc_rgb2dvi_0_0_synth_1
+reset_run img_proc_ila_2_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+delete_bd_objs [get_bd_nets v_axi4s_vid_out_0_underflow] [get_bd_nets v_axi4s_vid_out_0_status] [get_bd_nets v_axi4s_vid_out_0_locked] [get_bd_nets v_axi4s_vid_out_0_overflow] [get_bd_nets v_axi4s_vid_out_0_fifo_read_level] [get_bd_cells ila_1]
+delete_bd_objs [get_bd_nets dvi2rgb_0_aPixelClkLckd] [get_bd_cells ila_0]
+regenerate_bd_layout
+regenerate_bd_layout
+validate_bd_design
+regenerate_bd_layout
+make_wrapper -files [get_files /home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/img_proc.bd] -top
+import_files -force -norecurse /home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/hdl/img_proc_wrapper.vhd
+regenerate_bd_layout
+regenerate_bd_layout
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+delete_bd_objs [get_bd_nets axi_dynclk_0_LOCKED_O] [get_bd_cells ila_2]
+regenerate_bd_layout
+regenerate_bd_layout
+make_wrapper -files [get_files /home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/img_proc.bd] -top
+import_files -force -norecurse /home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/hdl/img_proc_wrapper.vhd
+regenerate_bd_layout
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+regenerate_bd_layout
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:ila:6.2 ila_0
+endgroup
+delete_bd_objs [get_bd_cells ila_0]
+regenerate_bd_layout
+regenerate_bd_layout
+validate_bd_design
+regenerate_bd_layout
+startgroup
+set_property -dict [list CONFIG.kGenerateSerialClk {false}] [get_bd_cells rgb2dvi_0]
+endgroup
+connect_bd_net [get_bd_pins axi_dynclk_0/PXL_CLK_5X_O] [get_bd_pins rgb2dvi_0/SerialClk]
+regenerate_bd_layout
+regenerate_bd_layout
+make_wrapper -files [get_files /home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/img_proc.bd] -top
+import_files -force -norecurse /home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/hdl/img_proc_wrapper.vhd
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:ila:6.2 ila_0
+endgroup
+set_property location {8 2581 672} [get_bd_cells ila_0]
+set_property -dict [list CONFIG.C_NUM_OF_PROBES {2} CONFIG.C_ENABLE_ILA_AXI_MON {false} CONFIG.C_MONITOR_TYPE {Native}] [get_bd_cells ila_0]
+connect_bd_net [get_bd_pins ila_0/clk] [get_bd_pins processing_system7_0/FCLK_CLK0]
+connect_bd_net [get_bd_pins ila_0/probe0] [get_bd_pins axi_dynclk_0/PXL_CLK_O]
+connect_bd_net [get_bd_pins ila_0/probe1] [get_bd_pins axi_dynclk_0/PXL_CLK_5X_O]
+regenerate_bd_layout
+regenerate_bd_layout
+make_wrapper -files [get_files /home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/img_proc.bd] -top
+import_files -force -norecurse /home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/hdl/img_proc_wrapper.vhd
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+disconnect_bd_net /axi_dynclk_0_PXL_CLK_5X_O [get_bd_pins ila_0/probe1]
+startgroup
+set_property -dict [list CONFIG.C_NUM_OF_PROBES {1}] [get_bd_cells ila_0]
+endgroup
+regenerate_bd_layout
+make_wrapper -files [get_files /home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/img_proc.bd] -top
+import_files -force -norecurse /home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/hdl/img_proc_wrapper.vhd
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+set_property PROBES.FILE {/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/impl_1/img_proc_wrapper.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/impl_1/img_proc_wrapper.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/impl_1/img_proc_wrapper.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"img_proc_i/dvi2rgb_0/U0/GenerateDebug.ILA_PixClkx"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"img_proc_i/dvi2rgb_0/U0/GenerateDebug.ILA_RefClkx"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_3 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"img_proc_i/ila_0"}]]
+open_bd_design {/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/img_proc.bd}
+regenerate_bd_layout
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"img_proc_i/ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"img_proc_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"img_proc_i/ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"img_proc_i/ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"img_proc_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"img_proc_i/ila_0"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes img_proc_i/Net1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"img_proc_i/ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"img_proc_i/ila_0"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"img_proc_i/ila_0"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"img_proc_i/ila_0"}]
+open_bd_design {/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/img_proc.bd}
+startgroup
+set_property -dict [list CONFIG.C_NUM_OF_PROBES {2}] [get_bd_cells ila_0]
+endgroup
+connect_bd_net [get_bd_pins ila_0/probe1] [get_bd_pins processing_system7_0/FCLK_CLK0]
+disconnect_bd_net /processing_system7_0_FCLK_CLK0 [get_bd_pins ila_0/probe1]
+regenerate_bd_layout
+connect_bd_net [get_bd_pins ila_0/probe1] [get_bd_pins proc_sys_reset_0/peripheral_aresetn]
+startgroup
+endgroup
+regenerate_bd_layout
+make_wrapper -files [get_files /home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/img_proc.bd] -top
+import_files -force -norecurse /home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/hdl/img_proc_wrapper.vhd
+reset_run synth_1
+reset_run img_proc_ila_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+set_property PROBES.FILE {/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/impl_1/img_proc_wrapper.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/impl_1/img_proc_wrapper.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/impl_1/img_proc_wrapper.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"img_proc_i/dvi2rgb_0/U0/GenerateDebug.ILA_PixClkx"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"img_proc_i/dvi2rgb_0/U0/GenerateDebug.ILA_RefClkx"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_3 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"img_proc_i/ila_0"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes img_proc_i/Net1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"img_proc_i/ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"img_proc_i/ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"img_proc_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"img_proc_i/ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"img_proc_i/ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"img_proc_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"img_proc_i/ila_0"}]]
+open_bd_design {/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/img_proc.bd}
+regenerate_bd_layout
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"img_proc_i/ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"img_proc_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"img_proc_i/ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"img_proc_i/ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"img_proc_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"img_proc_i/ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"img_proc_i/ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"img_proc_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"img_proc_i/ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"img_proc_i/ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"img_proc_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"img_proc_i/ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"img_proc_i/ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"img_proc_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"img_proc_i/ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"img_proc_i/ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"img_proc_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"img_proc_i/ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"img_proc_i/ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"img_proc_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"img_proc_i/ila_0"}]]
+open_bd_design {/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/img_proc.bd}
+regenerate_bd_layout
+create_bd_cell -type hier hdmi_input
+set_property location {2 488 474} [get_bd_cells hdmi_input]
+move_bd_cells [get_bd_cells hdmi_input] [get_bd_cells dvi2rgb_0]
+set_property location {2 667 322} [get_bd_cells v_vid_in_axi4s_0]
+move_bd_cells [get_bd_cells hdmi_input] [get_bd_cells v_vid_in_axi4s_0]
+move_bd_cells [get_bd_cells hdmi_input] [get_bd_cells axis_subset_converter_0]
+create_bd_cell -type hier hdmi_output
+set_property location {6 2272 255} [get_bd_cells hdmi_output]
+set_property name hdmi_decode [get_bd_cells hdmi_input]
+set_property name hdmi_encode [get_bd_cells hdmi_output]
+set_property location {6 2282 337} [get_bd_cells hdmi_encode]
+move_bd_cells [get_bd_cells hdmi_encode] [get_bd_cells rgb2dvi_0]
+move_bd_cells [get_bd_cells hdmi_encode] [get_bd_cells v_axi4s_vid_out_0]
+move_bd_cells [get_bd_cells hdmi_encode] [get_bd_cells xlconstant_1]
+regenerate_bd_layout
+create_bd_cell -type hier vdma
+set_property location {3 1176 468} [get_bd_cells vdma]
+move_bd_cells [get_bd_cells vdma] [get_bd_cells axi_vdma_0]
+move_bd_cells [get_bd_cells vdma] [get_bd_cells axi_interconnect_0]
+move_bd_cells [get_bd_cells vdma] [get_bd_cells axi_interconnect_1]
+move_bd_cells [get_bd_cells vdma] [get_bd_cells v_tc_0]
+move_bd_cells [get_bd_cells vdma] [get_bd_cells v_tc_1]
+regenerate_bd_layout
+regenerate_bd_layout
+delete_bd_objs [get_bd_cells ila_0]
+regenerate_bd_layout
+regenerate_bd_layout
+regenerate_bd_layout
+regenerate_bd_layout -hierarchy [get_bd_cells vdma]
+regenerate_bd_layout
+regenerate_bd_layout
+regenerate_bd_layout
+regenerate_bd_layout
+regenerate_bd_layout
+save_bd_design
+make_wrapper -files [get_files /home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/img_proc.bd] -top
+import_files -force -norecurse /home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/hdl/img_proc_wrapper.vhd
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+set_property PROBES.FILE {/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/impl_1/img_proc_wrapper.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/impl_1/img_proc_wrapper.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/impl_1/img_proc_wrapper.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"img_proc_i/hdmi_decode/dvi2rgb_0/U0/GenerateDebug.ILA_PixClkx"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"img_proc_i/hdmi_decode/dvi2rgb_0/U0/GenerateDebug.ILA_RefClkx"}]]
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {img_proc_i/hdmi_decode/dvi2rgb_0/U0/dbg_pAlignErr} {img_proc_i/hdmi_decode/dvi2rgb_0/U0/dbg_pBitslip} {img_proc_i/hdmi_decode/dvi2rgb_0/U0/dbg_pEyeSize[0]} {img_proc_i/hdmi_decode/dvi2rgb_0/U0/dbg_pEyeSize[1]} {img_proc_i/hdmi_decode/dvi2rgb_0/U0/dbg_pEyeSize[2]} {img_proc_i/hdmi_decode/dvi2rgb_0/U0/pLockLostRst} {img_proc_i/hdmi_decode/dvi2rgb_0/U0/pRdy} {img_proc_i/hdmi_decode/dvi2rgb_0/U0/pVld} }
+add_wave -into {hw_ila_data_2.wcfg} -radix hex { {img_proc_i/hdmi_decode/dvi2rgb_0/U0/dbg_Clocking_aLocked} {img_proc_i/hdmi_decode/dvi2rgb_0/U0/dbg_rBUFR_Rst} {img_proc_i/hdmi_decode/dvi2rgb_0/U0/dbg_rDlyRst} {img_proc_i/hdmi_decode/dvi2rgb_0/U0/dbg_rMMCM_Locked} {img_proc_i/hdmi_decode/dvi2rgb_0/U0/dbg_rMMCM_Reset} {img_proc_i/hdmi_decode/dvi2rgb_0/U0/dbg_rRdyRst} }
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"img_proc_i/hdmi_decode/dvi2rgb_0/U0/GenerateDebug.ILA_PixClkx"}]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"img_proc_i/hdmi_decode/dvi2rgb_0/U0/GenerateDebug.ILA_PixClkx"}]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"img_proc_i/hdmi_decode/dvi2rgb_0/U0/GenerateDebug.ILA_RefClkx"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"img_proc_i/hdmi_decode/dvi2rgb_0/U0/GenerateDebug.ILA_RefClkx"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"img_proc_i/hdmi_decode/dvi2rgb_0/U0/GenerateDebug.ILA_RefClkx"}]]
+open_bd_design {/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/img_proc.bd}
+open_bd_design {/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/img_proc.bd}
+regenerate_bd_layout
+open_bd_design {/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/img_proc.bd}

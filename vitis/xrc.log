@@ -1,0 +1,12 @@
+Thu Nov  7 20:15:11 2019: Server was asked to start on port: '39805'
+Thu Nov  7 20:15:11 2019: Server is using token UUID: '7c83995a-6c5e-47e8-9827-f32218295ee9'
+Thu Nov  7 20:15:11 2019: Attempting to start server on port '39805'
+Thu Nov  7 20:15:11 2019: XRC main fifo: created main fifo '/tmp/xrcmain7c83995a-6c5e-47e8-9827-f32218295ee9', fd read = 11
+Thu Nov  7 20:15:11 2019: Running Rule Check Server
+Thu Nov  7 20:15:11 2019: Version 1.5.1
+Thu Nov  7 20:15:12 2019: Rule Check Server: Accepted socket connection from client
+Thu Nov  7 20:15:14 2019: EXCHANGE_TOKEN received, server token: 7c83995a-6c5e-47e8-9827-f32218295ee9, passed token: 7c83995a-6c5e-47e8-9827-f32218295ee9
+Fri Nov  8 05:01:18 2019: STOP_SERVER received, server token: 7c83995a-6c5e-47e8-9827-f32218295ee9, passed token: 7c83995a-6c5e-47e8-9827-f32218295ee9
+Fri Nov  8 05:01:18 2019: Socket received request to stop server.
+Fri Nov  8 05:01:18 2019: SERVER: destructor for server bound to port 39805
+Fri Nov  8 05:01:18 2019: XRC main fifo: Good unlink of /tmp/xrcmain7c83995a-6c5e-47e8-9827-f32218295ee9

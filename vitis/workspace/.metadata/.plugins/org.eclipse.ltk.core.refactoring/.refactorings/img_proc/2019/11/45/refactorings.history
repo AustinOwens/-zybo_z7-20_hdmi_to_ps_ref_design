@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;img_proc/src/tripple_buf_vdma&apos; to &apos;tripple_buf_vdma.c&apos;" description="Rename resource &apos;tripple_buf_vdma&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/tripple_buf_vdma" name="tripple_buf_vdma.c" stamp="1573191527396" updateReferences="true"/>
+</session>

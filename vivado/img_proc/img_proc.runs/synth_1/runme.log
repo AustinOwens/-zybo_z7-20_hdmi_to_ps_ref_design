@@ -18,9 +18,9 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 18312 
+INFO: Helper process launched with PID 15447 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2053.227 ; gain = 200.684 ; free physical = 17998 ; free virtual = 25957
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2060.293 ; gain = 202.715 ; free physical = 19025 ; free virtual = 25015
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'img_proc_wrapper' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/imports/hdl/img_proc_wrapper.vhd:52]
 INFO: [Synth 8-3491] module 'IOBUF' declared at '/tools/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:36196' bound to instance 'hdmi_in_ddc_scl_iobuf' of component 'IOBUF' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/imports/hdl/img_proc_wrapper.vhd:109]
@@ -31,25 +31,25 @@ INFO: [Synth 8-6157] synthesizing module 'IOBUF' [/tools/Xilinx/Vivado/2019.2/sc
 	Parameter SLEW bound to: SLOW - type: string 
 INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (1#1) [/tools/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:36196]
 INFO: [Synth 8-3491] module 'IOBUF' declared at '/tools/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:36196' bound to instance 'hdmi_in_ddc_sda_iobuf' of component 'IOBUF' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/imports/hdl/img_proc_wrapper.vhd:116]
-INFO: [Synth 8-3491] module 'img_proc' declared at '/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/synth/img_proc.vhd:4805' bound to instance 'img_proc_i' of component 'img_proc' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/imports/hdl/img_proc_wrapper.vhd:123]
-INFO: [Synth 8-638] synthesizing module 'img_proc' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/synth/img_proc.vhd:4851]
-INFO: [Synth 8-3491] module 'img_proc_axi_dynclk_0_0' declared at '/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/synth_1/.Xil/Vivado-18239-austin-ubuntu/realtime/img_proc_axi_dynclk_0_0_stub.vhdl:5' bound to instance 'axi_dynclk_0' of component 'img_proc_axi_dynclk_0_0' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/synth/img_proc.vhd:5282]
-INFO: [Synth 8-638] synthesizing module 'img_proc_axi_dynclk_0_0' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/synth_1/.Xil/Vivado-18239-austin-ubuntu/realtime/img_proc_axi_dynclk_0_0_stub.vhdl:36]
-INFO: [Synth 8-3491] module 'img_proc_axi_gpio_0_0' declared at '/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/synth_1/.Xil/Vivado-18239-austin-ubuntu/realtime/img_proc_axi_gpio_0_0_stub.vhdl:5' bound to instance 'axi_gpio_0' of component 'img_proc_axi_gpio_0_0' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/synth/img_proc.vhd:5310]
-INFO: [Synth 8-638] synthesizing module 'img_proc_axi_gpio_0_0' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/synth_1/.Xil/Vivado-18239-austin-ubuntu/realtime/img_proc_axi_gpio_0_0_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'img_proc' declared at '/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/synth/img_proc.vhd:5166' bound to instance 'img_proc_i' of component 'img_proc' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/imports/hdl/img_proc_wrapper.vhd:123]
+INFO: [Synth 8-638] synthesizing module 'img_proc' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/synth/img_proc.vhd:5212]
+INFO: [Synth 8-3491] module 'img_proc_axi_dynclk_0_0' declared at '/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/synth_1/.Xil/Vivado-15419-austin-ubuntu/realtime/img_proc_axi_dynclk_0_0_stub.vhdl:5' bound to instance 'axi_dynclk_0' of component 'img_proc_axi_dynclk_0_0' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/synth/img_proc.vhd:5642]
+INFO: [Synth 8-638] synthesizing module 'img_proc_axi_dynclk_0_0' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/synth_1/.Xil/Vivado-15419-austin-ubuntu/realtime/img_proc_axi_dynclk_0_0_stub.vhdl:36]
+INFO: [Synth 8-3491] module 'img_proc_axi_gpio_0_0' declared at '/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/synth_1/.Xil/Vivado-15419-austin-ubuntu/realtime/img_proc_axi_gpio_0_0_stub.vhdl:5' bound to instance 'axi_gpio_0' of component 'img_proc_axi_gpio_0_0' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/synth/img_proc.vhd:5670]
+INFO: [Synth 8-638] synthesizing module 'img_proc_axi_gpio_0_0' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/synth_1/.Xil/Vivado-15419-austin-ubuntu/realtime/img_proc_axi_gpio_0_0_stub.vhdl:31]
 INFO: [Synth 8-638] synthesizing module 'hdmi_decode_imp_1TQ02U7' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/synth/img_proc.vhd:42]
-INFO: [Synth 8-3491] module 'img_proc_axis_subset_converter_0_0' declared at '/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/synth_1/.Xil/Vivado-18239-austin-ubuntu/realtime/img_proc_axis_subset_converter_0_0_stub.vhdl:5' bound to instance 'axis_subset_converter_0' of component 'img_proc_axis_subset_converter_0_0' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/synth/img_proc.vhd:179]
-INFO: [Synth 8-638] synthesizing module 'img_proc_axis_subset_converter_0_0' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/synth_1/.Xil/Vivado-18239-austin-ubuntu/realtime/img_proc_axis_subset_converter_0_0_stub.vhdl:23]
-INFO: [Synth 8-3491] module 'img_proc_dvi2rgb_0_0' declared at '/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/synth_1/.Xil/Vivado-18239-austin-ubuntu/realtime/img_proc_dvi2rgb_0_0_stub.vhdl:5' bound to instance 'dvi2rgb_0' of component 'img_proc_dvi2rgb_0_0' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/synth/img_proc.vhd:194]
-INFO: [Synth 8-638] synthesizing module 'img_proc_dvi2rgb_0_0' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/synth_1/.Xil/Vivado-18239-austin-ubuntu/realtime/img_proc_dvi2rgb_0_0_stub.vhdl:31]
-INFO: [Synth 8-3491] module 'img_proc_v_vid_in_axi4s_0_0' declared at '/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/synth_1/.Xil/Vivado-18239-austin-ubuntu/realtime/img_proc_v_vid_in_axi4s_0_0_stub.vhdl:5' bound to instance 'v_vid_in_axi4s_0' of component 'img_proc_v_vid_in_axi4s_0_0' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/synth/img_proc.vhd:217]
-INFO: [Synth 8-638] synthesizing module 'img_proc_v_vid_in_axi4s_0_0' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/synth_1/.Xil/Vivado-18239-austin-ubuntu/realtime/img_proc_v_vid_in_axi4s_0_0_stub.vhdl:39]
+INFO: [Synth 8-3491] module 'img_proc_axis_subset_converter_0_0' declared at '/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/synth_1/.Xil/Vivado-15419-austin-ubuntu/realtime/img_proc_axis_subset_converter_0_0_stub.vhdl:5' bound to instance 'axis_subset_converter_0' of component 'img_proc_axis_subset_converter_0_0' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/synth/img_proc.vhd:179]
+INFO: [Synth 8-638] synthesizing module 'img_proc_axis_subset_converter_0_0' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/synth_1/.Xil/Vivado-15419-austin-ubuntu/realtime/img_proc_axis_subset_converter_0_0_stub.vhdl:23]
+INFO: [Synth 8-3491] module 'img_proc_dvi2rgb_0_0' declared at '/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/synth_1/.Xil/Vivado-15419-austin-ubuntu/realtime/img_proc_dvi2rgb_0_0_stub.vhdl:5' bound to instance 'dvi2rgb_0' of component 'img_proc_dvi2rgb_0_0' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/synth/img_proc.vhd:194]
+INFO: [Synth 8-638] synthesizing module 'img_proc_dvi2rgb_0_0' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/synth_1/.Xil/Vivado-15419-austin-ubuntu/realtime/img_proc_dvi2rgb_0_0_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'img_proc_v_vid_in_axi4s_0_0' declared at '/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/synth_1/.Xil/Vivado-15419-austin-ubuntu/realtime/img_proc_v_vid_in_axi4s_0_0_stub.vhdl:5' bound to instance 'v_vid_in_axi4s_0' of component 'img_proc_v_vid_in_axi4s_0_0' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/synth/img_proc.vhd:217]
+INFO: [Synth 8-638] synthesizing module 'img_proc_v_vid_in_axi4s_0_0' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/synth_1/.Xil/Vivado-15419-austin-ubuntu/realtime/img_proc_v_vid_in_axi4s_0_0_stub.vhdl:39]
 INFO: [Synth 8-256] done synthesizing module 'hdmi_decode_imp_1TQ02U7' (2#1) [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/synth/img_proc.vhd:42]
 INFO: [Synth 8-638] synthesizing module 'hdmi_encode_imp_15N99CA' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/synth/img_proc.vhd:278]
-INFO: [Synth 8-3491] module 'img_proc_rgb2dvi_0_0' declared at '/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/synth_1/.Xil/Vivado-18239-austin-ubuntu/realtime/img_proc_rgb2dvi_0_0_stub.vhdl:5' bound to instance 'rgb2dvi_0' of component 'img_proc_rgb2dvi_0_0' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/synth/img_proc.vhd:389]
-INFO: [Synth 8-638] synthesizing module 'img_proc_rgb2dvi_0_0' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/synth_1/.Xil/Vivado-18239-austin-ubuntu/realtime/img_proc_rgb2dvi_0_0_stub.vhdl:22]
-INFO: [Synth 8-3491] module 'img_proc_v_axi4s_vid_out_0_0' declared at '/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/synth_1/.Xil/Vivado-18239-austin-ubuntu/realtime/img_proc_v_axi4s_vid_out_0_0_stub.vhdl:5' bound to instance 'v_axi4s_vid_out_0' of component 'img_proc_v_axi4s_vid_out_0_0' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/synth/img_proc.vhd:403]
-INFO: [Synth 8-638] synthesizing module 'img_proc_v_axi4s_vid_out_0_0' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/synth_1/.Xil/Vivado-18239-austin-ubuntu/realtime/img_proc_v_axi4s_vid_out_0_0_stub.vhdl:42]
+INFO: [Synth 8-3491] module 'img_proc_rgb2dvi_0_0' declared at '/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/synth_1/.Xil/Vivado-15419-austin-ubuntu/realtime/img_proc_rgb2dvi_0_0_stub.vhdl:5' bound to instance 'rgb2dvi_0' of component 'img_proc_rgb2dvi_0_0' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/synth/img_proc.vhd:389]
+INFO: [Synth 8-638] synthesizing module 'img_proc_rgb2dvi_0_0' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/synth_1/.Xil/Vivado-15419-austin-ubuntu/realtime/img_proc_rgb2dvi_0_0_stub.vhdl:22]
+INFO: [Synth 8-3491] module 'img_proc_v_axi4s_vid_out_0_0' declared at '/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/synth_1/.Xil/Vivado-15419-austin-ubuntu/realtime/img_proc_v_axi4s_vid_out_0_0_stub.vhdl:5' bound to instance 'v_axi4s_vid_out_0' of component 'img_proc_v_axi4s_vid_out_0_0' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/synth/img_proc.vhd:403]
+INFO: [Synth 8-638] synthesizing module 'img_proc_v_axi4s_vid_out_0_0' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/synth_1/.Xil/Vivado-15419-austin-ubuntu/realtime/img_proc_v_axi4s_vid_out_0_0_stub.vhdl:42]
 INFO: [Synth 8-3491] module 'img_proc_xlconstant_0_2' declared at '/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/ip/img_proc_xlconstant_0_2/synth/img_proc_xlconstant_0_2.v:57' bound to instance 'xlconstant_1' of component 'img_proc_xlconstant_0_2' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/synth/img_proc.vhd:437]
 INFO: [Synth 8-6157] synthesizing module 'img_proc_xlconstant_0_2' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/ip/img_proc_xlconstant_0_2/synth/img_proc_xlconstant_0_2.v:57]
 INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_6_xlconstant' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/ipshared/34f7/hdl/xlconstant_v1_1_vl_rfs.v:23]
@@ -58,14 +58,14 @@ INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_6_xlconstant' [/home/a
 INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_6_xlconstant' (3#1) [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/ipshared/34f7/hdl/xlconstant_v1_1_vl_rfs.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'img_proc_xlconstant_0_2' (4#1) [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/ip/img_proc_xlconstant_0_2/synth/img_proc_xlconstant_0_2.v:57]
 INFO: [Synth 8-256] done synthesizing module 'hdmi_encode_imp_15N99CA' (5#1) [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/synth/img_proc.vhd:278]
-INFO: [Synth 8-3491] module 'img_proc_proc_sys_reset_0_0' declared at '/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/synth_1/.Xil/Vivado-18239-austin-ubuntu/realtime/img_proc_proc_sys_reset_0_0_stub.vhdl:5' bound to instance 'proc_sys_reset_0' of component 'img_proc_proc_sys_reset_0_0' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/synth/img_proc.vhd:5382]
-INFO: [Synth 8-638] synthesizing module 'img_proc_proc_sys_reset_0_0' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/synth_1/.Xil/Vivado-18239-austin-ubuntu/realtime/img_proc_proc_sys_reset_0_0_stub.vhdl:21]
-INFO: [Synth 8-3491] module 'img_proc_processing_system7_0_0' declared at '/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/synth_1/.Xil/Vivado-18239-austin-ubuntu/realtime/img_proc_processing_system7_0_0_stub.vhdl:5' bound to instance 'processing_system7_0' of component 'img_proc_processing_system7_0_0' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/synth/img_proc.vhd:5395]
-INFO: [Synth 8-638] synthesizing module 'img_proc_processing_system7_0_0' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/synth_1/.Xil/Vivado-18239-austin-ubuntu/realtime/img_proc_processing_system7_0_0_stub.vhdl:122]
-INFO: [Synth 8-638] synthesizing module 'vdma_imp_QLRT7Y' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/synth/img_proc.vhd:3856]
-INFO: [Synth 8-3491] module 'img_proc_axi_gpio_0_1' declared at '/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/synth_1/.Xil/Vivado-18239-austin-ubuntu/realtime/img_proc_axi_gpio_0_1_stub.vhdl:5' bound to instance 'axi_gpio_1' of component 'img_proc_axi_gpio_0_1' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/synth/img_proc.vhd:4401]
-INFO: [Synth 8-638] synthesizing module 'img_proc_axi_gpio_0_1' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/synth_1/.Xil/Vivado-18239-austin-ubuntu/realtime/img_proc_axi_gpio_0_1_stub.vhdl:31]
-INFO: [Synth 8-638] synthesizing module 'img_proc_axi_interconnect_0_1' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/synth/img_proc.vhd:2128]
+INFO: [Synth 8-3491] module 'img_proc_proc_sys_reset_0_0' declared at '/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/synth_1/.Xil/Vivado-15419-austin-ubuntu/realtime/img_proc_proc_sys_reset_0_0_stub.vhdl:5' bound to instance 'proc_sys_reset_0' of component 'img_proc_proc_sys_reset_0_0' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/synth/img_proc.vhd:5742]
+INFO: [Synth 8-638] synthesizing module 'img_proc_proc_sys_reset_0_0' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/synth_1/.Xil/Vivado-15419-austin-ubuntu/realtime/img_proc_proc_sys_reset_0_0_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'img_proc_processing_system7_0_0' declared at '/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/synth_1/.Xil/Vivado-15419-austin-ubuntu/realtime/img_proc_processing_system7_0_0_stub.vhdl:5' bound to instance 'processing_system7_0' of component 'img_proc_processing_system7_0_0' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/synth/img_proc.vhd:5755]
+INFO: [Synth 8-638] synthesizing module 'img_proc_processing_system7_0_0' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/synth_1/.Xil/Vivado-15419-austin-ubuntu/realtime/img_proc_processing_system7_0_0_stub.vhdl:122]
+INFO: [Synth 8-638] synthesizing module 'vdma_imp_QLRT7Y' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/synth/img_proc.vhd:4084]
+INFO: [Synth 8-3491] module 'img_proc_axi_gpio_0_1' declared at '/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/synth_1/.Xil/Vivado-15419-austin-ubuntu/realtime/img_proc_axi_gpio_0_1_stub.vhdl:5' bound to instance 'axi_gpio_1' of component 'img_proc_axi_gpio_0_1' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/synth/img_proc.vhd:4696]
+INFO: [Synth 8-638] synthesizing module 'img_proc_axi_gpio_0_1' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/synth_1/.Xil/Vivado-15419-austin-ubuntu/realtime/img_proc_axi_gpio_0_1_stub.vhdl:31]
+INFO: [Synth 8-638] synthesizing module 'img_proc_axi_interconnect_0_1' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/synth/img_proc.vhd:2248]
 INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_74RAVT' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/synth/img_proc.vhd:903]
 INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_74RAVT' (6#1) [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/synth/img_proc.vhd:903]
 INFO: [Synth 8-638] synthesizing module 'm01_couplers_imp_1WI8DO8' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/synth/img_proc.vhd:1001]
@@ -78,37 +78,43 @@ INFO: [Synth 8-638] synthesizing module 'm04_couplers_imp_50X1B3' [/home/austin/
 INFO: [Synth 8-256] done synthesizing module 'm04_couplers_imp_50X1B3' (10#1) [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/synth/img_proc.vhd:1314]
 INFO: [Synth 8-638] synthesizing module 'm05_couplers_imp_1YA6WXQ' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/synth/img_proc.vhd:1415]
 INFO: [Synth 8-256] done synthesizing module 'm05_couplers_imp_1YA6WXQ' (11#1) [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/synth/img_proc.vhd:1415]
-INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_1QAVOGR' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/synth/img_proc.vhd:1539]
-INFO: [Synth 8-3491] module 'img_proc_auto_pc_0' declared at '/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/synth_1/.Xil/Vivado-18239-austin-ubuntu/realtime/img_proc_auto_pc_0_stub.vhdl:5' bound to instance 'auto_pc' of component 'img_proc_auto_pc_0' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/synth/img_proc.vhd:1722]
-INFO: [Synth 8-638] synthesizing module 'img_proc_auto_pc_0' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/synth_1/.Xil/Vivado-18239-austin-ubuntu/realtime/img_proc_auto_pc_0_stub.vhdl:70]
-INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_1QAVOGR' (12#1) [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/synth/img_proc.vhd:1539]
-INFO: [Synth 8-3491] module 'img_proc_xbar_2' declared at '/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/synth_1/.Xil/Vivado-18239-austin-ubuntu/realtime/img_proc_xbar_2_stub.vhdl:5' bound to instance 'xbar' of component 'img_proc_xbar_2' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/synth/img_proc.vhd:2925]
-INFO: [Synth 8-638] synthesizing module 'img_proc_xbar_2' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/synth_1/.Xil/Vivado-18239-austin-ubuntu/realtime/img_proc_xbar_2_stub.vhdl:51]
-INFO: [Synth 8-256] done synthesizing module 'img_proc_axi_interconnect_0_1' (13#1) [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/synth/img_proc.vhd:2128]
-INFO: [Synth 8-638] synthesizing module 'img_proc_axi_interconnect_1_0' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/synth/img_proc.vhd:3142]
+INFO: [Synth 8-638] synthesizing module 'm06_couplers_imp_6LKR4S' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/synth/img_proc.vhd:1516]
+INFO: [Synth 8-256] done synthesizing module 'm06_couplers_imp_6LKR4S' (12#1) [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/synth/img_proc.vhd:1516]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_1QAVOGR' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/synth/img_proc.vhd:1640]
+INFO: [Synth 8-3491] module 'img_proc_auto_pc_0' declared at '/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/synth_1/.Xil/Vivado-15419-austin-ubuntu/realtime/img_proc_auto_pc_0_stub.vhdl:5' bound to instance 'auto_pc' of component 'img_proc_auto_pc_0' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/synth/img_proc.vhd:1823]
+INFO: [Synth 8-638] synthesizing module 'img_proc_auto_pc_0' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/synth_1/.Xil/Vivado-15419-austin-ubuntu/realtime/img_proc_auto_pc_0_stub.vhdl:70]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_1QAVOGR' (13#1) [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/synth/img_proc.vhd:1640]
+INFO: [Synth 8-3491] module 'img_proc_xbar_2' declared at '/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/synth_1/.Xil/Vivado-15419-austin-ubuntu/realtime/img_proc_xbar_2_stub.vhdl:5' bound to instance 'xbar' of component 'img_proc_xbar_2' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/synth/img_proc.vhd:3141]
+INFO: [Synth 8-638] synthesizing module 'img_proc_xbar_2' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/synth_1/.Xil/Vivado-15419-austin-ubuntu/realtime/img_proc_xbar_2_stub.vhdl:51]
+INFO: [Synth 8-256] done synthesizing module 'img_proc_axi_interconnect_0_1' (14#1) [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/synth/img_proc.vhd:2248]
+INFO: [Synth 8-638] synthesizing module 'img_proc_axi_interconnect_1_0' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/synth/img_proc.vhd:3375]
 INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_41XI55' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/synth/img_proc.vhd:532]
-INFO: [Synth 8-3491] module 'img_proc_auto_pc_1' declared at '/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/synth_1/.Xil/Vivado-18239-austin-ubuntu/realtime/img_proc_auto_pc_1_stub.vhdl:5' bound to instance 'auto_pc' of component 'img_proc_auto_pc_1' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/synth/img_proc.vhd:775]
-INFO: [Synth 8-638] synthesizing module 'img_proc_auto_pc_1' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/synth_1/.Xil/Vivado-18239-austin-ubuntu/realtime/img_proc_auto_pc_1_stub.vhdl:90]
-INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_41XI55' (14#1) [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/synth/img_proc.vhd:532]
-INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_1WPKK0R' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/synth/img_proc.vhd:1824]
-INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_1WPKK0R' (15#1) [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/synth/img_proc.vhd:1824]
-INFO: [Synth 8-638] synthesizing module 's01_couplers_imp_6X3VZU' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/synth/img_proc.vhd:1911]
-INFO: [Synth 8-256] done synthesizing module 's01_couplers_imp_6X3VZU' (16#1) [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/synth/img_proc.vhd:1911]
-INFO: [Synth 8-3491] module 'img_proc_xbar_3' declared at '/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/synth_1/.Xil/Vivado-18239-austin-ubuntu/realtime/img_proc_xbar_3_stub.vhdl:5' bound to instance 'xbar' of component 'img_proc_xbar_3' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/synth/img_proc.vhd:3599]
-INFO: [Synth 8-638] synthesizing module 'img_proc_xbar_3' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/synth_1/.Xil/Vivado-18239-austin-ubuntu/realtime/img_proc_xbar_3_stub.vhdl:89]
-INFO: [Synth 8-256] done synthesizing module 'img_proc_axi_interconnect_1_0' (17#1) [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/synth/img_proc.vhd:3142]
-INFO: [Synth 8-3491] module 'img_proc_axi_vdma_0_0' declared at '/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/synth_1/.Xil/Vivado-18239-austin-ubuntu/realtime/img_proc_axi_vdma_0_0_stub.vhdl:5' bound to instance 'axi_vdma_0' of component 'img_proc_axi_vdma_0_0' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/synth/img_proc.vhd:4662]
-INFO: [Synth 8-638] synthesizing module 'img_proc_axi_vdma_0_0' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/synth_1/.Xil/Vivado-18239-austin-ubuntu/realtime/img_proc_axi_vdma_0_0_stub.vhdl:78]
-INFO: [Synth 8-3491] module 'img_proc_v_tc_0_0' declared at '/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/synth_1/.Xil/Vivado-18239-austin-ubuntu/realtime/img_proc_v_tc_0_0_stub.vhdl:5' bound to instance 'v_tc_0' of component 'img_proc_v_tc_0_0' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/synth/img_proc.vhd:4732]
-INFO: [Synth 8-638] synthesizing module 'img_proc_v_tc_0_0' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/synth_1/.Xil/Vivado-18239-austin-ubuntu/realtime/img_proc_v_tc_0_0_stub.vhdl:41]
-INFO: [Synth 8-3491] module 'img_proc_v_tc_0_1' declared at '/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/synth_1/.Xil/Vivado-18239-austin-ubuntu/realtime/img_proc_v_tc_0_1_stub.vhdl:5' bound to instance 'v_tc_1' of component 'img_proc_v_tc_0_1' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/synth/img_proc.vhd:4765]
-INFO: [Synth 8-638] synthesizing module 'img_proc_v_tc_0_1' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/synth_1/.Xil/Vivado-18239-austin-ubuntu/realtime/img_proc_v_tc_0_1_stub.vhdl:43]
-INFO: [Synth 8-256] done synthesizing module 'vdma_imp_QLRT7Y' (18#1) [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/synth/img_proc.vhd:3856]
-INFO: [Synth 8-3491] module 'img_proc_xlconstant_0_1' declared at '/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/ip/img_proc_xlconstant_0_1/synth/img_proc_xlconstant_0_1.v:57' bound to instance 'xlconstant_0' of component 'img_proc_xlconstant_0_1' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/synth/img_proc.vhd:5652]
+INFO: [Synth 8-3491] module 'img_proc_auto_pc_1' declared at '/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/synth_1/.Xil/Vivado-15419-austin-ubuntu/realtime/img_proc_auto_pc_1_stub.vhdl:5' bound to instance 'auto_pc' of component 'img_proc_auto_pc_1' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/synth/img_proc.vhd:775]
+INFO: [Synth 8-638] synthesizing module 'img_proc_auto_pc_1' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/synth_1/.Xil/Vivado-15419-austin-ubuntu/realtime/img_proc_auto_pc_1_stub.vhdl:90]
+INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_41XI55' (15#1) [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/synth/img_proc.vhd:532]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_1WPKK0R' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/synth/img_proc.vhd:1925]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_1WPKK0R' (16#1) [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/synth/img_proc.vhd:1925]
+INFO: [Synth 8-638] synthesizing module 's01_couplers_imp_6X3VZU' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/synth/img_proc.vhd:2012]
+INFO: [Synth 8-256] done synthesizing module 's01_couplers_imp_6X3VZU' (17#1) [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/synth/img_proc.vhd:2012]
+INFO: [Synth 8-3491] module 'img_proc_xbar_3' declared at '/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/synth_1/.Xil/Vivado-15419-austin-ubuntu/realtime/img_proc_xbar_3_stub.vhdl:5' bound to instance 'xbar' of component 'img_proc_xbar_3' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/synth/img_proc.vhd:3832]
+INFO: [Synth 8-638] synthesizing module 'img_proc_xbar_3' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/synth_1/.Xil/Vivado-15419-austin-ubuntu/realtime/img_proc_xbar_3_stub.vhdl:89]
+INFO: [Synth 8-256] done synthesizing module 'img_proc_axi_interconnect_1_0' (18#1) [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/synth/img_proc.vhd:3375]
+INFO: [Synth 8-3491] module 'img_proc_axi_vdma_0_0' declared at '/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/synth_1/.Xil/Vivado-15419-austin-ubuntu/realtime/img_proc_axi_vdma_0_0_stub.vhdl:5' bound to instance 'axi_vdma_0' of component 'img_proc_axi_vdma_0_0' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/synth/img_proc.vhd:4976]
+INFO: [Synth 8-638] synthesizing module 'img_proc_axi_vdma_0_0' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/synth_1/.Xil/Vivado-15419-austin-ubuntu/realtime/img_proc_axi_vdma_0_0_stub.vhdl:78]
+INFO: [Synth 8-3491] module 'img_proc_ila_0_0' declared at '/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/synth_1/.Xil/Vivado-15419-austin-ubuntu/realtime/img_proc_ila_0_0_stub.vhdl:5' bound to instance 'ila_0' of component 'img_proc_ila_0_0' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/synth/img_proc.vhd:5046]
+INFO: [Synth 8-638] synthesizing module 'img_proc_ila_0_0' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/synth_1/.Xil/Vivado-15419-austin-ubuntu/realtime/img_proc_ila_0_0_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'img_proc_v_tc_0_0' declared at '/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/synth_1/.Xil/Vivado-15419-austin-ubuntu/realtime/img_proc_v_tc_0_0_stub.vhdl:5' bound to instance 'v_tc_0' of component 'img_proc_v_tc_0_0' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/synth/img_proc.vhd:5059]
+INFO: [Synth 8-638] synthesizing module 'img_proc_v_tc_0_0' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/synth_1/.Xil/Vivado-15419-austin-ubuntu/realtime/img_proc_v_tc_0_0_stub.vhdl:41]
+INFO: [Synth 8-3491] module 'img_proc_v_tc_0_1' declared at '/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/synth_1/.Xil/Vivado-15419-austin-ubuntu/realtime/img_proc_v_tc_0_1_stub.vhdl:5' bound to instance 'v_tc_1' of component 'img_proc_v_tc_0_1' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/synth/img_proc.vhd:5092]
+INFO: [Synth 8-638] synthesizing module 'img_proc_v_tc_0_1' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/synth_1/.Xil/Vivado-15419-austin-ubuntu/realtime/img_proc_v_tc_0_1_stub.vhdl:43]
+INFO: [Synth 8-3491] module 'img_proc_v_tpg_0_0' declared at '/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/synth_1/.Xil/Vivado-15419-austin-ubuntu/realtime/img_proc_v_tpg_0_0_stub.vhdl:5' bound to instance 'v_tpg_0' of component 'img_proc_v_tpg_0_0' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/synth/img_proc.vhd:5127]
+INFO: [Synth 8-638] synthesizing module 'img_proc_v_tpg_0_0' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/synth_1/.Xil/Vivado-15419-austin-ubuntu/realtime/img_proc_v_tpg_0_0_stub.vhdl:42]
+INFO: [Synth 8-256] done synthesizing module 'vdma_imp_QLRT7Y' (19#1) [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/synth/img_proc.vhd:4084]
+INFO: [Synth 8-3491] module 'img_proc_xlconstant_0_1' declared at '/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/ip/img_proc_xlconstant_0_1/synth/img_proc_xlconstant_0_1.v:57' bound to instance 'xlconstant_0' of component 'img_proc_xlconstant_0_1' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/synth/img_proc.vhd:6007]
 INFO: [Synth 8-6157] synthesizing module 'img_proc_xlconstant_0_1' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/ip/img_proc_xlconstant_0_1/synth/img_proc_xlconstant_0_1.v:57]
-INFO: [Synth 8-6155] done synthesizing module 'img_proc_xlconstant_0_1' (19#1) [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/ip/img_proc_xlconstant_0_1/synth/img_proc_xlconstant_0_1.v:57]
-INFO: [Synth 8-256] done synthesizing module 'img_proc' (20#1) [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/synth/img_proc.vhd:4851]
-INFO: [Synth 8-256] done synthesizing module 'img_proc_wrapper' (21#1) [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/imports/hdl/img_proc_wrapper.vhd:52]
+INFO: [Synth 8-6155] done synthesizing module 'img_proc_xlconstant_0_1' (20#1) [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/ip/img_proc_xlconstant_0_1/synth/img_proc_xlconstant_0_1.v:57]
+INFO: [Synth 8-256] done synthesizing module 'img_proc' (21#1) [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/synth/img_proc.vhd:5212]
+INFO: [Synth 8-256] done synthesizing module 'img_proc_wrapper' (22#1) [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/imports/hdl/img_proc_wrapper.vhd:52]
 WARNING: [Synth 8-3331] design s01_couplers_imp_6X3VZU has unconnected port M_ACLK
 WARNING: [Synth 8-3331] design s01_couplers_imp_6X3VZU has unconnected port M_ARESETN
 WARNING: [Synth 8-3331] design s01_couplers_imp_6X3VZU has unconnected port S_ACLK
@@ -137,6 +143,10 @@ WARNING: [Synth 8-3331] design img_proc_axi_interconnect_1_0 has unconnected por
 WARNING: [Synth 8-3331] design img_proc_axi_interconnect_1_0 has unconnected port S01_ARESETN
 WARNING: [Synth 8-3331] design s00_couplers_imp_1QAVOGR has unconnected port M_ACLK
 WARNING: [Synth 8-3331] design s00_couplers_imp_1QAVOGR has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m06_couplers_imp_6LKR4S has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m06_couplers_imp_6LKR4S has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m06_couplers_imp_6LKR4S has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m06_couplers_imp_6LKR4S has unconnected port S_ARESETN
 WARNING: [Synth 8-3331] design m05_couplers_imp_1YA6WXQ has unconnected port M_ACLK
 WARNING: [Synth 8-3331] design m05_couplers_imp_1YA6WXQ has unconnected port M_ARESETN
 WARNING: [Synth 8-3331] design m05_couplers_imp_1YA6WXQ has unconnected port S_ACLK
@@ -162,7 +172,7 @@ WARNING: [Synth 8-3331] design m00_couplers_imp_74RAVT has unconnected port M_AR
 WARNING: [Synth 8-3331] design m00_couplers_imp_74RAVT has unconnected port S_ACLK
 WARNING: [Synth 8-3331] design m00_couplers_imp_74RAVT has unconnected port S_ARESETN
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2125.945 ; gain = 273.402 ; free physical = 18024 ; free virtual = 25984
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2133.012 ; gain = 275.434 ; free physical = 19051 ; free virtual = 25042
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -175,12 +185,12 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2128.914 ; gain = 276.371 ; free physical = 18024 ; free virtual = 25984
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2135.980 ; gain = 278.402 ; free physical = 19048 ; free virtual = 25039
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2128.914 ; gain = 276.371 ; free physical = 18024 ; free virtual = 25984
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2135.980 ; gain = 278.402 ; free physical = 19048 ; free virtual = 25039
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2134.852 ; gain = 0.000 ; free physical = 18016 ; free virtual = 25976
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2144.887 ; gain = 0.000 ; free physical = 19040 ; free virtual = 25030
 INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -217,10 +227,14 @@ Parsing XDC File [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_pr
 Finished Parsing XDC File [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/ip/img_proc_axi_dynclk_0_0/img_proc_axi_dynclk_0_0/img_proc_axi_dynclk_0_0_in_context.xdc] for cell 'img_proc_i/axi_dynclk_0'
 Parsing XDC File [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/ip/img_proc_axi_gpio_0_1/img_proc_axi_gpio_0_1/img_proc_axi_gpio_0_1_in_context.xdc] for cell 'img_proc_i/vdma/axi_gpio_1'
 Finished Parsing XDC File [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/ip/img_proc_axi_gpio_0_1/img_proc_axi_gpio_0_1/img_proc_axi_gpio_0_1_in_context.xdc] for cell 'img_proc_i/vdma/axi_gpio_1'
+Parsing XDC File [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/ip/img_proc_v_tpg_0_0/img_proc_v_tpg_0_0/img_proc_v_tpg_0_2_in_context.xdc] for cell 'img_proc_i/vdma/v_tpg_0'
+Finished Parsing XDC File [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/ip/img_proc_v_tpg_0_0/img_proc_v_tpg_0_0/img_proc_v_tpg_0_2_in_context.xdc] for cell 'img_proc_i/vdma/v_tpg_0'
+Parsing XDC File [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/ip/img_proc_ila_0_0/img_proc_ila_0_0/img_proc_ila_0_0_in_context.xdc] for cell 'img_proc_i/vdma/ila_0'
+Finished Parsing XDC File [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/ip/img_proc_ila_0_0/img_proc_ila_0_0/img_proc_ila_0_0_in_context.xdc] for cell 'img_proc_i/vdma/ila_0'
 Parsing XDC File [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/ip/img_proc_auto_pc_0/img_proc_auto_pc_0/img_proc_auto_pc_0_in_context.xdc] for cell 'img_proc_i/vdma/axi_interconnect_0/s00_couplers/auto_pc'
 Finished Parsing XDC File [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/ip/img_proc_auto_pc_0/img_proc_auto_pc_0/img_proc_auto_pc_0_in_context.xdc] for cell 'img_proc_i/vdma/axi_interconnect_0/s00_couplers/auto_pc'
-Parsing XDC File [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/ip/img_proc_auto_pc_1/img_proc_auto_pc_1/img_proc_auto_pc_6_in_context.xdc] for cell 'img_proc_i/vdma/axi_interconnect_1/m00_couplers/auto_pc'
-Finished Parsing XDC File [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/ip/img_proc_auto_pc_1/img_proc_auto_pc_1/img_proc_auto_pc_6_in_context.xdc] for cell 'img_proc_i/vdma/axi_interconnect_1/m00_couplers/auto_pc'
+Parsing XDC File [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/ip/img_proc_auto_pc_1/img_proc_auto_pc_1/img_proc_auto_pc_1_in_context.xdc] for cell 'img_proc_i/vdma/axi_interconnect_1/m00_couplers/auto_pc'
+Finished Parsing XDC File [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/ip/img_proc_auto_pc_1/img_proc_auto_pc_1/img_proc_auto_pc_1_in_context.xdc] for cell 'img_proc_i/vdma/axi_interconnect_1/m00_couplers/auto_pc'
 Parsing XDC File [/home/austin/Desktop/projects/zybo/zybo_img_proc/vhdl/Zybo-Z7-Master.xdc]
 Finished Parsing XDC File [/home/austin/Desktop/projects/zybo/zybo_img_proc/vhdl/Zybo-Z7-Master.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/austin/Desktop/projects/zybo/zybo_img_proc/vhdl/Zybo-Z7-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/img_proc_wrapper_propImpl.xdc].
@@ -229,12 +243,12 @@ Parsing XDC File [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_pr
 Finished Parsing XDC File [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2252.664 ; gain = 0.000 ; free physical = 17927 ; free virtual = 25886
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2260.730 ; gain = 0.000 ; free physical = 18950 ; free virtual = 24942
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 2 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 2 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2252.664 ; gain = 0.000 ; free physical = 17927 ; free virtual = 25886
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2260.730 ; gain = 0.000 ; free physical = 18950 ; free virtual = 24942
 WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'img_proc_i/axi_gpio_0' at clock pin 's_axi_aclk' is different from the actual clock period '5.000', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'img_proc_i/hdmi_decode/v_vid_in_axi4s_0' at clock pin 'vid_io_in_clk' is different from the actual clock period '6.060', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '6.060' specified during out-of-context synthesis of instance 'img_proc_i/hdmi_encode/rgb2dvi_0' at clock pin 'PixelClk' is different from the actual clock period '5.000', this can lead to different synthesis results.
@@ -244,14 +258,14 @@ WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context s
 WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'img_proc_i/vdma/v_tc_0' at clock pin 'clk' is different from the actual clock period '6.060', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'img_proc_i/vdma/v_tc_1' at clock pin 'clk' is different from the actual clock period '5.000', this can lead to different synthesis results.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2255.633 ; gain = 403.090 ; free physical = 18000 ; free virtual = 25962
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 2263.699 ; gain = 406.121 ; free physical = 19025 ; free virtual = 25017
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2255.633 ; gain = 403.090 ; free physical = 18000 ; free virtual = 25962
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 2263.699 ; gain = 406.121 ; free physical = 19025 ; free virtual = 25017
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -568,13 +582,15 @@ Applied set_property DONT_TOUCH = true for img_proc_i/axi_dynclk_0. (constraint 
 Applied set_property DONT_TOUCH = true for img_proc_i/xlconstant_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for img_proc_i/hdmi_encode/xlconstant_1. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for img_proc_i/vdma/axi_gpio_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for img_proc_i/vdma/v_tpg_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for img_proc_i/vdma/ila_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for img_proc_i/vdma/axi_interconnect_0/s00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for img_proc_i/vdma/axi_interconnect_1/m00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 2255.633 ; gain = 403.090 ; free physical = 18000 ; free virtual = 25962
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 2263.699 ; gain = 406.121 ; free physical = 19025 ; free virtual = 25017
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 2255.633 ; gain = 403.090 ; free physical = 17998 ; free virtual = 25961
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 2263.699 ; gain = 406.121 ; free physical = 19026 ; free virtual = 25019
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -637,8 +653,10 @@ WARNING: [Synth 8-3331] design img_proc_axi_interconnect_0_1 has unconnected por
 WARNING: [Synth 8-3331] design img_proc_axi_interconnect_0_1 has unconnected port M04_ARESETN
 WARNING: [Synth 8-3331] design img_proc_axi_interconnect_0_1 has unconnected port M05_ACLK
 WARNING: [Synth 8-3331] design img_proc_axi_interconnect_0_1 has unconnected port M05_ARESETN
+WARNING: [Synth 8-3331] design img_proc_axi_interconnect_0_1 has unconnected port M06_ACLK
+WARNING: [Synth 8-3331] design img_proc_axi_interconnect_0_1 has unconnected port M06_ARESETN
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2255.633 ; gain = 403.090 ; free physical = 17995 ; free virtual = 25961
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 2263.699 ; gain = 406.121 ; free physical = 19022 ; free virtual = 25019
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -650,13 +668,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 2255.633 ; gain = 403.090 ; free physical = 17847 ; free virtual = 25827
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 2263.699 ; gain = 406.121 ; free physical = 18901 ; free virtual = 24898
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 2255.633 ; gain = 403.090 ; free physical = 17847 ; free virtual = 25827
+Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 2263.699 ; gain = 406.121 ; free physical = 18901 ; free virtual = 24898
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -668,7 +686,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 2255.633 ; gain = 403.090 ; free physical = 17845 ; free virtual = 25824
+Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 2263.699 ; gain = 406.121 ; free physical = 18898 ; free virtual = 24895
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -692,13 +710,13 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 2255.633 ; gain = 403.090 ; free physical = 17844 ; free virtual = 25824
+Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 2263.699 ; gain = 406.121 ; free physical = 18898 ; free virtual = 24895
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 2255.633 ; gain = 403.090 ; free physical = 17844 ; free virtual = 25824
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 2263.699 ; gain = 406.121 ; free physical = 18898 ; free virtual = 24895
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -717,25 +735,25 @@ Report Check Netlist:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 2255.633 ; gain = 403.090 ; free physical = 17844 ; free virtual = 25824
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 2263.699 ; gain = 406.121 ; free physical = 18898 ; free virtual = 24895
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 2255.633 ; gain = 403.090 ; free physical = 17844 ; free virtual = 25824
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 2263.699 ; gain = 406.121 ; free physical = 18898 ; free virtual = 24895
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 2255.633 ; gain = 403.090 ; free physical = 17844 ; free virtual = 25824
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 2263.699 ; gain = 406.121 ; free physical = 18898 ; free virtual = 24895
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 2255.633 ; gain = 403.090 ; free physical = 17844 ; free virtual = 25824
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 2263.699 ; gain = 406.121 ; free physical = 18898 ; free virtual = 24895
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -760,8 +778,10 @@ Report BlackBoxes:
 |13    |img_proc_auto_pc_1                 |         1|
 |14    |img_proc_axi_gpio_0_1              |         1|
 |15    |img_proc_axi_vdma_0_0              |         1|
-|16    |img_proc_v_tc_0_0                  |         1|
-|17    |img_proc_v_tc_0_1                  |         1|
+|16    |img_proc_ila_0_0                   |         1|
+|17    |img_proc_v_tc_0_0                  |         1|
+|18    |img_proc_v_tc_0_1                  |         1|
+|19    |img_proc_v_tpg_0_0                 |         1|
 +------+-----------------------------------+----------+
 
 Report Cell Usage: 
@@ -776,59 +796,63 @@ Report Cell Usage:
 |6     |img_proc_axi_vdma_0_0_bbox_14             |     1|
 |7     |img_proc_axis_subset_converter_0_0_bbox_2 |     1|
 |8     |img_proc_dvi2rgb_0_0_bbox_3               |     1|
-|9     |img_proc_proc_sys_reset_0_0_bbox_7        |     1|
-|10    |img_proc_processing_system7_0_0_bbox_8    |     1|
-|11    |img_proc_rgb2dvi_0_0_bbox_5               |     1|
-|12    |img_proc_v_axi4s_vid_out_0_0_bbox_6       |     1|
-|13    |img_proc_v_tc_0_0_bbox_15                 |     1|
-|14    |img_proc_v_tc_0_1_bbox_16                 |     1|
-|15    |img_proc_v_vid_in_axi4s_0_0_bbox_4        |     1|
-|16    |img_proc_xbar_2_bbox_11                   |     1|
-|17    |img_proc_xbar_3_bbox_13                   |     1|
-|18    |IOBUF                                     |     2|
-|19    |OBUF                                      |     5|
+|9     |img_proc_ila_0_0_bbox_15                  |     1|
+|10    |img_proc_proc_sys_reset_0_0_bbox_7        |     1|
+|11    |img_proc_processing_system7_0_0_bbox_8    |     1|
+|12    |img_proc_rgb2dvi_0_0_bbox_5               |     1|
+|13    |img_proc_v_axi4s_vid_out_0_0_bbox_6       |     1|
+|14    |img_proc_v_tc_0_0_bbox_16                 |     1|
+|15    |img_proc_v_tc_0_1_bbox_17                 |     1|
+|16    |img_proc_v_tpg_0_0_bbox_18                |     1|
+|17    |img_proc_v_vid_in_axi4s_0_0_bbox_4        |     1|
+|18    |img_proc_xbar_2_bbox_11                   |     1|
+|19    |img_proc_xbar_3_bbox_13                   |     1|
+|20    |IOBUF                                     |     2|
+|21    |OBUF                                      |     5|
 +------+------------------------------------------+------+
 
 Report Instance Areas: 
 +------+-------------------------+------------------------------+------+
 |      |Instance                 |Module                        |Cells |
 +------+-------------------------+------------------------------+------+
-|1     |top                      |                              |  2491|
-|2     |  img_proc_i             |img_proc                      |  2484|
+|1     |top                      |                              |  2680|
+|2     |  img_proc_i             |img_proc                      |  2673|
 |3     |    xlconstant_0         |img_proc_xlconstant_0_1       |     0|
 |4     |    hdmi_decode          |hdmi_decode_imp_1TQ02U7       |    98|
 |5     |    hdmi_encode          |hdmi_encode_imp_15N99CA       |    86|
 |6     |      xlconstant_1       |img_proc_xlconstant_0_2       |     0|
-|7     |    vdma                 |vdma_imp_QLRT7Y               |  1906|
-|8     |      axi_interconnect_0 |img_proc_axi_interconnect_0_1 |   884|
+|7     |    vdma                 |vdma_imp_QLRT7Y               |  2095|
+|8     |      axi_interconnect_0 |img_proc_axi_interconnect_0_1 |   995|
 |9     |        s00_couplers     |s00_couplers_imp_1QAVOGR      |   177|
 |10    |      axi_interconnect_1 |img_proc_axi_interconnect_1_0 |   619|
 |11    |        m00_couplers     |m00_couplers_imp_41XI55       |   265|
 +------+-------------------------+------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 2255.633 ; gain = 403.090 ; free physical = 17844 ; free virtual = 25824
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 2263.699 ; gain = 406.121 ; free physical = 18898 ; free virtual = 24895
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 28 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 2255.633 ; gain = 276.371 ; free physical = 17902 ; free virtual = 25882
-Synthesis Optimization Complete : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 2255.633 ; gain = 403.090 ; free physical = 17902 ; free virtual = 25882
+Synthesis finished with 0 errors, 0 critical warnings and 30 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 2263.699 ; gain = 278.402 ; free physical = 18956 ; free virtual = 24952
+Synthesis Optimization Complete : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 2263.699 ; gain = 406.121 ; free physical = 18956 ; free virtual = 24952
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2255.633 ; gain = 0.000 ; free physical = 17971 ; free virtual = 25951
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2263.699 ; gain = 0.000 ; free physical = 19023 ; free virtual = 25020
 INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2255.633 ; gain = 0.000 ; free physical = 17910 ; free virtual = 25889
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2263.699 ; gain = 0.000 ; free physical = 18962 ; free virtual = 24959
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 2 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 2 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-98 Infos, 88 Warnings, 0 Critical Warnings and 0 Errors encountered.
+104 Infos, 94 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:27 . Memory (MB): peak = 2255.633 ; gain = 672.500 ; free physical = 18034 ; free virtual = 26014
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2255.633 ; gain = 0.000 ; free physical = 18034 ; free virtual = 26014
+synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:27 . Memory (MB): peak = 2263.699 ; gain = 657.656 ; free physical = 19084 ; free virtual = 25081
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.collectionResultDisplayLimit
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2263.699 ; gain = 0.000 ; free physical = 19084 ; free virtual = 25081
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint '/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/synth_1/img_proc_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file img_proc_wrapper_utilization_synth.rpt -pb img_proc_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Nov  6 00:20:23 2019...
+INFO: [Common 17-206] Exiting Vivado at Sat Nov  9 23:59:59 2019...
