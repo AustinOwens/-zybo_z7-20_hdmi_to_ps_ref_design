@@ -1,10 +1,10 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.2 (lin64) Build 2700185 Thu Oct 24 18:45:48 MDT 2019
--- Date        : Thu Nov  7 23:49:29 2019
+-- Date        : Sun Nov  3 22:07:23 2019
 -- Host        : austin-ubuntu running 64-bit Ubuntu 18.04.3 LTS
--- Command     : write_vhdl -force -mode funcsim
---               /home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/ip/img_proc_v_vid_in_axi4s_0_0/img_proc_v_vid_in_axi4s_0_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top img_proc_v_vid_in_axi4s_0_0 -prefix
+--               img_proc_v_vid_in_axi4s_0_0_ img_proc_v_vid_in_axi4s_0_0_sim_netlist.vhdl
 -- Design      : img_proc_v_vid_in_axi4s_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -37,8 +37,6 @@ entity img_proc_v_vid_in_axi4s_0_0_v_vid_in_axi4s_v4_0_9_formatter is
     axis_enable : in STD_LOGIC;
     vid_data : in STD_LOGIC_VECTOR ( 23 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of img_proc_v_vid_in_axi4s_0_0_v_vid_in_axi4s_v4_0_9_formatter : entity is "v_vid_in_axi4s_v4_0_9_formatter";
 end img_proc_v_vid_in_axi4s_0_0_v_vid_in_axi4s_v4_0_9_formatter;
 
 architecture STRUCTURE of img_proc_v_vid_in_axi4s_0_0_v_vid_in_axi4s_v4_0_9_formatter is
@@ -1096,8 +1094,6 @@ entity img_proc_v_vid_in_axi4s_0_0_xpm_cdc_gray is
   attribute DEST_SYNC_FF of img_proc_v_vid_in_axi4s_0_0_xpm_cdc_gray : entity is 4;
   attribute INIT_SYNC_FF : integer;
   attribute INIT_SYNC_FF of img_proc_v_vid_in_axi4s_0_0_xpm_cdc_gray : entity is 1;
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of img_proc_v_vid_in_axi4s_0_0_xpm_cdc_gray : entity is "xpm_cdc_gray";
   attribute REG_OUTPUT : integer;
   attribute REG_OUTPUT of img_proc_v_vid_in_axi4s_0_0_xpm_cdc_gray : entity is 0;
   attribute SIM_ASSERT_CHK : integer;
@@ -4570,8 +4566,6 @@ entity img_proc_v_vid_in_axi4s_0_0_xpm_cdc_single is
   attribute DEST_SYNC_FF of img_proc_v_vid_in_axi4s_0_0_xpm_cdc_single : entity is 4;
   attribute INIT_SYNC_FF : integer;
   attribute INIT_SYNC_FF of img_proc_v_vid_in_axi4s_0_0_xpm_cdc_single : entity is 0;
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of img_proc_v_vid_in_axi4s_0_0_xpm_cdc_single : entity is "xpm_cdc_single";
   attribute SIM_ASSERT_CHK : integer;
   attribute SIM_ASSERT_CHK of img_proc_v_vid_in_axi4s_0_0_xpm_cdc_single : entity is 0;
   attribute SRC_INPUT_REG : integer;
@@ -4743,8 +4737,6 @@ entity img_proc_v_vid_in_axi4s_0_0_xpm_cdc_sync_rst is
   attribute INIT of img_proc_v_vid_in_axi4s_0_0_xpm_cdc_sync_rst : entity is "0";
   attribute INIT_SYNC_FF : integer;
   attribute INIT_SYNC_FF of img_proc_v_vid_in_axi4s_0_0_xpm_cdc_sync_rst : entity is 1;
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of img_proc_v_vid_in_axi4s_0_0_xpm_cdc_sync_rst : entity is "xpm_cdc_sync_rst";
   attribute SIM_ASSERT_CHK : integer;
   attribute SIM_ASSERT_CHK of img_proc_v_vid_in_axi4s_0_0_xpm_cdc_sync_rst : entity is 0;
   attribute VERSION : integer;
@@ -4938,8 +4930,6 @@ entity img_proc_v_vid_in_axi4s_0_0_xpm_counter_updn is
     \count_value_i_reg[0]_1\ : in STD_LOGIC;
     rd_clk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of img_proc_v_vid_in_axi4s_0_0_xpm_counter_updn : entity is "xpm_counter_updn";
 end img_proc_v_vid_in_axi4s_0_0_xpm_counter_updn;
 
 architecture STRUCTURE of img_proc_v_vid_in_axi4s_0_0_xpm_counter_updn is
@@ -7129,8 +7119,6 @@ entity img_proc_v_vid_in_axi4s_0_0_xpm_fifo_reg_bit is
     wr_en : in STD_LOGIC;
     Q : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of img_proc_v_vid_in_axi4s_0_0_xpm_fifo_reg_bit : entity is "xpm_fifo_reg_bit";
 end img_proc_v_vid_in_axi4s_0_0_xpm_fifo_reg_bit;
 
 architecture STRUCTURE of img_proc_v_vid_in_axi4s_0_0_xpm_fifo_reg_bit is
@@ -7203,8 +7191,6 @@ entity img_proc_v_vid_in_axi4s_0_0_xpm_fifo_reg_vec is
     D : in STD_LOGIC_VECTOR ( 9 downto 0 );
     wr_clk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of img_proc_v_vid_in_axi4s_0_0_xpm_fifo_reg_vec : entity is "xpm_fifo_reg_vec";
 end img_proc_v_vid_in_axi4s_0_0_xpm_fifo_reg_vec;
 
 architecture STRUCTURE of img_proc_v_vid_in_axi4s_0_0_xpm_fifo_reg_vec is
@@ -8290,8 +8276,6 @@ entity img_proc_v_vid_in_axi4s_0_0_xpm_memory_base is
   attribute MESSAGE_CONTROL of img_proc_v_vid_in_axi4s_0_0_xpm_memory_base : entity is 0;
   attribute NUM_CHAR_LOC : integer;
   attribute NUM_CHAR_LOC of img_proc_v_vid_in_axi4s_0_0_xpm_memory_base : entity is 0;
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of img_proc_v_vid_in_axi4s_0_0_xpm_memory_base : entity is "xpm_memory_base";
   attribute P_ECC_MODE : string;
   attribute P_ECC_MODE of img_proc_v_vid_in_axi4s_0_0_xpm_memory_base : entity is "no_ecc";
   attribute P_ENABLE_BYTE_WRITE_A : integer;
@@ -8704,8 +8688,6 @@ entity img_proc_v_vid_in_axi4s_0_0_v_vid_in_axi4s_v4_0_9_cdc_single is
   port (
     vid_io_in_clk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of img_proc_v_vid_in_axi4s_0_0_v_vid_in_axi4s_v4_0_9_cdc_single : entity is "v_vid_in_axi4s_v4_0_9_cdc_single";
 end img_proc_v_vid_in_axi4s_0_0_v_vid_in_axi4s_v4_0_9_cdc_single;
 
 architecture STRUCTURE of img_proc_v_vid_in_axi4s_0_0_v_vid_in_axi4s_v4_0_9_cdc_single is
@@ -8794,8 +8776,6 @@ entity img_proc_v_vid_in_axi4s_0_0_xpm_fifo_rst is
     \guf.underflow_i_reg\ : in STD_LOGIC;
     rd_en : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of img_proc_v_vid_in_axi4s_0_0_xpm_fifo_rst : entity is "xpm_fifo_rst";
 end img_proc_v_vid_in_axi4s_0_0_xpm_fifo_rst;
 
 architecture STRUCTURE of img_proc_v_vid_in_axi4s_0_0_xpm_fifo_rst is
@@ -9380,8 +9360,6 @@ entity img_proc_v_vid_in_axi4s_0_0_xpm_fifo_base is
   attribute FULL_RESET_VALUE of img_proc_v_vid_in_axi4s_0_0_xpm_fifo_base : entity is 1;
   attribute FULL_RST_VAL : string;
   attribute FULL_RST_VAL of img_proc_v_vid_in_axi4s_0_0_xpm_fifo_base : entity is "1'b1";
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of img_proc_v_vid_in_axi4s_0_0_xpm_fifo_base : entity is "xpm_fifo_base";
   attribute PE_THRESH_ADJ : integer;
   attribute PE_THRESH_ADJ of img_proc_v_vid_in_axi4s_0_0_xpm_fifo_base : entity is 8;
   attribute PE_THRESH_MAX : integer;
@@ -10759,8 +10737,6 @@ entity img_proc_v_vid_in_axi4s_0_0_xpm_fifo_async is
   attribute FIFO_WRITE_DEPTH of img_proc_v_vid_in_axi4s_0_0_xpm_fifo_async : entity is 1024;
   attribute FULL_RESET_VALUE : integer;
   attribute FULL_RESET_VALUE of img_proc_v_vid_in_axi4s_0_0_xpm_fifo_async : entity is 1;
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of img_proc_v_vid_in_axi4s_0_0_xpm_fifo_async : entity is "xpm_fifo_async";
   attribute PROG_EMPTY_THRESH : integer;
   attribute PROG_EMPTY_THRESH of img_proc_v_vid_in_axi4s_0_0_xpm_fifo_async : entity is 10;
   attribute PROG_FULL_THRESH : integer;
@@ -11009,8 +10985,6 @@ entity img_proc_v_vid_in_axi4s_0_0_v_vid_in_axi4s_v4_0_9_fifo_async is
     m_axis_video_tready : in STD_LOGIC;
     aclken : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of img_proc_v_vid_in_axi4s_0_0_v_vid_in_axi4s_v4_0_9_fifo_async : entity is "v_vid_in_axi4s_v4_0_9_fifo_async";
 end img_proc_v_vid_in_axi4s_0_0_v_vid_in_axi4s_v4_0_9_fifo_async;
 
 architecture STRUCTURE of img_proc_v_vid_in_axi4s_0_0_v_vid_in_axi4s_v4_0_9_fifo_async is
@@ -11461,8 +11435,6 @@ entity img_proc_v_vid_in_axi4s_0_0_v_vid_in_axi4s_v4_0_9_coupler is
     m_axis_video_tready : in STD_LOGIC;
     aclken : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of img_proc_v_vid_in_axi4s_0_0_v_vid_in_axi4s_v4_0_9_coupler : entity is "v_vid_in_axi4s_v4_0_9_coupler";
 end img_proc_v_vid_in_axi4s_0_0_v_vid_in_axi4s_v4_0_9_coupler;
 
 architecture STRUCTURE of img_proc_v_vid_in_axi4s_0_0_v_vid_in_axi4s_v4_0_9_coupler is
@@ -11601,8 +11573,6 @@ entity img_proc_v_vid_in_axi4s_0_0_v_vid_in_axi4s_v4_0_9 is
   attribute C_PIXELS_PER_CLOCK of img_proc_v_vid_in_axi4s_0_0_v_vid_in_axi4s_v4_0_9 : entity is 1;
   attribute DowngradeIPIdentifiedWarnings : string;
   attribute DowngradeIPIdentifiedWarnings of img_proc_v_vid_in_axi4s_0_0_v_vid_in_axi4s_v4_0_9 : entity is "yes";
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of img_proc_v_vid_in_axi4s_0_0_v_vid_in_axi4s_v4_0_9 : entity is "v_vid_in_axi4s_v4_0_9";
 end img_proc_v_vid_in_axi4s_0_0_v_vid_in_axi4s_v4_0_9;
 
 architecture STRUCTURE of img_proc_v_vid_in_axi4s_0_0_v_vid_in_axi4s_v4_0_9 is
@@ -11984,13 +11954,13 @@ architecture STRUCTURE of img_proc_v_vid_in_axi4s_0_0 is
   attribute X_INTERFACE_INFO : string;
   attribute X_INTERFACE_INFO of aclk : signal is "xilinx.com:signal:clock:1.0 aclk_intf CLK";
   attribute X_INTERFACE_PARAMETER : string;
-  attribute X_INTERFACE_PARAMETER of aclk : signal is "XIL_INTERFACENAME aclk_intf, ASSOCIATED_BUSIF video_out, FREQ_HZ 2e+08, PHASE 0.000, CLK_DOMAIN img_proc_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0";
+  attribute X_INTERFACE_PARAMETER of aclk : signal is "XIL_INTERFACENAME aclk_intf, ASSOCIATED_BUSIF video_out, FREQ_HZ 200000000, PHASE 0.000, CLK_DOMAIN img_proc_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0";
   attribute X_INTERFACE_INFO of aclken : signal is "xilinx.com:signal:clockenable:1.0 aclken_intf CE";
   attribute X_INTERFACE_PARAMETER of aclken : signal is "XIL_INTERFACENAME aclken_intf, POLARITY ACTIVE_HIGH";
   attribute X_INTERFACE_INFO of aresetn : signal is "xilinx.com:signal:reset:1.0 aresetn_intf RST";
   attribute X_INTERFACE_PARAMETER of aresetn : signal is "XIL_INTERFACENAME aresetn_intf, POLARITY ACTIVE_LOW, INSERT_VIP 0";
   attribute X_INTERFACE_INFO of m_axis_video_tlast : signal is "xilinx.com:interface:axis:1.0 video_out TLAST";
-  attribute X_INTERFACE_PARAMETER of m_axis_video_tlast : signal is "XIL_INTERFACENAME video_out, TDATA_NUM_BYTES 3, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 1, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 1, FREQ_HZ 2e+08, PHASE 0.000, CLK_DOMAIN img_proc_processing_system7_0_0_FCLK_CLK0, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {TDATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value xilinx.com:video:G_B_R_444:1.0} bitwidth {attribs {resolve_type automatic dependency {} format long minimum {} maximum {}} value 24} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} array_type {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value rows} size {attribs {resolve_type generated dependency active_rows format long minimum {} maximum {}} value 1} stride {attribs {resolve_type generated dependency active_rows_stride format long minimum {} maximum {}} value 24} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type automatic dependency {} format long minimum {} maximum {}} value 24} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} array_type {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value cols} size {attribs {resolve_type generated dependency active_cols format long minimum {} maximum {}} value 1} stride {attribs {resolve_type generated dependency active_cols_stride format long minimum {} maximum {}} value 24} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type automatic dependency {} format long minimum {} maximum {}} value 24} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} struct {field_G {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value G} enabled {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value true} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type generated dependency video_data_width format long minimum {} maximum {}} value 8} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value true}}}} field_B {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value B} enabled {attribs {resolve_type generated dependency video_comp1_enabled format bool minimum {} maximum {}} value true} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type generated dependency video_data_width format long minimum {} maximum {}} value 8} bitoffset {attribs {resolve_type generated dependency video_comp1_offset format long minimum {} maximum {}} value 8} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value true}}}} field_R {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value R} enabled {attribs {resolve_type generated dependency video_comp2_enabled format bool minimum {} maximum {}} value true} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type generated dependency video_data_width format long minimum {} maximum {}} value 8} bitoffset {attribs {resolve_type generated dependency video_comp2_offset format long minimum {} maximum {}} value 16} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value true}}}}}}}}}}} TDATA_WIDTH 24}, INSERT_VIP 0";
+  attribute X_INTERFACE_PARAMETER of m_axis_video_tlast : signal is "XIL_INTERFACENAME video_out, TDATA_NUM_BYTES 3, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 1, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 1, FREQ_HZ 200000000, PHASE 0.000, CLK_DOMAIN img_proc_processing_system7_0_0_FCLK_CLK0, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {TDATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value xilinx.com:video:G_B_R_444:1.0} bitwidth {attribs {resolve_type automatic dependency {} format long minimum {} maximum {}} value 24} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} array_type {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value rows} size {attribs {resolve_type generated dependency active_rows format long minimum {} maximum {}} value 1} stride {attribs {resolve_type generated dependency active_rows_stride format long minimum {} maximum {}} value 24} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type automatic dependency {} format long minimum {} maximum {}} value 24} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} array_type {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value cols} size {attribs {resolve_type generated dependency active_cols format long minimum {} maximum {}} value 1} stride {attribs {resolve_type generated dependency active_cols_stride format long minimum {} maximum {}} value 24} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type automatic dependency {} format long minimum {} maximum {}} value 24} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} struct {field_G {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value G} enabled {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value true} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type generated dependency video_data_width format long minimum {} maximum {}} value 8} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value true}}}} field_B {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value B} enabled {attribs {resolve_type generated dependency video_comp1_enabled format bool minimum {} maximum {}} value true} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type generated dependency video_data_width format long minimum {} maximum {}} value 8} bitoffset {attribs {resolve_type generated dependency video_comp1_offset format long minimum {} maximum {}} value 8} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value true}}}} field_R {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value R} enabled {attribs {resolve_type generated dependency video_comp2_enabled format bool minimum {} maximum {}} value true} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type generated dependency video_data_width format long minimum {} maximum {}} value 8} bitoffset {attribs {resolve_type generated dependency video_comp2_offset format long minimum {} maximum {}} value 16} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value true}}}}}}}}}}} TDATA_WIDTH 24}, INSERT_VIP 0";
   attribute X_INTERFACE_INFO of m_axis_video_tready : signal is "xilinx.com:interface:axis:1.0 video_out TREADY";
   attribute X_INTERFACE_INFO of m_axis_video_tuser : signal is "xilinx.com:interface:axis:1.0 video_out TUSER";
   attribute X_INTERFACE_INFO of m_axis_video_tvalid : signal is "xilinx.com:interface:axis:1.0 video_out TVALID";

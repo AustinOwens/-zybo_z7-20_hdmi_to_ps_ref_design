@@ -1,7 +1,7 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.2 (lin64) Build 2700185 Thu Oct 24 18:45:48 MDT 2019
-// Date        : Sun Nov  3 18:04:18 2019
+// Date        : Wed Nov 13 00:30:34 2019
 // Host        : austin-ubuntu running 64-bit Ubuntu 18.04.3 LTS
 // Command     : write_verilog -force -mode synth_stub
 //               /home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/ip/img_proc_dvi2rgb_0_0/img_proc_dvi2rgb_0_0_stub.v
@@ -15,15 +15,15 @@
 // Please paste the declaration into a Verilog source file or add the file as an additional source.
 (* x_core_info = "dvi2rgb,Vivado 2019.2" *)
 module img_proc_dvi2rgb_0_0(TMDS_Clk_p, TMDS_Clk_n, TMDS_Data_p, 
-  TMDS_Data_n, RefClk, aRst, vid_pData, vid_pVDE, vid_pHSync, vid_pVSync, PixelClk, aPixelClkLckd, 
-  pLocked, SDA_I, SDA_O, SDA_T, SCL_I, SCL_O, SCL_T, pRst)
-/* synthesis syn_black_box black_box_pad_pin="TMDS_Clk_p,TMDS_Clk_n,TMDS_Data_p[2:0],TMDS_Data_n[2:0],RefClk,aRst,vid_pData[23:0],vid_pVDE,vid_pHSync,vid_pVSync,PixelClk,aPixelClkLckd,pLocked,SDA_I,SDA_O,SDA_T,SCL_I,SCL_O,SCL_T,pRst" */;
+  TMDS_Data_n, RefClk, aRst_n, vid_pData, vid_pVDE, vid_pHSync, vid_pVSync, PixelClk, 
+  aPixelClkLckd, pLocked, SDA_I, SDA_O, SDA_T, SCL_I, SCL_O, SCL_T, pRst_n)
+/* synthesis syn_black_box black_box_pad_pin="TMDS_Clk_p,TMDS_Clk_n,TMDS_Data_p[2:0],TMDS_Data_n[2:0],RefClk,aRst_n,vid_pData[23:0],vid_pVDE,vid_pHSync,vid_pVSync,PixelClk,aPixelClkLckd,pLocked,SDA_I,SDA_O,SDA_T,SCL_I,SCL_O,SCL_T,pRst_n" */;
   input TMDS_Clk_p;
   input TMDS_Clk_n;
   input [2:0]TMDS_Data_p;
   input [2:0]TMDS_Data_n;
   input RefClk;
-  input aRst;
+  input aRst_n;
   output [23:0]vid_pData;
   output vid_pVDE;
   output vid_pHSync;
@@ -37,5 +37,5 @@ module img_proc_dvi2rgb_0_0(TMDS_Clk_p, TMDS_Clk_n, TMDS_Data_p,
   input SCL_I;
   output SCL_O;
   output SCL_T;
-  input pRst;
+  input pRst_n;
 endmodule

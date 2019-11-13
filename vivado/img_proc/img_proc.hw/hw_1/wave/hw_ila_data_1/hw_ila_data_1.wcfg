@@ -10,14 +10,16 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="1318fs"></ZoomEndTime>
+      <ZoomEndTime time="2049fs"></ZoomEndTime>
       <Cursor1Time time="0fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="403"></NameColumnWidth>
-      <ValueColumnWidth column_width="110"></ValueColumnWidth>
+      <ValueColumnWidth column_width="106"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="8" />
+   <wave_markers>
+   </wave_markers>
    <wvobject type="array" fp_name="img_proc_i/hdmi_decode/dvi2rgb_0/U0/dbg_pAlignErr">
       <obj_property name="DisplayName">FullPathName</obj_property>
       <obj_property name="ElementShortName">img_proc_i/hdmi_decode/dvi2rgb_0/U0/dbg_pAlignErr[2:0]</obj_property>

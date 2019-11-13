@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z020clg400-1" LaunchTime="1573372670">
+<GenRun Id="impl_1" LaunchPart="xc7z020clg400-1" LaunchTime="1573633685">
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <File Type="BG-DRC" Name="img_proc_wrapper.drc"/>
   <File Type="BG-BGN" Name="img_proc_wrapper.bgn"/>
@@ -87,7 +87,7 @@
     <File Path="$PSRCDIR/sources_1/imports/hdl/img_proc_wrapper.vhd">
       <FileInfo>
         <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/bd/img_proc/hdl/img_proc_wrapper.vhd"/>
-        <Attr Name="ImportTime" Val="1573199307"/>
+        <Attr Name="ImportTime" Val="1573633637"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
@@ -128,18 +128,11 @@
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="img_proc_ila_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="img_proc_v_tc_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="img_proc_xbar_2"/>
   <BlockFileSet Type="BlockSrcs" Name="img_proc_axi_gpio_0_1"/>
   <BlockFileSet Type="BlockSrcs" Name="img_proc_xbar_3"/>
   <BlockFileSet Type="BlockSrcs" Name="img_proc_axis_subset_converter_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="img_proc_processing_system7_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="img_proc_axi_gpio_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="img_proc_axi_dynclk_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="img_proc_v_vid_in_axi4s_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="img_proc_proc_sys_reset_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="img_proc_axi_vdma_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="img_proc_v_tc_0_1"/>
-  <BlockFileSet Type="BlockSrcs" Name="img_proc_v_axi4s_vid_out_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="img_proc_dvi2rgb_0_0"/>
 </GenRun>

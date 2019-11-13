@@ -10,77 +10,27 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="1615fs"></ZoomEndTime>
+      <ZoomEndTime time="1025fs"></ZoomEndTime>
       <Cursor1Time time="0fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="485"></NameColumnWidth>
+      <NameColumnWidth column_width="481"></NameColumnWidth>
       <ValueColumnWidth column_width="66"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="9" />
-   <wvobject type="array" fp_name="img_proc_i/vdma/v_tpg_0_m_axis_video_TDATA">
+   <WVObjectSize size="2" />
+   <wave_markers>
+   </wave_markers>
+   <wvobject type="logic" fp_name="img_proc_i/hdmi_decode/dvi2rgb_0_aPixelClkLckd">
       <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">img_proc_i/vdma/v_tpg_0_m_axis_video_TDATA[23:0]</obj_property>
-      <obj_property name="ObjectShortName">v_tpg_0_m_axis_video_TDATA[23:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="ElementShortName">img_proc_i/hdmi_decode/dvi2rgb_0_aPixelClkLckd</obj_property>
+      <obj_property name="ObjectShortName">dvi2rgb_0_aPixelClkLckd</obj_property>
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
-   <wvobject type="logic" fp_name="img_proc_i/vdma/v_tpg_0_m_axis_video_TDEST">
+   <wvobject type="logic" fp_name="img_proc_i/hdmi_decode/dvi2rgb_0_pLocked">
       <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">img_proc_i/vdma/v_tpg_0_m_axis_video_TDEST</obj_property>
-      <obj_property name="ObjectShortName">v_tpg_0_m_axis_video_TDEST</obj_property>
-      <obj_property name="LABELRADIX">true</obj_property>
-      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
-   </wvobject>
-   <wvobject type="logic" fp_name="img_proc_i/vdma/v_tpg_0_m_axis_video_TID">
-      <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">img_proc_i/vdma/v_tpg_0_m_axis_video_TID</obj_property>
-      <obj_property name="ObjectShortName">v_tpg_0_m_axis_video_TID</obj_property>
-      <obj_property name="LABELRADIX">true</obj_property>
-      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="img_proc_i/vdma/v_tpg_0_m_axis_video_TKEEP">
-      <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">img_proc_i/vdma/v_tpg_0_m_axis_video_TKEEP[2:0]</obj_property>
-      <obj_property name="ObjectShortName">v_tpg_0_m_axis_video_TKEEP[2:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-      <obj_property name="LABELRADIX">true</obj_property>
-      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
-   </wvobject>
-   <wvobject type="logic" fp_name="img_proc_i/vdma/v_tpg_0_m_axis_video_TLAST">
-      <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">img_proc_i/vdma/v_tpg_0_m_axis_video_TLAST</obj_property>
-      <obj_property name="ObjectShortName">v_tpg_0_m_axis_video_TLAST</obj_property>
-      <obj_property name="LABELRADIX">true</obj_property>
-      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
-   </wvobject>
-   <wvobject type="logic" fp_name="img_proc_i/vdma/v_tpg_0_m_axis_video_TREADY">
-      <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">img_proc_i/vdma/v_tpg_0_m_axis_video_TREADY</obj_property>
-      <obj_property name="ObjectShortName">v_tpg_0_m_axis_video_TREADY</obj_property>
-      <obj_property name="LABELRADIX">true</obj_property>
-      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="img_proc_i/vdma/v_tpg_0_m_axis_video_TSTRB">
-      <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">img_proc_i/vdma/v_tpg_0_m_axis_video_TSTRB[2:0]</obj_property>
-      <obj_property name="ObjectShortName">v_tpg_0_m_axis_video_TSTRB[2:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-      <obj_property name="LABELRADIX">true</obj_property>
-      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
-   </wvobject>
-   <wvobject type="logic" fp_name="img_proc_i/vdma/v_tpg_0_m_axis_video_TUSER">
-      <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">img_proc_i/vdma/v_tpg_0_m_axis_video_TUSER</obj_property>
-      <obj_property name="ObjectShortName">v_tpg_0_m_axis_video_TUSER</obj_property>
-      <obj_property name="LABELRADIX">true</obj_property>
-      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
-   </wvobject>
-   <wvobject type="logic" fp_name="img_proc_i/vdma/v_tpg_0_m_axis_video_TVALID">
-      <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">img_proc_i/vdma/v_tpg_0_m_axis_video_TVALID</obj_property>
-      <obj_property name="ObjectShortName">v_tpg_0_m_axis_video_TVALID</obj_property>
+      <obj_property name="ElementShortName">img_proc_i/hdmi_decode/dvi2rgb_0_pLocked</obj_property>
+      <obj_property name="ObjectShortName">dvi2rgb_0_pLocked</obj_property>
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>

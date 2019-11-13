@@ -9,9 +9,6 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==img_proc || ORI
 # IP: bd/img_proc/ip/img_proc_dvi2rgb_0_0/img_proc_dvi2rgb_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==img_proc_dvi2rgb_0_0 || ORIG_REF_NAME==img_proc_dvi2rgb_0_0} -quiet] -quiet
 
-# IP: bd/img_proc/ip/img_proc_rgb2dvi_0_0/img_proc_rgb2dvi_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==img_proc_rgb2dvi_0_0 || ORIG_REF_NAME==img_proc_rgb2dvi_0_0} -quiet] -quiet
-
 # IP: bd/img_proc/ip/img_proc_processing_system7_0_0/img_proc_processing_system7_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==img_proc_processing_system7_0_0 || ORIG_REF_NAME==img_proc_processing_system7_0_0} -quiet] -quiet
 
@@ -33,41 +30,20 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==img_proc_axi_in
 # IP: bd/img_proc/ip/img_proc_axi_vdma_0_0/img_proc_axi_vdma_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==img_proc_axi_vdma_0_0 || ORIG_REF_NAME==img_proc_axi_vdma_0_0} -quiet] -quiet
 
-# IP: bd/img_proc/ip/img_proc_v_axi4s_vid_out_0_0/img_proc_v_axi4s_vid_out_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==img_proc_v_axi4s_vid_out_0_0 || ORIG_REF_NAME==img_proc_v_axi4s_vid_out_0_0} -quiet] -quiet
-
-# IP: bd/img_proc/ip/img_proc_v_tc_0_0/img_proc_v_tc_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==img_proc_v_tc_0_0 || ORIG_REF_NAME==img_proc_v_tc_0_0} -quiet] -quiet
-
 # IP: bd/img_proc/ip/img_proc_v_vid_in_axi4s_0_0/img_proc_v_vid_in_axi4s_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==img_proc_v_vid_in_axi4s_0_0 || ORIG_REF_NAME==img_proc_v_vid_in_axi4s_0_0} -quiet] -quiet
 
 # IP: bd/img_proc/ip/img_proc_axis_subset_converter_0_0/img_proc_axis_subset_converter_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==img_proc_axis_subset_converter_0_0 || ORIG_REF_NAME==img_proc_axis_subset_converter_0_0} -quiet] -quiet
 
-# IP: bd/img_proc/ip/img_proc_v_tc_0_1/img_proc_v_tc_0_1.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==img_proc_v_tc_0_1 || ORIG_REF_NAME==img_proc_v_tc_0_1} -quiet] -quiet
-
-# IP: bd/img_proc/ip/img_proc_axi_gpio_0_0/img_proc_axi_gpio_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==img_proc_axi_gpio_0_0 || ORIG_REF_NAME==img_proc_axi_gpio_0_0} -quiet] -quiet
-
-# IP: bd/img_proc/ip/img_proc_axi_dynclk_0_0/img_proc_axi_dynclk_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==img_proc_axi_dynclk_0_0 || ORIG_REF_NAME==img_proc_axi_dynclk_0_0} -quiet] -quiet
-
 # IP: bd/img_proc/ip/img_proc_xlconstant_0_1/img_proc_xlconstant_0_1.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==img_proc_xlconstant_0_1 || ORIG_REF_NAME==img_proc_xlconstant_0_1} -quiet] -quiet
-
-# IP: bd/img_proc/ip/img_proc_xlconstant_0_2/img_proc_xlconstant_0_2.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==img_proc_xlconstant_0_2 || ORIG_REF_NAME==img_proc_xlconstant_0_2} -quiet] -quiet
 
 # IP: bd/img_proc/ip/img_proc_axi_gpio_0_1/img_proc_axi_gpio_0_1.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==img_proc_axi_gpio_0_1 || ORIG_REF_NAME==img_proc_axi_gpio_0_1} -quiet] -quiet
 
-# IP: bd/img_proc/ip/img_proc_v_tpg_0_0/img_proc_v_tpg_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==img_proc_v_tpg_0_0 || ORIG_REF_NAME==img_proc_v_tpg_0_0} -quiet] -quiet
-
-# IP: bd/img_proc/ip/img_proc_ila_0_0/img_proc_ila_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==img_proc_ila_0_0 || ORIG_REF_NAME==img_proc_ila_0_0} -quiet] -quiet
+# IP: bd/img_proc/ip/img_proc_ila_0_1/img_proc_ila_0_1.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==img_proc_ila_0_1 || ORIG_REF_NAME==img_proc_ila_0_1} -quiet] -quiet
 
 # IP: bd/img_proc/ip/img_proc_auto_pc_0/img_proc_auto_pc_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==img_proc_auto_pc_0 || ORIG_REF_NAME==img_proc_auto_pc_0} -quiet] -quiet

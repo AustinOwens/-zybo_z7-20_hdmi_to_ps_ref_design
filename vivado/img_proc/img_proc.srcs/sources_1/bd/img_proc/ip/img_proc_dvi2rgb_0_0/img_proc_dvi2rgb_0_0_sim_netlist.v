@@ -1,7 +1,7 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.2 (lin64) Build 2700185 Thu Oct 24 18:45:48 MDT 2019
-// Date        : Sun Nov  3 18:04:19 2019
+// Date        : Wed Nov 13 00:30:34 2019
 // Host        : austin-ubuntu running 64-bit Ubuntu 18.04.3 LTS
 // Command     : write_verilog -force -mode funcsim
 //               /home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/ip/img_proc_dvi2rgb_0_0/img_proc_dvi2rgb_0_0_sim_netlist.v
@@ -20,7 +20,7 @@ module img_proc_dvi2rgb_0_0
     TMDS_Data_p,
     TMDS_Data_n,
     RefClk,
-    aRst,
+    aRst_n,
     vid_pData,
     vid_pVDE,
     vid_pHSync,
@@ -34,13 +34,13 @@ module img_proc_dvi2rgb_0_0
     SCL_I,
     SCL_O,
     SCL_T,
-    pRst);
+    pRst_n);
   (* x_interface_info = "digilentinc.com:interface:tmds:1.0 TMDS CLK_P, xilinx.com:signal:clock:1.0 TMDS_Clk_p CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME TMDS, BOARD.ASSOCIATED_PARAM TMDS_BOARD_INTERFACE, XIL_INTERFACENAME TMDS_Clk_p, ASSOCIATED_RESET pRst, FREQ_HZ 100000000, PHASE 0.000, INSERT_VIP 0" *) input TMDS_Clk_p;
   (* x_interface_info = "digilentinc.com:interface:tmds:1.0 TMDS CLK_N, xilinx.com:signal:clock:1.0 TMDS_Clk_n CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME TMDS_Clk_n, ASSOCIATED_RESET aRst_n:AsyncRst_n, FREQ_HZ 100000000, PHASE 0.000, INSERT_VIP 0" *) input TMDS_Clk_n;
   (* x_interface_info = "digilentinc.com:interface:tmds:1.0 TMDS DATA_P" *) input [2:0]TMDS_Data_p;
   (* x_interface_info = "digilentinc.com:interface:tmds:1.0 TMDS DATA_N" *) input [2:0]TMDS_Data_n;
-  (* x_interface_info = "xilinx.com:signal:clock:1.0 RefClk CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME RefClk, FREQ_HZ 200000000, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1, INSERT_VIP 0" *) input RefClk;
-  input aRst;
+  (* x_interface_info = "xilinx.com:signal:clock:1.0 RefClk CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME RefClk, FREQ_HZ 200000000, PHASE 0.000, CLK_DOMAIN img_proc_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *) input RefClk;
+  (* x_interface_info = "xilinx.com:signal:reset:1.0 AsyncRst_n RST" *) (* x_interface_parameter = "XIL_INTERFACENAME AsyncRst_n, POLARITY ACTIVE_LOW, INSERT_VIP 0" *) input aRst_n;
   (* x_interface_info = "xilinx.com:interface:vid_io:1.0 RGB DATA" *) output [23:0]vid_pData;
   (* x_interface_info = "xilinx.com:interface:vid_io:1.0 RGB ACTIVE_VIDEO" *) output vid_pVDE;
   (* x_interface_info = "xilinx.com:interface:vid_io:1.0 RGB HSYNC" *) output vid_pHSync;
@@ -54,7 +54,7 @@ module img_proc_dvi2rgb_0_0
   (* x_interface_info = "xilinx.com:interface:iic:1.0 DDC SCL_I" *) input SCL_I;
   (* x_interface_info = "xilinx.com:interface:iic:1.0 DDC SCL_O" *) output SCL_O;
   (* x_interface_info = "xilinx.com:interface:iic:1.0 DDC SCL_T" *) output SCL_T;
-  input pRst;
+  (* x_interface_info = "xilinx.com:signal:reset:1.0 SyncRst_n RST" *) (* x_interface_parameter = "XIL_INTERFACENAME SyncRst_n, POLARITY ACTIVE_LOW, INSERT_VIP 0" *) input pRst_n;
 
   wire PixelClk;
   wire RefClk;
@@ -69,9 +69,9 @@ module img_proc_dvi2rgb_0_0
   (* DIFF_TERM = 0 *) (* IBUF_LOW_PWR *) (* IOSTANDARD = "TMDS_33" *) wire [2:0]TMDS_Data_n;
   (* DIFF_TERM = 0 *) (* IBUF_LOW_PWR *) (* IOSTANDARD = "TMDS_33" *) wire [2:0]TMDS_Data_p;
   wire aPixelClkLckd;
-  wire aRst;
+  wire aRst_n;
   wire pLocked;
-  wire pRst;
+  wire pRst_n;
   wire [23:0]vid_pData;
   wire vid_pHSync;
   wire vid_pVDE;
@@ -101,11 +101,11 @@ module img_proc_dvi2rgb_0_0
         .TMDS_Data_n(TMDS_Data_n),
         .TMDS_Data_p(TMDS_Data_p),
         .aPixelClkLckd(aPixelClkLckd),
-        .aRst(aRst),
-        .aRst_n(1'b1),
+        .aRst(1'b0),
+        .aRst_n(aRst_n),
         .pLocked(pLocked),
-        .pRst(pRst),
-        .pRst_n(1'b1),
+        .pRst(1'b0),
+        .pRst_n(pRst_n),
         .vid_pData(vid_pData),
         .vid_pHSync(vid_pHSync),
         .vid_pVDE(vid_pVDE),

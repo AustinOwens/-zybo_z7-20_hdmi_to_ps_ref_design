@@ -362,7 +362,7 @@
                     },
                     {
                         "type": "ILA_V3",
-                        "name": "img_proc_i/vdma/ila_0",
+                        "name": "img_proc_i/hdmi_decode/ila_0",
                         "spec": "labtools_ila_v6",
                         "ipName": "ila",
                         "core_location": {
@@ -370,7 +370,7 @@
                             "slave_index": 2,
                             "bscan_switch_index": 0
                         },
-                        "uuid": "F0F0602BFBF85C16AF2EE64359081AEA",
+                        "uuid": "1B5C296521ED576CBB491EE227AD294B",
                         "pins": [
                             {
                                 "name": "probe0",
@@ -383,7 +383,7 @@
                                 "portIndex": 0,
                                 "nets": [
                                     {
-                                        "name": "img_proc_i/vdma/v_tpg_0_m_axis_video_TREADY",
+                                        "name": "img_proc_i/hdmi_decode/dvi2rgb_0_aPixelClkLckd",
                                         "isBus": false
                                     }
                                 ]
@@ -393,221 +393,13 @@
                                 "id": 15,
                                 "type": "DATA_TRIGGER",
                                 "direction": "IN",
-                                "isVector": true,
+                                "isVector": false,
                                 "leftIndex": 0,
-                                "rightIndex": 23,
+                                "rightIndex": 0,
                                 "portIndex": 1,
                                 "nets": [
                                     {
-                                        "name": "img_proc_i/vdma/v_tpg_0_m_axis_video_TDATA",
-                                        "isBus": true,
-                                        "subnets": [
-                                            {
-                                                "name": "img_proc_i/vdma/v_tpg_0_m_axis_video_TDATA[23]"
-                                            },
-                                            {
-                                                "name": "img_proc_i/vdma/v_tpg_0_m_axis_video_TDATA[22]"
-                                            },
-                                            {
-                                                "name": "img_proc_i/vdma/v_tpg_0_m_axis_video_TDATA[21]"
-                                            },
-                                            {
-                                                "name": "img_proc_i/vdma/v_tpg_0_m_axis_video_TDATA[20]"
-                                            },
-                                            {
-                                                "name": "img_proc_i/vdma/v_tpg_0_m_axis_video_TDATA[19]"
-                                            },
-                                            {
-                                                "name": "img_proc_i/vdma/v_tpg_0_m_axis_video_TDATA[18]"
-                                            },
-                                            {
-                                                "name": "img_proc_i/vdma/v_tpg_0_m_axis_video_TDATA[17]"
-                                            },
-                                            {
-                                                "name": "img_proc_i/vdma/v_tpg_0_m_axis_video_TDATA[16]"
-                                            },
-                                            {
-                                                "name": "img_proc_i/vdma/v_tpg_0_m_axis_video_TDATA[15]"
-                                            },
-                                            {
-                                                "name": "img_proc_i/vdma/v_tpg_0_m_axis_video_TDATA[14]"
-                                            },
-                                            {
-                                                "name": "img_proc_i/vdma/v_tpg_0_m_axis_video_TDATA[13]"
-                                            },
-                                            {
-                                                "name": "img_proc_i/vdma/v_tpg_0_m_axis_video_TDATA[12]"
-                                            },
-                                            {
-                                                "name": "img_proc_i/vdma/v_tpg_0_m_axis_video_TDATA[11]"
-                                            },
-                                            {
-                                                "name": "img_proc_i/vdma/v_tpg_0_m_axis_video_TDATA[10]"
-                                            },
-                                            {
-                                                "name": "img_proc_i/vdma/v_tpg_0_m_axis_video_TDATA[9]"
-                                            },
-                                            {
-                                                "name": "img_proc_i/vdma/v_tpg_0_m_axis_video_TDATA[8]"
-                                            },
-                                            {
-                                                "name": "img_proc_i/vdma/v_tpg_0_m_axis_video_TDATA[7]"
-                                            },
-                                            {
-                                                "name": "img_proc_i/vdma/v_tpg_0_m_axis_video_TDATA[6]"
-                                            },
-                                            {
-                                                "name": "img_proc_i/vdma/v_tpg_0_m_axis_video_TDATA[5]"
-                                            },
-                                            {
-                                                "name": "img_proc_i/vdma/v_tpg_0_m_axis_video_TDATA[4]"
-                                            },
-                                            {
-                                                "name": "img_proc_i/vdma/v_tpg_0_m_axis_video_TDATA[3]"
-                                            },
-                                            {
-                                                "name": "img_proc_i/vdma/v_tpg_0_m_axis_video_TDATA[2]"
-                                            },
-                                            {
-                                                "name": "img_proc_i/vdma/v_tpg_0_m_axis_video_TDATA[1]"
-                                            },
-                                            {
-                                                "name": "img_proc_i/vdma/v_tpg_0_m_axis_video_TDATA[0]"
-                                            }
-                                        ]
-                                    }
-                                ]
-                            },
-                            {
-                                "name": "probe2",
-                                "id": 16,
-                                "type": "DATA_TRIGGER",
-                                "direction": "IN",
-                                "isVector": true,
-                                "leftIndex": 0,
-                                "rightIndex": 2,
-                                "portIndex": 2,
-                                "nets": [
-                                    {
-                                        "name": "img_proc_i/vdma/v_tpg_0_m_axis_video_TSTRB",
-                                        "isBus": true,
-                                        "subnets": [
-                                            {
-                                                "name": "img_proc_i/vdma/v_tpg_0_m_axis_video_TSTRB[2]"
-                                            },
-                                            {
-                                                "name": "img_proc_i/vdma/v_tpg_0_m_axis_video_TSTRB[1]"
-                                            },
-                                            {
-                                                "name": "img_proc_i/vdma/v_tpg_0_m_axis_video_TSTRB[0]"
-                                            }
-                                        ]
-                                    }
-                                ]
-                            },
-                            {
-                                "name": "probe3",
-                                "id": 17,
-                                "type": "DATA_TRIGGER",
-                                "direction": "IN",
-                                "isVector": false,
-                                "leftIndex": 0,
-                                "rightIndex": 0,
-                                "portIndex": 3,
-                                "nets": [
-                                    {
-                                        "name": "img_proc_i/vdma/v_tpg_0_m_axis_video_TVALID",
-                                        "isBus": false
-                                    }
-                                ]
-                            },
-                            {
-                                "name": "probe4",
-                                "id": 18,
-                                "type": "DATA_TRIGGER",
-                                "direction": "IN",
-                                "isVector": false,
-                                "leftIndex": 0,
-                                "rightIndex": 0,
-                                "portIndex": 4,
-                                "nets": [
-                                    {
-                                        "name": "img_proc_i/vdma/v_tpg_0_m_axis_video_TLAST",
-                                        "isBus": false
-                                    }
-                                ]
-                            },
-                            {
-                                "name": "probe5",
-                                "id": 19,
-                                "type": "DATA_TRIGGER",
-                                "direction": "IN",
-                                "isVector": false,
-                                "leftIndex": 0,
-                                "rightIndex": 0,
-                                "portIndex": 5,
-                                "nets": [
-                                    {
-                                        "name": "img_proc_i/vdma/v_tpg_0_m_axis_video_TUSER",
-                                        "isBus": false
-                                    }
-                                ]
-                            },
-                            {
-                                "name": "probe6",
-                                "id": 20,
-                                "type": "DATA_TRIGGER",
-                                "direction": "IN",
-                                "isVector": true,
-                                "leftIndex": 0,
-                                "rightIndex": 2,
-                                "portIndex": 6,
-                                "nets": [
-                                    {
-                                        "name": "img_proc_i/vdma/v_tpg_0_m_axis_video_TKEEP",
-                                        "isBus": true,
-                                        "subnets": [
-                                            {
-                                                "name": "img_proc_i/vdma/v_tpg_0_m_axis_video_TKEEP[2]"
-                                            },
-                                            {
-                                                "name": "img_proc_i/vdma/v_tpg_0_m_axis_video_TKEEP[1]"
-                                            },
-                                            {
-                                                "name": "img_proc_i/vdma/v_tpg_0_m_axis_video_TKEEP[0]"
-                                            }
-                                        ]
-                                    }
-                                ]
-                            },
-                            {
-                                "name": "probe7",
-                                "id": 21,
-                                "type": "DATA_TRIGGER",
-                                "direction": "IN",
-                                "isVector": false,
-                                "leftIndex": 0,
-                                "rightIndex": 0,
-                                "portIndex": 7,
-                                "nets": [
-                                    {
-                                        "name": "img_proc_i/vdma/v_tpg_0_m_axis_video_TDEST",
-                                        "isBus": false
-                                    }
-                                ]
-                            },
-                            {
-                                "name": "probe8",
-                                "id": 22,
-                                "type": "DATA_TRIGGER",
-                                "direction": "IN",
-                                "isVector": false,
-                                "leftIndex": 0,
-                                "rightIndex": 0,
-                                "portIndex": 8,
-                                "nets": [
-                                    {
-                                        "name": "img_proc_i/vdma/v_tpg_0_m_axis_video_TID",
+                                        "name": "img_proc_i/hdmi_decode/dvi2rgb_0_pLocked",
                                         "isBus": false
                                     }
                                 ]
