@@ -1,0 +1,1 @@
+The png.py is apart of a 3rd party library. I had to make slight modifications to it in order to get it to work with python2 (located at /usr/lib/python2.7/site-packages/ on zybo board)

@@ -2,10 +2,10 @@
 <Root MajorVersion="0" MinorVersion="39">
   <CompositeFile CompositeFileTopName="img_proc" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1573633677"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1573633677"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1573633677"/>
-    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1573633677"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1573639576"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1573639576"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1573639576"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1573639576"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip/img_proc_dvi2rgb_0_0/img_proc_dvi2rgb_0_0.xci" Type="IP">
         <Instance HierarchyPath="hdmi_decode/dvi2rgb_0"/>
@@ -13,16 +13,6 @@
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="synth/img_proc.vhd" Type="VHDL">
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-      </File>
-      <File Name="sim/img_proc.vhd" Type="VHDL">
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
-        <Library Name="xil_defaultlib"/>
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="ip/img_proc_processing_system7_0_0/img_proc_processing_system7_0_0.xci" Type="IP">
@@ -119,6 +109,16 @@
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="synth/img_proc.vhd" Type="VHDL">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+      </File>
+      <File Name="sim/img_proc.vhd" Type="VHDL">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="ip/img_proc_auto_pc_0/img_proc_auto_pc_0.xci" Type="IP">

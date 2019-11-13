@@ -200,8 +200,8 @@ proc create_hier_cell_vdma { parentCell nameHier } {
    CONFIG.c_include_s2mm_dre {0} \
    CONFIG.c_m_axis_mm2s_tdata_width {32} \
    CONFIG.c_mm2s_genlock_mode {0} \
-   CONFIG.c_s2mm_linebuffer_depth {4096} \
-   CONFIG.c_s2mm_max_burst_length {32} \
+   CONFIG.c_s2mm_linebuffer_depth {16384} \
+   CONFIG.c_s2mm_max_burst_length {256} \
  ] $axi_vdma_0
 
   # Create interface connections
@@ -279,7 +279,7 @@ proc create_hier_cell_hdmi_decode { parentCell nameHier } {
    CONFIG.S_HAS_TLAST {1} \
    CONFIG.S_TDATA_NUM_BYTES {3} \
    CONFIG.S_TUSER_WIDTH {1} \
-   CONFIG.TDATA_REMAP {tdata[23:16],tdata[7:0],tdata[15:8]} \
+   CONFIG.TDATA_REMAP {tdata[15:8],tdata[7:0],tdata[23:16]} \
    CONFIG.TLAST_REMAP {tlast[0]} \
    CONFIG.TUSER_REMAP {tuser[0:0]} \
  ] $axis_subset_converter_0

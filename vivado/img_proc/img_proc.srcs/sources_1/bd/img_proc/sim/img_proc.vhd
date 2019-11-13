@@ -1,7 +1,7 @@
 --Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2019.2 (lin64) Build 2700185 Thu Oct 24 18:45:48 MDT 2019
---Date        : Wed Nov 13 00:27:38 2019
+--Date        : Wed Nov 13 02:06:15 2019
 --Host        : austin-ubuntu running 64-bit Ubuntu 18.04.3 LTS
 --Command     : generate_target img_proc.bd
 --Design      : img_proc
@@ -36,30 +36,6 @@ entity hdmi_decode_imp_1TQ02U7 is
 end hdmi_decode_imp_1TQ02U7;
 
 architecture STRUCTURE of hdmi_decode_imp_1TQ02U7 is
-  component img_proc_dvi2rgb_0_0 is
-  port (
-    TMDS_Clk_p : in STD_LOGIC;
-    TMDS_Clk_n : in STD_LOGIC;
-    TMDS_Data_p : in STD_LOGIC_VECTOR ( 2 downto 0 );
-    TMDS_Data_n : in STD_LOGIC_VECTOR ( 2 downto 0 );
-    RefClk : in STD_LOGIC;
-    aRst_n : in STD_LOGIC;
-    vid_pData : out STD_LOGIC_VECTOR ( 23 downto 0 );
-    vid_pVDE : out STD_LOGIC;
-    vid_pHSync : out STD_LOGIC;
-    vid_pVSync : out STD_LOGIC;
-    PixelClk : out STD_LOGIC;
-    aPixelClkLckd : out STD_LOGIC;
-    pLocked : out STD_LOGIC;
-    SDA_I : in STD_LOGIC;
-    SDA_O : out STD_LOGIC;
-    SDA_T : out STD_LOGIC;
-    SCL_I : in STD_LOGIC;
-    SCL_O : out STD_LOGIC;
-    SCL_T : out STD_LOGIC;
-    pRst_n : in STD_LOGIC
-  );
-  end component img_proc_dvi2rgb_0_0;
   component img_proc_v_vid_in_axi4s_0_0 is
   port (
     vid_io_in_clk : in STD_LOGIC;
@@ -115,6 +91,30 @@ architecture STRUCTURE of hdmi_decode_imp_1TQ02U7 is
     probe1 : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
   end component img_proc_ila_0_1;
+  component img_proc_dvi2rgb_0_0 is
+  port (
+    TMDS_Clk_p : in STD_LOGIC;
+    TMDS_Clk_n : in STD_LOGIC;
+    TMDS_Data_p : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    TMDS_Data_n : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    RefClk : in STD_LOGIC;
+    aRst_n : in STD_LOGIC;
+    vid_pData : out STD_LOGIC_VECTOR ( 23 downto 0 );
+    vid_pVDE : out STD_LOGIC;
+    vid_pHSync : out STD_LOGIC;
+    vid_pVSync : out STD_LOGIC;
+    PixelClk : out STD_LOGIC;
+    aPixelClkLckd : out STD_LOGIC;
+    pLocked : out STD_LOGIC;
+    SDA_I : in STD_LOGIC;
+    SDA_O : out STD_LOGIC;
+    SDA_T : out STD_LOGIC;
+    SCL_I : in STD_LOGIC;
+    SCL_O : out STD_LOGIC;
+    SCL_T : out STD_LOGIC;
+    pRst_n : in STD_LOGIC
+  );
+  end component img_proc_dvi2rgb_0_0;
   signal Conn1_CLK_N : STD_LOGIC;
   signal Conn1_CLK_P : STD_LOGIC;
   signal Conn1_DATA_N : STD_LOGIC_VECTOR ( 2 downto 0 );
