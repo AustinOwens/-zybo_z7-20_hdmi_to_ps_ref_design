@@ -1,7 +1,7 @@
 --Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2019.2 (lin64) Build 2700185 Thu Oct 24 18:45:48 MDT 2019
---Date        : Sun Dec  8 19:54:05 2019
+--Date        : Sun Dec  8 20:12:36 2019
 --Host        : austin-ubuntu running 64-bit Ubuntu 18.04.3 LTS
 --Command     : generate_target img_proc.bd
 --Design      : img_proc
@@ -31,11 +31,6 @@ entity hdmi_decode_imp_1TQ02U7 is
     hdmi_in_ddc_sda_i : in STD_LOGIC;
     hdmi_in_ddc_sda_o : out STD_LOGIC;
     hdmi_in_ddc_sda_t : out STD_LOGIC;
-    m_axis_tdata1 : out STD_LOGIC_VECTOR ( 23 downto 0 );
-    m_axis_tlast1 : out STD_LOGIC;
-    m_axis_tready1 : in STD_LOGIC;
-    m_axis_tuser1 : out STD_LOGIC_VECTOR ( 0 to 0 );
-    m_axis_tvalid1 : out STD_LOGIC;
     vid_io_in_reset : in STD_LOGIC
   );
 end hdmi_decode_imp_1TQ02U7;
@@ -180,33 +175,6 @@ begin
   hdmi_in_ddc_sda_o <= dvi2rgb_0_DDC_SDA_O;
   hdmi_in_ddc_sda_t <= dvi2rgb_0_DDC_SDA_T;
   vid_io_in_reset_1 <= vid_io_in_reset;
-  m_axis_tlast1 <= 'Z';
-  m_axis_tvalid1 <= 'Z';
-  m_axis_tdata1(0) <= 'Z';
-  m_axis_tdata1(1) <= 'Z';
-  m_axis_tdata1(2) <= 'Z';
-  m_axis_tdata1(3) <= 'Z';
-  m_axis_tdata1(4) <= 'Z';
-  m_axis_tdata1(5) <= 'Z';
-  m_axis_tdata1(6) <= 'Z';
-  m_axis_tdata1(7) <= 'Z';
-  m_axis_tdata1(8) <= 'Z';
-  m_axis_tdata1(9) <= 'Z';
-  m_axis_tdata1(10) <= 'Z';
-  m_axis_tdata1(11) <= 'Z';
-  m_axis_tdata1(12) <= 'Z';
-  m_axis_tdata1(13) <= 'Z';
-  m_axis_tdata1(14) <= 'Z';
-  m_axis_tdata1(15) <= 'Z';
-  m_axis_tdata1(16) <= 'Z';
-  m_axis_tdata1(17) <= 'Z';
-  m_axis_tdata1(18) <= 'Z';
-  m_axis_tdata1(19) <= 'Z';
-  m_axis_tdata1(20) <= 'Z';
-  m_axis_tdata1(21) <= 'Z';
-  m_axis_tdata1(22) <= 'Z';
-  m_axis_tdata1(23) <= 'Z';
-  m_axis_tuser1(0) <= 'Z';
 axis_subset_converter_0: component img_proc_axis_subset_converter_0_0
      port map (
       aclk => RefClk_1,
@@ -3365,12 +3333,7 @@ entity vdma_imp_QLRT7Y is
     S_AXIS_S2MM_tvalid : in STD_LOGIC;
     axi_resetn : in STD_LOGIC;
     ctl : in STD_LOGIC;
-    m_axi_mm2s_aclk : in STD_LOGIC;
-    s_axis1_tdata : in STD_LOGIC_VECTOR ( 23 downto 0 );
-    s_axis1_tlast : in STD_LOGIC;
-    s_axis1_tready : out STD_LOGIC;
-    s_axis1_tuser : in STD_LOGIC_VECTOR ( 0 to 0 );
-    s_axis1_tvalid : in STD_LOGIC
+    m_axi_mm2s_aclk : in STD_LOGIC
   );
 end vdma_imp_QLRT7Y;
 
@@ -3779,7 +3742,6 @@ begin
   axi_resetn_1 <= axi_resetn;
   ctl_1 <= ctl;
   m_axi_mm2s_aclk_1 <= m_axi_mm2s_aclk;
-  s_axis1_tready <= 'Z';
 axi_gpio_1: component img_proc_axi_gpio_0_1
      port map (
       gpio_io_o(3 downto 0) => Conn3_TRI_O(3 downto 0),
@@ -4142,7 +4104,6 @@ entity img_proc is
     FIXED_IO_ps_porb : inout STD_LOGIC;
     FIXED_IO_ps_srstb : inout STD_LOGIC;
     ctl : in STD_LOGIC;
-    ext_reset_in : in STD_LOGIC;
     hdmi_in_clk_n : in STD_LOGIC;
     hdmi_in_clk_p : in STD_LOGIC;
     hdmi_in_data_n : in STD_LOGIC_VECTOR ( 2 downto 0 );
@@ -4157,7 +4118,7 @@ entity img_proc is
     led_tri_o : out STD_LOGIC_VECTOR ( 3 downto 0 )
   );
   attribute CORE_GENERATION_INFO : string;
-  attribute CORE_GENERATION_INFO of img_proc : entity is "img_proc,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=img_proc,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=27,numReposBlks=16,numNonXlnxBlks=2,numHierBlks=11,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_board_cnt=1,da_clkrst_cnt=3,da_ps7_cnt=1,synth_mode=OOC_per_IP}";
+  attribute CORE_GENERATION_INFO of img_proc : entity is "img_proc,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=img_proc,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=26,numReposBlks=15,numNonXlnxBlks=2,numHierBlks=11,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_board_cnt=1,da_clkrst_cnt=3,da_ps7_cnt=1,synth_mode=OOC_per_IP}";
   attribute HW_HANDOFF : string;
   attribute HW_HANDOFF of img_proc : entity is "img_proc.hwdef";
 end img_proc;
@@ -4296,23 +4257,12 @@ architecture STRUCTURE of img_proc is
     dout : out STD_LOGIC_VECTOR ( 0 to 0 )
   );
   end component img_proc_xlconstant_0_1;
-  component img_proc_util_vector_logic_0_0 is
-  port (
-    Op1 : in STD_LOGIC_VECTOR ( 0 to 0 );
-    Res : out STD_LOGIC_VECTOR ( 0 to 0 )
-  );
-  end component img_proc_util_vector_logic_0_0;
   signal ctl_1 : STD_LOGIC;
-  signal ext_reset_in_1 : STD_LOGIC;
   signal hdmi_decode_M_AXIS_TDATA : STD_LOGIC_VECTOR ( 23 downto 0 );
   signal hdmi_decode_M_AXIS_TLAST : STD_LOGIC;
   signal hdmi_decode_M_AXIS_TREADY : STD_LOGIC;
   signal hdmi_decode_M_AXIS_TUSER : STD_LOGIC_VECTOR ( 0 to 0 );
   signal hdmi_decode_M_AXIS_TVALID : STD_LOGIC;
-  signal hdmi_decode_m_axis_tdata1 : STD_LOGIC_VECTOR ( 23 downto 0 );
-  signal hdmi_decode_m_axis_tlast1 : STD_LOGIC;
-  signal hdmi_decode_m_axis_tuser1 : STD_LOGIC_VECTOR ( 0 to 0 );
-  signal hdmi_decode_m_axis_tvalid1 : STD_LOGIC;
   signal hdmi_in_1_CLK_N : STD_LOGIC;
   signal hdmi_in_1_CLK_P : STD_LOGIC;
   signal hdmi_in_1_DATA_N : STD_LOGIC_VECTOR ( 2 downto 0 );
@@ -4323,7 +4273,6 @@ architecture STRUCTURE of img_proc is
   signal hdmi_input_hdmi_in_ddc_SDA_I : STD_LOGIC;
   signal hdmi_input_hdmi_in_ddc_SDA_O : STD_LOGIC;
   signal hdmi_input_hdmi_in_ddc_SDA_T : STD_LOGIC;
-  signal m_axis_tready1_1 : STD_LOGIC;
   signal proc_sys_reset_0_interconnect_aresetn : STD_LOGIC_VECTOR ( 0 to 0 );
   signal proc_sys_reset_0_peripheral_aresetn : STD_LOGIC_VECTOR ( 0 to 0 );
   signal proc_sys_reset_0_peripheral_reset : STD_LOGIC_VECTOR ( 0 to 0 );
@@ -4436,7 +4385,6 @@ architecture STRUCTURE of img_proc is
   signal NLW_processing_system7_0_S_AXI_HP0_WACOUNT_UNCONNECTED : STD_LOGIC_VECTOR ( 5 downto 0 );
   signal NLW_processing_system7_0_S_AXI_HP0_WCOUNT_UNCONNECTED : STD_LOGIC_VECTOR ( 7 downto 0 );
   signal NLW_processing_system7_0_USB0_PORT_INDCTL_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
-  signal NLW_util_vector_logic_0_Res_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
   attribute X_INTERFACE_INFO : string;
   attribute X_INTERFACE_INFO of DDR_cas_n : signal is "xilinx.com:interface:ddrx:1.0 DDR CAS_N";
   attribute X_INTERFACE_INFO of DDR_ck_n : signal is "xilinx.com:interface:ddrx:1.0 DDR CK_N";
@@ -4454,8 +4402,6 @@ architecture STRUCTURE of img_proc is
   attribute X_INTERFACE_INFO of FIXED_IO_ps_clk : signal is "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_CLK";
   attribute X_INTERFACE_INFO of FIXED_IO_ps_porb : signal is "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_PORB";
   attribute X_INTERFACE_INFO of FIXED_IO_ps_srstb : signal is "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_SRSTB";
-  attribute X_INTERFACE_INFO of ext_reset_in : signal is "xilinx.com:signal:reset:1.0 RST.EXT_RESET_IN RST";
-  attribute X_INTERFACE_PARAMETER of ext_reset_in : signal is "XIL_INTERFACENAME RST.EXT_RESET_IN, INSERT_VIP 0, POLARITY ACTIVE_LOW";
   attribute X_INTERFACE_INFO of hdmi_in_clk_n : signal is "digilentinc.com:interface:tmds:1.0 hdmi_in CLK_N";
   attribute X_INTERFACE_INFO of hdmi_in_clk_p : signal is "digilentinc.com:interface:tmds:1.0 hdmi_in CLK_P";
   attribute X_INTERFACE_INFO of hdmi_in_ddc_scl_i : signal is "xilinx.com:interface:iic:1.0 hdmi_in_ddc SCL_I";
@@ -4477,7 +4423,6 @@ architecture STRUCTURE of img_proc is
   attribute X_INTERFACE_INFO of led_tri_o : signal is "xilinx.com:interface:gpio:1.0 led TRI_O";
 begin
   ctl_1 <= ctl;
-  ext_reset_in_1 <= ext_reset_in;
   hdmi_in_1_CLK_N <= hdmi_in_clk_n;
   hdmi_in_1_CLK_P <= hdmi_in_clk_p;
   hdmi_in_1_DATA_N(2 downto 0) <= hdmi_in_data_n(2 downto 0);
@@ -4510,11 +4455,6 @@ hdmi_decode: entity work.hdmi_decode_imp_1TQ02U7
       hdmi_in_ddc_sda_i => hdmi_input_hdmi_in_ddc_SDA_I,
       hdmi_in_ddc_sda_o => hdmi_input_hdmi_in_ddc_SDA_O,
       hdmi_in_ddc_sda_t => hdmi_input_hdmi_in_ddc_SDA_T,
-      m_axis_tdata1(23 downto 0) => hdmi_decode_m_axis_tdata1(23 downto 0),
-      m_axis_tlast1 => hdmi_decode_m_axis_tlast1,
-      m_axis_tready1 => m_axis_tready1_1,
-      m_axis_tuser1(0) => hdmi_decode_m_axis_tuser1(0),
-      m_axis_tvalid1 => hdmi_decode_m_axis_tvalid1,
       vid_io_in_reset => proc_sys_reset_0_peripheral_reset(0)
     );
 proc_sys_reset_0: component img_proc_proc_sys_reset_0_0
@@ -4646,11 +4586,6 @@ processing_system7_0: component img_proc_processing_system7_0_0
       USB0_VBUS_PWRFAULT => '0',
       USB0_VBUS_PWRSELECT => NLW_processing_system7_0_USB0_VBUS_PWRSELECT_UNCONNECTED
     );
-util_vector_logic_0: component img_proc_util_vector_logic_0_0
-     port map (
-      Op1(0) => ext_reset_in_1,
-      Res(0) => NLW_util_vector_logic_0_Res_UNCONNECTED(0)
-    );
 vdma: entity work.vdma_imp_QLRT7Y
      port map (
       ARESETN => proc_sys_reset_0_interconnect_aresetn(0),
@@ -4738,12 +4673,7 @@ vdma: entity work.vdma_imp_QLRT7Y
       S_AXIS_S2MM_tvalid => hdmi_decode_M_AXIS_TVALID,
       axi_resetn => proc_sys_reset_0_peripheral_aresetn(0),
       ctl => ctl_1,
-      m_axi_mm2s_aclk => processing_system7_0_FCLK_CLK0,
-      s_axis1_tdata(23 downto 0) => hdmi_decode_m_axis_tdata1(23 downto 0),
-      s_axis1_tlast => hdmi_decode_m_axis_tlast1,
-      s_axis1_tready => m_axis_tready1_1,
-      s_axis1_tuser(0) => hdmi_decode_m_axis_tuser1(0),
-      s_axis1_tvalid => hdmi_decode_m_axis_tvalid1
+      m_axi_mm2s_aclk => processing_system7_0_FCLK_CLK0
     );
 xlconstant_0: component img_proc_xlconstant_0_1
      port map (

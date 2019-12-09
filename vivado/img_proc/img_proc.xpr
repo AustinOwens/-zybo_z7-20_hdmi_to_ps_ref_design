@@ -101,9 +101,6 @@
         <CompFileExtendedInfo CompFileName="img_proc.bd" FileRelPathName="ip/img_proc_video_stream_mux_0_0/img_proc_video_stream_mux_0_0.xci">
           <Proxy FileSetName="img_proc_video_stream_mux_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="img_proc.bd" FileRelPathName="ip/img_proc_util_vector_logic_0_0/img_proc_util_vector_logic_0_0.xci">
-          <Proxy FileSetName="img_proc_util_vector_logic_0_0"/>
-        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="img_proc.bd" FileRelPathName="ip/img_proc_dvi2rgb_0_1/img_proc_dvi2rgb_0_1.xci">
           <Proxy FileSetName="img_proc_dvi2rgb_0_1"/>
         </CompFileExtendedInfo>
@@ -111,7 +108,7 @@
       <File Path="$PSRCDIR/sources_1/imports/hdl/img_proc_wrapper.vhd">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/bd/img_proc/hdl/img_proc_wrapper.vhd"/>
-          <Attr Name="ImportTime" Val="1575845775"/>
+          <Attr Name="ImportTime" Val="1575864704"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -192,12 +189,6 @@
     <FileSet Name="img_proc_v_tpg_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/img_proc_v_tpg_0_0">
       <Config>
         <Option Name="TopModule" Val="img_proc_v_tpg_0_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="img_proc_util_vector_logic_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/img_proc_util_vector_logic_0_0">
-      <Config>
-        <Option Name="TopModule" Val="img_proc_util_vector_logic_0_0"/>
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
@@ -328,18 +319,6 @@
       <RQSFiles/>
     </Run>
     <Run Id="img_proc_v_tpg_0_0_synth_1" Type="Ft3:Synth" SrcSet="img_proc_v_tpg_0_0" Part="xc7z020clg400-1" ConstrsSet="img_proc_v_tpg_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/img_proc_v_tpg_0_0_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2019"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="img_proc_util_vector_logic_0_0_synth_1" Type="Ft3:Synth" SrcSet="img_proc_util_vector_logic_0_0" Part="xc7z020clg400-1" ConstrsSet="img_proc_util_vector_logic_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/img_proc_util_vector_logic_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
           <Desc>Vivado Synthesis Defaults</Desc>
@@ -532,25 +511,6 @@
       <RQSFiles/>
     </Run>
     <Run Id="img_proc_v_tpg_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="img_proc_v_tpg_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="img_proc_v_tpg_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design" EnableStepBool="1"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2019"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="img_proc_util_vector_logic_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="img_proc_util_vector_logic_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="img_proc_util_vector_logic_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
           <Desc>Default settings for Implementation.</Desc>

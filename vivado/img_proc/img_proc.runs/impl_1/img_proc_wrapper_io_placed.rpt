@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2019.2 (lin64) Build 2700185 Thu Oct 24 18:45:48 MDT 2019
-| Date                      : Sun Dec  8 19:58:48 2019
+| Date                      : Sun Dec  8 20:16:58 2019
 | Host                      : austin-ubuntu running 64-bit Ubuntu 18.04.3 LTS
 | Command                   : report_io -file img_proc_wrapper_io_placed.rpt
 | Design                    : img_proc_wrapper
@@ -25,7 +25,7 @@ Table of Contents
 +---------------+
 | Total User IO |
 +---------------+
-|           147 |
+|           146 |
 +---------------+
 
 
@@ -232,7 +232,7 @@ Table of Contents
 | K15        |                    |            | GND                     | GND         |                    |         |            |      |                     |                      |     0.0 |            |           |          |      |                  |              |                   |              |
 | K16        |                    | High Range | IO_L24P_T3_AD15P_35     | User IO     |                    |      35 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | K17        |                    | High Range | IO_L12P_T1_MRCC_35      | User IO     |                    |      35 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
-| K18        | ext_reset_in       | High Range | IO_L12N_T1_MRCC_35      | INPUT       | LVCMOS33           |      35 |            |      |                     |                 NONE |         | FIXED      |           |          |      | NONE             |              |                   |              |
+| K18        |                    | High Range | IO_L12N_T1_MRCC_35      | User IO     |                    |      35 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | K19        |                    | High Range | IO_L10P_T1_AD11P_35     | User IO     |                    |      35 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | K20        |                    | High Range | VCCO_35                 | VCCO        |                    |      35 |            |      |                     |                      |    3.30 |            |           |          |      |                  |              |                   |              |
 | L1         | DDR_addr[5]        |            | PS_DDR_A5_502           | OUT         | SSTL135            |         |            | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |

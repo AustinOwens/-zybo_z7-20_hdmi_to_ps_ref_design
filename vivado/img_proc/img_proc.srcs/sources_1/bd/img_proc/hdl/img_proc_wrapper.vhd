@@ -1,7 +1,7 @@
 --Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2019.2 (lin64) Build 2700185 Thu Oct 24 18:45:48 MDT 2019
---Date        : Sun Dec  8 19:54:05 2019
+--Date        : Sun Dec  8 20:12:37 2019
 --Host        : austin-ubuntu running 64-bit Ubuntu 18.04.3 LTS
 --Command     : generate_target img_proc_wrapper.bd
 --Design      : img_proc_wrapper
@@ -35,7 +35,6 @@ entity img_proc_wrapper is
     FIXED_IO_ps_porb : inout STD_LOGIC;
     FIXED_IO_ps_srstb : inout STD_LOGIC;
     ctl : in STD_LOGIC;
-    ext_reset_in : in STD_LOGIC;
     hdmi_in_clk_n : in STD_LOGIC;
     hdmi_in_clk_p : in STD_LOGIC;
     hdmi_in_data_n : in STD_LOGIC_VECTOR ( 2 downto 0 );
@@ -83,7 +82,6 @@ architecture STRUCTURE of img_proc_wrapper is
     DDR_dq : inout STD_LOGIC_VECTOR ( 31 downto 0 );
     DDR_dqs_n : inout STD_LOGIC_VECTOR ( 3 downto 0 );
     DDR_dqs_p : inout STD_LOGIC_VECTOR ( 3 downto 0 );
-    ext_reset_in : in STD_LOGIC;
     ctl : in STD_LOGIC
   );
   end component img_proc;
@@ -140,7 +138,6 @@ img_proc_i: component img_proc
       FIXED_IO_ps_porb => FIXED_IO_ps_porb,
       FIXED_IO_ps_srstb => FIXED_IO_ps_srstb,
       ctl => ctl,
-      ext_reset_in => ext_reset_in,
       hdmi_in_clk_n => hdmi_in_clk_n,
       hdmi_in_clk_p => hdmi_in_clk_p,
       hdmi_in_data_n(2 downto 0) => hdmi_in_data_n(2 downto 0),

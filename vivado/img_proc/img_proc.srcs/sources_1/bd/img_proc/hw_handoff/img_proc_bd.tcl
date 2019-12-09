@@ -171,11 +171,6 @@ proc create_hier_cell_vdma { parentCell nameHier } {
   create_bd_pin -dir I -type rst axi_resetn
   create_bd_pin -dir I ctl
   create_bd_pin -dir I -type clk m_axi_mm2s_aclk
-  create_bd_pin -dir I -from 23 -to 0 s_axis1_tdata
-  create_bd_pin -dir I s_axis1_tlast
-  create_bd_pin -dir O s_axis1_tready
-  create_bd_pin -dir I -from 0 -to 0 s_axis1_tuser
-  create_bd_pin -dir I s_axis1_tvalid
 
   # Create instance: axi_gpio_1, and set properties
   set axi_gpio_1 [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_1 ]
@@ -287,11 +282,6 @@ proc create_hier_cell_hdmi_decode { parentCell nameHier } {
   create_bd_pin -dir I -type clk RefClk
   create_bd_pin -dir I aRst
   create_bd_pin -dir I -type ce aclken
-  create_bd_pin -dir O -from 23 -to 0 m_axis_tdata1
-  create_bd_pin -dir O m_axis_tlast1
-  create_bd_pin -dir I m_axis_tready1
-  create_bd_pin -dir O -from 0 -to 0 m_axis_tuser1
-  create_bd_pin -dir O m_axis_tvalid1
   create_bd_pin -dir I -type rst vid_io_in_reset
 
   # Create instance: axis_subset_converter_0, and set properties
@@ -398,7 +388,6 @@ proc create_root_design { parentCell } {
 
   # Create ports
   set ctl [ create_bd_port -dir I ctl ]
-  set ext_reset_in [ create_bd_port -dir I -type rst ext_reset_in ]
   set hdmi_in_hpd [ create_bd_port -dir O -from 0 -to 0 hdmi_in_hpd ]
 
   # Create instance: hdmi_decode
@@ -885,14 +874,6 @@ proc create_root_design { parentCell } {
    CONFIG.PCW_USE_S_AXI_HP0 {1} \
  ] $processing_system7_0
 
-  # Create instance: util_vector_logic_0, and set properties
-  set util_vector_logic_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 util_vector_logic_0 ]
-  set_property -dict [ list \
-   CONFIG.C_OPERATION {not} \
-   CONFIG.C_SIZE {1} \
-   CONFIG.LOGO_FILE {data/sym_notgate.png} \
- ] $util_vector_logic_0
-
   # Create instance: vdma
   create_hier_cell_vdma [current_bd_instance .] vdma
 
@@ -911,12 +892,6 @@ proc create_root_design { parentCell } {
 
   # Create port connections
   connect_bd_net -net ctl_1 [get_bd_ports ctl] [get_bd_pins vdma/ctl]
-  connect_bd_net -net ext_reset_in_1 [get_bd_ports ext_reset_in] [get_bd_pins util_vector_logic_0/Op1]
-  connect_bd_net -net hdmi_decode_m_axis_tdata1 [get_bd_pins hdmi_decode/m_axis_tdata1] [get_bd_pins vdma/s_axis1_tdata]
-  connect_bd_net -net hdmi_decode_m_axis_tlast1 [get_bd_pins hdmi_decode/m_axis_tlast1] [get_bd_pins vdma/s_axis1_tlast]
-  connect_bd_net -net hdmi_decode_m_axis_tuser1 [get_bd_pins hdmi_decode/m_axis_tuser1] [get_bd_pins vdma/s_axis1_tuser]
-  connect_bd_net -net hdmi_decode_m_axis_tvalid1 [get_bd_pins hdmi_decode/m_axis_tvalid1] [get_bd_pins vdma/s_axis1_tvalid]
-  connect_bd_net -net m_axis_tready1_1 [get_bd_pins hdmi_decode/m_axis_tready1] [get_bd_pins vdma/s_axis1_tready]
   connect_bd_net -net proc_sys_reset_0_interconnect_aresetn [get_bd_pins proc_sys_reset_0/interconnect_aresetn] [get_bd_pins vdma/ARESETN]
   connect_bd_net -net proc_sys_reset_0_peripheral_aresetn [get_bd_pins hdmi_decode/aRst] [get_bd_pins proc_sys_reset_0/peripheral_aresetn] [get_bd_pins vdma/axi_resetn]
   connect_bd_net -net proc_sys_reset_0_peripheral_reset [get_bd_pins hdmi_decode/vid_io_in_reset] [get_bd_pins proc_sys_reset_0/peripheral_reset]

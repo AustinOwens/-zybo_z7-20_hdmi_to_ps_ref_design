@@ -51,9 +51,6 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==img_proc_v_tpg_
 # IP: bd/img_proc/ip/img_proc_dvi2rgb_0_1/img_proc_dvi2rgb_0_1.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==img_proc_dvi2rgb_0_1 || ORIG_REF_NAME==img_proc_dvi2rgb_0_1} -quiet] -quiet
 
-# IP: bd/img_proc/ip/img_proc_util_vector_logic_0_0/img_proc_util_vector_logic_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==img_proc_util_vector_logic_0_0 || ORIG_REF_NAME==img_proc_util_vector_logic_0_0} -quiet] -quiet
-
 # IP: bd/img_proc/ip/img_proc_auto_pc_0/img_proc_auto_pc_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==img_proc_auto_pc_0 || ORIG_REF_NAME==img_proc_auto_pc_0} -quiet] -quiet
 

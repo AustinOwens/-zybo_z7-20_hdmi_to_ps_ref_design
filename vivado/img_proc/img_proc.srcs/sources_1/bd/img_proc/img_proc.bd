@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x89E9C7CCD1C9FC26",
+      "boundary_crc": "0x2772C2AE74D3E09D",
       "device": "xc7z020clg400-1",
       "name": "img_proc",
       "synth_flow_mode": "Hierarchical",
@@ -40,8 +40,7 @@
         "axi_gpio_1": "",
         "v_tpg_0": "",
         "video_stream_mux_0": ""
-      },
-      "util_vector_logic_0": ""
+      }
     },
     "interface_ports": {
       "hdmi_in": {
@@ -126,20 +125,6 @@
         "direction": "O",
         "left": "0",
         "right": "0"
-      },
-      "ext_reset_in": {
-        "type": "rst",
-        "direction": "I",
-        "parameters": {
-          "INSERT_VIP": {
-            "value": "0",
-            "value_src": "default"
-          },
-          "POLARITY": {
-            "value": "ACTIVE_LOW",
-            "value_src": "default"
-          }
-        }
       },
       "ctl": {
         "direction": "I"
@@ -1198,25 +1183,6 @@
           "aclken": {
             "type": "ce",
             "direction": "I"
-          },
-          "m_axis_tdata1": {
-            "direction": "O",
-            "left": "23",
-            "right": "0"
-          },
-          "m_axis_tlast1": {
-            "direction": "O"
-          },
-          "m_axis_tready1": {
-            "direction": "I"
-          },
-          "m_axis_tuser1": {
-            "direction": "O",
-            "left": "0",
-            "right": "0"
-          },
-          "m_axis_tvalid1": {
-            "direction": "O"
           }
         },
         "components": {
@@ -1411,25 +1377,6 @@
           },
           "ARESETN": {
             "type": "rst",
-            "direction": "I"
-          },
-          "s_axis1_tdata": {
-            "direction": "I",
-            "left": "23",
-            "right": "0"
-          },
-          "s_axis1_tlast": {
-            "direction": "I"
-          },
-          "s_axis1_tready": {
-            "direction": "O"
-          },
-          "s_axis1_tuser": {
-            "direction": "I",
-            "left": "0",
-            "right": "0"
-          },
-          "s_axis1_tvalid": {
             "direction": "I"
           },
           "ctl": {
@@ -1636,16 +1583,16 @@
                   }
                 },
                 "interface_nets": {
-                  "s00_couplers_to_auto_pc": {
-                    "interface_ports": [
-                      "S_AXI",
-                      "auto_pc/S_AXI"
-                    ]
-                  },
                   "auto_pc_to_s00_couplers": {
                     "interface_ports": [
                       "M_AXI",
                       "auto_pc/M_AXI"
+                    ]
+                  },
+                  "s00_couplers_to_auto_pc": {
+                    "interface_ports": [
+                      "S_AXI",
+                      "auto_pc/S_AXI"
                     ]
                   }
                 },
@@ -1828,22 +1775,10 @@
               }
             },
             "interface_nets": {
-              "axi_interconnect_0_to_s00_couplers": {
+              "m00_couplers_to_axi_interconnect_0": {
                 "interface_ports": [
-                  "S00_AXI",
-                  "s00_couplers/S_AXI"
-                ]
-              },
-              "s00_couplers_to_xbar": {
-                "interface_ports": [
-                  "s00_couplers/M_AXI",
-                  "xbar/S00_AXI"
-                ]
-              },
-              "m02_couplers_to_axi_interconnect_0": {
-                "interface_ports": [
-                  "M02_AXI",
-                  "m02_couplers/M_AXI"
+                  "M00_AXI",
+                  "m00_couplers/M_AXI"
                 ]
               },
               "xbar_to_m00_couplers": {
@@ -1852,16 +1787,10 @@
                   "m00_couplers/S_AXI"
                 ]
               },
-              "m00_couplers_to_axi_interconnect_0": {
+              "s00_couplers_to_xbar": {
                 "interface_ports": [
-                  "M00_AXI",
-                  "m00_couplers/M_AXI"
-                ]
-              },
-              "xbar_to_m01_couplers": {
-                "interface_ports": [
-                  "xbar/M01_AXI",
-                  "m01_couplers/S_AXI"
+                  "s00_couplers/M_AXI",
+                  "xbar/S00_AXI"
                 ]
               },
               "m01_couplers_to_axi_interconnect_0": {
@@ -1870,10 +1799,28 @@
                   "m01_couplers/M_AXI"
                 ]
               },
+              "axi_interconnect_0_to_s00_couplers": {
+                "interface_ports": [
+                  "S00_AXI",
+                  "s00_couplers/S_AXI"
+                ]
+              },
+              "xbar_to_m01_couplers": {
+                "interface_ports": [
+                  "xbar/M01_AXI",
+                  "m01_couplers/S_AXI"
+                ]
+              },
               "xbar_to_m02_couplers": {
                 "interface_ports": [
                   "xbar/M02_AXI",
                   "m02_couplers/S_AXI"
+                ]
+              },
+              "m02_couplers_to_axi_interconnect_0": {
+                "interface_ports": [
+                  "M02_AXI",
+                  "m02_couplers/M_AXI"
                 ]
               }
             },
@@ -2250,22 +2197,16 @@
               }
             },
             "interface_nets": {
-              "s01_couplers_to_xbar": {
-                "interface_ports": [
-                  "s01_couplers/M_AXI",
-                  "xbar/S01_AXI"
-                ]
-              },
-              "axi_interconnect_1_to_s00_couplers": {
-                "interface_ports": [
-                  "S00_AXI",
-                  "s00_couplers/S_AXI"
-                ]
-              },
               "xbar_to_m00_couplers": {
                 "interface_ports": [
                   "xbar/M00_AXI",
                   "m00_couplers/S_AXI"
+                ]
+              },
+              "s00_couplers_to_xbar": {
+                "interface_ports": [
+                  "s00_couplers/M_AXI",
+                  "xbar/S00_AXI"
                 ]
               },
               "m00_couplers_to_axi_interconnect_1": {
@@ -2274,16 +2215,22 @@
                   "m00_couplers/M_AXI"
                 ]
               },
+              "axi_interconnect_1_to_s00_couplers": {
+                "interface_ports": [
+                  "S00_AXI",
+                  "s00_couplers/S_AXI"
+                ]
+              },
               "axi_interconnect_1_to_s01_couplers": {
                 "interface_ports": [
                   "S01_AXI",
                   "s01_couplers/S_AXI"
                 ]
               },
-              "s00_couplers_to_xbar": {
+              "s01_couplers_to_xbar": {
                 "interface_ports": [
-                  "s00_couplers/M_AXI",
-                  "xbar/S00_AXI"
+                  "s01_couplers/M_AXI",
+                  "xbar/S01_AXI"
                 ]
               }
             },
@@ -2498,18 +2445,6 @@
             ]
           }
         }
-      },
-      "util_vector_logic_0": {
-        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
-        "xci_name": "img_proc_util_vector_logic_0_0",
-        "parameters": {
-          "C_OPERATION": {
-            "value": "not"
-          },
-          "C_SIZE": {
-            "value": "1"
-          }
-        }
       }
     },
     "interface_nets": {
@@ -2599,46 +2534,10 @@
           "vdma/ARESETN"
         ]
       },
-      "hdmi_decode_m_axis_tdata1": {
-        "ports": [
-          "hdmi_decode/m_axis_tdata1",
-          "vdma/s_axis1_tdata"
-        ]
-      },
-      "hdmi_decode_m_axis_tlast1": {
-        "ports": [
-          "hdmi_decode/m_axis_tlast1",
-          "vdma/s_axis1_tlast"
-        ]
-      },
-      "m_axis_tready1_1": {
-        "ports": [
-          "vdma/s_axis1_tready",
-          "hdmi_decode/m_axis_tready1"
-        ]
-      },
-      "hdmi_decode_m_axis_tuser1": {
-        "ports": [
-          "hdmi_decode/m_axis_tuser1",
-          "vdma/s_axis1_tuser"
-        ]
-      },
-      "hdmi_decode_m_axis_tvalid1": {
-        "ports": [
-          "hdmi_decode/m_axis_tvalid1",
-          "vdma/s_axis1_tvalid"
-        ]
-      },
       "ctl_1": {
         "ports": [
           "ctl",
           "vdma/ctl"
-        ]
-      },
-      "ext_reset_in_1": {
-        "ports": [
-          "ext_reset_in",
-          "util_vector_logic_0/Op1"
         ]
       },
       "processing_system7_0_FCLK_RESET0_N": {

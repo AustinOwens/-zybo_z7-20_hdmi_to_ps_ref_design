@@ -6,7 +6,7 @@
 
 source /tools/Xilinx/Vivado/2019.2/scripts/vivado_hls/hls.tcl -notrace
 INFO: [HLS 200-10] Running '/tools/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/vivado_hls'
-INFO: [HLS 200-10] For user 'austin' on host 'austin-ubuntu' (Linux_x86_64 version 5.0.0-37-generic) on Sun Dec 08 19:55:03 PST 2019
+INFO: [HLS 200-10] For user 'austin' on host 'austin-ubuntu' (Linux_x86_64 version 5.0.0-37-generic) on Sun Dec 08 20:13:11 PST 2019
 INFO: [HLS 200-10] On os Ubuntu 18.04.3 LTS
 INFO: [HLS 200-10] In directory '/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/img_proc_v_tpg_0_0_synth_1'
 Sourcing Tcl script '/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/img_proc_v_tpg_0_0_synth_1/runhls.tcl'
@@ -20,14 +20,14 @@ INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
 INFO: [SYN 201-201] Setting up clock 'ap_clk' with a period of 8ns.
 INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
 INFO: [HLS 200-10] Analyzing design file '/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/ip/img_proc_v_tpg_0_0/src/v_tpg.cpp' ... 
-INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 968.680 ; gain = 528.973 ; free physical = 8263 ; free virtual = 17390
-INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 968.680 ; gain = 528.973 ; free physical = 8263 ; free virtual = 17390
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 968.680 ; gain = 528.973 ; free physical = 9347 ; free virtual = 18985
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 968.680 ; gain = 528.973 ; free physical = 9347 ; free virtual = 18985
 INFO: [HLS 200-10] Starting code transformations ...
-INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 968.680 ; gain = 528.973 ; free physical = 8205 ; free virtual = 17337
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 968.680 ; gain = 528.973 ; free physical = 9304 ; free virtual = 18943
 INFO: [HLS 200-10] Checking synthesizability ...
 WARNING: [SYNCHK 200-23] /home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/ip/img_proc_v_tpg_0_0/src/v_tpg.cpp:944: variable-indexed range selection may cause suboptimal QoR.
 INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
-INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 968.680 ; gain = 528.973 ; free physical = 8123 ; free virtual = 17256
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 968.680 ; gain = 528.973 ; free physical = 9273 ; free virtual = 18913
 INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'tpgPatternZonePlate'.
 INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'tpgPatternVerticalRamp'.
 INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'tpgPatternVerticalHorizontalRamp'.
@@ -143,7 +143,7 @@ INFO: [XFORM 203-401] Performing if-conversion on hyperblock in function 'tpgPRB
 INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/ip/img_proc_v_tpg_0_0/src/v_tpg.cpp:929:13) to (/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/ip/img_proc_v_tpg_0_0/src/v_tpg.cpp:898:53) in function 'MultiPixStream2AXIvideo'... converting 15 basic blocks.
 INFO: [XFORM 203-11] Balancing expressions in function 'tpgPatternRainbow' (/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/ip/img_proc_v_tpg_0_0/src/v_tpg.cpp:1215)...3 expression(s) balanced.
 INFO: [XFORM 203-11] Balancing expressions in function 'tpgPatternBox'...3 expression(s) balanced.
-INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1032.680 ; gain = 592.973 ; free physical = 7989 ; free virtual = 17124
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1032.680 ; gain = 592.973 ; free physical = 9224 ; free virtual = 18866
 WARNING: [XFORM 203-631] Renaming function 'tpgPatternVerticalRamp' to 'tpgPatternVerticalRa' 
 WARNING: [XFORM 203-631] Renaming function 'tpgPatternVerticalHorizontalRamp' to 'tpgPatternVerticalHo' 
 WARNING: [XFORM 203-631] Renaming function 'tpgPatternTemporalRamp' to 'tpgPatternTemporalRa' (/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/ip/img_proc_v_tpg_0_0/src/v_tpg.cpp:1070:5)
@@ -154,7 +154,7 @@ WARNING: [XFORM 203-631] Renaming function 'tpgPatternDPColorRamp' to 'tpgPatter
 WARNING: [XFORM 203-631] Renaming function 'tpgPatternDPBlackWhiteVerticalLine' to 'tpgPatternDPBlackWhi' (/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/ip/img_proc_v_tpg_0_0/src/v_tpg.cpp:1631:5)
 WARNING: [XFORM 203-631] Renaming function 'tpgPatternCheckerBoard' to 'tpgPatternCheckerBoa' 
 WARNING: [XFORM 203-631] Renaming function 'MultiPixStream2AXIvideo' to 'MultiPixStream2AXIvi' (/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/ip/img_proc_v_tpg_0_0/src/v_tpg.cpp:180:53)
-INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1354.742 ; gain = 915.035 ; free physical = 7585 ; free virtual = 16720
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1354.742 ; gain = 915.035 ; free physical = 8912 ; free virtual = 18555
 INFO: [HLS 200-10] Starting hardware synthesis ...
 INFO: [HLS 200-10] Synthesizing 'v_tpg' ...
 WARNING: [SYN 201-103] Legalizing function name 'reg<ap_uint<10> >' to 'reg_ap_uint_10_s'.
@@ -197,13 +197,13 @@ INFO: [SCHED 204-11] Finished scheduling optimization.
 INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 21.43 seconds; current allocated memory: 553.605 MB.
+INFO: [HLS 200-111]  Elapsed time: 21.22 seconds; current allocated memory: 553.606 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.94 seconds; current allocated memory: 554.096 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.9 seconds; current allocated memory: 554.096 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'tpgPatternDPBlackWhi' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -240,13 +240,13 @@ INFO: [SCHED 204-11] Finished scheduling optimization.
 INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.99 seconds; current allocated memory: 554.239 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.95 seconds; current allocated memory: 554.243 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.06 seconds; current allocated memory: 554.288 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.06 seconds; current allocated memory: 554.292 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'tpgPatternDPColorRam' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -283,13 +283,13 @@ INFO: [SCHED 204-11] Finished scheduling optimization.
 INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.1 seconds; current allocated memory: 554.418 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.1 seconds; current allocated memory: 554.422 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.25 seconds; current allocated memory: 554.586 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.25 seconds; current allocated memory: 554.591 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'tpgPRBS' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -326,13 +326,13 @@ INFO: [SCHED 204-11] Finished scheduling optimization.
 INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.32 seconds; current allocated memory: 554.773 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.3 seconds; current allocated memory: 554.775 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.15 seconds; current allocated memory: 554.941 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.15 seconds; current allocated memory: 554.944 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'tpgPatternCheckerBoa' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -369,13 +369,13 @@ INFO: [SCHED 204-11] Finished scheduling optimization.
 INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.23 seconds; current allocated memory: 555.265 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.22 seconds; current allocated memory: 555.271 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.38 seconds; current allocated memory: 555.627 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.37 seconds; current allocated memory: 555.632 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'tpgPatternVerticalHo' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -412,13 +412,13 @@ INFO: [SCHED 204-11] Finished scheduling optimization.
 INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.44 seconds; current allocated memory: 555.700 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.42 seconds; current allocated memory: 555.704 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.07 seconds; current allocated memory: 555.781 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.07 seconds; current allocated memory: 555.784 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'tpgPatternRainbow' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -496,13 +496,13 @@ WARNING: [SCHED 204-21] The critical path in module 'tpgPatternRainbow' consists
 	'add' operation of DSP[46] ('add_ln1237_1', /home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/ip/img_proc_v_tpg_0_0/src/v_tpg.cpp:1237) [46]  (3.02 ns)
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.19 seconds; current allocated memory: 556.345 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.18 seconds; current allocated memory: 556.349 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.72 seconds; current allocated memory: 556.805 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.7 seconds; current allocated memory: 556.807 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'reg_ap_uint_10_s' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -539,13 +539,13 @@ INFO: [SCHED 204-11] Finished scheduling optimization.
 INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.8 seconds; current allocated memory: 556.915 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.78 seconds; current allocated memory: 556.916 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.04 seconds; current allocated memory: 556.953 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.05 seconds; current allocated memory: 556.956 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'tpgPatternCrossHatch' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -582,13 +582,13 @@ INFO: [SCHED 204-11] Finished scheduling optimization.
 INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.13 seconds; current allocated memory: 557.272 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.14 seconds; current allocated memory: 557.274 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.38 seconds; current allocated memory: 557.596 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.38 seconds; current allocated memory: 557.599 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'tpgPatternTartanColo' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -625,13 +625,13 @@ INFO: [SCHED 204-11] Finished scheduling optimization.
 INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.47 seconds; current allocated memory: 557.938 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.47 seconds; current allocated memory: 557.935 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.37 seconds; current allocated memory: 558.296 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.37 seconds; current allocated memory: 558.293 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'reg_int_s' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -668,13 +668,13 @@ INFO: [SCHED 204-11] Finished scheduling optimization.
 INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.45 seconds; current allocated memory: 558.355 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.45 seconds; current allocated memory: 558.350 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.15 seconds; current allocated memory: 558.396 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.05 seconds; current allocated memory: 558.393 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'tpgPatternZonePlate' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -737,13 +737,13 @@ WARNING: [SCHED 204-21] The critical path in module 'tpgPatternZonePlate' consis
 	'load' operation ('tpgSinTableArray_loa', /home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/ip/img_proc_v_tpg_0_0/src/v_tpg.cpp:1299) on array 'tpgSinTableArray' [61]  (3.25 ns)
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.22 seconds; current allocated memory: 558.632 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.17 seconds; current allocated memory: 558.632 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.24 seconds; current allocated memory: 558.889 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.23 seconds; current allocated memory: 558.886 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'tpgPatternColorBars' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -785,13 +785,13 @@ INFO: [SCHED 204-11] Finished scheduling optimization.
 INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.35 seconds; current allocated memory: 559.203 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.43 seconds; current allocated memory: 559.200 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.74 seconds; current allocated memory: 559.640 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.72 seconds; current allocated memory: 559.633 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'tpgPatternSolidWhite' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -828,13 +828,13 @@ INFO: [SCHED 204-11] Finished scheduling optimization.
 INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.85 seconds; current allocated memory: 559.724 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.84 seconds; current allocated memory: 559.719 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.09 seconds; current allocated memory: 559.809 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.08 seconds; current allocated memory: 559.805 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'tpgPatternSolidBlack' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -871,13 +871,13 @@ INFO: [SCHED 204-11] Finished scheduling optimization.
 INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.2 seconds; current allocated memory: 559.881 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.2 seconds; current allocated memory: 559.874 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.08 seconds; current allocated memory: 559.971 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.08 seconds; current allocated memory: 559.963 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'tpgPatternSolidBlue' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -914,13 +914,13 @@ INFO: [SCHED 204-11] Finished scheduling optimization.
 INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.2 seconds; current allocated memory: 560.096 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.2 seconds; current allocated memory: 560.088 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.09 seconds; current allocated memory: 560.190 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.09 seconds; current allocated memory: 560.182 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'tpgPatternSolidGreen' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -957,13 +957,13 @@ INFO: [SCHED 204-11] Finished scheduling optimization.
 INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.22 seconds; current allocated memory: 560.267 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.22 seconds; current allocated memory: 560.259 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.09 seconds; current allocated memory: 560.362 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.09 seconds; current allocated memory: 560.354 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'tpgPatternSolidRed' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -1000,13 +1000,13 @@ INFO: [SCHED 204-11] Finished scheduling optimization.
 INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.23 seconds; current allocated memory: 560.459 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.22 seconds; current allocated memory: 560.451 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.1 seconds; current allocated memory: 560.552 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.1 seconds; current allocated memory: 560.546 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'tpgPatternTemporalRa' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -1043,13 +1043,13 @@ INFO: [SCHED 204-11] Finished scheduling optimization.
 INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.24 seconds; current allocated memory: 560.598 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.23 seconds; current allocated memory: 560.590 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.09 seconds; current allocated memory: 560.655 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.09 seconds; current allocated memory: 560.647 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'tpgPatternVerticalRa' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -1086,13 +1086,13 @@ INFO: [SCHED 204-11] Finished scheduling optimization.
 INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.24 seconds; current allocated memory: 560.761 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.24 seconds; current allocated memory: 560.754 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.11 seconds; current allocated memory: 560.852 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.11 seconds; current allocated memory: 560.844 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'tpgPatternHorizontal' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -1129,13 +1129,13 @@ INFO: [SCHED 204-11] Finished scheduling optimization.
 INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.27 seconds; current allocated memory: 560.922 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.26 seconds; current allocated memory: 560.918 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.13 seconds; current allocated memory: 561.006 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.13 seconds; current allocated memory: 561.000 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'tpgBackground' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -1172,13 +1172,13 @@ INFO: [SCHED 204-11] Finished scheduling optimization.
 INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.34 seconds; current allocated memory: 562.157 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.35 seconds; current allocated memory: 562.147 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 1.32 seconds; current allocated memory: 565.001 MB.
+INFO: [HLS 200-111]  Elapsed time: 1.32 seconds; current allocated memory: 564.994 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'tpgPatternBox' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -1215,13 +1215,13 @@ INFO: [SCHED 204-11] Finished scheduling optimization.
 INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 1.01 seconds; current allocated memory: 565.290 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.94 seconds; current allocated memory: 565.284 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.36 seconds; current allocated memory: 565.627 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.35 seconds; current allocated memory: 565.621 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'tpgPatternCrossHair' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -1258,13 +1258,13 @@ INFO: [SCHED 204-11] Finished scheduling optimization.
 INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.57 seconds; current allocated memory: 565.751 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.51 seconds; current allocated memory: 565.743 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.15 seconds; current allocated memory: 565.890 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.14 seconds; current allocated memory: 565.883 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'tpgPatternMask' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -1301,13 +1301,13 @@ INFO: [SCHED 204-11] Finished scheduling optimization.
 INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.33 seconds; current allocated memory: 565.960 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.31 seconds; current allocated memory: 565.955 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.11 seconds; current allocated memory: 566.039 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.1 seconds; current allocated memory: 566.034 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'tpgForeground' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -1344,13 +1344,13 @@ INFO: [SCHED 204-11] Finished scheduling optimization.
 INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.32 seconds; current allocated memory: 566.257 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.31 seconds; current allocated memory: 566.250 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.3 seconds; current allocated memory: 567.776 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.3 seconds; current allocated memory: 567.768 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'reg_unsigned_short_s' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -1385,13 +1385,13 @@ INFO: [SCHED 204-11] Finished scheduling optimization.
 INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.44 seconds; current allocated memory: 567.830 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.43 seconds; current allocated memory: 567.823 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.07 seconds; current allocated memory: 567.871 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.07 seconds; current allocated memory: 567.864 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'MultiPixStream2AXIvi' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -1428,13 +1428,13 @@ INFO: [SCHED 204-11] Finished scheduling optimization.
 INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.28 seconds; current allocated memory: 568.144 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.27 seconds; current allocated memory: 568.139 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.65 seconds; current allocated memory: 568.589 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.62 seconds; current allocated memory: 568.583 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'v_tpg' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -1469,13 +1469,13 @@ INFO: [SCHED 204-11] Finished scheduling optimization.
 INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.82 seconds; current allocated memory: 568.844 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.82 seconds; current allocated memory: 568.838 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.86 seconds; current allocated memory: 570.118 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.84 seconds; current allocated memory: 570.111 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'tpgPatternDPColorSqu' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -1497,18 +1497,18 @@ INFO: [SYN 201-210] Renamed object name 'tpgPatternDPColorSqu_DPtpgBarSelYuv_709
 INFO: [SYN 201-210] Renamed object name 'tpgPatternDPColorSqu_DPtpgBarSelYuv_709_v' to 'tpgPatternDPColorncg' due to the length limit 20
 WARNING: [RTGEN 206-101] Register 'xCount_V_2_0' is power-on initialization.
 INFO: [RTGEN 206-100] Finished creating RTL model for 'tpgPatternDPColorSqu'.
-INFO: [HLS 200-111]  Elapsed time: 0.72 seconds; current allocated memory: 571.323 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.68 seconds; current allocated memory: 571.317 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'tpgPatternDPBlackWhi' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'tpgPatternDPBlackWhi'.
-INFO: [HLS 200-111]  Elapsed time: 1.07 seconds; current allocated memory: 573.538 MB.
+INFO: [HLS 200-111]  Elapsed time: 1.02 seconds; current allocated memory: 573.533 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'tpgPatternDPColorRam' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 WARNING: [RTGEN 206-101] Register 'rampVal_2' is power-on initialization.
 INFO: [RTGEN 206-100] Finished creating RTL model for 'tpgPatternDPColorRam'.
-INFO: [HLS 200-111]  Elapsed time: 0.1 seconds; current allocated memory: 574.053 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.1 seconds; current allocated memory: 574.048 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'tpgPRBS' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -1516,7 +1516,7 @@ WARNING: [RTGEN 206-101] Register 'rSerie_V' is power-on initialization.
 WARNING: [RTGEN 206-101] Register 'gSerie_V' is power-on initialization.
 WARNING: [RTGEN 206-101] Register 'bSerie_V' is power-on initialization.
 INFO: [RTGEN 206-100] Finished creating RTL model for 'tpgPRBS'.
-INFO: [HLS 200-111]  Elapsed time: 0.34 seconds; current allocated memory: 575.015 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.33 seconds; current allocated memory: 575.008 MB.
 INFO: [WVHDL 200-304] Encrypting RTL VHDL done.
 INFO: [WVHDL 200-304] Encrypting RTL Verilog done.
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -1534,7 +1534,7 @@ INFO: [SYN 201-210] Renamed object name 'tpgPatternCheckerBoa_tpgBarSelYuv_u350'
 INFO: [SYN 201-210] Renamed object name 'tpgPatternCheckerBoa_tpgBarSelRgb_b358' to 'tpgPatternCheckerudo' due to the length limit 20
 WARNING: [RTGEN 206-101] Register 'xCount_V_0' is power-on initialization.
 INFO: [RTGEN 206-100] Finished creating RTL model for 'tpgPatternCheckerBoa'.
-INFO: [HLS 200-111]  Elapsed time: 0.3 seconds; current allocated memory: 569.884 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.29 seconds; current allocated memory: 569.878 MB.
 INFO: [WVHDL 200-304] Encrypting RTL VHDL done.
 INFO: [WVHDL 200-304] Encrypting RTL Verilog done.
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -1542,7 +1542,7 @@ INFO: [HLS 200-10] -- Generating RTL for module 'tpgPatternVerticalHo'
 INFO: [HLS 200-10] ----------------------------------------------------------------
 WARNING: [RTGEN 206-101] Register 'hdata' is power-on initialization.
 INFO: [RTGEN 206-100] Finished creating RTL model for 'tpgPatternVerticalHo'.
-INFO: [HLS 200-111]  Elapsed time: 0.45 seconds; current allocated memory: 570.167 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.43 seconds; current allocated memory: 570.163 MB.
 INFO: [WVHDL 200-304] Encrypting RTL VHDL done.
 INFO: [WVHDL 200-304] Encrypting RTL Verilog done.
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -1562,12 +1562,12 @@ INFO: [RTGEN 206-100] Generating core module 'v_tpg_mac_muladd_xdS': 1 instance(
 INFO: [RTGEN 206-100] Generating core module 'v_tpg_mac_muladd_yd2': 1 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'v_tpg_mac_muladd_zec': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'tpgPatternRainbow'.
-INFO: [HLS 200-111]  Elapsed time: 0.2 seconds; current allocated memory: 571.067 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.2 seconds; current allocated memory: 571.065 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'reg_ap_uint_10_s' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'reg_ap_uint_10_s'.
-INFO: [HLS 200-111]  Elapsed time: 0.87 seconds; current allocated memory: 572.707 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.86 seconds; current allocated memory: 572.705 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'tpgPatternCrossHatch' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -1577,7 +1577,7 @@ INFO: [SYN 201-210] Renamed object name 'tpgPatternCrossHatch_whiYuv_1' to 'tpgP
 INFO: [SYN 201-210] Renamed object name 'tpgPatternCrossHatch_blkYuv_1' to 'tpgPatternCrossHaDeQ' due to the length limit 20
 WARNING: [RTGEN 206-101] Register 'xCount_V_1_0' is power-on initialization.
 INFO: [RTGEN 206-100] Finished creating RTL model for 'tpgPatternCrossHatch'.
-INFO: [HLS 200-111]  Elapsed time: 0.14 seconds; current allocated memory: 573.543 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.13 seconds; current allocated memory: 573.540 MB.
 INFO: [WVHDL 200-304] Encrypting RTL VHDL done.
 INFO: [WVHDL 200-304] Encrypting RTL Verilog done.
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -1595,14 +1595,14 @@ INFO: [SYN 201-210] Renamed object name 'tpgPatternTartanColo_tpgBarSelYuv_u349'
 INFO: [SYN 201-210] Renamed object name 'tpgPatternTartanColo_tpgBarSelRgb_b357' to 'tpgPatternTartanCKfY' due to the length limit 20
 WARNING: [RTGEN 206-101] Register 'xCount_V_3_0' is power-on initialization.
 INFO: [RTGEN 206-100] Finished creating RTL model for 'tpgPatternTartanColo'.
-INFO: [HLS 200-111]  Elapsed time: 0.53 seconds; current allocated memory: 574.285 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.52 seconds; current allocated memory: 574.281 MB.
 INFO: [WVHDL 200-304] Encrypting RTL VHDL done.
 INFO: [WVHDL 200-304] Encrypting RTL Verilog done.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'reg_int_s' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'reg_int_s'.
-INFO: [HLS 200-111]  Elapsed time: 0.43 seconds; current allocated memory: 574.446 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.47 seconds; current allocated memory: 574.442 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'tpgPatternZonePlate' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -1618,7 +1618,7 @@ INFO: [RTGEN 206-100] Generating core module 'v_tpg_mac_muladd_OgC': 1 instance(
 INFO: [RTGEN 206-100] Generating core module 'v_tpg_mul_mul_17sNgs': 1 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'v_tpg_mul_mul_9nsPgM': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'tpgPatternZonePlate'.
-INFO: [HLS 200-111]  Elapsed time: 0.16 seconds; current allocated memory: 575.208 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.17 seconds; current allocated memory: 575.204 MB.
 INFO: [WVHDL 200-304] Encrypting RTL VHDL done.
 INFO: [WVHDL 200-304] Encrypting RTL Verilog done.
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -1635,13 +1635,13 @@ INFO: [SYN 201-210] Renamed object name 'tpgPatternColorBars_tpgBarSelRgb_b' to 
 WARNING: [RTGEN 206-101] Register 'xBar_V_0' is power-on initialization.
 WARNING: [RTGEN 206-101] Register 'count' is power-on initialization.
 INFO: [RTGEN 206-100] Finished creating RTL model for 'tpgPatternColorBars'.
-INFO: [HLS 200-111]  Elapsed time: 0.37 seconds; current allocated memory: 576.003 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.37 seconds; current allocated memory: 575.997 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'tpgPatternSolidWhite' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SYN 201-210] Renamed object name 'tpgPatternSolidWhite_whiYuv' to 'tpgPatternSolidWhWhU' due to the length limit 20
 INFO: [RTGEN 206-100] Finished creating RTL model for 'tpgPatternSolidWhite'.
-INFO: [HLS 200-111]  Elapsed time: 0.88 seconds; current allocated memory: 577.840 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.87 seconds; current allocated memory: 577.834 MB.
 INFO: [WVHDL 200-304] Encrypting RTL VHDL done.
 INFO: [WVHDL 200-304] Encrypting RTL Verilog done.
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -1649,7 +1649,7 @@ INFO: [HLS 200-10] -- Generating RTL for module 'tpgPatternSolidBlack'
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SYN 201-210] Renamed object name 'tpgPatternSolidBlack_blkYuv' to 'tpgPatternSolidBlXh4' due to the length limit 20
 INFO: [RTGEN 206-100] Finished creating RTL model for 'tpgPatternSolidBlack'.
-INFO: [HLS 200-111]  Elapsed time: 0.14 seconds; current allocated memory: 578.207 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.14 seconds; current allocated memory: 578.204 MB.
 INFO: [WVHDL 200-304] Encrypting RTL VHDL done.
 INFO: [WVHDL 200-304] Encrypting RTL Verilog done.
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -1657,7 +1657,7 @@ INFO: [HLS 200-10] -- Generating RTL for module 'tpgPatternSolidBlue'
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SYN 201-210] Renamed object name 'tpgPatternSolidBlue_bluYuv' to 'tpgPatternSolidBlYie' due to the length limit 20
 INFO: [RTGEN 206-100] Finished creating RTL model for 'tpgPatternSolidBlue'.
-INFO: [HLS 200-111]  Elapsed time: 0.14 seconds; current allocated memory: 578.561 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.13 seconds; current allocated memory: 578.557 MB.
 INFO: [WVHDL 200-304] Encrypting RTL VHDL done.
 INFO: [WVHDL 200-304] Encrypting RTL Verilog done.
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -1665,7 +1665,7 @@ INFO: [HLS 200-10] -- Generating RTL for module 'tpgPatternSolidGreen'
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SYN 201-210] Renamed object name 'tpgPatternSolidGreen_grnYuv' to 'tpgPatternSolidGrZio' due to the length limit 20
 INFO: [RTGEN 206-100] Finished creating RTL model for 'tpgPatternSolidGreen'.
-INFO: [HLS 200-111]  Elapsed time: 0.15 seconds; current allocated memory: 578.915 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.14 seconds; current allocated memory: 578.911 MB.
 INFO: [WVHDL 200-304] Encrypting RTL VHDL done.
 INFO: [WVHDL 200-304] Encrypting RTL Verilog done.
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -1673,20 +1673,20 @@ INFO: [HLS 200-10] -- Generating RTL for module 'tpgPatternSolidRed'
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SYN 201-210] Renamed object name 'tpgPatternSolidRed_redYuv' to 'tpgPatternSolidRe0iy' due to the length limit 20
 INFO: [RTGEN 206-100] Finished creating RTL model for 'tpgPatternSolidRed'.
-INFO: [HLS 200-111]  Elapsed time: 0.18 seconds; current allocated memory: 579.245 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.14 seconds; current allocated memory: 579.239 MB.
 INFO: [WVHDL 200-304] Encrypting RTL VHDL done.
 INFO: [WVHDL 200-304] Encrypting RTL Verilog done.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'tpgPatternTemporalRa' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'tpgPatternTemporalRa'.
-INFO: [HLS 200-111]  Elapsed time: 0.14 seconds; current allocated memory: 579.422 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.13 seconds; current allocated memory: 579.417 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'tpgPatternVerticalRa' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 WARNING: [RTGEN 206-101] Register 'rampVal' is power-on initialization.
 INFO: [RTGEN 206-100] Finished creating RTL model for 'tpgPatternVerticalRa'.
-INFO: [HLS 200-111]  Elapsed time: 0.14 seconds; current allocated memory: 579.811 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.13 seconds; current allocated memory: 579.806 MB.
 INFO: [WVHDL 200-304] Encrypting RTL VHDL done.
 INFO: [WVHDL 200-304] Encrypting RTL Verilog done.
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -1694,13 +1694,13 @@ INFO: [HLS 200-10] -- Generating RTL for module 'tpgPatternHorizontal'
 INFO: [HLS 200-10] ----------------------------------------------------------------
 WARNING: [RTGEN 206-101] Register 'rampVal_1' is power-on initialization.
 INFO: [RTGEN 206-100] Finished creating RTL model for 'tpgPatternHorizontal'.
-INFO: [HLS 200-111]  Elapsed time: 0.16 seconds; current allocated memory: 580.041 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.15 seconds; current allocated memory: 580.035 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'tpgBackground' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 WARNING: [RTGEN 206-101] Register 'rampStart' is power-on initialization.
 INFO: [RTGEN 206-100] Finished creating RTL model for 'tpgBackground'.
-INFO: [HLS 200-111]  Elapsed time: 0.24 seconds; current allocated memory: 582.854 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.24 seconds; current allocated memory: 582.850 MB.
 INFO: [WVHDL 200-304] Encrypting RTL VHDL done.
 INFO: [WVHDL 200-304] Encrypting RTL Verilog done.
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -1711,7 +1711,7 @@ WARNING: [RTGEN 206-101] Register 'boxVCoord' is power-on initialization.
 WARNING: [RTGEN 206-101] Register 'hDir' is power-on initialization.
 WARNING: [RTGEN 206-101] Register 'vDir' is power-on initialization.
 INFO: [RTGEN 206-100] Finished creating RTL model for 'tpgPatternBox'.
-INFO: [HLS 200-111]  Elapsed time: 0.89 seconds; current allocated memory: 583.482 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.91 seconds; current allocated memory: 583.479 MB.
 INFO: [WVHDL 200-304] Encrypting RTL VHDL done.
 INFO: [WVHDL 200-304] Encrypting RTL Verilog done.
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -1719,34 +1719,34 @@ INFO: [HLS 200-10] -- Generating RTL for module 'tpgPatternCrossHair'
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SYN 201-210] Renamed object name 'tpgPatternCrossHair_whiYuv_2' to 'tpgPatternCrossHa1iI' due to the length limit 20
 INFO: [RTGEN 206-100] Finished creating RTL model for 'tpgPatternCrossHair'.
-INFO: [HLS 200-111]  Elapsed time: 0.41 seconds; current allocated memory: 583.881 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.41 seconds; current allocated memory: 583.878 MB.
 INFO: [WVHDL 200-304] Encrypting RTL VHDL done.
 INFO: [WVHDL 200-304] Encrypting RTL Verilog done.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'tpgPatternMask' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'tpgPatternMask'.
-INFO: [HLS 200-111]  Elapsed time: 0.17 seconds; current allocated memory: 584.103 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.16 seconds; current allocated memory: 584.100 MB.
 INFO: [WVHDL 200-304] Encrypting RTL VHDL done.
 INFO: [WVHDL 200-304] Encrypting RTL Verilog done.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'tpgForeground' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'tpgForeground'.
-INFO: [HLS 200-111]  Elapsed time: 0.14 seconds; current allocated memory: 585.080 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.14 seconds; current allocated memory: 585.077 MB.
 INFO: [WVHDL 200-304] Encrypting RTL VHDL done.
 INFO: [WVHDL 200-304] Encrypting RTL Verilog done.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'reg_unsigned_short_s' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'reg_unsigned_short_s'.
-INFO: [HLS 200-111]  Elapsed time: 0.32 seconds; current allocated memory: 585.246 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.32 seconds; current allocated memory: 585.240 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'MultiPixStream2AXIvi' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 WARNING: [RTGEN 206-101] Register 'counter' is power-on initialization.
 INFO: [RTGEN 206-100] Finished creating RTL model for 'MultiPixStream2AXIvi'.
-INFO: [HLS 200-111]  Elapsed time: 0.11 seconds; current allocated memory: 586.083 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.12 seconds; current allocated memory: 586.079 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'v_tpg' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -1785,7 +1785,7 @@ INFO: [RTGEN 206-100] Bundling port 'height', 'width', 'bckgndId', 'ovrlayId', '
 INFO: [SYN 201-210] Renamed object name 'start_for_tpgForeground_U0' to 'start_for_tpgFore2iS' due to the length limit 20
 INFO: [SYN 201-210] Renamed object name 'start_for_MultiPixStream2AXIvi_U0' to 'start_for_MultiPi3i2' due to the length limit 20
 INFO: [RTGEN 206-100] Finished creating RTL model for 'v_tpg'.
-INFO: [HLS 200-111]  Elapsed time: 0.97 seconds; current allocated memory: 588.183 MB.
+INFO: [HLS 200-111]  Elapsed time: 1.01 seconds; current allocated memory: 588.179 MB.
 INFO: [WVHDL 200-304] Encrypting RTL VHDL done.
 INFO: [WVHDL 200-304] Encrypting RTL Verilog done.
 INFO: [RTMG 210-279] Implementing memory 'img_proc_v_tpg_0_0_tpgPatternDPColorbkb_rom' using distributed ROMs.
@@ -1822,7 +1822,7 @@ INFO: [RTMG 210-285] Implementing FIFO 'ovrlayYUV_V_val_1_V_U(img_proc_v_tpg_0_0
 INFO: [RTMG 210-285] Implementing FIFO 'ovrlayYUV_V_val_2_V_U(img_proc_v_tpg_0_0_fifo_w8_d2_A)' using Shift Registers.
 INFO: [RTMG 210-285] Implementing FIFO 'start_for_tpgFore2iS_U(img_proc_v_tpg_0_0_start_for_tpgFore2iS)' using Shift Registers.
 INFO: [RTMG 210-285] Implementing FIFO 'start_for_MultiPi3i2_U(img_proc_v_tpg_0_0_start_for_MultiPi3i2)' using Shift Registers.
-INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:54 ; elapsed = 00:00:56 . Memory (MB): peak = 1354.742 ; gain = 915.035 ; free physical = 8388 ; free virtual = 17553
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:53 ; elapsed = 00:00:55 . Memory (MB): peak = 1354.742 ; gain = 915.035 ; free physical = 8855 ; free virtual = 18516
 INFO: [VHDL 208-304] Generating VHDL RTL for v_tpg with prefix img_proc_v_tpg_0_0_.
 INFO: [VLOG 209-307] Generating Verilog RTL for v_tpg with prefix img_proc_v_tpg_0_0_.
 INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
@@ -1836,6 +1836,6 @@ source run_ippack.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2019.2/data/ip'.
-INFO: [Common 17-206] Exiting Vivado at Sun Dec  8 19:56:09 2019...
-INFO: [HLS 200-112] Total elapsed time: 67.08 seconds; peak allocated memory: 588.183 MB.
-INFO: [Common 17-206] Exiting vivado_hls at Sun Dec  8 19:56:10 2019...
+INFO: [Common 17-206] Exiting Vivado at Sun Dec  8 20:14:16 2019...
+INFO: [HLS 200-112] Total elapsed time: 68.39 seconds; peak allocated memory: 588.179 MB.
+INFO: [Common 17-206] Exiting vivado_hls at Sun Dec  8 20:14:19 2019...
