@@ -1,3 +1,9 @@
+'''
+Created on Nov 22, 2019
+
+@author: austin
+'''
+
 import os, png, mmap, BaseHTTPServer
 
 FRAMEBUFFER_OFFSET=0x0e000000
@@ -14,26 +20,7 @@ class MyHandler(BaseHTTPServer.BaseHTTPRequestHandler):
         s.send_header("Content-type", "image/png")
         s.end_headers()
         
-        #a = [0]*WIDTH*HEIGHT
-        #for i in xrange(WIDTH):
-        #    a[i] = (ord(mm[i*3]), ord(mm[i*3+1]), ord(mm[i*3+2]))
-        
-        #print(a[0:5])
-        #writer.write(s.wfile, a)
-        
         writer.write_array(s.wfile, [ord(j) for j in mm[0:WIDTH*HEIGHT*PIXEL_SIZE]])
-        
-        #q = [[[255, 0, 0] for x in xrange(WIDTH)] for y in xrange(HEIGHT)]
-        #a = [255, 0, 0]
-        #b = []
-        #for x in xrange(HEIGHT):
-        #    b.append(a*WIDTH)
-        #print len(q), len(q[0])
-        #writer.write(s.wfile, q)
-        
-        #a = [[(255, 0, 0) for x in range(WIDTH)] for y in range(HEIGHT)] 
-        #print len(a)
-        #writer.write_packed(s.wfile, a)
 
 httpd = BaseHTTPServer.HTTPServer(("0.0.0.0", 80), MyHandler)
 try:
