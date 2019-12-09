@@ -52,3 +52,12 @@ timestamp=[2019-12-07 16:30:55], mode=WORKBENCH_UI_INIT, duration=0:00:00.707, d
 timestamp=[2019-12-08 15:06:54], mode=WORKBENCH_START, duration=0:00:16.787, duration_ms=16787, data={}
 timestamp=[2019-12-08 15:06:55], mode=WORKBENCH_UI_INIT, duration=0:00:01.459, duration_ms=1459, data={editors_count=2, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=true, projects=RemoteSystemsTempFiles,img_proc,img_proc_bsp,img_proc_system}
 timestamp=[2019-12-08 15:07:31], mode=PLATFORM_GENERATION, duration=0:00:20.002, duration_ms=20002, data={name=img_proc_bsp}
+timestamp=[2019-12-08 22:07:17], mode=PLATFORM_GENERATION, duration=0:00:21.309, duration_ms=21309, data={name=img_proc_bsp}
+timestamp=[2019-12-08 22:08:03], mode=PLATFORM_GENERATION, duration=0:00:35.414, duration_ms=35414, data={name=img_proc_bsp}
+timestamp=[2019-12-08 22:08:30], mode=PLATFORM_GENERATION, duration=0:00:17.197, duration_ms=17197, data={name=img_proc_bsp}
+timestamp=[2019-12-08 22:08:48], mode=PLATFORM_GENERATION, duration=0:00:17.392, duration_ms=17392, data={name=img_proc_bsp}
+timestamp=[2019-12-08 22:10:12], mode=PLATFORM_GENERATION, duration=0:00:17.192, duration_ms=17192, data={name=img_proc_bsp}
+timestamp=[2019-12-08 22:11:15], mode=PLATFORM_GENERATION, duration=0:00:04.915, duration_ms=4915, data={name=img_proc_bsp}
+timestamp=[2019-12-08 22:11:54], mode=WORKBENCH_START, duration=0:00:05.960, duration_ms=5960, data={}
+timestamp=[2019-12-08 22:11:54], mode=WORKBENCH_UI_INIT, duration=0:00:00.729, duration_ms=729, data={editors_count=3, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=true, projects=RemoteSystemsTempFiles,img_proc,img_proc_bsp,img_proc_system}
+timestamp=[2019-12-08 22:13:40], mode=PLATFORM_GENERATION, duration=0:00:17.236, duration_ms=17236, data={name=img_proc_bsp}

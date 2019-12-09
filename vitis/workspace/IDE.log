@@ -159,3 +159,30 @@ Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors
 15:07:12 INFO  : Successfully done setting workspace for the tool. 
 15:07:28 INFO  : Successfully done sdx_reload_mss "/home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/zynq_fsbl/zynq_fsbl_bsp/system.mss"
 15:07:28 INFO  : Successfully done sdx_reload_mss "/home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/ps7_cortexa9_0/standalone_domain/bsp/system.mss"
+22:04:38 INFO  : Hardware specification for platform project 'img_proc_bsp' is updated.
+22:04:42 INFO  : Successfully done sdx_reload_mss "/home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/zynq_fsbl/zynq_fsbl_bsp/system.mss"
+22:04:42 INFO  : Successfully done sdx_reload_mss "/home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/ps7_cortexa9_0/standalone_domain/bsp/system.mss"
+22:06:44 INFO  : Invoking Bootgen: bootgen -image output.bif -arch zynq -o /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/resources/BOOT.bin -w on
+22:06:44 INFO  : Overwriting existing bif file /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/resources/output.bif
+22:06:45 INFO  : Bootgen command execution is done.
+22:08:31 ERROR : Failed to compute checksum of hardware specification file used by project 'img_proc'
+22:10:25 INFO  : Hardware specification for platform project 'img_proc_bsp' is updated.
+22:10:28 WARN  : Failed to closehw "/home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/hw/img_proc_wrapper.xsa"
+Reason: ERROR: [Common 17-39] 'hsi::close_hw_design' failed due to earlier errors.
+
+22:10:28 ERROR : Failed to execute command 'domain active {zynq_fsbl}'. Click on details for more information.
+22:10:28 ERROR : Failed to execute command 'domain active {standalone_domain}'. Click on details for more information.
+22:10:30 ERROR : Failed to execute command 'platform read {/home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/platform.spr}'. Click on details for more information.
+22:11:53 INFO  : Launching XSCT server: xsct -n  -interactive /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/temp_xsdb_launch_script.tcl
+22:11:54 INFO  : Registering command handlers for Vitis TCF services
+22:11:55 INFO  : XSCT server has started successfully.
+22:11:58 INFO  : plnx-install-location is set to ''
+22:11:58 INFO  : Successfully done setting XSCT server connection channel  
+22:11:58 INFO  : Successfully done query RDI_DATADIR 
+22:11:58 INFO  : Successfully done setting workspace for the tool. 
+22:11:58 INFO  : Successfully done sdx_reload_mss "/home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/zynq_fsbl/zynq_fsbl_bsp/system.mss"
+22:11:58 INFO  : Successfully done sdx_reload_mss "/home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/ps7_cortexa9_0/standalone_domain/bsp/system.mss"
+22:13:59 INFO  : The hardware specfication used by project 'img_proc' is out of sync with the platform. Resource files extracted from the hardware specfiication will be updated.
+22:13:59 INFO  : The file '/home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc/_ide/bitstream/img_proc_wrapper.bit' stored in project is removed.
+22:13:59 INFO  : The updated bitstream files are copied from platform to folder '/home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc/_ide/bitstream' in project 'img_proc'.
+22:14:02 INFO  : The updated ps init files are copied from platform to folder '/home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc/_ide/psinit' in project 'img_proc'.

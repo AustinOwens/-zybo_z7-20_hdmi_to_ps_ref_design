@@ -19,7 +19,7 @@
 #0x12 - DisplayPort black and white vertical lines
 #0x13 - DisplayPort color square
 
-devmem2 0x43c30010 w 480   #height
-devmem2 0x43c30018 w 640   #width
-devmem2 0x43c30020 w 0x0B  #bg pattern id
-devmem2 0x43c30000 w 0x81  #Start
+devmem2 0x43c00010 w 1080   #height
+devmem2 0x43c00018 w 1920   #width
+devmem2 0x43c00020 w 0x0B  #bg pattern id
+devmem2 0x43c00000 w 0x81  #Start

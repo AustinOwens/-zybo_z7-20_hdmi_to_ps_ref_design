@@ -1,90 +1,12 @@
 Nothing to build in platform 'img_proc_bsp'
 
-18:57:29 **** Incremental Build of configuration Debug for project img_proc ****
+22:13:58 **** Incremental Build of configuration Debug for project img_proc ****
 make all 
-Building file: ../src/tripple_buf_vdma.c
-Invoking: ARM v7 Linux gcc compiler
-arm-linux-gnueabihf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tripple_buf_vdma.o" -MMD -MP -MF"src/tripple_buf_vdma.d" -MT"src/tripple_buf_vdma.o" -o "src/tripple_buf_vdma.o" "../src/tripple_buf_vdma.c"
-../src/tripple_buf_vdma.c: In function ‘vdma_setup’:
-../src/tripple_buf_vdma.c:159:32: warning: assignment to ‘unsigned char *’ from ‘unsigned int’ makes pointer from integer without a cast [-Wint-conversion]
-     handle->fb1PhysicalAddress = fb1Addr;
-                                ^
-../src/tripple_buf_vdma.c:166:32: warning: assignment to ‘unsigned char *’ from ‘unsigned int’ makes pointer from integer without a cast [-Wint-conversion]
-     handle->fb2PhysicalAddress = fb2Addr;
-                                ^
-../src/tripple_buf_vdma.c:173:32: warning: assignment to ‘unsigned char *’ from ‘unsigned int’ makes pointer from integer without a cast [-Wint-conversion]
-     handle->fb3PhysicalAddress = fb3Addr;
-                                ^
-../src/tripple_buf_vdma.c: In function ‘vtpg_setup’:
-../src/tripple_buf_vdma.c:195:5: warning: implicit declaration of function ‘vtpg_set’; did you mean ‘vtpg_setup’? [-Wimplicit-function-declaration]
-     vtpg_set(handle, OFFSET_VTPG_WIDTH, width);
-     ^~~~~~~~
-     vtpg_setup
-../src/tripple_buf_vdma.c: In function ‘vdma_halt’:
-../src/tripple_buf_vdma.c:202:5: warning: implicit declaration of function ‘vdma_set’; did you mean ‘vdma_setup’? [-Wimplicit-function-declaration]
-     vdma_set(handle, OFFSET_VDMA_S2MM_CONTROL_REGISTER, VDMA_CONTROL_REGISTER_RESET);
-     ^~~~~~~~
-     vdma_setup
-../src/tripple_buf_vdma.c: At top level:
-../src/tripple_buf_vdma.c:215:6: warning: conflicting types for ‘vdma_set’
- void vdma_set(vdma_handle *handle, int num, unsigned int val) {
-      ^~~~~~~~
-../src/tripple_buf_vdma.c:202:5: note: previous implicit declaration of ‘vdma_set’ was here
-     vdma_set(handle, OFFSET_VDMA_S2MM_CONTROL_REGISTER, VDMA_CONTROL_REGISTER_RESET);
-     ^~~~~~~~
-../src/tripple_buf_vdma.c:224:6: warning: conflicting types for ‘vtpg_set’
- void vtpg_set(vdma_handle *handle, int num, unsigned int val) {
-      ^~~~~~~~
-../src/tripple_buf_vdma.c:195:5: note: previous implicit declaration of ‘vtpg_set’ was here
-     vtpg_set(handle, OFFSET_VTPG_WIDTH, width);
-     ^~~~~~~~
-../src/tripple_buf_vdma.c: In function ‘vdma_start_triple_buffering’:
-../src/tripple_buf_vdma.c:299:59: warning: passing argument 3 of ‘vdma_set’ makes integer from pointer without a cast [-Wint-conversion]
-     vdma_set(handle, OFFSET_VDMA_S2MM_FRAMEBUFFER1, handle->fb1PhysicalAddress);
-                                                     ~~~~~~^~~~~~~~~~~~~~~~~~~~
-../src/tripple_buf_vdma.c:215:58: note: expected ‘unsigned int’ but argument is of type ‘unsigned char *’
- void vdma_set(vdma_handle *handle, int num, unsigned int val) {
-                                             ~~~~~~~~~~~~~^~~
-../src/tripple_buf_vdma.c:300:59: warning: passing argument 3 of ‘vdma_set’ makes integer from pointer without a cast [-Wint-conversion]
-     vdma_set(handle, OFFSET_VDMA_MM2S_FRAMEBUFFER1, handle->fb1PhysicalAddress);
-                                                     ~~~~~~^~~~~~~~~~~~~~~~~~~~
-../src/tripple_buf_vdma.c:215:58: note: expected ‘unsigned int’ but argument is of type ‘unsigned char *’
- void vdma_set(vdma_handle *handle, int num, unsigned int val) {
-                                             ~~~~~~~~~~~~~^~~
-../src/tripple_buf_vdma.c:301:59: warning: passing argument 3 of ‘vdma_set’ makes integer from pointer without a cast [-Wint-conversion]
-     vdma_set(handle, OFFSET_VDMA_S2MM_FRAMEBUFFER2, handle->fb2PhysicalAddress);
-                                                     ~~~~~~^~~~~~~~~~~~~~~~~~~~
-../src/tripple_buf_vdma.c:215:58: note: expected ‘unsigned int’ but argument is of type ‘unsigned char *’
- void vdma_set(vdma_handle *handle, int num, unsigned int val) {
-                                             ~~~~~~~~~~~~~^~~
-../src/tripple_buf_vdma.c:302:59: warning: passing argument 3 of ‘vdma_set’ makes integer from pointer without a cast [-Wint-conversion]
-     vdma_set(handle, OFFSET_VDMA_MM2S_FRAMEBUFFER2, handle->fb2PhysicalAddress);
-                                                     ~~~~~~^~~~~~~~~~~~~~~~~~~~
-../src/tripple_buf_vdma.c:215:58: note: expected ‘unsigned int’ but argument is of type ‘unsigned char *’
- void vdma_set(vdma_handle *handle, int num, unsigned int val) {
-                                             ~~~~~~~~~~~~~^~~
-../src/tripple_buf_vdma.c:303:59: warning: passing argument 3 of ‘vdma_set’ makes integer from pointer without a cast [-Wint-conversion]
-     vdma_set(handle, OFFSET_VDMA_S2MM_FRAMEBUFFER3, handle->fb3PhysicalAddress);
-                                                     ~~~~~~^~~~~~~~~~~~~~~~~~~~
-../src/tripple_buf_vdma.c:215:58: note: expected ‘unsigned int’ but argument is of type ‘unsigned char *’
- void vdma_set(vdma_handle *handle, int num, unsigned int val) {
-                                             ~~~~~~~~~~~~~^~~
-../src/tripple_buf_vdma.c:304:59: warning: passing argument 3 of ‘vdma_set’ makes integer from pointer without a cast [-Wint-conversion]
-     vdma_set(handle, OFFSET_VDMA_MM2S_FRAMEBUFFER3, handle->fb3PhysicalAddress);
-                                                     ~~~~~~^~~~~~~~~~~~~~~~~~~~
-../src/tripple_buf_vdma.c:215:58: note: expected ‘unsigned int’ but argument is of type ‘unsigned char *’
- void vdma_set(vdma_handle *handle, int num, unsigned int val) {
-                                             ~~~~~~~~~~~~~^~~
-Finished building: ../src/tripple_buf_vdma.c
- 
-Building target: img_proc.elf
-Invoking: ARM v7 Linux gcc linker
-arm-linux-gnueabihf-gcc  -o "img_proc.elf"  ./src/tripple_buf_vdma.o   
-Finished building target: img_proc.elf
- 
-Invoking: ARM v7 Linux Print Size
-arm-linux-gnueabihf-size img_proc.elf  |tee "img_proc.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-   7790	    336	     12	   8138	   1fca	img_proc.elf
-Finished building: img_proc.elf.size
- 
+make: Nothing to be done for 'all'.
+22:14:02 **** Incremental Build of configuration Debug for project img_proc_system ****
+make all 
+Generating bif file for the system project
+Executing command '::scw::generate_bif -xpfm /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/export/img_proc_bsp/img_proc_bsp.xpfm -domains linux_domain -bifpath /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_system/Debug/system.bif' on XSCT
+sdcard_gen --xpfm /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/export/img_proc_bsp/img_proc_bsp.xpfm --sys_config img_proc_bsp --bif /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_system/Debug/system.bif --bitstream /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc/_ide/bitstream/img_proc_wrapper.bit --sd_file /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc/Debug/img_proc.elf
+creating BOOT.BIN using /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc/_ide/bitstream/img_proc_wrapper.bit
+Running /tools/Xilinx/Vitis/2019.2/bin/bootgen  -image /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN

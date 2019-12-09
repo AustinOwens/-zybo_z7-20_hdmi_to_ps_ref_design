@@ -12677,3 +12677,2061 @@ Binding(ALT+ARROW_LEFT,
 
 !ENTRY com.xilinx.sdk.utils 1 0 2019-12-08 18:05:06.876
 !MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '3'
+
+!ENTRY org.eclipse.ui 4 4 2019-12-08 22:02:43.459
+!MESSAGE Conflicting handlers for com.xilinx.sdx.system.core.importSourcesCommand: {com.xilinx.sdx.system.core.handler.ImportSourcesHandler@26c9fee9} vs {com.xilinx.sdx.system.core.handler.ImportSourcesHandler}
+
+!ENTRY com.xilinx.sdk.utils 1 0 2019-12-08 22:02:49.067
+!MESSAGE Opening file dialog using preferences. Current path: null, Local preference: scw_hwspec_file_selection, Group preference: null
+
+!ENTRY com.xilinx.sdk.utils 1 0 2019-12-08 22:02:49.068
+!MESSAGE Preference loaded using local preference: null
+
+!ENTRY com.xilinx.sdk.utils 1 0 2019-12-08 22:02:49.068
+!MESSAGE Workspace path used is: /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:04:35.459
+!MESSAGE XSCT Command: [platform config -updatehw {/home/austin/Desktop/projects/zybo/zybo_img_proc/vhdl/img_proc_wrapper.xsa}], Thread: Worker-85: Updating hardware platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:04:38.243
+!MESSAGE XSCT command with result: [platform config -updatehw {/home/austin/Desktop/projects/zybo/zybo_img_proc/vhdl/img_proc_wrapper.xsa}], Result: [null, ]. Thread: Worker-85: Updating hardware platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:04:39.710
+!MESSAGE XSCT Command: [platform read {/home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/platform.spr}], Thread: Worker-88: Initializing the platform to enable editing
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:04:39.710
+!MESSAGE XSCT Command: [::hsi::utils::closehw /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/hw/img_proc_wrapper.xsa], Thread: Worker-89: Initializing hardware specification UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:04:39.785
+!MESSAGE XSCT Command: [domain active {zynq_fsbl}], Thread: Worker-86: Initializing 'zynq_fsbl' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:04:41.173
+!MESSAGE XSCT command with result: [platform read {/home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/platform.spr}], Result: [null, ]. Thread: Worker-88: Initializing the platform to enable editing
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:04:41.195
+!MESSAGE XSCT command with result: [::hsi::utils::closehw /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/hw/img_proc_wrapper.xsa], Result: [null, ]. Thread: Worker-89: Initializing hardware specification UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:04:41.195
+!MESSAGE XSCT command with result: [domain active {zynq_fsbl}], Result: [null, ]. Thread: Worker-86: Initializing 'zynq_fsbl' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:04:41.195
+!MESSAGE XSCT Command: [::hsi::utils::openhw /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/hw/img_proc_wrapper.xsa], Thread: Worker-89: Initializing hardware specification UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:04:41.195
+!MESSAGE XSCT Command: [::scw::get_hw_path], Thread: Worker-86: Initializing 'zynq_fsbl' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:04:42.493
+!MESSAGE XSCT command with result: [::hsi::utils::openhw /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/hw/img_proc_wrapper.xsa], Result: [null, ]. Thread: Worker-89: Initializing hardware specification UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:04:42.494
+!MESSAGE XSCT command with result: [::scw::get_hw_path], Result: [null, /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/hw/img_proc_wrapper.xsa]. Thread: Worker-86: Initializing 'zynq_fsbl' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:04:42.494
+!MESSAGE XSCT Command: [::scw::regenerate_psinit /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/hw/img_proc_wrapper.xsa], Thread: Worker-86: Initializing 'zynq_fsbl' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:04:42.495
+!MESSAGE XSCT command with result: [::scw::regenerate_psinit /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/hw/img_proc_wrapper.xsa], Result: [null, ]. Thread: Worker-86: Initializing 'zynq_fsbl' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:04:42.495
+!MESSAGE XSCT Command: [::scw::get_mss_path], Thread: Worker-86: Initializing 'zynq_fsbl' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:04:42.496
+!MESSAGE XSCT command with result: [::scw::get_mss_path], Result: [null, /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/zynq_fsbl/zynq_fsbl_bsp/system.mss]. Thread: Worker-86: Initializing 'zynq_fsbl' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:04:42.497
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/hw/img_proc_wrapper.xsa /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/zynq_fsbl/zynq_fsbl_bsp/system.mss ], Thread: Worker-86: Initializing 'zynq_fsbl' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:04:42.497
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/hw/img_proc_wrapper.xsa /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/zynq_fsbl/zynq_fsbl_bsp/system.mss ], Result: [null, ]. Thread: Worker-86: Initializing 'zynq_fsbl' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:04:42.498
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/hw/img_proc_wrapper.xsa /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/zynq_fsbl/zynq_fsbl_bsp/system.mss], Thread: Worker-86: Initializing 'zynq_fsbl' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:04:42.499
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/hw/img_proc_wrapper.xsa /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/zynq_fsbl/zynq_fsbl_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.1",
+}]. Thread: Worker-86: Initializing 'zynq_fsbl' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:04:42.499
+!MESSAGE XSCT Command: [domain active {standalone_domain}], Thread: Worker-86: Initializing 'standalone_domain' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:04:42.500
+!MESSAGE XSCT command with result: [domain active {standalone_domain}], Result: [null, ]. Thread: Worker-86: Initializing 'standalone_domain' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:04:42.500
+!MESSAGE XSCT Command: [::scw::get_hw_path], Thread: Worker-86: Initializing 'standalone_domain' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:04:42.501
+!MESSAGE XSCT command with result: [::scw::get_hw_path], Result: [null, /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/hw/img_proc_wrapper.xsa]. Thread: Worker-86: Initializing 'standalone_domain' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:04:42.501
+!MESSAGE XSCT Command: [::scw::regenerate_psinit /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/hw/img_proc_wrapper.xsa], Thread: Worker-86: Initializing 'standalone_domain' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:04:42.501
+!MESSAGE XSCT command with result: [::scw::regenerate_psinit /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/hw/img_proc_wrapper.xsa], Result: [null, ]. Thread: Worker-86: Initializing 'standalone_domain' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:04:42.502
+!MESSAGE XSCT Command: [::scw::get_mss_path], Thread: Worker-86: Initializing 'standalone_domain' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:04:42.503
+!MESSAGE XSCT command with result: [::scw::get_mss_path], Result: [null, /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/ps7_cortexa9_0/standalone_domain/bsp/system.mss]. Thread: Worker-86: Initializing 'standalone_domain' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:04:42.504
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/hw/img_proc_wrapper.xsa /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/ps7_cortexa9_0/standalone_domain/bsp/system.mss ], Thread: Worker-86: Initializing 'standalone_domain' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:04:42.505
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/hw/img_proc_wrapper.xsa /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/ps7_cortexa9_0/standalone_domain/bsp/system.mss ], Result: [null, ]. Thread: Worker-86: Initializing 'standalone_domain' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:04:42.505
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/hw/img_proc_wrapper.xsa /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/ps7_cortexa9_0/standalone_domain/bsp/system.mss], Thread: Worker-86: Initializing 'standalone_domain' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:04:42.506
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/hw/img_proc_wrapper.xsa /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/ps7_cortexa9_0/standalone_domain/bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.1",
+}]. Thread: Worker-86: Initializing 'standalone_domain' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:04:42.520
+!MESSAGE XSCT Command: [::hsi::utils::get_connected_periphs /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/hw/img_proc_wrapper.xsa ps7_cortexa9_0], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:04:42.522
+!MESSAGE XSCT command with result: [::hsi::utils::get_connected_periphs /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/hw/img_proc_wrapper.xsa ps7_cortexa9_0], Result: [null, ps7_afi_0 ps7_afi_1 ps7_afi_2 ps7_afi_3 ps7_coresight_comp_0 ps7_ddr_0 ps7_ddrc_0 ps7_dev_cfg_0 ps7_dma_ns ps7_dma_s ps7_ethernet_0 ps7_globaltimer_0 ps7_gpio_0 ps7_gpv_0 ps7_intc_dist_0 ps7_iop_bus_config_0 ps7_l2cachec_0 ps7_ocmc_0 ps7_pl310_0 ps7_pmu_0 ps7_qspi_0 ps7_qspi_linear_0 ps7_ram_0 ps7_ram_1 ps7_scuc_0 ps7_scugic_0 ps7_scutimer_0 ps7_scuwdt_0 ps7_sd_0 ps7_slcr_0 ps7_uart_1 ps7_usb_0 ps7_xadc_0 vdma_axi_gpio_1 vdma_axi_vdma_0 vdma_v_tpg_0]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:04:42.522
+!MESSAGE XSCT Command: [::hsi::utils::get_drivers_for_sw -json /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/hw/img_proc_wrapper.xsa /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/zynq_fsbl/zynq_fsbl_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:04:42.530
+!MESSAGE XSCT command with result: [::hsi::utils::get_drivers_for_sw -json /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/hw/img_proc_wrapper.xsa /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/zynq_fsbl/zynq_fsbl_bsp/system.mss], Result: [null, {"ps7_afi_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_afi_1": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_afi_2": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_afi_3": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_coresight_comp_0": {"name": "coresightps_dcc",
+"ver": "1.6",
+},
+"ps7_ddr_0": {"name": "ddrps",
+"ver": "1.0",
+},
+"ps7_ddrc_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_dev_cfg_0": {"name": "devcfg",
+"ver": "3.5",
+},
+"ps7_dma_ns": {"name": "dmaps",
+"ver": "2.5",
+},
+"ps7_dma_s": {"name": "dmaps",
+"ver": "2.5",
+},
+"ps7_ethernet_0": {"name": "emacps",
+"ver": "3.10",
+},
+"ps7_globaltimer_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_gpio_0": {"name": "gpiops",
+"ver": "3.6",
+},
+"ps7_gpv_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_intc_dist_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_iop_bus_config_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_l2cachec_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_ocmc_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_pl310_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_pmu_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_qspi_0": {"name": "qspips",
+"ver": "3.6",
+},
+"ps7_qspi_linear_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_ram_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_ram_1": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_scuc_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_scugic_0": {"name": "scugic",
+"ver": "4.1",
+},
+"ps7_scutimer_0": {"name": "scutimer",
+"ver": "2.1",
+},
+"ps7_scuwdt_0": {"name": "scuwdt",
+"ver": "2.1",
+},
+"ps7_sd_0": {"name": "sdps",
+"ver": "3.8",
+},
+"ps7_slcr_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_uart_1": {"name": "uartps",
+"ver": "3.8",
+},
+"ps7_usb_0": {"name": "usbps",
+"ver": "2.4",
+},
+"ps7_xadc_0": {"name": "xadcps",
+"ver": "2.3",
+},
+"vdma_axi_gpio_1": {"name": "gpio",
+"ver": "4.5",
+},
+"vdma_axi_vdma_0": {"name": "axivdma",
+"ver": "6.6",
+},
+"vdma_v_tpg_0": {"name": "v_tpg",
+"ver": "8.1",
+},
+"ps7_cortexa9_0": {"name": "cpu_cortexa9",
+"ver": "2.8",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:04:42.531
+!MESSAGE XSCT Command: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "v_tpg" && VERSION == "8.1"  && TYPE == "DRIVER"}]], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:04:42.537
+!MESSAGE XSCT command with result: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "v_tpg" && VERSION == "8.1"  && TYPE == "DRIVER"}]], Result: [null, /tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/v_tpg_v8_1]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:04:42.559
+!MESSAGE XSCT Command: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "v_tpg" && VERSION == "8.1"  && TYPE == "DRIVER"}]], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:04:42.564
+!MESSAGE XSCT command with result: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "v_tpg" && VERSION == "8.1"  && TYPE == "DRIVER"}]], Result: [null, /tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/v_tpg_v8_1]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:04:42.661
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/hw/img_proc_wrapper.xsa /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/zynq_fsbl/zynq_fsbl_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:04:42.664
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/hw/img_proc_wrapper.xsa /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/zynq_fsbl/zynq_fsbl_bsp/system.mss], Result: [null, xilffs xilrsa]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:04:42.664
+!MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/hw/img_proc_wrapper.xsa /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/zynq_fsbl/zynq_fsbl_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:04:42.666
+!MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/hw/img_proc_wrapper.xsa /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/zynq_fsbl/zynq_fsbl_bsp/system.mss], Result: [null, {"xilffs": "4.2",
+"xilrsa": "1.5",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:04:42.667
+!MESSAGE XSCT Command: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "xilffs" && VERSION == "4.2"  && TYPE == "LIBRARY"}]], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:04:42.673
+!MESSAGE XSCT command with result: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "xilffs" && VERSION == "4.2"  && TYPE == "LIBRARY"}]], Result: [null, /tools/Xilinx/Vitis/2019.2/data/embeddedsw/lib/sw_services/xilffs_v4_2]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:04:42.674
+!MESSAGE XSCT Command: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "xilrsa" && VERSION == "1.5"  && TYPE == "LIBRARY"}]], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:04:42.680
+!MESSAGE XSCT command with result: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "xilrsa" && VERSION == "1.5"  && TYPE == "LIBRARY"}]], Result: [null, /tools/Xilinx/Vitis/2019.2/data/embeddedsw/lib/sw_services/xilrsa_v1_5]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:04:42.707
+!MESSAGE XSCT Command: [::scw::sdx_reload_mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:04:42.745
+!MESSAGE XSCT command with result: [::scw::sdx_reload_mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:04:42.784
+!MESSAGE XSCT Command: [::hsi::utils::get_drivers_for_sw -json /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/hw/img_proc_wrapper.xsa /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/ps7_cortexa9_0/standalone_domain/bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:04:42.794
+!MESSAGE XSCT command with result: [::hsi::utils::get_drivers_for_sw -json /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/hw/img_proc_wrapper.xsa /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/ps7_cortexa9_0/standalone_domain/bsp/system.mss], Result: [null, {"ps7_afi_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_afi_1": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_afi_2": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_afi_3": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_coresight_comp_0": {"name": "coresightps_dcc",
+"ver": "1.6",
+},
+"ps7_ddr_0": {"name": "ddrps",
+"ver": "1.0",
+},
+"ps7_ddrc_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_dev_cfg_0": {"name": "devcfg",
+"ver": "3.5",
+},
+"ps7_dma_ns": {"name": "dmaps",
+"ver": "2.5",
+},
+"ps7_dma_s": {"name": "dmaps",
+"ver": "2.5",
+},
+"ps7_ethernet_0": {"name": "emacps",
+"ver": "3.10",
+},
+"ps7_globaltimer_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_gpio_0": {"name": "gpiops",
+"ver": "3.6",
+},
+"ps7_gpv_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_intc_dist_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_iop_bus_config_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_l2cachec_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_ocmc_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_pl310_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_pmu_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_qspi_0": {"name": "qspips",
+"ver": "3.6",
+},
+"ps7_qspi_linear_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_ram_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_ram_1": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_scuc_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_scugic_0": {"name": "scugic",
+"ver": "4.1",
+},
+"ps7_scutimer_0": {"name": "scutimer",
+"ver": "2.1",
+},
+"ps7_scuwdt_0": {"name": "scuwdt",
+"ver": "2.1",
+},
+"ps7_sd_0": {"name": "sdps",
+"ver": "3.8",
+},
+"ps7_slcr_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_uart_1": {"name": "uartps",
+"ver": "3.8",
+},
+"ps7_usb_0": {"name": "usbps",
+"ver": "2.4",
+},
+"ps7_xadc_0": {"name": "xadcps",
+"ver": "2.3",
+},
+"vdma_axi_gpio_1": {"name": "gpio",
+"ver": "4.5",
+},
+"vdma_axi_vdma_0": {"name": "axivdma",
+"ver": "6.6",
+},
+"vdma_v_tpg_0": {"name": "v_tpg",
+"ver": "8.1",
+},
+"ps7_cortexa9_0": {"name": "cpu_cortexa9",
+"ver": "2.8",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:04:42.795
+!MESSAGE XSCT Command: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "v_tpg" && VERSION == "8.1"  && TYPE == "DRIVER"}]], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:04:42.800
+!MESSAGE XSCT command with result: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "v_tpg" && VERSION == "8.1"  && TYPE == "DRIVER"}]], Result: [null, /tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/v_tpg_v8_1]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:04:42.800
+!MESSAGE XSCT Command: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "v_tpg" && VERSION == "8.1"  && TYPE == "DRIVER"}]], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:04:42.805
+!MESSAGE XSCT command with result: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "v_tpg" && VERSION == "8.1"  && TYPE == "DRIVER"}]], Result: [null, /tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/v_tpg_v8_1]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:04:42.880
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/hw/img_proc_wrapper.xsa /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/ps7_cortexa9_0/standalone_domain/bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:04:42.882
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/hw/img_proc_wrapper.xsa /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/ps7_cortexa9_0/standalone_domain/bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:04:42.904
+!MESSAGE XSCT Command: [::scw::sdx_reload_mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:04:42.939
+!MESSAGE XSCT command with result: [::scw::sdx_reload_mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 1 0 2019-12-08 22:05:51.903
+!MESSAGE Opening file dialog using preferences. Current path: null, Local preference: bootgen_files_selection, Group preference: null
+
+!ENTRY com.xilinx.sdk.utils 1 0 2019-12-08 22:05:51.904
+!MESSAGE Preference loaded using local preference: /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/resources/output.bif
+
+!ENTRY com.xilinx.sdk.utils 1 0 2019-12-08 22:05:51.904
+!MESSAGE Workspace path used is: /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace
+
+!ENTRY com.xilinx.sdk.utils 1 0 2019-12-08 22:06:09.586
+!MESSAGE Opening file dialog using preferences. Current path: null, Local preference: bootgen_files_selection, Group preference: null
+
+!ENTRY com.xilinx.sdk.utils 1 0 2019-12-08 22:06:09.586
+!MESSAGE Preference loaded using local preference: /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/resources
+
+!ENTRY com.xilinx.sdk.utils 1 0 2019-12-08 22:06:24.576
+!MESSAGE Opening file dialog using preferences. Current path: null, Local preference: bootgen_files_selection, Group preference: null
+
+!ENTRY com.xilinx.sdk.utils 1 0 2019-12-08 22:06:24.576
+!MESSAGE Preference loaded using local preference: /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/resources
+
+!ENTRY com.xilinx.sdk.utils 1 0 2019-12-08 22:06:44.147
+!MESSAGE Tool usage for 'BOOTGEN' updated to '1'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:08:11.384
+!MESSAGE XSCT Command: [::hsi::utils::openhw /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/export/img_proc_bsp/hw/img_proc_wrapper.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:08:11.387
+!MESSAGE XSCT command with result: [::hsi::utils::openhw /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/export/img_proc_bsp/hw/img_proc_wrapper.xsa], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:08:11.387
+!MESSAGE XSCT Command: [::hsi::utils::get_design_properties -json /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/export/img_proc_bsp/hw/img_proc_wrapper.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:08:11.392
+!MESSAGE XSCT command with result: [::hsi::utils::get_design_properties -json /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/export/img_proc_bsp/hw/img_proc_wrapper.xsa], Result: [null, {"device": "7z020",
+"family": "zynq",
+"timestamp": "Wed Nov  6 00:18:42 2019",
+"vivado_version": "2019.2",
+"part": "xc7z020clg400-1",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 1 0 2019-12-08 22:09:29.318
+!MESSAGE Opening file dialog using preferences. Current path: /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/resources, Local preference: bif_file, Group preference: platform_editor
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:09:31.052
+!MESSAGE XSCT Command: [domain active {linux_domain}], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:09:31.054
+!MESSAGE XSCT command with result: [domain active {linux_domain}], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:09:31.069
+!MESSAGE XSCT Command: [domain config -bif {/home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/resources/output.bif}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:09:31.071
+!MESSAGE XSCT command with result: [domain config -bif {/home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/resources/output.bif}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:09:31.141
+!MESSAGE XSCT Command: [platform write], Thread: Worker-90: Saving platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:09:31.149
+!MESSAGE XSCT command with result: [platform write], Result: [null, Successfully saved  the platform at "/home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/platform.spr"]. Thread: Worker-90: Saving platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:09:34.812
+!MESSAGE XSCT Command: [domain config -bif {/home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/resources/output.bif}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:09:34.815
+!MESSAGE XSCT command with result: [domain config -bif {/home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/resources/output.bif}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:09:34.971
+!MESSAGE XSCT Command: [platform write], Thread: Worker-86: Saving platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:09:34.979
+!MESSAGE XSCT command with result: [platform write], Result: [null, Successfully saved  the platform at "/home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/platform.spr"]. Thread: Worker-86: Saving platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:09:42.648
+!MESSAGE XSCT Command: [domain config -bif {/home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/resources/boot_files/uEnv.txt}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:09:42.651
+!MESSAGE XSCT command with result: [domain config -bif {/home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/resources/boot_files/uEnv.txt}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:09:42.854
+!MESSAGE XSCT Command: [platform write], Thread: Worker-93: Saving platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:09:42.861
+!MESSAGE XSCT command with result: [platform write], Result: [null, Successfully saved  the platform at "/home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/platform.spr"]. Thread: Worker-93: Saving platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:09:48.599
+!MESSAGE XSCT Command: [domain config -bif {/home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/resources/output.bif}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:09:48.602
+!MESSAGE XSCT command with result: [domain config -bif {/home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/resources/output.bif}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:09:48.856
+!MESSAGE XSCT Command: [platform write], Thread: Worker-93: Saving platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:09:48.863
+!MESSAGE XSCT command with result: [platform write], Result: [null, Successfully saved  the platform at "/home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/platform.spr"]. Thread: Worker-93: Saving platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:10:24.156
+!MESSAGE XSCT Command: [platform config -updatehw {/home/austin/Desktop/projects/zybo/zybo_img_proc/vhdl/img_proc_wrapper.xsa}], Thread: Worker-87: Updating hardware platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:10:25.473
+!MESSAGE XSCT command with result: [platform config -updatehw {/home/austin/Desktop/projects/zybo/zybo_img_proc/vhdl/img_proc_wrapper.xsa}], Result: [null, ]. Thread: Worker-87: Updating hardware platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:10:26.768
+!MESSAGE XSCT Command: [platform read {/home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/platform.spr}], Thread: Worker-87: Initializing the platform to enable editing
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:10:26.768
+!MESSAGE XSCT Command: [::hsi::utils::closehw /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/hw/img_proc_wrapper.xsa], Thread: Worker-85: Initializing hardware specification UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:10:26.848
+!MESSAGE XSCT Command: [domain active {zynq_fsbl}], Thread: Worker-88: Initializing 'zynq_fsbl' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:10:28.319
+!MESSAGE XSCT command with result: [platform read {/home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/platform.spr}], Result: [{Format=
+Error: Hw specification provided does not have the HwDb, please check:/home/austin/Desktop/projects/zybo/zybo_img_proc/vhdl/img_proc_wrapper.xsa
+ Could not read the platform., Time=1575871828318, Code=1}, ]. Thread: Worker-87: Initializing the platform to enable editing
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:10:28.415
+!MESSAGE XSCT command with result: [::hsi::utils::closehw /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/hw/img_proc_wrapper.xsa], Result: [{Format=ERROR: [Common 17-39] 'hsi::close_hw_design' failed due to earlier errors.
+, Time=1575871828414, Code=1}, ]. Thread: Worker-85: Initializing hardware specification UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:10:28.415
+!MESSAGE XSCT command with result: [domain active {zynq_fsbl}], Result: [{Format=No Domain exists with name:  zynq_fsbl, Time=1575871828415, Code=1}, ]. Thread: Worker-88: Initializing 'zynq_fsbl' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:10:28.416
+!MESSAGE XSCT Command: [::hsi::utils::openhw /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/hw/img_proc_wrapper.xsa], Thread: Worker-85: Initializing hardware specification UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:10:28.417
+!MESSAGE XSCT Command: [domain active {standalone_domain}], Thread: Worker-88: Initializing 'standalone_domain' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:10:28.417
+!MESSAGE XSCT command with result: [::hsi::utils::openhw /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/hw/img_proc_wrapper.xsa], Result: [null, ]. Thread: Worker-85: Initializing hardware specification UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:10:28.418
+!MESSAGE XSCT command with result: [domain active {standalone_domain}], Result: [{Format=No Domain exists with name:  standalone_domain, Time=1575871828418, Code=1}, ]. Thread: Worker-88: Initializing 'standalone_domain' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 1 0 2019-12-08 22:11:33.134
+!MESSAGE Executing command: /tools/Xilinx/Vitis/2019.2/bin/wbtcv -mode batch -source vitis_webtalk.tcl
+
+!ENTRY com.xilinx.sdk.utils 1 0 2019-12-08 22:11:33.156
+!MESSAGE Executed Webtalk command
+!SESSION 2019-12-08 22:11:43.097 -----------------------------------------------
+eclipse.buildId=2019.2
+java.version=9.0.4
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.emf.ecore 2 0 2019-12-08 22:11:48.158
+!MESSAGE Both 'com.autoesl.autopilot.ui.models' and 'com.autoesl.autopilot.ui.models' register a package for 'com.autoesl.autopilot.solution'
+
+!ENTRY org.eclipse.jface 2 0 2019-12-08 22:11:49.694
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-12-08 22:11:49.694
+!MESSAGE A conflict occurred for ALT+ARROW_LEFT:
+Binding(ALT+ARROW_LEFT,
+	ParameterizedCommand(Command(org.eclipse.ui.navigate.backwardHistory,Backward History,
+		Move backward in the editor navigation history,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7cb4d4ee,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+ARROW_LEFT,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.hover.backwardMacroExpansion,Back,
+		Steps backward in macro expansions,
+		Category(org.eclipse.cdt.ui.category.source,C/C++ Source,C/C++ Source Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@44ec6637,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,user)
+Binding(ALT+ARROW_LEFT,
+	ParameterizedCommand(Command(org.eclipse.ui.navigate.back,Back,
+		Navigate back,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5a0b550a,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,user)
+
+!ENTRY org.eclipse.ui 4 4 2019-12-08 22:11:53.269
+!MESSAGE Conflicting handlers for com.xilinx.sdx.system.core.importSourcesCommand: {com.xilinx.sdx.system.core.handler.ImportSourcesHandler} vs {com.xilinx.sdx.system.core.handler.ImportSourcesHandler}
+
+!ENTRY org.eclipse.ui 4 4 2019-12-08 22:11:53.270
+!MESSAGE Conflicting handlers for com.xilinx.sdx.system.core.importSourcesCommand: {com.xilinx.sdx.system.core.handler.ImportSourcesHandler} vs {com.xilinx.sdx.system.core.handler.ImportSourcesHandler}
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:11:55.162
+!MESSAGE XSCT Command: [platform read {/home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/platform.spr}], Thread: Worker-3: Initializing the platform to enable editing
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:11:55.162
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-0: Initializing 'zynq_fsbl' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:11:55.163
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:11:55.164
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:11:55.164
+!MESSAGE XSCT Command: [::hsi::utils::openhw /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/hw/img_proc_wrapper.xsa], Thread: Worker-1: Initializing hardware specification UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:11:58.156
+!MESSAGE XSCT command with result: [platform read {/home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/platform.spr}], Result: [null, ]. Thread: Worker-3: Initializing the platform to enable editing
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:11:58.158
+!MESSAGE XSCT Command: [platform active {img_proc_bsp}], Thread: Worker-3: Initializing the platform to enable editing
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:11:58.169
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-0: Initializing 'zynq_fsbl' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:11:58.170
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:11:58.170
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:11:58.171
+!MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-0: Initializing 'zynq_fsbl' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:11:58.171
+!MESSAGE XSCT command with result: [::hsi::utils::openhw /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/hw/img_proc_wrapper.xsa], Result: [null, ]. Thread: Worker-1: Initializing hardware specification UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:11:58.172
+!MESSAGE XSCT Command: [setws /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace], Thread: Thread-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:11:58.172
+!MESSAGE XSCT command with result: [platform active {img_proc_bsp}], Result: [null, ]. Thread: Worker-3: Initializing the platform to enable editing
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:11:58.173
+!MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, /tools/Xilinx/Vitis/2019.2/data]. Thread: Worker-0: Initializing 'zynq_fsbl' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:11:58.174
+!MESSAGE XSCT command with result: [setws /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace], Result: [null, ]. Thread: Thread-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:11:58.180
+!MESSAGE XSCT Command: [domain active {zynq_fsbl}], Thread: Worker-0: Initializing 'zynq_fsbl' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:11:58.181
+!MESSAGE XSCT command with result: [domain active {zynq_fsbl}], Result: [null, ]. Thread: Worker-0: Initializing 'zynq_fsbl' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:11:58.182
+!MESSAGE XSCT Command: [::scw::get_hw_path], Thread: Worker-0: Initializing 'zynq_fsbl' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:11:58.183
+!MESSAGE XSCT command with result: [::scw::get_hw_path], Result: [null, /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/hw/img_proc_wrapper.xsa]. Thread: Worker-0: Initializing 'zynq_fsbl' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:11:58.184
+!MESSAGE XSCT Command: [::scw::regenerate_psinit /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/hw/img_proc_wrapper.xsa], Thread: Worker-0: Initializing 'zynq_fsbl' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:11:58.185
+!MESSAGE XSCT command with result: [::scw::regenerate_psinit /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/hw/img_proc_wrapper.xsa], Result: [null, ]. Thread: Worker-0: Initializing 'zynq_fsbl' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:11:58.185
+!MESSAGE XSCT Command: [::scw::get_mss_path], Thread: Worker-0: Initializing 'zynq_fsbl' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:11:58.189
+!MESSAGE XSCT command with result: [::scw::get_mss_path], Result: [null, /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/zynq_fsbl/zynq_fsbl_bsp/system.mss]. Thread: Worker-0: Initializing 'zynq_fsbl' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:11:58.197
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/hw/img_proc_wrapper.xsa /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/zynq_fsbl/zynq_fsbl_bsp/system.mss ], Thread: Worker-0: Initializing 'zynq_fsbl' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:11:58.200
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/hw/img_proc_wrapper.xsa /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/zynq_fsbl/zynq_fsbl_bsp/system.mss ], Result: [null, ]. Thread: Worker-0: Initializing 'zynq_fsbl' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:11:58.200
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/hw/img_proc_wrapper.xsa /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/zynq_fsbl/zynq_fsbl_bsp/system.mss], Thread: Worker-0: Initializing 'zynq_fsbl' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:11:58.204
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/hw/img_proc_wrapper.xsa /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/zynq_fsbl/zynq_fsbl_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.1",
+}]. Thread: Worker-0: Initializing 'zynq_fsbl' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:11:58.208
+!MESSAGE XSCT Command: [domain active {standalone_domain}], Thread: Worker-4: Initializing 'standalone_domain' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:11:58.209
+!MESSAGE XSCT command with result: [domain active {standalone_domain}], Result: [null, ]. Thread: Worker-4: Initializing 'standalone_domain' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:11:58.209
+!MESSAGE XSCT Command: [::scw::get_hw_path], Thread: Worker-4: Initializing 'standalone_domain' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:11:58.210
+!MESSAGE XSCT command with result: [::scw::get_hw_path], Result: [null, /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/hw/img_proc_wrapper.xsa]. Thread: Worker-4: Initializing 'standalone_domain' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:11:58.211
+!MESSAGE XSCT Command: [::scw::regenerate_psinit /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/hw/img_proc_wrapper.xsa], Thread: Worker-4: Initializing 'standalone_domain' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:11:58.212
+!MESSAGE XSCT command with result: [::scw::regenerate_psinit /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/hw/img_proc_wrapper.xsa], Result: [null, ]. Thread: Worker-4: Initializing 'standalone_domain' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:11:58.212
+!MESSAGE XSCT Command: [::scw::get_mss_path], Thread: Worker-4: Initializing 'standalone_domain' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:11:58.218
+!MESSAGE XSCT Command: [hsi::utils::get_supported_os -json /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/hw/img_proc_wrapper.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:11:58.247
+!MESSAGE XSCT command with result: [::scw::get_mss_path], Result: [null, /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/ps7_cortexa9_0/standalone_domain/bsp/system.mss]. Thread: Worker-4: Initializing 'standalone_domain' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:11:58.248
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/hw/img_proc_wrapper.xsa /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/ps7_cortexa9_0/standalone_domain/bsp/system.mss ], Thread: Worker-4: Initializing 'standalone_domain' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:11:58.254
+!MESSAGE XSCT command with result: [hsi::utils::get_supported_os -json /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/hw/img_proc_wrapper.xsa], Result: [null, {"ps7_cortexa9_0": {"freertos10_xilinx_v1_4": {"name": "freertos10_xilinx",
+"version": "1.4",
+"desc": "This Xilinx FreeRTOS port is based on FreeRTOS kernel version 10.1.1",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/ThirdParty/bsp/freertos10_xilinx_v1_4",
+},
+"standalone_v7_1": {"name": "standalone",
+"version": "7.1",
+"desc": "Standalone is a simple, low-level software layer. It provides access to basic processor features such as caches, interrupts and exceptions as well as the basic features of a hosted environment, such as standard input and output, profiling, abort and exit.",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxil,-lgcc,-lc,--end-group",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/lib/bsp/standalone_v7_1",
+},
+},
+"ps7_cortexa9_1": {"freertos10_xilinx_v1_4": {"name": "freertos10_xilinx",
+"version": "1.4",
+"desc": "This Xilinx FreeRTOS port is based on FreeRTOS kernel version 10.1.1",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/ThirdParty/bsp/freertos10_xilinx_v1_4",
+},
+"standalone_v7_1": {"name": "standalone",
+"version": "7.1",
+"desc": "Standalone is a simple, low-level software layer. It provides access to basic processor features such as caches, interrupts and exceptions as well as the basic features of a hosted environment, such as standard input and output, profiling, abort and exit.",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxil,-lgcc,-lc,--end-group",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/lib/bsp/standalone_v7_1",
+},
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:11:58.254
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/hw/img_proc_wrapper.xsa /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/ps7_cortexa9_0/standalone_domain/bsp/system.mss ], Result: [null, ]. Thread: Worker-4: Initializing 'standalone_domain' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:11:58.255
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/hw/img_proc_wrapper.xsa /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/ps7_cortexa9_0/standalone_domain/bsp/system.mss], Thread: Worker-4: Initializing 'standalone_domain' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:11:58.256
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/hw/img_proc_wrapper.xsa /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/ps7_cortexa9_0/standalone_domain/bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.1",
+}]. Thread: Worker-4: Initializing 'standalone_domain' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:11:58.276
+!MESSAGE XSCT Command: [::hsi::utils::get_connected_periphs /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/hw/img_proc_wrapper.xsa ps7_cortexa9_0], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:11:58.278
+!MESSAGE XSCT command with result: [::hsi::utils::get_connected_periphs /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/hw/img_proc_wrapper.xsa ps7_cortexa9_0], Result: [null, ps7_afi_0 ps7_afi_1 ps7_afi_2 ps7_afi_3 ps7_coresight_comp_0 ps7_ddr_0 ps7_ddrc_0 ps7_dev_cfg_0 ps7_dma_ns ps7_dma_s ps7_ethernet_0 ps7_globaltimer_0 ps7_gpio_0 ps7_gpv_0 ps7_intc_dist_0 ps7_iop_bus_config_0 ps7_l2cachec_0 ps7_ocmc_0 ps7_pl310_0 ps7_pmu_0 ps7_qspi_0 ps7_qspi_linear_0 ps7_ram_0 ps7_ram_1 ps7_scuc_0 ps7_scugic_0 ps7_scutimer_0 ps7_scuwdt_0 ps7_sd_0 ps7_slcr_0 ps7_uart_1 ps7_usb_0 ps7_xadc_0 vdma_axi_gpio_1 vdma_axi_vdma_0 vdma_v_tpg_0]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:11:58.279
+!MESSAGE XSCT Command: [::hsi::utils::get_drivers_for_sw -json /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/hw/img_proc_wrapper.xsa /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/zynq_fsbl/zynq_fsbl_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:11:58.285
+!MESSAGE XSCT command with result: [::hsi::utils::get_drivers_for_sw -json /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/hw/img_proc_wrapper.xsa /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/zynq_fsbl/zynq_fsbl_bsp/system.mss], Result: [null, {"ps7_afi_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_afi_1": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_afi_2": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_afi_3": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_coresight_comp_0": {"name": "coresightps_dcc",
+"ver": "1.6",
+},
+"ps7_ddr_0": {"name": "ddrps",
+"ver": "1.0",
+},
+"ps7_ddrc_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_dev_cfg_0": {"name": "devcfg",
+"ver": "3.5",
+},
+"ps7_dma_ns": {"name": "dmaps",
+"ver": "2.5",
+},
+"ps7_dma_s": {"name": "dmaps",
+"ver": "2.5",
+},
+"ps7_ethernet_0": {"name": "emacps",
+"ver": "3.10",
+},
+"ps7_globaltimer_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_gpio_0": {"name": "gpiops",
+"ver": "3.6",
+},
+"ps7_gpv_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_intc_dist_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_iop_bus_config_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_l2cachec_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_ocmc_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_pl310_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_pmu_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_qspi_0": {"name": "qspips",
+"ver": "3.6",
+},
+"ps7_qspi_linear_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_ram_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_ram_1": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_scuc_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_scugic_0": {"name": "scugic",
+"ver": "4.1",
+},
+"ps7_scutimer_0": {"name": "scutimer",
+"ver": "2.1",
+},
+"ps7_scuwdt_0": {"name": "scuwdt",
+"ver": "2.1",
+},
+"ps7_sd_0": {"name": "sdps",
+"ver": "3.8",
+},
+"ps7_slcr_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_uart_1": {"name": "uartps",
+"ver": "3.8",
+},
+"ps7_usb_0": {"name": "usbps",
+"ver": "2.4",
+},
+"ps7_xadc_0": {"name": "xadcps",
+"ver": "2.3",
+},
+"vdma_axi_gpio_1": {"name": "gpio",
+"ver": "4.5",
+},
+"vdma_axi_vdma_0": {"name": "axivdma",
+"ver": "6.6",
+},
+"vdma_v_tpg_0": {"name": "v_tpg",
+"ver": "8.1",
+},
+"ps7_cortexa9_0": {"name": "cpu_cortexa9",
+"ver": "2.8",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:11:58.286
+!MESSAGE XSCT Command: [hsi::utils::get_drivers_for_hw -json /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/hw/img_proc_wrapper.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:11:58.389
+!MESSAGE XSCT command with result: [hsi::utils::get_drivers_for_hw -json /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/hw/img_proc_wrapper.xsa], Result: [null, {"hdmi_decode_axis_subset_converter_0": {"version": "1.1",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"hdmi_decode_dvi2rgb_0": {"version": "2.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"hdmi_decode_ila_0": {"version": "6.2",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"hdmi_decode_v_vid_in_axi4s_0": {"version": "4.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"proc_sys_reset_0": {"version": "5.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"processing_system7_0": {"version": "5.5",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"vdma_axi_gpio_1": {"version": "2.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"gpio_v4_5": {"name": "gpio",
+"version": "4.5",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/gpio_v4_5",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"vdma_axi_interconnect_0": {"version": "2.1",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"vdma_axi_interconnect_1": {"version": "2.1",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"vdma_axi_vdma_0": {"version": "6.3",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"axivdma_v6_6": {"name": "axivdma",
+"version": "6.6",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/axivdma_v6_6",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"vdma_v_tpg_0": {"version": "8.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"tpg_v3_1": {"name": "tpg",
+"version": "3.1",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/tpg_v3_1",
+"compilerflags": "",
+"linkerflags": "",
+},
+"v_tpg_v8_1": {"name": "v_tpg",
+"version": "8.1",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/v_tpg_v8_1",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"vdma_video_stream_mux_0": {"version": "1.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"xlconstant_0": {"version": "1.1",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_clockc_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_uart_1": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"uartps_v3_8": {"name": "uartps",
+"version": "3.8",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/uartps_v3_8",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"ps7_pl310_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_pmu_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_qspi_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"qspips_v3_6": {"name": "qspips",
+"version": "3.6",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/qspips_v3_6",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"ps7_qspi_linear_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_axi_interconnect_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_cortexa9_0": {"version": "5.2",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"cpu_cortexa9_v2_8": {"name": "cpu_cortexa9",
+"version": "2.8",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/cpu_cortexa9_v2_8",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"ps7_cortexa9_1": {"version": "5.2",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"cpu_cortexa9_v2_8": {"name": "cpu_cortexa9",
+"version": "2.8",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/cpu_cortexa9_v2_8",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"ps7_ddr_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"ddrps_v1_0": {"name": "ddrps",
+"version": "1.0",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/ddrps_v1_0",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"ps7_ethernet_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"emacps_v3_10": {"name": "emacps",
+"version": "3.10",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/emacps_v3_10",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"ps7_usb_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"usbps_v2_4": {"name": "usbps",
+"version": "2.4",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/usbps_v2_4",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"ps7_sd_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"sdps_v3_8": {"name": "sdps",
+"version": "3.8",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/sdps_v3_8",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"ps7_gpio_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"gpiops_v3_6": {"name": "gpiops",
+"version": "3.6",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/gpiops_v3_6",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"ps7_ddrc_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_dev_cfg_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"devcfg_v3_5": {"name": "devcfg",
+"version": "3.5",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/devcfg_v3_5",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"ps7_xadc_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"xadcps_v2_3": {"name": "xadcps",
+"version": "2.3",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/xadcps_v2_3",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"ps7_ocmc_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_coresight_comp_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"coresightps_dcc_v1_6": {"name": "coresightps_dcc",
+"version": "1.6",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/coresightps_dcc_v1_6",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"ps7_gpv_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_scuc_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_globaltimer_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_intc_dist_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_l2cachec_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_dma_s": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"dmaps_v2_5": {"name": "dmaps",
+"version": "2.5",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/dmaps_v2_5",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"ps7_iop_bus_config_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_ram_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_ram_1": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_scugic_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"scugic_v4_1": {"name": "scugic",
+"version": "4.1",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/scugic_v4_1",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"ps7_scutimer_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"scutimer_v2_1": {"name": "scutimer",
+"version": "2.1",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/scutimer_v2_1",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"ps7_scuwdt_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"scuwdt_v2_1": {"name": "scuwdt",
+"version": "2.1",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/scuwdt_v2_1",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"ps7_slcr_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_dma_ns": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"dmaps_v2_5": {"name": "dmaps",
+"version": "2.5",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/dmaps_v2_5",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"ps7_afi_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_afi_1": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_afi_2": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_afi_3": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_m_axi_gp0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:11:58.458
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/hw/img_proc_wrapper.xsa /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/zynq_fsbl/zynq_fsbl_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:11:58.461
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/hw/img_proc_wrapper.xsa /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/zynq_fsbl/zynq_fsbl_bsp/system.mss], Result: [null, xilffs xilrsa]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:11:58.461
+!MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/hw/img_proc_wrapper.xsa /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/zynq_fsbl/zynq_fsbl_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:11:58.465
+!MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/hw/img_proc_wrapper.xsa /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/zynq_fsbl/zynq_fsbl_bsp/system.mss], Result: [null, {"xilffs": "4.2",
+"xilrsa": "1.5",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:11:58.466
+!MESSAGE XSCT Command: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "xilffs" && VERSION == "4.2"  && TYPE == "LIBRARY"}]], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:11:58.473
+!MESSAGE XSCT command with result: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "xilffs" && VERSION == "4.2"  && TYPE == "LIBRARY"}]], Result: [null, /tools/Xilinx/Vitis/2019.2/data/embeddedsw/lib/sw_services/xilffs_v4_2]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:11:58.475
+!MESSAGE XSCT Command: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "xilrsa" && VERSION == "1.5"  && TYPE == "LIBRARY"}]], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:11:58.481
+!MESSAGE XSCT command with result: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "xilrsa" && VERSION == "1.5"  && TYPE == "LIBRARY"}]], Result: [null, /tools/Xilinx/Vitis/2019.2/data/embeddedsw/lib/sw_services/xilrsa_v1_5]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:11:58.511
+!MESSAGE XSCT Command: [::scw::sdx_reload_mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:11:58.565
+!MESSAGE XSCT command with result: [::scw::sdx_reload_mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:11:58.606
+!MESSAGE XSCT Command: [::hsi::utils::get_drivers_for_sw -json /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/hw/img_proc_wrapper.xsa /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/ps7_cortexa9_0/standalone_domain/bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:11:58.616
+!MESSAGE XSCT command with result: [::hsi::utils::get_drivers_for_sw -json /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/hw/img_proc_wrapper.xsa /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/ps7_cortexa9_0/standalone_domain/bsp/system.mss], Result: [null, {"ps7_afi_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_afi_1": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_afi_2": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_afi_3": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_coresight_comp_0": {"name": "coresightps_dcc",
+"ver": "1.6",
+},
+"ps7_ddr_0": {"name": "ddrps",
+"ver": "1.0",
+},
+"ps7_ddrc_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_dev_cfg_0": {"name": "devcfg",
+"ver": "3.5",
+},
+"ps7_dma_ns": {"name": "dmaps",
+"ver": "2.5",
+},
+"ps7_dma_s": {"name": "dmaps",
+"ver": "2.5",
+},
+"ps7_ethernet_0": {"name": "emacps",
+"ver": "3.10",
+},
+"ps7_globaltimer_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_gpio_0": {"name": "gpiops",
+"ver": "3.6",
+},
+"ps7_gpv_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_intc_dist_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_iop_bus_config_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_l2cachec_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_ocmc_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_pl310_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_pmu_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_qspi_0": {"name": "qspips",
+"ver": "3.6",
+},
+"ps7_qspi_linear_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_ram_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_ram_1": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_scuc_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_scugic_0": {"name": "scugic",
+"ver": "4.1",
+},
+"ps7_scutimer_0": {"name": "scutimer",
+"ver": "2.1",
+},
+"ps7_scuwdt_0": {"name": "scuwdt",
+"ver": "2.1",
+},
+"ps7_sd_0": {"name": "sdps",
+"ver": "3.8",
+},
+"ps7_slcr_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_uart_1": {"name": "uartps",
+"ver": "3.8",
+},
+"ps7_usb_0": {"name": "usbps",
+"ver": "2.4",
+},
+"ps7_xadc_0": {"name": "xadcps",
+"ver": "2.3",
+},
+"vdma_axi_gpio_1": {"name": "gpio",
+"ver": "4.5",
+},
+"vdma_axi_vdma_0": {"name": "axivdma",
+"ver": "6.6",
+},
+"vdma_v_tpg_0": {"name": "v_tpg",
+"ver": "8.1",
+},
+"ps7_cortexa9_0": {"name": "cpu_cortexa9",
+"ver": "2.8",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:11:58.683
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/hw/img_proc_wrapper.xsa /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/ps7_cortexa9_0/standalone_domain/bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:11:58.685
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/hw/img_proc_wrapper.xsa /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/ps7_cortexa9_0/standalone_domain/bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:11:58.708
+!MESSAGE XSCT Command: [::scw::sdx_reload_mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:11:58.743
+!MESSAGE XSCT command with result: [::scw::sdx_reload_mss], Result: [null, ]. Thread: main
+
+!ENTRY org.eclipse.ui 4 4 2019-12-08 22:12:03.748
+!MESSAGE Conflicting handlers for com.xilinx.sdx.system.core.importSourcesCommand: {com.xilinx.sdx.system.core.handler.ImportSourcesHandler@6045d2c} vs {com.xilinx.sdx.system.core.handler.ImportSourcesHandler}
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:12:50.786
+!MESSAGE XSCT Command: [domain remove linux_domain], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:12:50.861
+!MESSAGE XSCT command with result: [domain remove linux_domain], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:12:50.902
+!MESSAGE XSCT Command: [platform write], Thread: Worker-9: Saving platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:12:50.908
+!MESSAGE XSCT command with result: [platform write], Result: [null, Successfully saved  the platform at "/home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/platform.spr"]. Thread: Worker-9: Saving platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:12:53.115
+!MESSAGE XSCT Command: [::scw::get_supported_os], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:12:53.116
+!MESSAGE XSCT command with result: [::scw::get_supported_os], Result: [null, ["linux","freertos","standalone"]]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:12:53.117
+!MESSAGE XSCT Command: [::scw::get_supported_proc -os standalone], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:12:53.118
+!MESSAGE XSCT command with result: [::scw::get_supported_proc -os standalone], Result: [null, ["ps7_cortexa9_0","ps7_cortexa9_1"]]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:12:53.119
+!MESSAGE XSCT Command: [::scw::get_supported_proc -os linux], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:12:53.120
+!MESSAGE XSCT command with result: [::scw::get_supported_proc -os linux], Result: [null, ["ps7_cortexa9_0","ps7_cortexa9_1"]]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:12:53.121
+!MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/hw/img_proc_wrapper.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:12:53.142
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_periphs -json /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/hw/img_proc_wrapper.xsa], Result: [null, {"hdmi_decode_axis_subset_converter_0": {"hier_name": "hdmi_decode_axis_subset_converter_0",
+"type": "axis_subset_converter",
+"version": "1.1",
+"ip_type": "BUS",
+},
+"hdmi_decode_dvi2rgb_0": {"hier_name": "hdmi_decode_dvi2rgb_0",
+"type": "dvi2rgb",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"hdmi_decode_ila_0": {"hier_name": "hdmi_decode_ila_0",
+"type": "ila",
+"version": "6.2",
+"ip_type": "PERIPHERAL",
+},
+"hdmi_decode_v_vid_in_axi4s_0": {"hier_name": "hdmi_decode_v_vid_in_axi4s_0",
+"type": "v_vid_in_axi4s",
+"version": "4.0",
+"ip_type": "PERIPHERAL",
+},
+"proc_sys_reset_0": {"hier_name": "proc_sys_reset_0",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+"processing_system7_0": {"hier_name": "processing_system7_0",
+"type": "processing_system7",
+"version": "5.5",
+"ip_type": "",
+},
+"vdma_axi_gpio_1": {"hier_name": "vdma_axi_gpio_1",
+"type": "axi_gpio",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"vdma_axi_interconnect_0": {"hier_name": "vdma_axi_interconnect_0",
+"type": "axi_interconnect",
+"version": "2.1",
+"ip_type": "BUS",
+},
+"vdma_axi_interconnect_1": {"hier_name": "vdma_axi_interconnect_1",
+"type": "axi_interconnect",
+"version": "2.1",
+"ip_type": "BUS",
+},
+"vdma_axi_vdma_0": {"hier_name": "vdma_axi_vdma_0",
+"type": "axi_vdma",
+"version": "6.3",
+"ip_type": "PERIPHERAL",
+},
+"vdma_v_tpg_0": {"hier_name": "vdma_v_tpg_0",
+"type": "v_tpg",
+"version": "8.0",
+"ip_type": "PERIPHERAL",
+},
+"vdma_video_stream_mux_0": {"hier_name": "vdma_video_stream_mux_0",
+"type": "video_stream_mux",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"xlconstant_0": {"hier_name": "xlconstant_0",
+"type": "xlconstant",
+"version": "1.1",
+"ip_type": "PERIPHERAL",
+},
+"ps7_clockc_0": {"hier_name": "ps7_clockc_0",
+"type": "ps7_clockc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_uart_1": {"hier_name": "ps7_uart_1",
+"type": "ps7_uart",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_pl310_0": {"hier_name": "ps7_pl310_0",
+"type": "ps7_pl310",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_pmu_0": {"hier_name": "ps7_pmu_0",
+"type": "ps7_pmu",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_qspi_0": {"hier_name": "ps7_qspi_0",
+"type": "ps7_qspi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_qspi_linear_0": {"hier_name": "ps7_qspi_linear_0",
+"type": "ps7_qspi_linear",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_axi_interconnect_0": {"hier_name": "ps7_axi_interconnect_0",
+"type": "ps7_axi_interconnect",
+"version": "1.00.a",
+"ip_type": "BUS",
+},
+"ps7_cortexa9_0": {"hier_name": "ps7_cortexa9_0",
+"type": "ps7_cortexa9",
+"version": "5.2",
+"ip_type": "PROCESSOR",
+},
+"ps7_cortexa9_1": {"hier_name": "ps7_cortexa9_1",
+"type": "ps7_cortexa9",
+"version": "5.2",
+"ip_type": "PROCESSOR",
+},
+"ps7_ddr_0": {"hier_name": "ps7_ddr_0",
+"type": "ps7_ddr",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_ethernet_0": {"hier_name": "ps7_ethernet_0",
+"type": "ps7_ethernet",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_usb_0": {"hier_name": "ps7_usb_0",
+"type": "ps7_usb",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_sd_0": {"hier_name": "ps7_sd_0",
+"type": "ps7_sdio",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_gpio_0": {"hier_name": "ps7_gpio_0",
+"type": "ps7_gpio",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_ddrc_0": {"hier_name": "ps7_ddrc_0",
+"type": "ps7_ddrc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_dev_cfg_0": {"hier_name": "ps7_dev_cfg_0",
+"type": "ps7_dev_cfg",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_xadc_0": {"hier_name": "ps7_xadc_0",
+"type": "ps7_xadc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_ocmc_0": {"hier_name": "ps7_ocmc_0",
+"type": "ps7_ocmc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_coresight_comp_0": {"hier_name": "ps7_coresight_comp_0",
+"type": "ps7_coresight_comp",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_gpv_0": {"hier_name": "ps7_gpv_0",
+"type": "ps7_gpv",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_scuc_0": {"hier_name": "ps7_scuc_0",
+"type": "ps7_scuc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_globaltimer_0": {"hier_name": "ps7_globaltimer_0",
+"type": "ps7_globaltimer",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_intc_dist_0": {"hier_name": "ps7_intc_dist_0",
+"type": "ps7_intc_dist",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_l2cachec_0": {"hier_name": "ps7_l2cachec_0",
+"type": "ps7_l2cachec",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_dma_s": {"hier_name": "ps7_dma_s",
+"type": "ps7_dma",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_iop_bus_config_0": {"hier_name": "ps7_iop_bus_config_0",
+"type": "ps7_iop_bus_config",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_ram_0": {"hier_name": "ps7_ram_0",
+"type": "ps7_ram",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_ram_1": {"hier_name": "ps7_ram_1",
+"type": "ps7_ram",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_scugic_0": {"hier_name": "ps7_scugic_0",
+"type": "ps7_scugic",
+"version": "1.00.a",
+"ip_type": "INTERRUPT_CNTLR",
+},
+"ps7_scutimer_0": {"hier_name": "ps7_scutimer_0",
+"type": "ps7_scutimer",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_scuwdt_0": {"hier_name": "ps7_scuwdt_0",
+"type": "ps7_scuwdt",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_slcr_0": {"hier_name": "ps7_slcr_0",
+"type": "ps7_slcr",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_dma_ns": {"hier_name": "ps7_dma_ns",
+"type": "ps7_dma",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_0": {"hier_name": "ps7_afi_0",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_1": {"hier_name": "ps7_afi_1",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_2": {"hier_name": "ps7_afi_2",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_3": {"hier_name": "ps7_afi_3",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_m_axi_gp0": {"hier_name": "ps7_m_axi_gp0",
+"type": "ps7_m_axi_gp",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:12:53.145
+!MESSAGE XSCT Command: [::scw::get_supported_proc -os freertos], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:12:53.147
+!MESSAGE XSCT command with result: [::scw::get_supported_proc -os freertos], Result: [null, ["ps7_cortexa9_0","ps7_cortexa9_1"]]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:12:53.188
+!MESSAGE XSCT Command: [::scw::get_os_version standalone], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:12:53.189
+!MESSAGE XSCT command with result: [::scw::get_os_version standalone], Result: [null, standalone(7.1)]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:12:59.371
+!MESSAGE XSCT Command: [::scw::get_os_version linux], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:12:59.372
+!MESSAGE XSCT command with result: [::scw::get_os_version linux], Result: [null, linux(N/A)]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 1 0 2019-12-08 22:13:02.293
+!MESSAGE Opening file dialog using preferences. Current path: null, Local preference: bif_file, Group preference: platform_editor
+
+!ENTRY com.xilinx.sdk.utils 1 0 2019-12-08 22:13:02.293
+!MESSAGE Preference loaded using local preference: /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/resources
+
+!ENTRY com.xilinx.sdk.utils 1 0 2019-12-08 22:13:07.349
+!MESSAGE Opening file dialog using preferences. Current path: , Local preference: boot_components_directory, Group preference: platform_editor
+
+!ENTRY com.xilinx.sdk.utils 1 0 2019-12-08 22:13:07.350
+!MESSAGE Preference loaded using local preference: /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/resources
+
+!ENTRY com.xilinx.sdk.utils 1 0 2019-12-08 22:13:10.475
+!MESSAGE Opening file dialog using preferences. Current path: , Local preference: linux_image_directory, Group preference: platform_editor
+
+!ENTRY com.xilinx.sdk.utils 1 0 2019-12-08 22:13:10.476
+!MESSAGE Preference loaded using local preference: /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/resources
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:13:19.606
+!MESSAGE XSCT Command: [domain create -name {linux_domain} -os {linux} -proc {ps7_cortexa9} -display-name {linux_domain} -desc {} -runtime {cpp}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:13:19.614
+!MESSAGE XSCT command with result: [domain create -name {linux_domain} -os {linux} -proc {ps7_cortexa9} -display-name {linux_domain} -desc {} -runtime {cpp}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:13:19.813
+!MESSAGE XSCT Command: [platform write], Thread: Worker-3: Saving platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:13:19.820
+!MESSAGE XSCT command with result: [platform write], Result: [null, Successfully saved  the platform at "/home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/platform.spr"]. Thread: Worker-3: Saving platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:13:19.822
+!MESSAGE XSCT Command: [domain config -boot {/home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/resources/boot_files}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:13:19.825
+!MESSAGE XSCT command with result: [domain config -boot {/home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/resources/boot_files}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:13:20.055
+!MESSAGE XSCT Command: [platform write], Thread: Worker-6: Saving platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:13:20.061
+!MESSAGE XSCT command with result: [platform write], Result: [null, Successfully saved  the platform at "/home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/platform.spr"]. Thread: Worker-6: Saving platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:13:20.076
+!MESSAGE XSCT Command: [domain config -bif {/home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/resources/output.bif}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:13:20.080
+!MESSAGE XSCT command with result: [domain config -bif {/home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/resources/output.bif}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:13:20.129
+!MESSAGE XSCT Command: [platform write], Thread: Worker-5: Saving platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:13:20.138
+!MESSAGE XSCT Command: [domain config -image {/home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/resources/boot_files}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:13:20.139
+!MESSAGE XSCT command with result: [platform write], Result: [null, Successfully saved  the platform at "/home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/platform.spr"]. Thread: Worker-5: Saving platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:13:20.142
+!MESSAGE XSCT command with result: [domain config -image {/home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/resources/boot_files}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:13:20.177
+!MESSAGE XSCT Command: [domain -report -json], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:13:20.177
+!MESSAGE XSCT Command: [platform write], Thread: Worker-4: Saving platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:13:20.177
+!MESSAGE XSCT command with result: [domain -report -json], Result: [null, {"domainName":"linux_domain","domainDispName":"linux_domain","domainDesc":"","os":"linux","domType":"mssDomain","sysBootDir":"/home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/resources/boot_files","bootBifFile":"/home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/resources/output.bif","imageLocation":"/home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/resources/boot_files","processors":"ps7_cortexa9"}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:13:20.180
+!MESSAGE XSCT command with result: [platform write], Result: [null, Successfully saved  the platform at "/home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/platform.spr"]. Thread: Worker-4: Saving platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:13:20.187
+!MESSAGE XSCT Command: [domain config -runtime {cpp}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:13:20.190
+!MESSAGE XSCT command with result: [domain config -runtime {cpp}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:13:20.245
+!MESSAGE XSCT Command: [platform write], Thread: Worker-2: Saving platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:13:20.252
+!MESSAGE XSCT command with result: [platform write], Result: [null, Successfully saved  the platform at "/home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/platform.spr"]. Thread: Worker-2: Saving platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:13:46.303
+!MESSAGE XSCT Command: [::hsi::utils::openhw /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/export/img_proc_bsp/hw/img_proc_wrapper.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:13:47.653
+!MESSAGE XSCT command with result: [::hsi::utils::openhw /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/export/img_proc_bsp/hw/img_proc_wrapper.xsa], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:13:47.654
+!MESSAGE XSCT Command: [::hsi::utils::get_design_properties -json /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/export/img_proc_bsp/hw/img_proc_wrapper.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:13:47.656
+!MESSAGE XSCT command with result: [::hsi::utils::get_design_properties -json /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/export/img_proc_bsp/hw/img_proc_wrapper.xsa], Result: [null, {"device": "7z020",
+"family": "zynq",
+"timestamp": "Sun Dec  8 20:12:37 2019",
+"vivado_version": "2019.2",
+"part": "xc7z020clg400-1",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:13:59.322
+!MESSAGE XSCT Command: [::hsi::utils::openhw /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/export/img_proc_bsp/hw/img_proc_wrapper.xsa], Thread: Worker-2: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:13:59.324
+!MESSAGE XSCT command with result: [::hsi::utils::openhw /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/export/img_proc_bsp/hw/img_proc_wrapper.xsa], Result: [null, ]. Thread: Worker-2: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:13:59.359
+!MESSAGE XSCT Command: [hsi::internal::extract_hw_files -quiet bit mmi bmm -dir {/home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc/_ide/bitstream}], Thread: Worker-2: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:13:59.396
+!MESSAGE XSCT command with result: [hsi::internal::extract_hw_files -quiet bit mmi bmm -dir {/home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc/_ide/bitstream}], Result: [null, ]. Thread: Worker-2: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:13:59.399
+!MESSAGE XSCT Command: [::hsi::generate_target {psinit} [ ::hsi::get_cells -filter { CONFIGURABLE == true } -hierarchical] -dir {/home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc/_ide/psinit} -quiet], Thread: Worker-2: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-08 22:14:02.716
+!MESSAGE XSCT command with result: [::hsi::generate_target {psinit} [ ::hsi::get_cells -filter { CONFIGURABLE == true } -hierarchical] -dir {/home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc/_ide/psinit} -quiet], Result: [null, ]. Thread: Worker-2: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2019-12-08 22:14:09.646
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '1'
+
+!ENTRY org.eclipse.tcf 4 0 2019-12-09 01:13:08.639
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1182)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:96)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.tcf 4 0 2019-12-09 01:13:08.641
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1182)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:96)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.tcf 4 0 2019-12-09 01:27:13.552
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1182)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:96)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.tcf 4 0 2019-12-09 01:27:13.552
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1182)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:96)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.tcf 4 0 2019-12-09 01:27:14.546
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1182)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:96)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.tcf 4 0 2019-12-09 01:27:14.546
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1182)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:96)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.tcf 4 0 2019-12-09 01:27:16.269
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1182)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:96)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.tcf 4 0 2019-12-09 01:27:16.270
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1182)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:96)
+	at java.base/java.lang.Thread.run(Unknown Source)
