@@ -27,6 +27,10 @@
  *  Modified on: 18.12.2014
  *       Author: Lauri Vosandi
  *          web: lauri.vosandi.com
+ *
+ *  Modified on: 08.12.2019
+ *       Author: Austin Owens
+ *          web: autofb66@hotmail.com
  */
 
 #include <stdio.h>
@@ -34,6 +38,8 @@
 #include <unistd.h>
 #include <fcntl.h>
 #include <sys/mman.h>
+#include <string.h>
+
 
 /* Register offsets */
 #define OFFSET_PARK_PTR_REG                     0x28
@@ -60,6 +66,11 @@
 #define OFFSET_VDMA_S2MM_FRAMEBUFFER2           0xb0
 #define OFFSET_VDMA_S2MM_FRAMEBUFFER3           0xb4
 #define OFFSET_VDMA_S2MM_FRAMEBUFFER4           0xb8
+
+#define OFFSET_VTPG_START                       0x00
+#define OFFSET_VTPG_HEIGHT                      0x10
+#define OFFSET_VTPG_WIDTH                       0x18
+#define OFFSET_VTPG_PATTERN_ID                  0x20
 
 /* S2MM and MM2S control register flags */
 #define VDMA_CONTROL_REGISTER_START                     0x00000001
@@ -91,6 +102,29 @@
 #define VDMA_STATUS_REGISTER_FrameCount                 0x00ff0000  // Read-only
 #define VDMA_STATUS_REGISTER_DelayCount                 0xff000000  // Read-only
 
+/* VTPG control register flags */
+#define VTPG_CONTROL_REGISTER_PATTERN_PASSTHROUGH          0x00000000  // Pass the video input straight through the video output
+#define VTPG_CONTROL_REGISTER_PATTERN_HORIZ_RAMP           0x00000001  // Horizontal Ramp which increases each component (RGB or Y) horizontally by 1
+#define VTPG_CONTROL_REGISTER_PATTERN_VERT_RAMP            0x00000002  // Vertical Ramp which increases each component (RGB or Y) vertically by 1
+#define VTPG_CONTROL_REGISTER_PATTERN_TEMPORAL_RAMP        0x00000003  // Temporal Ramp which increases every pixel by a value set in the motion_speedregister for every frame.
+#define VTPG_CONTROL_REGISTER_PATTERN_SOLID_RED            0x00000004  // Solid red output
+#define VTPG_CONTROL_REGISTER_PATTERN_SOLID_GREEN          0x00000005  // Solid green outpt
+#define VTPG_CONTROL_REGISTER_PATTERN_SOLID_BLUE           0x00000006  // Solid blue output
+#define VTPG_CONTROL_REGISTER_PATTERN_SOLID_BLACK          0x00000007  // Solid black output
+#define VTPG_CONTROL_REGISTER_PATTERN_SOLID_WHITE          0x00000008  // Solid white output
+#define VTPG_CONTROL_REGISTER_PATTERN_COLOR_BARS           0x00000009  // Color bars
+#define VTPG_CONTROL_REGISTER_PATTERN_ZONE_PLATE           0x0000000A  // Zone Plate output produces a ROM based sinusoidal pattern. This option has dependencies on the motion_speed, zplate_hor_cntl_start, zplate_hor_cntl_delta, zplate_ver_cntl_start and zplate_ver_cntl_delta registers.
+#define VTPG_CONTROL_REGISTER_PATTERN_TARTAN_COLOR_BARS    0x0000000B  // Tartan Color Bars
+#define VTPG_CONTROL_REGISTER_PATTERN_CROSS_HATCH          0x0000000C  // Draws a cross hatch pattern.
+#define VTPG_CONTROL_REGISTER_PATTERN_COLOR_SWEEP          0x0000000D  // Color sweep pattern
+#define VTPG_CONTROL_REGISTER_PATTERN_VERT_HORIZ_RAMP      0x0000000E  // A combined vertical and horizontal ramp
+#define VTPG_CONTROL_REGISTER_PATTERN_BLK_WHT_CHKR_BRD     0x0000000F  // Black and white checker board
+#define VTPG_CONTROL_REGISTER_PATTERN_PSEUDORANDOM         0x00000010  // Pseudorandom pattern
+#define VTPG_CONTROL_REGISTER_PATTERN_DP_COLOR_RAMPS       0x00000011  // DisplayPort color ramp
+#define VTPG_CONTROL_REGISTER_PATTERN_DP_BLK_WHT_VERT_RAMP 0x00000012  // DisplayPort black and white vertical lines
+#define VTPG_CONTROL_REGISTER_PATTERN_DP_COLOR_SQUARE      0x00000013  // DisplayPort color square
+#define VTPG_CONTROL_REGISTER_START                        0x00000081
+
 typedef struct {
     unsigned int baseAddr;
     int vdmaHandler;
@@ -99,6 +133,7 @@ typedef struct {
     int pixelLength;
     int fbLength;
     unsigned int* vdmaVirtualAddress;
+    unsigned int* vtpgVirtualAddress;
     unsigned char* fb1VirtualAddress;
     unsigned char* fb1PhysicalAddress;
     unsigned char* fb2VirtualAddress;
@@ -106,7 +141,6 @@ typedef struct {
     unsigned char* fb3VirtualAddress;
     unsigned char* fb3PhysicalAddress;
 } vdma_handle;
-
 
 
 int vdma_setup(vdma_handle *handle, unsigned int baseAddr, int width, int height, int pixelLength, unsigned int fb1Addr, unsigned int fb2Addr, unsigned int fb3Addr) {
@@ -150,6 +184,19 @@ int vdma_setup(vdma_handle *handle, unsigned int baseAddr, int width, int height
     return 0;
 }
 
+int vtpg_setup(vdma_handle *handle, unsigned int baseAddr, int width, int height) {
+
+    handle->vtpgVirtualAddress = (unsigned int*)mmap(NULL, 65535, PROT_READ | PROT_WRITE, MAP_SHARED, handle->vdmaHandler, (off_t)baseAddr);
+    if(handle->vtpgVirtualAddress == MAP_FAILED) {
+        perror("vtpgVirtualAddress mapping for absolute memory access failed.\n");
+        return -1;
+    }
+
+    vtpg_set(handle, OFFSET_VTPG_WIDTH, width);
+    vtpg_set(handle, OFFSET_VTPG_HEIGHT, height);
+
+    return 0;
+}
 
 void vdma_halt(vdma_handle *handle) {
     vdma_set(handle, OFFSET_VDMA_S2MM_CONTROL_REGISTER, VDMA_CONTROL_REGISTER_RESET);
@@ -168,6 +215,14 @@ unsigned int vdma_get(vdma_handle *handle, int num) {
 void vdma_set(vdma_handle *handle, int num, unsigned int val) {
 	//WHY SHIFT 2 HERE? - Austin
     handle->vdmaVirtualAddress[num>>2]=val;
+}
+
+unsigned int vtpg_get(vdma_handle *handle, int num) {
+    return handle->vtpgVirtualAddress[num>>2];
+}
+
+void vtpg_set(vdma_handle *handle, int num, unsigned int val) {
+    handle->vtpgVirtualAddress[num>>2]=val;
 }
 
 void vdma_status_dump(int status) {
@@ -270,20 +325,31 @@ int vdma_running(vdma_handle *handle) {
 }
 
 int vdma_idle(vdma_handle *handle) {
-    // Check whtether VDMA is transferring
+    // Check whether VDMA is transferring
     return (vdma_get(handle, OFFSET_VDMA_S2MM_STATUS_REGISTER) & VDMA_STATUS_REGISTER_FrameCountInterrupt)!=0;
 }
 
+void raw_input(char* prompt, char* input)
+{
+	printf("%s", prompt);
+	fflush(stdout);
+	fgets(input, 10, stdin);
+	input[strlen(input)-1] = '\0';
+}
+
 int main(int argc, char *argv[]) {
-    int j, i;
+    //int j, i;
+	int j;
+    char input[10];
     int width, height, pixel_length;
+    int kill_thread = 0;
 
     vdma_handle handle;
 
     if (argc != 4)
     {
-            printf("Must pass in width, height, and pixel length (default was 4) arguments.\n");
-            return 0;
+    	printf("Must pass in width, height, and pixel length (default was 4) arguments.\n");
+        return 0;
     }
 
     width = atoi(argv[1]);
@@ -295,18 +361,109 @@ int main(int argc, char *argv[]) {
     // Setup VDMA handle and memory-mapped ranges
     vdma_setup(&handle, 0x43000000, width, height, pixel_length, 0x0e000000, 0x0f000000, 0x10000000);
 
+    // Setup Video Test Pattern Generator (VTPG) handle and memory-mapped ranges
+    vtpg_setup(&handle, 0x43c00000, width, height);
+
     // Start triple buffering
     vdma_start_triple_buffering(&handle);
 
-    // Run for 10 seconds, just monitor status registers
-    for(i=0; i<30; i++) {
-        vdma_s2mm_status_dump(&handle);
-        vdma_mm2s_status_dump(&handle);
-        printf("FB1:\n");
-        for (j = 0; j < 4096; j++) printf(" %02x", handle.fb1VirtualAddress[j]); printf("\n");
-        sleep(1);
-    }
 
-    // Halt VDMA and unmap memory ranges
-    vdma_halt(&handle);
+    while (kill_thread == 0)
+    {
+    	raw_input("\n\nAvailable Commands:\n'p' to print section of frame buffer\n'v' to turn on VTPG\n'q' to quit\n>> ", input);
+
+		if (strcmp(input, "p") == 0)
+		{
+			vdma_s2mm_status_dump(&handle);
+			vdma_mm2s_status_dump(&handle);
+
+			printf("FB1:\n");
+			for (j = 0; j < 4096; j++)
+			{
+				printf(" %02x", handle.fb1VirtualAddress[j]);
+			}
+			printf("\n");
+		}
+
+		else if (strcmp(input, "v") == 0)
+		{
+			if (vtpg_get(&handle, OFFSET_VTPG_START) != VTPG_CONTROL_REGISTER_START)
+			{
+				vtpg_set(&handle, OFFSET_VTPG_START, VTPG_CONTROL_REGISTER_START);
+				printf("Started VTPG\n");
+			}
+
+			raw_input("\nAvailable Patterns:\n'p': Passthrough\n'rgbhr': RGB Horizontal Ramp\n'rgbvr': RGB Vertical Ramp\n'tr': Temporal Ramp\n'r': Red\n'g': Green\n'b': Blue\n'k': Black\n'w': White\n'cb': Color Bars\n'zp': Zone Plate\n'tcb': Tartan Color Bars\n'ch': Cross Hatch\n'cs': Color Sweep\n'vhr': Vertical Horizontal Ramp\n'chkr' Black and White Checker Board\n'ps': Pseudorandom\n'dpcr': Display Port Color Ramp\n'dpbwv': Display Port Black and White Vertical Lines\n'dpcs': Display Port Color Square\n>> ", input);
+
+			if (strcmp(input, "p") == 0)
+				vtpg_set(&handle, OFFSET_VTPG_PATTERN_ID, VTPG_CONTROL_REGISTER_PATTERN_PASSTHROUGH);
+
+			else if (strcmp(input, "rgbhr") == 0)
+				vtpg_set(&handle, OFFSET_VTPG_PATTERN_ID, VTPG_CONTROL_REGISTER_PATTERN_HORIZ_RAMP);
+
+			else if (strcmp(input, "rgbvr") == 0)
+				vtpg_set(&handle, OFFSET_VTPG_PATTERN_ID, VTPG_CONTROL_REGISTER_PATTERN_VERT_RAMP);
+
+			else if (strcmp(input, "tr") == 0)
+				vtpg_set(&handle, OFFSET_VTPG_PATTERN_ID, VTPG_CONTROL_REGISTER_PATTERN_TEMPORAL_RAMP);
+
+			else if (strcmp(input, "r") == 0)
+				vtpg_set(&handle, OFFSET_VTPG_PATTERN_ID, VTPG_CONTROL_REGISTER_PATTERN_SOLID_RED);
+
+			else if (strcmp(input, "g") == 0)
+				vtpg_set(&handle, OFFSET_VTPG_PATTERN_ID, VTPG_CONTROL_REGISTER_PATTERN_SOLID_GREEN);
+
+			else if (strcmp(input, "b") == 0)
+				vtpg_set(&handle, OFFSET_VTPG_PATTERN_ID, VTPG_CONTROL_REGISTER_PATTERN_SOLID_BLUE);
+
+			else if (strcmp(input, "k") == 0)
+				vtpg_set(&handle, OFFSET_VTPG_PATTERN_ID, VTPG_CONTROL_REGISTER_PATTERN_SOLID_BLACK);
+
+			else if (strcmp(input, "w") == 0)
+				vtpg_set(&handle, OFFSET_VTPG_PATTERN_ID, VTPG_CONTROL_REGISTER_PATTERN_SOLID_WHITE);
+
+			else if (strcmp(input, "cb") == 0)
+				vtpg_set(&handle, OFFSET_VTPG_PATTERN_ID, VTPG_CONTROL_REGISTER_PATTERN_COLOR_BARS);
+
+			else if (strcmp(input, "zp") == 0)
+				vtpg_set(&handle, OFFSET_VTPG_PATTERN_ID, VTPG_CONTROL_REGISTER_PATTERN_ZONE_PLATE);
+
+			else if (strcmp(input, "tcb") == 0)
+				vtpg_set(&handle, OFFSET_VTPG_PATTERN_ID, VTPG_CONTROL_REGISTER_PATTERN_TARTAN_COLOR_BARS);
+
+			else if (strcmp(input, "ch") == 0)
+				vtpg_set(&handle, OFFSET_VTPG_PATTERN_ID, VTPG_CONTROL_REGISTER_PATTERN_CROSS_HATCH);
+
+			else if (strcmp(input, "cs") == 0)
+				vtpg_set(&handle, OFFSET_VTPG_PATTERN_ID, VTPG_CONTROL_REGISTER_PATTERN_COLOR_SWEEP);
+
+			else if (strcmp(input, "vhr") == 0)
+				vtpg_set(&handle, OFFSET_VTPG_PATTERN_ID, VTPG_CONTROL_REGISTER_PATTERN_VERT_HORIZ_RAMP);
+
+			else if (strcmp(input, "chkr") == 0)
+				vtpg_set(&handle, OFFSET_VTPG_PATTERN_ID, VTPG_CONTROL_REGISTER_PATTERN_BLK_WHT_CHKR_BRD);
+
+			else if (strcmp(input, "ps") == 0)
+				vtpg_set(&handle, OFFSET_VTPG_PATTERN_ID, VTPG_CONTROL_REGISTER_PATTERN_PSEUDORANDOM);
+
+			else if (strcmp(input, "dpcr") == 0)
+				vtpg_set(&handle, OFFSET_VTPG_PATTERN_ID, VTPG_CONTROL_REGISTER_PATTERN_DP_COLOR_RAMPS);
+
+			else if (strcmp(input, "dpbwv") == 0)
+				vtpg_set(&handle, OFFSET_VTPG_PATTERN_ID, VTPG_CONTROL_REGISTER_PATTERN_DP_BLK_WHT_VERT_RAMP);
+
+			else if (strcmp(input, "dpcs") == 0)
+				vtpg_set(&handle, OFFSET_VTPG_PATTERN_ID, VTPG_CONTROL_REGISTER_PATTERN_DP_COLOR_SQUARE);
+
+		}
+
+		else if (strcmp(input, "q") == 0)
+		{
+			printf("Exiting...\n");
+			vdma_halt(&handle);
+			kill_thread = 1;
+		}
+
+    }
+    printf("Exited\n");
 }

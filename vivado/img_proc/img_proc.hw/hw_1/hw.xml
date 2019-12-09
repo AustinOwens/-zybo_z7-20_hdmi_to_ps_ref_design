@@ -53,6 +53,12 @@
   </ObjectList>
   <ObjectList object_type="hw_probe" gui_info="">
     <Object name="img_proc_i/Net1" gui_info=""/>
+    <Object name="img_proc_i/hdmi_decode/dvi2rgb_0/U0/dbg_Clocking_aLocked" gui_info=""/>
+    <Object name="img_proc_i/hdmi_decode/dvi2rgb_0/U0/dbg_rBUFR_Rst" gui_info=""/>
+    <Object name="img_proc_i/hdmi_decode/dvi2rgb_0/U0/dbg_rDlyRst" gui_info=""/>
+    <Object name="img_proc_i/hdmi_decode/dvi2rgb_0/U0/dbg_rMMCM_Locked" gui_info=""/>
+    <Object name="img_proc_i/hdmi_decode/dvi2rgb_0/U0/dbg_rMMCM_Reset" gui_info=""/>
+    <Object name="img_proc_i/hdmi_decode/dvi2rgb_0/U0/dbg_rRdyRst" gui_info=""/>
     <Object name="img_proc_i/vdma/v_tpg_0_m_axis_video_TDATA[23:0]" gui_info=""/>
   </ObjectList>
   <probeset name="hw project" active="false">

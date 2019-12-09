@@ -1,11 +1,11 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.2 (lin64) Build 2700185 Thu Oct 24 18:45:48 MDT 2019
--- Date        : Mon Nov  4 00:17:19 2019
+-- Date        : Sun Dec  8 17:22:19 2019
 -- Host        : austin-ubuntu running 64-bit Ubuntu 18.04.3 LTS
--- Command     : write_vhdl -force -mode funcsim -rename_top img_proc_ila_0_1 -prefix
---               img_proc_ila_0_1_ img_proc_ila_2_0_sim_netlist.vhdl
--- Design      : img_proc_ila_2_0
+-- Command     : write_vhdl -force -mode funcsim
+--               /home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/ip/img_proc_ila_0_1/img_proc_ila_0_1_sim_netlist.vhdl
+-- Design      : img_proc_ila_0_1
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
 -- Device      : xc7z020clg400-1
@@ -25,6 +25,8 @@ entity img_proc_ila_0_1_blk_mem_gen_v8_4_4_blk_mem_gen_prim_wrapper is
     Q : in STD_LOGIC_VECTOR ( 9 downto 0 );
     DIADI : in STD_LOGIC_VECTOR ( 2 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of img_proc_ila_0_1_blk_mem_gen_v8_4_4_blk_mem_gen_prim_wrapper : entity is "blk_mem_gen_v8_4_4_blk_mem_gen_prim_wrapper";
 end img_proc_ila_0_1_blk_mem_gen_v8_4_4_blk_mem_gen_prim_wrapper;
 
 architecture STRUCTURE of img_proc_ila_0_1_blk_mem_gen_v8_4_4_blk_mem_gen_prim_wrapper is
@@ -212,6 +214,8 @@ entity img_proc_ila_0_1_ltlib_v1_0_0_all_typeA_slice is
     Q : in STD_LOGIC_VECTOR ( 0 to 0 );
     \I_IS_TERMINATION_SLICE_W_OUTPUT_REG.DOUT_O_reg_0\ : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of img_proc_ila_0_1_ltlib_v1_0_0_all_typeA_slice : entity is "ltlib_v1_0_0_all_typeA_slice";
 end img_proc_ila_0_1_ltlib_v1_0_0_all_typeA_slice;
 
 architecture STRUCTURE of img_proc_ila_0_1_ltlib_v1_0_0_all_typeA_slice is
@@ -1298,6 +1302,8 @@ entity img_proc_ila_0_1_ltlib_v1_0_0_async_edge_xfer is
     arm_ctrl : in STD_LOGIC;
     last_din : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of img_proc_ila_0_1_ltlib_v1_0_0_async_edge_xfer : entity is "ltlib_v1_0_0_async_edge_xfer";
 end img_proc_ila_0_1_ltlib_v1_0_0_async_edge_xfer;
 
 architecture STRUCTURE of img_proc_ila_0_1_ltlib_v1_0_0_async_edge_xfer is
@@ -1770,6 +1776,8 @@ entity img_proc_ila_0_1_ltlib_v1_0_0_cfglut4 is
     A : in STD_LOGIC_VECTOR ( 3 downto 0 );
     s_dclk_o : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of img_proc_ila_0_1_ltlib_v1_0_0_cfglut4 : entity is "ltlib_v1_0_0_cfglut4";
 end img_proc_ila_0_1_ltlib_v1_0_0_cfglut4;
 
 architecture STRUCTURE of img_proc_ila_0_1_ltlib_v1_0_0_cfglut4 is
@@ -1844,6 +1852,8 @@ entity img_proc_ila_0_1_ltlib_v1_0_0_cfglut5 is
     A : in STD_LOGIC_VECTOR ( 4 downto 0 );
     s_dclk_o : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of img_proc_ila_0_1_ltlib_v1_0_0_cfglut5 : entity is "ltlib_v1_0_0_cfglut5";
 end img_proc_ila_0_1_ltlib_v1_0_0_cfglut5;
 
 architecture STRUCTURE of img_proc_ila_0_1_ltlib_v1_0_0_cfglut5 is
@@ -1954,6 +1964,8 @@ entity img_proc_ila_0_1_ltlib_v1_0_0_cfglut6 is
     s_dclk_o : in STD_LOGIC;
     u_wcnt_hcmp_q : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of img_proc_ila_0_1_ltlib_v1_0_0_cfglut6 : entity is "ltlib_v1_0_0_cfglut6";
 end img_proc_ila_0_1_ltlib_v1_0_0_cfglut6;
 
 architecture STRUCTURE of img_proc_ila_0_1_ltlib_v1_0_0_cfglut6 is
@@ -2205,6 +2217,8 @@ entity img_proc_ila_0_1_ltlib_v1_0_0_cfglut7 is
     wcnt_hcmp : in STD_LOGIC;
     \I_YESLUT6.I_YES_OREG.O_reg_reg_2\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of img_proc_ila_0_1_ltlib_v1_0_0_cfglut7 : entity is "ltlib_v1_0_0_cfglut7";
 end img_proc_ila_0_1_ltlib_v1_0_0_cfglut7;
 
 architecture STRUCTURE of img_proc_ila_0_1_ltlib_v1_0_0_cfglut7 is
@@ -2454,6 +2468,8 @@ entity img_proc_ila_0_1_ltlib_v1_0_0_generic_memrd is
     SR : in STD_LOGIC_VECTOR ( 0 to 0 );
     \input_data_reg[2]_1\ : in STD_LOGIC_VECTOR ( 2 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of img_proc_ila_0_1_ltlib_v1_0_0_generic_memrd : entity is "ltlib_v1_0_0_generic_memrd";
 end img_proc_ila_0_1_ltlib_v1_0_0_generic_memrd;
 
 architecture STRUCTURE of img_proc_ila_0_1_ltlib_v1_0_0_generic_memrd is
@@ -3138,6 +3154,8 @@ entity img_proc_ila_0_1_ltlib_v1_0_0_rising_edge_detection is
     Q : in STD_LOGIC_VECTOR ( 0 to 0 );
     \dout_pulse_reg[0]_0\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of img_proc_ila_0_1_ltlib_v1_0_0_rising_edge_detection : entity is "ltlib_v1_0_0_rising_edge_detection";
 end img_proc_ila_0_1_ltlib_v1_0_0_rising_edge_detection;
 
 architecture STRUCTURE of img_proc_ila_0_1_ltlib_v1_0_0_rising_edge_detection is
@@ -3303,32 +3321,34 @@ entity img_proc_ila_0_1_xsdbs_v1_0_2_reg_ctl is
   port (
     \xsdb_reg_reg[2]_0\ : out STD_LOGIC;
     \xsdb_reg_reg[15]_0\ : out STD_LOGIC_VECTOR ( 15 downto 0 );
-    \xsdb_reg_reg[3]_0\ : out STD_LOGIC;
+    \xsdb_reg_reg[4]_0\ : out STD_LOGIC;
     \xsdb_reg_reg[5]_0\ : out STD_LOGIC;
     \xsdb_reg_reg[6]_0\ : out STD_LOGIC;
-    \xsdb_reg_reg[7]_0\ : out STD_LOGIC;
     \xsdb_reg_reg[8]_0\ : out STD_LOGIC;
     \xsdb_reg_reg[9]_0\ : out STD_LOGIC;
-    \xsdb_reg_reg[11]_0\ : out STD_LOGIC;
-    \slaveRegDo_ff8_reg[15]\ : out STD_LOGIC;
-    \slaveRegDo_ff8_reg[15]_0\ : out STD_LOGIC;
+    \xsdb_reg_reg[10]_0\ : out STD_LOGIC;
+    \slaveRegDo_ff8_reg[14]\ : out STD_LOGIC;
+    \slaveRegDo_ff8_reg[14]_0\ : out STD_LOGIC;
+    \slaveRegDo_ff8_reg[14]_1\ : out STD_LOGIC;
     \G_1PIPE_IFACE.s_daddr_r_reg[2]\ : out STD_LOGIC;
     \G_1PIPE_IFACE.s_daddr_r_reg[0]\ : out STD_LOGIC;
     \G_1PIPE_IFACE.s_daddr_r_reg[4]\ : out STD_LOGIC;
     \G_1PIPE_IFACE.s_daddr_r_reg[8]\ : out STD_LOGIC;
     s_daddr_o : in STD_LOGIC_VECTOR ( 12 downto 0 );
     \slaveRegDo_mux_3_reg[2]\ : in STD_LOGIC;
-    \slaveRegDo_mux_3_reg[11]\ : in STD_LOGIC;
-    \slaveRegDo_mux_3_reg[15]\ : in STD_LOGIC;
+    \slaveRegDo_mux_3_reg[10]\ : in STD_LOGIC;
+    \slaveRegDo_mux_3_reg[14]\ : in STD_LOGIC;
     Q : in STD_LOGIC_VECTOR ( 8 downto 0 );
-    \slaveRegDo_mux_3_reg[15]_0\ : in STD_LOGIC;
-    \slaveRegDo_mux_3_reg[15]_1\ : in STD_LOGIC;
-    \slaveRegDo_mux_3_reg[15]_2\ : in STD_LOGIC;
+    \slaveRegDo_mux_3_reg[14]_0\ : in STD_LOGIC;
+    \slaveRegDo_mux_3_reg[14]_1\ : in STD_LOGIC;
+    \slaveRegDo_mux_3_reg[14]_2\ : in STD_LOGIC;
     s_dwe_o : in STD_LOGIC;
     s_den_o : in STD_LOGIC;
     s_di_o : in STD_LOGIC_VECTOR ( 15 downto 0 );
     s_dclk_o : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of img_proc_ila_0_1_xsdbs_v1_0_2_reg_ctl : entity is "xsdbs_v1_0_2_reg_ctl";
 end img_proc_ila_0_1_xsdbs_v1_0_2_reg_ctl;
 
 architecture STRUCTURE of img_proc_ila_0_1_xsdbs_v1_0_2_reg_ctl is
@@ -3357,43 +3377,56 @@ drdy_ff7_i_3: unisim.vcomponents.LUT6
       I5 => s_daddr_o(10),
       O => \^g_1pipe_iface.s_daddr_r_reg[8]\
     );
-\slaveRegDo_mux_3[11]_i_1\: unisim.vcomponents.LUT5
+\slaveRegDo_mux_3[10]_i_1\: unisim.vcomponents.LUT5
     generic map(
       INIT => X"FFEAEAEA"
     )
         port map (
-      I0 => \slaveRegDo_mux_3_reg[11]\,
-      I1 => \slaveRegDo_mux_3_reg[15]\,
-      I2 => \^xsdb_reg_reg[15]_0\(11),
-      I3 => Q(6),
-      I4 => \slaveRegDo_mux_3_reg[15]_0\,
-      O => \xsdb_reg_reg[11]_0\
+      I0 => \slaveRegDo_mux_3_reg[10]\,
+      I1 => \slaveRegDo_mux_3_reg[14]\,
+      I2 => \^xsdb_reg_reg[15]_0\(10),
+      I3 => Q(5),
+      I4 => \slaveRegDo_mux_3_reg[14]_0\,
+      O => \xsdb_reg_reg[10]_0\
+    );
+\slaveRegDo_mux_3[11]_i_1\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"FFFFF888F888F888"
+    )
+        port map (
+      I0 => \slaveRegDo_mux_3_reg[14]_1\,
+      I1 => \slaveRegDo_mux_3_reg[14]_2\,
+      I2 => \slaveRegDo_mux_3_reg[14]\,
+      I3 => \^xsdb_reg_reg[15]_0\(11),
+      I4 => Q(6),
+      I5 => \slaveRegDo_mux_3_reg[14]_0\,
+      O => \slaveRegDo_ff8_reg[14]\
+    );
+\slaveRegDo_mux_3[12]_i_1\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"FFFFF888F888F888"
+    )
+        port map (
+      I0 => \slaveRegDo_mux_3_reg[14]_1\,
+      I1 => \slaveRegDo_mux_3_reg[14]_2\,
+      I2 => \slaveRegDo_mux_3_reg[14]\,
+      I3 => \^xsdb_reg_reg[15]_0\(12),
+      I4 => Q(7),
+      I5 => \slaveRegDo_mux_3_reg[14]_0\,
+      O => \slaveRegDo_ff8_reg[14]_0\
     );
 \slaveRegDo_mux_3[14]_i_1\: unisim.vcomponents.LUT6
     generic map(
       INIT => X"FFFFF888F888F888"
     )
         port map (
-      I0 => \slaveRegDo_mux_3_reg[15]_1\,
-      I1 => \slaveRegDo_mux_3_reg[15]_2\,
-      I2 => \slaveRegDo_mux_3_reg[15]\,
+      I0 => \slaveRegDo_mux_3_reg[14]_1\,
+      I1 => \slaveRegDo_mux_3_reg[14]_2\,
+      I2 => \slaveRegDo_mux_3_reg[14]\,
       I3 => \^xsdb_reg_reg[15]_0\(14),
-      I4 => Q(7),
-      I5 => \slaveRegDo_mux_3_reg[15]_0\,
-      O => \slaveRegDo_ff8_reg[15]\
-    );
-\slaveRegDo_mux_3[15]_i_2\: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"FFFFF888F888F888"
-    )
-        port map (
-      I0 => \slaveRegDo_mux_3_reg[15]_1\,
-      I1 => \slaveRegDo_mux_3_reg[15]_2\,
-      I2 => \slaveRegDo_mux_3_reg[15]\,
-      I3 => \^xsdb_reg_reg[15]_0\(15),
       I4 => Q(8),
-      I5 => \slaveRegDo_mux_3_reg[15]_0\,
-      O => \slaveRegDo_ff8_reg[15]_0\
+      I5 => \slaveRegDo_mux_3_reg[14]_0\,
+      O => \slaveRegDo_ff8_reg[14]_1\
     );
 \slaveRegDo_mux_3[2]_i_2\: unisim.vcomponents.LUT6
     generic map(
@@ -3408,77 +3441,66 @@ drdy_ff7_i_3: unisim.vcomponents.LUT6
       I5 => s_daddr_o(1),
       O => \xsdb_reg_reg[2]_0\
     );
-\slaveRegDo_mux_3[3]_i_1\: unisim.vcomponents.LUT5
+\slaveRegDo_mux_3[4]_i_1\: unisim.vcomponents.LUT5
     generic map(
       INIT => X"FFEAEAEA"
     )
         port map (
-      I0 => \slaveRegDo_mux_3_reg[11]\,
-      I1 => \slaveRegDo_mux_3_reg[15]\,
-      I2 => \^xsdb_reg_reg[15]_0\(3),
+      I0 => \slaveRegDo_mux_3_reg[10]\,
+      I1 => \slaveRegDo_mux_3_reg[14]\,
+      I2 => \^xsdb_reg_reg[15]_0\(4),
       I3 => Q(0),
-      I4 => \slaveRegDo_mux_3_reg[15]_0\,
-      O => \xsdb_reg_reg[3]_0\
+      I4 => \slaveRegDo_mux_3_reg[14]_0\,
+      O => \xsdb_reg_reg[4]_0\
     );
 \slaveRegDo_mux_3[5]_i_1\: unisim.vcomponents.LUT5
     generic map(
       INIT => X"FFEAEAEA"
     )
         port map (
-      I0 => \slaveRegDo_mux_3_reg[11]\,
-      I1 => \slaveRegDo_mux_3_reg[15]\,
+      I0 => \slaveRegDo_mux_3_reg[10]\,
+      I1 => \slaveRegDo_mux_3_reg[14]\,
       I2 => \^xsdb_reg_reg[15]_0\(5),
       I3 => Q(1),
-      I4 => \slaveRegDo_mux_3_reg[15]_0\,
+      I4 => \slaveRegDo_mux_3_reg[14]_0\,
       O => \xsdb_reg_reg[5]_0\
     );
-\slaveRegDo_mux_3[6]_i_1\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"FFEAEAEA"
-    )
-        port map (
-      I0 => \slaveRegDo_mux_3_reg[11]\,
-      I1 => \slaveRegDo_mux_3_reg[15]\,
-      I2 => \^xsdb_reg_reg[15]_0\(6),
-      I3 => Q(2),
-      I4 => \slaveRegDo_mux_3_reg[15]_0\,
-      O => \xsdb_reg_reg[6]_0\
-    );
-\slaveRegDo_mux_3[7]_i_1\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"FFEAEAEA"
-    )
-        port map (
-      I0 => \slaveRegDo_mux_3_reg[11]\,
-      I1 => \slaveRegDo_mux_3_reg[15]\,
-      I2 => \^xsdb_reg_reg[15]_0\(7),
-      I3 => Q(3),
-      I4 => \slaveRegDo_mux_3_reg[15]_0\,
-      O => \xsdb_reg_reg[7]_0\
-    );
-\slaveRegDo_mux_3[8]_i_1\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"FFEAEAEA"
-    )
-        port map (
-      I0 => \slaveRegDo_mux_3_reg[11]\,
-      I1 => \slaveRegDo_mux_3_reg[15]\,
-      I2 => \^xsdb_reg_reg[15]_0\(8),
-      I3 => Q(4),
-      I4 => \slaveRegDo_mux_3_reg[15]_0\,
-      O => \xsdb_reg_reg[8]_0\
-    );
-\slaveRegDo_mux_3[9]_i_1\: unisim.vcomponents.LUT6
+\slaveRegDo_mux_3[6]_i_1\: unisim.vcomponents.LUT6
     generic map(
       INIT => X"C0000000A00000F0"
     )
         port map (
-      I0 => \^xsdb_reg_reg[15]_0\(9),
-      I1 => Q(5),
+      I0 => \^xsdb_reg_reg[15]_0\(6),
+      I1 => Q(2),
       I2 => s_daddr_o(3),
       I3 => s_daddr_o(0),
       I4 => s_daddr_o(2),
       I5 => s_daddr_o(1),
+      O => \xsdb_reg_reg[6]_0\
+    );
+\slaveRegDo_mux_3[8]_i_1\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"C0000000A00000F0"
+    )
+        port map (
+      I0 => \^xsdb_reg_reg[15]_0\(8),
+      I1 => Q(3),
+      I2 => s_daddr_o(3),
+      I3 => s_daddr_o(0),
+      I4 => s_daddr_o(2),
+      I5 => s_daddr_o(1),
+      O => \xsdb_reg_reg[8]_0\
+    );
+\slaveRegDo_mux_3[9]_i_1\: unisim.vcomponents.LUT5
+    generic map(
+      INIT => X"FFEAEAEA"
+    )
+        port map (
+      I0 => \slaveRegDo_mux_3_reg[10]\,
+      I1 => \slaveRegDo_mux_3_reg[14]\,
+      I2 => \^xsdb_reg_reg[15]_0\(9),
+      I3 => Q(4),
+      I4 => \slaveRegDo_mux_3_reg[14]_0\,
       O => \xsdb_reg_reg[9]_0\
     );
 \xsdb_reg[15]_i_1__13\: unisim.vcomponents.LUT6
@@ -8775,6 +8797,8 @@ entity img_proc_ila_0_1_xsdbs_v1_0_2_reg_p2s is
     \shadow_reg[15]_0\ : in STD_LOGIC;
     mu_config_cs_serial_input : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of img_proc_ila_0_1_xsdbs_v1_0_2_reg_p2s : entity is "xsdbs_v1_0_2_reg_p2s";
 end img_proc_ila_0_1_xsdbs_v1_0_2_reg_p2s;
 
 architecture STRUCTURE of img_proc_ila_0_1_xsdbs_v1_0_2_reg_p2s is
@@ -11518,17 +11542,17 @@ entity \img_proc_ila_0_1_xsdbs_v1_0_2_reg_p2s__parameterized2\ is
     \parallel_dout_reg[1]_0\ : out STD_LOGIC;
     Q : out STD_LOGIC_VECTOR ( 9 downto 0 );
     \parallel_dout_reg[2]_0\ : out STD_LOGIC;
-    \parallel_dout_reg[4]_0\ : out STD_LOGIC;
-    \parallel_dout_reg[10]_0\ : out STD_LOGIC;
-    \parallel_dout_reg[12]_0\ : out STD_LOGIC;
+    \parallel_dout_reg[3]_0\ : out STD_LOGIC;
+    \parallel_dout_reg[7]_0\ : out STD_LOGIC;
     \parallel_dout_reg[13]_0\ : out STD_LOGIC;
+    \parallel_dout_reg[15]_0\ : out STD_LOGIC;
     \G_1PIPE_IFACE.s_daddr_r_reg[1]\ : out STD_LOGIC;
     \G_1PIPE_IFACE.s_di_r_reg[15]\ : out STD_LOGIC;
     D : in STD_LOGIC_VECTOR ( 0 to 0 );
     s_dclk_o : in STD_LOGIC;
     \slaveRegDo_mux_3_reg[1]\ : in STD_LOGIC;
     \slaveRegDo_mux_3_reg[1]_0\ : in STD_LOGIC;
-    \slaveRegDo_mux_3_reg[13]\ : in STD_LOGIC_VECTOR ( 4 downto 0 );
+    \slaveRegDo_mux_3_reg[15]\ : in STD_LOGIC_VECTOR ( 4 downto 0 );
     \slaveRegDo_mux_3_reg[1]_1\ : in STD_LOGIC;
     \slaveRegDo_mux_3_reg[1]_2\ : in STD_LOGIC;
     s_daddr_o : in STD_LOGIC_VECTOR ( 5 downto 0 );
@@ -11557,7 +11581,7 @@ architecture STRUCTURE of \img_proc_ila_0_1_xsdbs_v1_0_2_reg_p2s__parameterized2
   signal next_state : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal \next_state_inferred__3/i__n_0\ : STD_LOGIC;
   signal \p_0_in__1\ : STD_LOGIC_VECTOR ( 3 downto 0 );
-  signal parallel_dout : STD_LOGIC_VECTOR ( 13 downto 1 );
+  signal parallel_dout : STD_LOGIC_VECTOR ( 15 downto 1 );
   signal serial_dout : STD_LOGIC;
   signal shadow : STD_LOGIC_VECTOR ( 14 downto 0 );
   signal \shadow[15]_i_2_n_0\ : STD_LOGIC;
@@ -11832,14 +11856,14 @@ data_out_sel_reg: unisim.vcomponents.FDRE
       C => s_dclk_o,
       CE => \^e\(0),
       D => \^q\(7),
-      Q => parallel_dout(10),
+      Q => \^q\(6),
       R => '0'
     );
 \parallel_dout_reg[11]\: unisim.vcomponents.FDRE
      port map (
       C => s_dclk_o,
       CE => \^e\(0),
-      D => parallel_dout(12),
+      D => \^q\(8),
       Q => \^q\(7),
       R => '0'
     );
@@ -11848,14 +11872,14 @@ data_out_sel_reg: unisim.vcomponents.FDRE
       C => s_dclk_o,
       CE => \^e\(0),
       D => parallel_dout(13),
-      Q => parallel_dout(12),
+      Q => \^q\(8),
       R => '0'
     );
 \parallel_dout_reg[13]\: unisim.vcomponents.FDRE
      port map (
       C => s_dclk_o,
       CE => \^e\(0),
-      D => \^q\(8),
+      D => \^q\(9),
       Q => parallel_dout(13),
       R => '0'
     );
@@ -11863,8 +11887,8 @@ data_out_sel_reg: unisim.vcomponents.FDRE
      port map (
       C => s_dclk_o,
       CE => \^e\(0),
-      D => \^q\(9),
-      Q => \^q\(8),
+      D => parallel_dout(15),
+      Q => \^q\(9),
       R => '0'
     );
 \parallel_dout_reg[15]\: unisim.vcomponents.FDRE
@@ -11872,7 +11896,7 @@ data_out_sel_reg: unisim.vcomponents.FDRE
       C => s_dclk_o,
       CE => \^e\(0),
       D => D(0),
-      Q => \^q\(9),
+      Q => parallel_dout(15),
       R => '0'
     );
 \parallel_dout_reg[1]\: unisim.vcomponents.FDRE
@@ -11887,7 +11911,7 @@ data_out_sel_reg: unisim.vcomponents.FDRE
      port map (
       C => s_dclk_o,
       CE => \^e\(0),
-      D => \^q\(1),
+      D => parallel_dout(3),
       Q => parallel_dout(2),
       R => '0'
     );
@@ -11895,8 +11919,8 @@ data_out_sel_reg: unisim.vcomponents.FDRE
      port map (
       C => s_dclk_o,
       CE => \^e\(0),
-      D => parallel_dout(4),
-      Q => \^q\(1),
+      D => \^q\(1),
+      Q => parallel_dout(3),
       R => '0'
     );
 \parallel_dout_reg[4]\: unisim.vcomponents.FDRE
@@ -11904,7 +11928,7 @@ data_out_sel_reg: unisim.vcomponents.FDRE
       C => s_dclk_o,
       CE => \^e\(0),
       D => \^q\(2),
-      Q => parallel_dout(4),
+      Q => \^q\(1),
       R => '0'
     );
 \parallel_dout_reg[5]\: unisim.vcomponents.FDRE
@@ -11919,7 +11943,7 @@ data_out_sel_reg: unisim.vcomponents.FDRE
      port map (
       C => s_dclk_o,
       CE => \^e\(0),
-      D => \^q\(4),
+      D => parallel_dout(7),
       Q => \^q\(3),
       R => '0'
     );
@@ -11927,24 +11951,24 @@ data_out_sel_reg: unisim.vcomponents.FDRE
      port map (
       C => s_dclk_o,
       CE => \^e\(0),
-      D => \^q\(5),
-      Q => \^q\(4),
+      D => \^q\(4),
+      Q => parallel_dout(7),
       R => '0'
     );
 \parallel_dout_reg[8]\: unisim.vcomponents.FDRE
      port map (
       C => s_dclk_o,
       CE => \^e\(0),
-      D => \^q\(6),
-      Q => \^q\(5),
+      D => \^q\(5),
+      Q => \^q\(4),
       R => '0'
     );
 \parallel_dout_reg[9]\: unisim.vcomponents.FDRE
      port map (
       C => s_dclk_o,
       CE => \^e\(0),
-      D => parallel_dout(10),
-      Q => \^q\(6),
+      D => \^q\(6),
+      Q => \^q\(5),
       R => '0'
     );
 serial_data_o: unisim.vcomponents.LUT3
@@ -12374,44 +12398,31 @@ shift_en_reg: unisim.vcomponents.FDRE
       Q => \^e\(0),
       R => '0'
     );
-\slaveRegDo_mux_3[10]_i_1\: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"A000C00000000000"
-    )
-        port map (
-      I0 => parallel_dout(10),
-      I1 => \slaveRegDo_mux_3_reg[13]\(2),
-      I2 => s_daddr_o(3),
-      I3 => s_daddr_o(0),
-      I4 => s_daddr_o(1),
-      I5 => s_daddr_o(2),
-      O => \parallel_dout_reg[10]_0\
-    );
-\slaveRegDo_mux_3[12]_i_1\: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"A000C00000000000"
-    )
-        port map (
-      I0 => parallel_dout(12),
-      I1 => \slaveRegDo_mux_3_reg[13]\(3),
-      I2 => s_daddr_o(3),
-      I3 => s_daddr_o(0),
-      I4 => s_daddr_o(1),
-      I5 => s_daddr_o(2),
-      O => \parallel_dout_reg[12]_0\
-    );
 \slaveRegDo_mux_3[13]_i_1\: unisim.vcomponents.LUT6
     generic map(
       INIT => X"A000C00000000000"
     )
         port map (
       I0 => parallel_dout(13),
-      I1 => \slaveRegDo_mux_3_reg[13]\(4),
+      I1 => \slaveRegDo_mux_3_reg[15]\(3),
       I2 => s_daddr_o(3),
       I3 => s_daddr_o(0),
       I4 => s_daddr_o(1),
       I5 => s_daddr_o(2),
       O => \parallel_dout_reg[13]_0\
+    );
+\slaveRegDo_mux_3[15]_i_2\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"A000C00000000000"
+    )
+        port map (
+      I0 => parallel_dout(15),
+      I1 => \slaveRegDo_mux_3_reg[15]\(4),
+      I2 => s_daddr_o(3),
+      I3 => s_daddr_o(0),
+      I4 => s_daddr_o(1),
+      I5 => s_daddr_o(2),
+      O => \parallel_dout_reg[15]_0\
     );
 \slaveRegDo_mux_3[1]_i_1\: unisim.vcomponents.LUT6
     generic map(
@@ -12421,7 +12432,7 @@ shift_en_reg: unisim.vcomponents.FDRE
       I0 => parallel_dout(1),
       I1 => \slaveRegDo_mux_3_reg[1]\,
       I2 => \slaveRegDo_mux_3_reg[1]_0\,
-      I3 => \slaveRegDo_mux_3_reg[13]\(0),
+      I3 => \slaveRegDo_mux_3_reg[15]\(0),
       I4 => \slaveRegDo_mux_3_reg[1]_1\,
       I5 => \slaveRegDo_mux_3_reg[1]_2\,
       O => \parallel_dout_reg[1]_0\
@@ -12439,18 +12450,31 @@ shift_en_reg: unisim.vcomponents.FDRE
       I5 => \slaveRegDo_mux_3_reg[2]\,
       O => \parallel_dout_reg[2]_0\
     );
-\slaveRegDo_mux_3[4]_i_1\: unisim.vcomponents.LUT6
+\slaveRegDo_mux_3[3]_i_1\: unisim.vcomponents.LUT6
     generic map(
       INIT => X"A000C00000000000"
     )
         port map (
-      I0 => parallel_dout(4),
-      I1 => \slaveRegDo_mux_3_reg[13]\(1),
+      I0 => parallel_dout(3),
+      I1 => \slaveRegDo_mux_3_reg[15]\(1),
       I2 => s_daddr_o(3),
       I3 => s_daddr_o(0),
       I4 => s_daddr_o(1),
       I5 => s_daddr_o(2),
-      O => \parallel_dout_reg[4]_0\
+      O => \parallel_dout_reg[3]_0\
+    );
+\slaveRegDo_mux_3[7]_i_1\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"A000C00000000000"
+    )
+        port map (
+      I0 => parallel_dout(7),
+      I1 => \slaveRegDo_mux_3_reg[15]\(2),
+      I2 => s_daddr_o(3),
+      I3 => s_daddr_o(0),
+      I4 => s_daddr_o(1),
+      I5 => s_daddr_o(2),
+      O => \parallel_dout_reg[7]_0\
     );
 end STRUCTURE;
 library IEEE;
@@ -12473,6 +12497,8 @@ entity img_proc_ila_0_1_xsdbs_v1_0_2_reg_stat is
     Q : in STD_LOGIC_VECTOR ( 0 to 0 );
     \slaveRegDo_mux_3_reg[0]_0\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of img_proc_ila_0_1_xsdbs_v1_0_2_reg_stat : entity is "xsdbs_v1_0_2_reg_stat";
 end img_proc_ila_0_1_xsdbs_v1_0_2_reg_stat;
 
 architecture STRUCTURE of img_proc_ila_0_1_xsdbs_v1_0_2_reg_stat is
@@ -13073,6 +13099,8 @@ entity img_proc_ila_0_1_xsdbs_v1_0_2_xsdbs is
   attribute C_XDEVICEFAMILY of img_proc_ila_0_1_xsdbs_v1_0_2_xsdbs : entity is "zynq";
   attribute C_XSDB_SLAVE_TYPE : integer;
   attribute C_XSDB_SLAVE_TYPE of img_proc_ila_0_1_xsdbs_v1_0_2_xsdbs : entity is 17;
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of img_proc_ila_0_1_xsdbs_v1_0_2_xsdbs : entity is "xsdbs_v1_0_2_xsdbs";
   attribute dont_touch : string;
   attribute dont_touch of img_proc_ila_0_1_xsdbs_v1_0_2_xsdbs : entity is "true";
 end img_proc_ila_0_1_xsdbs_v1_0_2_xsdbs;
@@ -16611,6 +16639,8 @@ entity img_proc_ila_0_1_blk_mem_gen_v8_4_4_blk_mem_gen_prim_width is
     Q : in STD_LOGIC_VECTOR ( 9 downto 0 );
     DIADI : in STD_LOGIC_VECTOR ( 2 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of img_proc_ila_0_1_blk_mem_gen_v8_4_4_blk_mem_gen_prim_width : entity is "blk_mem_gen_v8_4_4_blk_mem_gen_prim_width";
 end img_proc_ila_0_1_blk_mem_gen_v8_4_4_blk_mem_gen_prim_width;
 
 architecture STRUCTURE of img_proc_ila_0_1_blk_mem_gen_v8_4_4_blk_mem_gen_prim_width is
@@ -16642,6 +16672,8 @@ entity img_proc_ila_0_1_ila_v6_2_10_ila_reset_ctrl is
     halt_ctrl : in STD_LOGIC;
     arm_ctrl : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of img_proc_ila_0_1_ila_v6_2_10_ila_reset_ctrl : entity is "ila_v6_2_10_ila_reset_ctrl";
 end img_proc_ila_0_1_ila_v6_2_10_ila_reset_ctrl;
 
 architecture STRUCTURE of img_proc_ila_0_1_ila_v6_2_10_ila_reset_ctrl is
@@ -16827,6 +16859,8 @@ entity img_proc_ila_0_1_ltlib_v1_0_0_all_typeA is
     Q : in STD_LOGIC_VECTOR ( 0 to 0 );
     \I_IS_TERMINATION_SLICE_W_OUTPUT_REG.DOUT_O_reg\ : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of img_proc_ila_0_1_ltlib_v1_0_0_all_typeA : entity is "ltlib_v1_0_0_all_typeA";
 end img_proc_ila_0_1_ltlib_v1_0_0_all_typeA;
 
 architecture STRUCTURE of img_proc_ila_0_1_ltlib_v1_0_0_all_typeA is
@@ -18678,32 +18712,34 @@ entity img_proc_ila_0_1_xsdbs_v1_0_2_reg_stream is
   port (
     \xsdb_reg_reg[2]\ : out STD_LOGIC;
     \xsdb_reg_reg[15]\ : out STD_LOGIC_VECTOR ( 15 downto 0 );
-    \xsdb_reg_reg[3]\ : out STD_LOGIC;
+    \xsdb_reg_reg[4]\ : out STD_LOGIC;
     \xsdb_reg_reg[5]\ : out STD_LOGIC;
     \xsdb_reg_reg[6]\ : out STD_LOGIC;
-    \xsdb_reg_reg[7]\ : out STD_LOGIC;
     \xsdb_reg_reg[8]\ : out STD_LOGIC;
     \xsdb_reg_reg[9]\ : out STD_LOGIC;
-    \xsdb_reg_reg[11]\ : out STD_LOGIC;
-    \slaveRegDo_ff8_reg[15]\ : out STD_LOGIC;
-    \slaveRegDo_ff8_reg[15]_0\ : out STD_LOGIC;
+    \xsdb_reg_reg[10]\ : out STD_LOGIC;
+    \slaveRegDo_ff8_reg[14]\ : out STD_LOGIC;
+    \slaveRegDo_ff8_reg[14]_0\ : out STD_LOGIC;
+    \slaveRegDo_ff8_reg[14]_1\ : out STD_LOGIC;
     \G_1PIPE_IFACE.s_daddr_r_reg[2]\ : out STD_LOGIC;
     \G_1PIPE_IFACE.s_daddr_r_reg[0]\ : out STD_LOGIC;
     \G_1PIPE_IFACE.s_daddr_r_reg[4]\ : out STD_LOGIC;
     \G_1PIPE_IFACE.s_daddr_r_reg[8]\ : out STD_LOGIC;
     s_daddr_o : in STD_LOGIC_VECTOR ( 12 downto 0 );
     \slaveRegDo_mux_3_reg[2]\ : in STD_LOGIC;
-    \slaveRegDo_mux_3_reg[11]\ : in STD_LOGIC;
-    \slaveRegDo_mux_3_reg[15]\ : in STD_LOGIC;
+    \slaveRegDo_mux_3_reg[10]\ : in STD_LOGIC;
+    \slaveRegDo_mux_3_reg[14]\ : in STD_LOGIC;
     Q : in STD_LOGIC_VECTOR ( 8 downto 0 );
-    \slaveRegDo_mux_3_reg[15]_0\ : in STD_LOGIC;
-    \slaveRegDo_mux_3_reg[15]_1\ : in STD_LOGIC;
-    \slaveRegDo_mux_3_reg[15]_2\ : in STD_LOGIC;
+    \slaveRegDo_mux_3_reg[14]_0\ : in STD_LOGIC;
+    \slaveRegDo_mux_3_reg[14]_1\ : in STD_LOGIC;
+    \slaveRegDo_mux_3_reg[14]_2\ : in STD_LOGIC;
     s_dwe_o : in STD_LOGIC;
     s_den_o : in STD_LOGIC;
     s_di_o : in STD_LOGIC_VECTOR ( 15 downto 0 );
     s_dclk_o : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of img_proc_ila_0_1_xsdbs_v1_0_2_reg_stream : entity is "xsdbs_v1_0_2_reg_stream";
 end img_proc_ila_0_1_xsdbs_v1_0_2_reg_stream;
 
 architecture STRUCTURE of img_proc_ila_0_1_xsdbs_v1_0_2_reg_stream is
@@ -18720,21 +18756,21 @@ begin
       s_den_o => s_den_o,
       s_di_o(15 downto 0) => s_di_o(15 downto 0),
       s_dwe_o => s_dwe_o,
-      \slaveRegDo_ff8_reg[15]\ => \slaveRegDo_ff8_reg[15]\,
-      \slaveRegDo_ff8_reg[15]_0\ => \slaveRegDo_ff8_reg[15]_0\,
-      \slaveRegDo_mux_3_reg[11]\ => \slaveRegDo_mux_3_reg[11]\,
-      \slaveRegDo_mux_3_reg[15]\ => \slaveRegDo_mux_3_reg[15]\,
-      \slaveRegDo_mux_3_reg[15]_0\ => \slaveRegDo_mux_3_reg[15]_0\,
-      \slaveRegDo_mux_3_reg[15]_1\ => \slaveRegDo_mux_3_reg[15]_1\,
-      \slaveRegDo_mux_3_reg[15]_2\ => \slaveRegDo_mux_3_reg[15]_2\,
+      \slaveRegDo_ff8_reg[14]\ => \slaveRegDo_ff8_reg[14]\,
+      \slaveRegDo_ff8_reg[14]_0\ => \slaveRegDo_ff8_reg[14]_0\,
+      \slaveRegDo_ff8_reg[14]_1\ => \slaveRegDo_ff8_reg[14]_1\,
+      \slaveRegDo_mux_3_reg[10]\ => \slaveRegDo_mux_3_reg[10]\,
+      \slaveRegDo_mux_3_reg[14]\ => \slaveRegDo_mux_3_reg[14]\,
+      \slaveRegDo_mux_3_reg[14]_0\ => \slaveRegDo_mux_3_reg[14]_0\,
+      \slaveRegDo_mux_3_reg[14]_1\ => \slaveRegDo_mux_3_reg[14]_1\,
+      \slaveRegDo_mux_3_reg[14]_2\ => \slaveRegDo_mux_3_reg[14]_2\,
       \slaveRegDo_mux_3_reg[2]\ => \slaveRegDo_mux_3_reg[2]\,
-      \xsdb_reg_reg[11]_0\ => \xsdb_reg_reg[11]\,
+      \xsdb_reg_reg[10]_0\ => \xsdb_reg_reg[10]\,
       \xsdb_reg_reg[15]_0\(15 downto 0) => \xsdb_reg_reg[15]\(15 downto 0),
       \xsdb_reg_reg[2]_0\ => \xsdb_reg_reg[2]\,
-      \xsdb_reg_reg[3]_0\ => \xsdb_reg_reg[3]\,
+      \xsdb_reg_reg[4]_0\ => \xsdb_reg_reg[4]\,
       \xsdb_reg_reg[5]_0\ => \xsdb_reg_reg[5]\,
       \xsdb_reg_reg[6]_0\ => \xsdb_reg_reg[6]\,
-      \xsdb_reg_reg[7]_0\ => \xsdb_reg_reg[7]\,
       \xsdb_reg_reg[8]_0\ => \xsdb_reg_reg[8]\,
       \xsdb_reg_reg[9]_0\ => \xsdb_reg_reg[9]\
     );
@@ -18797,6 +18833,8 @@ entity img_proc_ila_0_1_blk_mem_gen_v8_4_4_blk_mem_gen_generic_cstr is
     Q : in STD_LOGIC_VECTOR ( 9 downto 0 );
     DIADI : in STD_LOGIC_VECTOR ( 2 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of img_proc_ila_0_1_blk_mem_gen_v8_4_4_blk_mem_gen_generic_cstr : entity is "blk_mem_gen_v8_4_4_blk_mem_gen_generic_cstr";
 end img_proc_ila_0_1_blk_mem_gen_v8_4_4_blk_mem_gen_generic_cstr;
 
 architecture STRUCTURE of img_proc_ila_0_1_blk_mem_gen_v8_4_4_blk_mem_gen_generic_cstr is
@@ -18859,6 +18897,8 @@ entity img_proc_ila_0_1_ila_v6_2_10_ila_register is
     \xsdb_reg_reg[9]\ : in STD_LOGIC_VECTOR ( 9 downto 0 );
     \xsdb_reg_reg[1]_1\ : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of img_proc_ila_0_1_ila_v6_2_10_ila_register : entity is "ila_v6_2_10_ila_register";
 end img_proc_ila_0_1_ila_v6_2_10_ila_register;
 
 architecture STRUCTURE of img_proc_ila_0_1_ila_v6_2_10_ila_register is
@@ -18990,7 +19030,7 @@ architecture STRUCTURE of img_proc_ila_0_1_ila_v6_2_10_ila_register is
   signal \p_0_in__5\ : STD_LOGIC_VECTOR ( 8 downto 0 );
   signal p_2_in : STD_LOGIC;
   signal p_3_in : STD_LOGIC_VECTOR ( 5 to 5 );
-  signal parallel_dout : STD_LOGIC_VECTOR ( 15 downto 0 );
+  signal parallel_dout : STD_LOGIC_VECTOR ( 14 downto 0 );
   signal \^read_reset_addr\ : STD_LOGIC_VECTOR ( 9 downto 0 );
   signal regAck_reg : STD_LOGIC;
   signal \regAck_reg_n_0_[1]\ : STD_LOGIC;
@@ -19257,11 +19297,11 @@ architecture STRUCTURE of img_proc_ila_0_1_ila_v6_2_10_ila_register is
   signal slaveRegDo_82 : STD_LOGIC_VECTOR ( 15 downto 0 );
   signal slaveRegDo_84 : STD_LOGIC_VECTOR ( 15 downto 0 );
   signal slaveRegDo_890 : STD_LOGIC_VECTOR ( 15 downto 0 );
-  signal \slaveRegDo_ff8[11]_i_1_n_0\ : STD_LOGIC;
-  signal \slaveRegDo_ff8[15]_i_1_n_0\ : STD_LOGIC;
-  signal \slaveRegDo_ff8[15]_i_2_n_0\ : STD_LOGIC;
-  signal \slaveRegDo_ff8_reg_n_0_[11]\ : STD_LOGIC;
-  signal \slaveRegDo_ff8_reg_n_0_[15]\ : STD_LOGIC;
+  signal \slaveRegDo_ff8[10]_i_1_n_0\ : STD_LOGIC;
+  signal \slaveRegDo_ff8[14]_i_1_n_0\ : STD_LOGIC;
+  signal \slaveRegDo_ff8[14]_i_2_n_0\ : STD_LOGIC;
+  signal \slaveRegDo_ff8_reg_n_0_[10]\ : STD_LOGIC;
+  signal \slaveRegDo_ff8_reg_n_0_[14]\ : STD_LOGIC;
   signal slaveRegDo_ff9 : STD_LOGIC_VECTOR ( 1 to 1 );
   signal slaveRegDo_ffa : STD_LOGIC_VECTOR ( 1 to 1 );
   signal slaveRegDo_muStatus : STD_LOGIC_VECTOR ( 0 to 0 );
@@ -19302,11 +19342,11 @@ architecture STRUCTURE of img_proc_ila_0_1_ila_v6_2_10_ila_register is
   signal \slaveRegDo_mux_2[3]_i_2_n_0\ : STD_LOGIC;
   signal \slaveRegDo_mux_2[3]_i_3_n_0\ : STD_LOGIC;
   signal slaveRegDo_mux_3 : STD_LOGIC_VECTOR ( 15 downto 0 );
-  signal \slaveRegDo_mux_3[11]_i_2_n_0\ : STD_LOGIC;
+  signal \slaveRegDo_mux_3[10]_i_2_n_0\ : STD_LOGIC;
+  signal \slaveRegDo_mux_3[14]_i_2_n_0\ : STD_LOGIC;
+  signal \slaveRegDo_mux_3[14]_i_3_n_0\ : STD_LOGIC;
+  signal \slaveRegDo_mux_3[14]_i_4_n_0\ : STD_LOGIC;
   signal \slaveRegDo_mux_3[15]_i_1_n_0\ : STD_LOGIC;
-  signal \slaveRegDo_mux_3[15]_i_3_n_0\ : STD_LOGIC;
-  signal \slaveRegDo_mux_3[15]_i_4_n_0\ : STD_LOGIC;
-  signal \slaveRegDo_mux_3[15]_i_5_n_0\ : STD_LOGIC;
   signal \slaveRegDo_mux_3[1]_i_3_n_0\ : STD_LOGIC;
   signal \slaveRegDo_mux_3[1]_i_4_n_0\ : STD_LOGIC;
   signal slaveRegDo_mux_4 : STD_LOGIC_VECTOR ( 15 downto 0 );
@@ -19432,10 +19472,10 @@ architecture STRUCTURE of img_proc_ila_0_1_ila_v6_2_10_ila_register is
   attribute SOFT_HLUTNM of \slaveRegDo_mux_2[0]_i_3\ : label is "soft_lutpair52";
   attribute SOFT_HLUTNM of \slaveRegDo_mux_2[3]_i_2\ : label is "soft_lutpair52";
   attribute SOFT_HLUTNM of \slaveRegDo_mux_2[3]_i_3\ : label is "soft_lutpair61";
-  attribute SOFT_HLUTNM of \slaveRegDo_mux_3[11]_i_2\ : label is "soft_lutpair53";
-  attribute SOFT_HLUTNM of \slaveRegDo_mux_3[15]_i_3\ : label is "soft_lutpair60";
-  attribute SOFT_HLUTNM of \slaveRegDo_mux_3[15]_i_4\ : label is "soft_lutpair59";
-  attribute SOFT_HLUTNM of \slaveRegDo_mux_3[15]_i_5\ : label is "soft_lutpair59";
+  attribute SOFT_HLUTNM of \slaveRegDo_mux_3[10]_i_2\ : label is "soft_lutpair53";
+  attribute SOFT_HLUTNM of \slaveRegDo_mux_3[14]_i_2\ : label is "soft_lutpair60";
+  attribute SOFT_HLUTNM of \slaveRegDo_mux_3[14]_i_3\ : label is "soft_lutpair59";
+  attribute SOFT_HLUTNM of \slaveRegDo_mux_3[14]_i_4\ : label is "soft_lutpair59";
 begin
   arm_ctrl <= \^arm_ctrl\;
   debug_data_in(15 downto 0) <= \^debug_data_in\(15 downto 0);
@@ -21439,19 +21479,18 @@ reg_srl_fff: entity work.\img_proc_ila_0_1_xsdbs_v1_0_2_reg_p2s__parameterized2\
       E(0) => E(0),
       \G_1PIPE_IFACE.s_daddr_r_reg[1]\ => reg_srl_fff_n_18,
       \G_1PIPE_IFACE.s_di_r_reg[15]\ => reg_srl_fff_n_19,
-      Q(9 downto 8) => parallel_dout(15 downto 14),
-      Q(7) => parallel_dout(11),
-      Q(6 downto 2) => parallel_dout(9 downto 5),
-      Q(1) => parallel_dout(3),
+      Q(9) => parallel_dout(14),
+      Q(8 downto 4) => parallel_dout(12 downto 8),
+      Q(3 downto 1) => parallel_dout(6 downto 4),
       Q(0) => parallel_dout(0),
       capture_ctrl_config_serial_output => capture_ctrl_config_serial_output,
       \current_state_reg[3]_0\ => reg_stream_ffd_n_28,
-      \parallel_dout_reg[10]_0\ => reg_srl_fff_n_15,
-      \parallel_dout_reg[12]_0\ => reg_srl_fff_n_16,
-      \parallel_dout_reg[13]_0\ => reg_srl_fff_n_17,
+      \parallel_dout_reg[13]_0\ => reg_srl_fff_n_16,
+      \parallel_dout_reg[15]_0\ => reg_srl_fff_n_17,
       \parallel_dout_reg[1]_0\ => reg_srl_fff_n_2,
       \parallel_dout_reg[2]_0\ => reg_srl_fff_n_13,
-      \parallel_dout_reg[4]_0\ => reg_srl_fff_n_14,
+      \parallel_dout_reg[3]_0\ => reg_srl_fff_n_14,
+      \parallel_dout_reg[7]_0\ => reg_srl_fff_n_15,
       s_daddr_o(5) => s_daddr(12),
       s_daddr_o(4) => s_daddr(7),
       s_daddr_o(3 downto 0) => s_daddr(3 downto 0),
@@ -21459,12 +21498,13 @@ reg_srl_fff: entity work.\img_proc_ila_0_1_xsdbs_v1_0_2_reg_p2s__parameterized2\
       s_den_o => s_den,
       s_di_o(15 downto 0) => s_di(15 downto 0),
       s_dwe_o => s_dwe,
-      \slaveRegDo_mux_3_reg[13]\(4 downto 3) => \^debug_data_in\(13 downto 12),
-      \slaveRegDo_mux_3_reg[13]\(2) => \^debug_data_in\(10),
-      \slaveRegDo_mux_3_reg[13]\(1) => \^debug_data_in\(4),
-      \slaveRegDo_mux_3_reg[13]\(0) => \^debug_data_in\(1),
-      \slaveRegDo_mux_3_reg[1]\ => \slaveRegDo_mux_3[15]_i_5_n_0\,
-      \slaveRegDo_mux_3_reg[1]_0\ => \slaveRegDo_mux_3[15]_i_4_n_0\,
+      \slaveRegDo_mux_3_reg[15]\(4) => \^debug_data_in\(15),
+      \slaveRegDo_mux_3_reg[15]\(3) => \^debug_data_in\(13),
+      \slaveRegDo_mux_3_reg[15]\(2) => \^debug_data_in\(7),
+      \slaveRegDo_mux_3_reg[15]\(1) => \^debug_data_in\(3),
+      \slaveRegDo_mux_3_reg[15]\(0) => \^debug_data_in\(1),
+      \slaveRegDo_mux_3_reg[1]\ => \slaveRegDo_mux_3[14]_i_4_n_0\,
+      \slaveRegDo_mux_3_reg[1]_0\ => \slaveRegDo_mux_3[14]_i_3_n_0\,
       \slaveRegDo_mux_3_reg[1]_1\ => reg_stream_ffe_n_4,
       \slaveRegDo_mux_3_reg[1]_2\ => \slaveRegDo_mux_3[1]_i_3_n_0\,
       \slaveRegDo_mux_3_reg[2]\ => reg_stream_ffd_n_0
@@ -21475,32 +21515,31 @@ reg_stream_ffd: entity work.img_proc_ila_0_1_xsdbs_v1_0_2_reg_stream
       \G_1PIPE_IFACE.s_daddr_r_reg[2]\ => reg_stream_ffd_n_26,
       \G_1PIPE_IFACE.s_daddr_r_reg[4]\ => reg_stream_ffd_n_28,
       \G_1PIPE_IFACE.s_daddr_r_reg[8]\ => reg_stream_ffd_n_29,
-      Q(8 downto 7) => parallel_dout(15 downto 14),
-      Q(6) => parallel_dout(11),
-      Q(5 downto 1) => parallel_dout(9 downto 5),
-      Q(0) => parallel_dout(3),
+      Q(8) => parallel_dout(14),
+      Q(7 downto 3) => parallel_dout(12 downto 8),
+      Q(2 downto 0) => parallel_dout(6 downto 4),
       s_daddr_o(12 downto 0) => s_daddr(12 downto 0),
       s_dclk_o => \^s_dclk_o\,
       s_den_o => s_den,
       s_di_o(15 downto 0) => s_di(15 downto 0),
       s_dwe_o => s_dwe,
-      \slaveRegDo_ff8_reg[15]\ => reg_stream_ffd_n_24,
-      \slaveRegDo_ff8_reg[15]_0\ => reg_stream_ffd_n_25,
-      \slaveRegDo_mux_3_reg[11]\ => \slaveRegDo_mux_3[11]_i_2_n_0\,
-      \slaveRegDo_mux_3_reg[15]\ => \slaveRegDo_mux_3[15]_i_4_n_0\,
-      \slaveRegDo_mux_3_reg[15]_0\ => \slaveRegDo_mux_3[15]_i_5_n_0\,
-      \slaveRegDo_mux_3_reg[15]_1\ => \slaveRegDo_mux_3[15]_i_3_n_0\,
-      \slaveRegDo_mux_3_reg[15]_2\ => \slaveRegDo_ff8_reg_n_0_[15]\,
+      \slaveRegDo_ff8_reg[14]\ => reg_stream_ffd_n_23,
+      \slaveRegDo_ff8_reg[14]_0\ => reg_stream_ffd_n_24,
+      \slaveRegDo_ff8_reg[14]_1\ => reg_stream_ffd_n_25,
+      \slaveRegDo_mux_3_reg[10]\ => \slaveRegDo_mux_3[10]_i_2_n_0\,
+      \slaveRegDo_mux_3_reg[14]\ => \slaveRegDo_mux_3[14]_i_3_n_0\,
+      \slaveRegDo_mux_3_reg[14]_0\ => \slaveRegDo_mux_3[14]_i_4_n_0\,
+      \slaveRegDo_mux_3_reg[14]_1\ => \slaveRegDo_mux_3[14]_i_2_n_0\,
+      \slaveRegDo_mux_3_reg[14]_2\ => \slaveRegDo_ff8_reg_n_0_[14]\,
       \slaveRegDo_mux_3_reg[2]\ => \^xsdb_reg_reg[2]\,
-      \xsdb_reg_reg[11]\ => reg_stream_ffd_n_23,
+      \xsdb_reg_reg[10]\ => reg_stream_ffd_n_22,
       \xsdb_reg_reg[15]\(15 downto 0) => \^debug_data_in\(15 downto 0),
       \xsdb_reg_reg[2]\ => reg_stream_ffd_n_0,
-      \xsdb_reg_reg[3]\ => reg_stream_ffd_n_17,
+      \xsdb_reg_reg[4]\ => reg_stream_ffd_n_17,
       \xsdb_reg_reg[5]\ => reg_stream_ffd_n_18,
       \xsdb_reg_reg[6]\ => reg_stream_ffd_n_19,
-      \xsdb_reg_reg[7]\ => reg_stream_ffd_n_20,
-      \xsdb_reg_reg[8]\ => reg_stream_ffd_n_21,
-      \xsdb_reg_reg[9]\ => reg_stream_ffd_n_22
+      \xsdb_reg_reg[8]\ => reg_stream_ffd_n_20,
+      \xsdb_reg_reg[9]\ => reg_stream_ffd_n_21
     );
 reg_stream_ffe: entity work.\img_proc_ila_0_1_xsdbs_v1_0_2_reg_stream__parameterized0\
      port map (
@@ -21618,27 +21657,27 @@ s_dclk_flag_sync2_reg: unisim.vcomponents.FDRE
       Q => \shift_reg1_reg_n_0_[1]\,
       R => '0'
     );
-\slaveRegDo_ff8[11]_i_1\: unisim.vcomponents.LUT3
+\slaveRegDo_ff8[10]_i_1\: unisim.vcomponents.LUT3
     generic map(
       INIT => X"E2"
     )
         port map (
       I0 => count_tt,
-      I1 => \slaveRegDo_ff8[15]_i_2_n_0\,
-      I2 => \slaveRegDo_ff8_reg_n_0_[11]\,
-      O => \slaveRegDo_ff8[11]_i_1_n_0\
+      I1 => \slaveRegDo_ff8[14]_i_2_n_0\,
+      I2 => \slaveRegDo_ff8_reg_n_0_[10]\,
+      O => \slaveRegDo_ff8[10]_i_1_n_0\
     );
-\slaveRegDo_ff8[15]_i_1\: unisim.vcomponents.LUT3
+\slaveRegDo_ff8[14]_i_1\: unisim.vcomponents.LUT3
     generic map(
       INIT => X"D1"
     )
         port map (
       I0 => count_tt,
-      I1 => \slaveRegDo_ff8[15]_i_2_n_0\,
-      I2 => \slaveRegDo_ff8_reg_n_0_[15]\,
-      O => \slaveRegDo_ff8[15]_i_1_n_0\
+      I1 => \slaveRegDo_ff8[14]_i_2_n_0\,
+      I2 => \slaveRegDo_ff8_reg_n_0_[14]\,
+      O => \slaveRegDo_ff8[14]_i_1_n_0\
     );
-\slaveRegDo_ff8[15]_i_2\: unisim.vcomponents.LUT6
+\slaveRegDo_ff8[14]_i_2\: unisim.vcomponents.LUT6
     generic map(
       INIT => X"FFFFFFFFFFEFFFFF"
     )
@@ -21649,22 +21688,22 @@ s_dclk_flag_sync2_reg: unisim.vcomponents.FDRE
       I3 => s_daddr(0),
       I4 => s_daddr(7),
       I5 => \MU_SRL[0].mu_srl_reg_n_4\,
-      O => \slaveRegDo_ff8[15]_i_2_n_0\
+      O => \slaveRegDo_ff8[14]_i_2_n_0\
     );
-\slaveRegDo_ff8_reg[11]\: unisim.vcomponents.FDRE
+\slaveRegDo_ff8_reg[10]\: unisim.vcomponents.FDRE
      port map (
       C => \^s_dclk_o\,
       CE => '1',
-      D => \slaveRegDo_ff8[11]_i_1_n_0\,
-      Q => \slaveRegDo_ff8_reg_n_0_[11]\,
+      D => \slaveRegDo_ff8[10]_i_1_n_0\,
+      Q => \slaveRegDo_ff8_reg_n_0_[10]\,
       R => s_rst
     );
-\slaveRegDo_ff8_reg[15]\: unisim.vcomponents.FDSE
+\slaveRegDo_ff8_reg[14]\: unisim.vcomponents.FDSE
      port map (
       C => \^s_dclk_o\,
       CE => '1',
-      D => \slaveRegDo_ff8[15]_i_1_n_0\,
-      Q => \slaveRegDo_ff8_reg_n_0_[15]\,
+      D => \slaveRegDo_ff8[14]_i_1_n_0\,
+      Q => \slaveRegDo_ff8_reg_n_0_[14]\,
       S => s_rst
     );
 \slaveRegDo_ff9_reg[1]\: unisim.vcomponents.FDRE
@@ -22554,7 +22593,7 @@ s_dclk_flag_sync2_reg: unisim.vcomponents.FDRE
       Q => slaveRegDo_mux_2(9),
       R => \slaveRegDo_mux_2[15]_i_1_n_0\
     );
-\slaveRegDo_mux_3[11]_i_2\: unisim.vcomponents.LUT5
+\slaveRegDo_mux_3[10]_i_2\: unisim.vcomponents.LUT5
     generic map(
       INIT => X"00100000"
     )
@@ -22563,8 +22602,41 @@ s_dclk_flag_sync2_reg: unisim.vcomponents.FDRE
       I1 => s_daddr(2),
       I2 => s_daddr(3),
       I3 => s_daddr(0),
-      I4 => \slaveRegDo_ff8_reg_n_0_[11]\,
-      O => \slaveRegDo_mux_3[11]_i_2_n_0\
+      I4 => \slaveRegDo_ff8_reg_n_0_[10]\,
+      O => \slaveRegDo_mux_3[10]_i_2_n_0\
+    );
+\slaveRegDo_mux_3[14]_i_2\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"0004"
+    )
+        port map (
+      I0 => s_daddr(0),
+      I1 => s_daddr(3),
+      I2 => s_daddr(2),
+      I3 => s_daddr(1),
+      O => \slaveRegDo_mux_3[14]_i_2_n_0\
+    );
+\slaveRegDo_mux_3[14]_i_3\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"0800"
+    )
+        port map (
+      I0 => s_daddr(3),
+      I1 => s_daddr(0),
+      I2 => s_daddr(1),
+      I3 => s_daddr(2),
+      O => \slaveRegDo_mux_3[14]_i_3_n_0\
+    );
+\slaveRegDo_mux_3[14]_i_4\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"8000"
+    )
+        port map (
+      I0 => s_daddr(3),
+      I1 => s_daddr(0),
+      I2 => s_daddr(2),
+      I3 => s_daddr(1),
+      O => \slaveRegDo_mux_3[14]_i_4_n_0\
     );
 \slaveRegDo_mux_3[15]_i_1\: unisim.vcomponents.LUT6
     generic map(
@@ -22578,39 +22650,6 @@ s_dclk_flag_sync2_reg: unisim.vcomponents.FDRE
       I4 => s_daddr(8),
       I5 => s_daddr(4),
       O => \slaveRegDo_mux_3[15]_i_1_n_0\
-    );
-\slaveRegDo_mux_3[15]_i_3\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"0004"
-    )
-        port map (
-      I0 => s_daddr(0),
-      I1 => s_daddr(3),
-      I2 => s_daddr(2),
-      I3 => s_daddr(1),
-      O => \slaveRegDo_mux_3[15]_i_3_n_0\
-    );
-\slaveRegDo_mux_3[15]_i_4\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"0800"
-    )
-        port map (
-      I0 => s_daddr(3),
-      I1 => s_daddr(0),
-      I2 => s_daddr(1),
-      I3 => s_daddr(2),
-      O => \slaveRegDo_mux_3[15]_i_4_n_0\
-    );
-\slaveRegDo_mux_3[15]_i_5\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"8000"
-    )
-        port map (
-      I0 => s_daddr(3),
-      I1 => s_daddr(0),
-      I2 => s_daddr(2),
-      I3 => s_daddr(1),
-      O => \slaveRegDo_mux_3[15]_i_5_n_0\
     );
 \slaveRegDo_mux_3[1]_i_3\: unisim.vcomponents.LUT6
     generic map(
@@ -22631,7 +22670,7 @@ s_dclk_flag_sync2_reg: unisim.vcomponents.FDRE
     )
         port map (
       I0 => slaveRegDo_ff9(1),
-      I1 => \slaveRegDo_ff8_reg_n_0_[11]\,
+      I1 => \slaveRegDo_ff8_reg_n_0_[10]\,
       I2 => s_daddr(0),
       I3 => s_daddr(3),
       I4 => s_daddr(2),
@@ -22650,7 +22689,7 @@ s_dclk_flag_sync2_reg: unisim.vcomponents.FDRE
      port map (
       C => \^s_dclk_o\,
       CE => '1',
-      D => reg_srl_fff_n_15,
+      D => reg_stream_ffd_n_22,
       Q => slaveRegDo_mux_3(10),
       R => \slaveRegDo_mux_3[15]_i_1_n_0\
     );
@@ -22666,7 +22705,7 @@ s_dclk_flag_sync2_reg: unisim.vcomponents.FDRE
      port map (
       C => \^s_dclk_o\,
       CE => '1',
-      D => reg_srl_fff_n_16,
+      D => reg_stream_ffd_n_24,
       Q => slaveRegDo_mux_3(12),
       R => \slaveRegDo_mux_3[15]_i_1_n_0\
     );
@@ -22674,7 +22713,7 @@ s_dclk_flag_sync2_reg: unisim.vcomponents.FDRE
      port map (
       C => \^s_dclk_o\,
       CE => '1',
-      D => reg_srl_fff_n_17,
+      D => reg_srl_fff_n_16,
       Q => slaveRegDo_mux_3(13),
       R => \slaveRegDo_mux_3[15]_i_1_n_0\
     );
@@ -22682,7 +22721,7 @@ s_dclk_flag_sync2_reg: unisim.vcomponents.FDRE
      port map (
       C => \^s_dclk_o\,
       CE => '1',
-      D => reg_stream_ffd_n_24,
+      D => reg_stream_ffd_n_25,
       Q => slaveRegDo_mux_3(14),
       R => \slaveRegDo_mux_3[15]_i_1_n_0\
     );
@@ -22690,7 +22729,7 @@ s_dclk_flag_sync2_reg: unisim.vcomponents.FDRE
      port map (
       C => \^s_dclk_o\,
       CE => '1',
-      D => reg_stream_ffd_n_25,
+      D => reg_srl_fff_n_17,
       Q => slaveRegDo_mux_3(15),
       R => \slaveRegDo_mux_3[15]_i_1_n_0\
     );
@@ -22714,7 +22753,7 @@ s_dclk_flag_sync2_reg: unisim.vcomponents.FDRE
      port map (
       C => \^s_dclk_o\,
       CE => '1',
-      D => reg_stream_ffd_n_17,
+      D => reg_srl_fff_n_14,
       Q => slaveRegDo_mux_3(3),
       R => \slaveRegDo_mux_3[15]_i_1_n_0\
     );
@@ -22722,7 +22761,7 @@ s_dclk_flag_sync2_reg: unisim.vcomponents.FDRE
      port map (
       C => \^s_dclk_o\,
       CE => '1',
-      D => reg_srl_fff_n_14,
+      D => reg_stream_ffd_n_17,
       Q => slaveRegDo_mux_3(4),
       R => \slaveRegDo_mux_3[15]_i_1_n_0\
     );
@@ -22746,7 +22785,7 @@ s_dclk_flag_sync2_reg: unisim.vcomponents.FDRE
      port map (
       C => \^s_dclk_o\,
       CE => '1',
-      D => reg_stream_ffd_n_20,
+      D => reg_srl_fff_n_15,
       Q => slaveRegDo_mux_3(7),
       R => \slaveRegDo_mux_3[15]_i_1_n_0\
     );
@@ -22754,7 +22793,7 @@ s_dclk_flag_sync2_reg: unisim.vcomponents.FDRE
      port map (
       C => \^s_dclk_o\,
       CE => '1',
-      D => reg_stream_ffd_n_21,
+      D => reg_stream_ffd_n_20,
       Q => slaveRegDo_mux_3(8),
       R => \slaveRegDo_mux_3[15]_i_1_n_0\
     );
@@ -22762,7 +22801,7 @@ s_dclk_flag_sync2_reg: unisim.vcomponents.FDRE
      port map (
       C => \^s_dclk_o\,
       CE => '1',
-      D => reg_stream_ffd_n_22,
+      D => reg_stream_ffd_n_21,
       Q => slaveRegDo_mux_3(9),
       R => \slaveRegDo_mux_3[15]_i_1_n_0\
     );
@@ -23186,6 +23225,8 @@ entity img_proc_ila_0_1_ltlib_v1_0_0_allx_typeA is
     Q : in STD_LOGIC_VECTOR ( 0 to 0 );
     \I_IS_TERMINATION_SLICE_W_OUTPUT_REG.DOUT_O_reg\ : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of img_proc_ila_0_1_ltlib_v1_0_0_allx_typeA : entity is "ltlib_v1_0_0_allx_typeA";
 end img_proc_ila_0_1_ltlib_v1_0_0_allx_typeA;
 
 architecture STRUCTURE of img_proc_ila_0_1_ltlib_v1_0_0_allx_typeA is
@@ -23339,6 +23380,8 @@ entity img_proc_ila_0_1_ltlib_v1_0_0_allx_typeA_nodelay is
     SRL_D_I : in STD_LOGIC;
     \probeDelay1_reg[0]_0\ : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of img_proc_ila_0_1_ltlib_v1_0_0_allx_typeA_nodelay : entity is "ltlib_v1_0_0_allx_typeA_nodelay";
 end img_proc_ila_0_1_ltlib_v1_0_0_allx_typeA_nodelay;
 
 architecture STRUCTURE of img_proc_ila_0_1_ltlib_v1_0_0_allx_typeA_nodelay is
@@ -23628,6 +23671,8 @@ entity img_proc_ila_0_1_blk_mem_gen_v8_4_4_blk_mem_gen_top is
     Q : in STD_LOGIC_VECTOR ( 9 downto 0 );
     DIADI : in STD_LOGIC_VECTOR ( 2 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of img_proc_ila_0_1_blk_mem_gen_v8_4_4_blk_mem_gen_top : entity is "blk_mem_gen_v8_4_4_blk_mem_gen_top";
 end img_proc_ila_0_1_blk_mem_gen_v8_4_4_blk_mem_gen_top;
 
 architecture STRUCTURE of img_proc_ila_0_1_blk_mem_gen_v8_4_4_blk_mem_gen_top is
@@ -23659,6 +23704,8 @@ entity img_proc_ila_0_1_ltlib_v1_0_0_match is
     Q : in STD_LOGIC_VECTOR ( 1 downto 0 );
     \I_IS_TERMINATION_SLICE_W_OUTPUT_REG.DOUT_O_reg\ : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of img_proc_ila_0_1_ltlib_v1_0_0_match : entity is "ltlib_v1_0_0_match";
 end img_proc_ila_0_1_ltlib_v1_0_0_match;
 
 architecture STRUCTURE of img_proc_ila_0_1_ltlib_v1_0_0_match is
@@ -23813,6 +23860,8 @@ entity img_proc_ila_0_1_ltlib_v1_0_0_match_nodelay is
     PROBES_I : in STD_LOGIC_VECTOR ( 19 downto 0 );
     SRL_D_I : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of img_proc_ila_0_1_ltlib_v1_0_0_match_nodelay : entity is "ltlib_v1_0_0_match_nodelay";
 end img_proc_ila_0_1_ltlib_v1_0_0_match_nodelay;
 
 architecture STRUCTURE of img_proc_ila_0_1_ltlib_v1_0_0_match_nodelay is
@@ -23906,6 +23955,8 @@ entity img_proc_ila_0_1_blk_mem_gen_v8_4_4_synth is
     Q : in STD_LOGIC_VECTOR ( 9 downto 0 );
     DIADI : in STD_LOGIC_VECTOR ( 2 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of img_proc_ila_0_1_blk_mem_gen_v8_4_4_synth : entity is "blk_mem_gen_v8_4_4_synth";
 end img_proc_ila_0_1_blk_mem_gen_v8_4_4_synth;
 
 architecture STRUCTURE of img_proc_ila_0_1_blk_mem_gen_v8_4_4_synth is
@@ -23947,6 +23998,8 @@ entity img_proc_ila_0_1_ila_v6_2_10_ila_cap_sample_counter is
     \out\ : in STD_LOGIC_VECTOR ( 9 downto 0 );
     Q : in STD_LOGIC_VECTOR ( 9 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of img_proc_ila_0_1_ila_v6_2_10_ila_cap_sample_counter : entity is "ila_v6_2_10_ila_cap_sample_counter";
 end img_proc_ila_0_1_ila_v6_2_10_ila_cap_sample_counter;
 
 architecture STRUCTURE of img_proc_ila_0_1_ila_v6_2_10_ila_cap_sample_counter is
@@ -24358,6 +24411,8 @@ entity img_proc_ila_0_1_ila_v6_2_10_ila_cap_window_counter is
     wcnt_hcmp_temp : in STD_LOGIC;
     \iwcnt_reg[9]_0\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of img_proc_ila_0_1_ila_v6_2_10_ila_cap_window_counter : entity is "ila_v6_2_10_ila_cap_window_counter";
 end img_proc_ila_0_1_ila_v6_2_10_ila_cap_window_counter;
 
 architecture STRUCTURE of img_proc_ila_0_1_ila_v6_2_10_ila_cap_window_counter is
@@ -24700,6 +24755,8 @@ entity img_proc_ila_0_1_ila_v6_2_10_ila_trig_match is
     \I_IS_TERMINATION_SLICE_W_OUTPUT_REG.DOUT_O_reg\ : in STD_LOGIC;
     probe_data : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of img_proc_ila_0_1_ila_v6_2_10_ila_trig_match : entity is "ila_v6_2_10_ila_trig_match";
 end img_proc_ila_0_1_ila_v6_2_10_ila_trig_match;
 
 architecture STRUCTURE of img_proc_ila_0_1_ila_v6_2_10_ila_trig_match is
@@ -24742,6 +24799,8 @@ entity img_proc_ila_0_1_blk_mem_gen_v8_4_4 is
     Q : in STD_LOGIC_VECTOR ( 9 downto 0 );
     DIADI : in STD_LOGIC_VECTOR ( 2 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of img_proc_ila_0_1_blk_mem_gen_v8_4_4 : entity is "blk_mem_gen_v8_4_4";
 end img_proc_ila_0_1_blk_mem_gen_v8_4_4;
 
 architecture STRUCTURE of img_proc_ila_0_1_blk_mem_gen_v8_4_4 is
@@ -24788,6 +24847,8 @@ entity img_proc_ila_0_1_ila_v6_2_10_ila_cap_addrgen is
     u_scnt_cmp_q_1 : in STD_LOGIC;
     \captured_samples_reg[0]_0\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of img_proc_ila_0_1_ila_v6_2_10_ila_cap_addrgen : entity is "ila_v6_2_10_ila_cap_addrgen";
 end img_proc_ila_0_1_ila_v6_2_10_ila_cap_addrgen;
 
 architecture STRUCTURE of img_proc_ila_0_1_ila_v6_2_10_ila_cap_addrgen is
@@ -26184,6 +26245,8 @@ entity img_proc_ila_0_1_ila_v6_2_10_ila_trigger is
     \I_IS_TERMINATION_SLICE_W_OUTPUT_REG.DOUT_O_reg\ : in STD_LOGIC;
     probe_data : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of img_proc_ila_0_1_ila_v6_2_10_ila_trigger : entity is "ila_v6_2_10_ila_trigger";
 end img_proc_ila_0_1_ila_v6_2_10_ila_trigger;
 
 architecture STRUCTURE of img_proc_ila_0_1_ila_v6_2_10_ila_trigger is
@@ -26249,6 +26312,8 @@ entity img_proc_ila_0_1_ila_v6_2_10_ila_cap_ctrl_legacy is
     u_scnt_cmp_q : in STD_LOGIC_VECTOR ( 1 downto 0 );
     \captured_samples_reg[0]\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of img_proc_ila_0_1_ila_v6_2_10_ila_cap_ctrl_legacy : entity is "ila_v6_2_10_ila_cap_ctrl_legacy";
 end img_proc_ila_0_1_ila_v6_2_10_ila_cap_ctrl_legacy;
 
 architecture STRUCTURE of img_proc_ila_0_1_ila_v6_2_10_ila_cap_ctrl_legacy is
@@ -26419,6 +26484,8 @@ entity img_proc_ila_0_1_ila_v6_2_10_ila_trace_memory is
     Q : in STD_LOGIC_VECTOR ( 9 downto 0 );
     DIADI : in STD_LOGIC_VECTOR ( 2 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of img_proc_ila_0_1_ila_v6_2_10_ila_trace_memory : entity is "ila_v6_2_10_ila_trace_memory";
 end img_proc_ila_0_1_ila_v6_2_10_ila_trace_memory;
 
 architecture STRUCTURE of img_proc_ila_0_1_ila_v6_2_10_ila_trace_memory is
@@ -26448,6 +26515,8 @@ entity img_proc_ila_0_1_ila_v6_2_10_ila_core is
     probe1 : in STD_LOGIC_VECTOR ( 0 to 0 );
     probe0 : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of img_proc_ila_0_1_ila_v6_2_10_ila_core : entity is "ila_v6_2_10_ila_core";
 end img_proc_ila_0_1_ila_v6_2_10_ila_core;
 
 architecture STRUCTURE of img_proc_ila_0_1_ila_v6_2_10_ila_core is
@@ -28238,7 +28307,7 @@ entity img_proc_ila_0_1_ila_v6_2_10_ila is
   attribute C_EN_TIME_TAG : integer;
   attribute C_EN_TIME_TAG of img_proc_ila_0_1_ila_v6_2_10_ila : entity is 0;
   attribute C_ILA_CLK_FREQ : integer;
-  attribute C_ILA_CLK_FREQ of img_proc_ila_0_1_ila_v6_2_10_ila : entity is 200000000;
+  attribute C_ILA_CLK_FREQ of img_proc_ila_0_1_ila_v6_2_10_ila : entity is 125000000;
   attribute C_INPUT_PIPE_STAGES : integer;
   attribute C_INPUT_PIPE_STAGES of img_proc_ila_0_1_ila_v6_2_10_ila : entity is 0;
   attribute C_MAJOR_VERSION : integer;
@@ -46769,6 +46838,8 @@ entity img_proc_ila_0_1_ila_v6_2_10_ila is
   attribute LC_TIME_TAG_WIDTH of img_proc_ila_0_1_ila_v6_2_10_ila : entity is 1;
   attribute LC_TRIG_WIDTH : integer;
   attribute LC_TRIG_WIDTH of img_proc_ila_0_1_ila_v6_2_10_ila : entity is 2;
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of img_proc_ila_0_1_ila_v6_2_10_ila : entity is "ila_v6_2_10_ila";
   attribute dont_touch : string;
   attribute dont_touch of img_proc_ila_0_1_ila_v6_2_10_ila : entity is "true";
   attribute downgradeipidentifiedwarnings : string;
@@ -46910,7 +46981,7 @@ entity img_proc_ila_0_1 is
   attribute NotValidForBitStream : boolean;
   attribute NotValidForBitStream of img_proc_ila_0_1 : entity is true;
   attribute CHECK_LICENSE_TYPE : string;
-  attribute CHECK_LICENSE_TYPE of img_proc_ila_0_1 : entity is "img_proc_ila_2_0,ila_v6_2_10_ila,{}";
+  attribute CHECK_LICENSE_TYPE of img_proc_ila_0_1 : entity is "img_proc_ila_0_1,ila_v6_2_10_ila,{}";
   attribute downgradeipidentifiedwarnings : string;
   attribute downgradeipidentifiedwarnings of img_proc_ila_0_1 : entity is "yes";
   attribute x_core_info : string;
@@ -46963,7 +47034,7 @@ architecture STRUCTURE of img_proc_ila_0_1 is
   attribute C_EN_TIME_TAG : integer;
   attribute C_EN_TIME_TAG of U0 : label is 0;
   attribute C_ILA_CLK_FREQ : integer;
-  attribute C_ILA_CLK_FREQ of U0 : label is 200000000;
+  attribute C_ILA_CLK_FREQ of U0 : label is 125000000;
   attribute C_INPUT_PIPE_STAGES : integer;
   attribute C_INPUT_PIPE_STAGES of U0 : label is 0;
   attribute C_MAJOR_VERSION : integer;

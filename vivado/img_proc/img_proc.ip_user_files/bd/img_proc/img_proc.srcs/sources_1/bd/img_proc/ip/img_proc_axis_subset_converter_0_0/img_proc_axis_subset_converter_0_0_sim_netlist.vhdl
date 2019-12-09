@@ -1,7 +1,7 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.2 (lin64) Build 2700185 Thu Oct 24 18:45:48 MDT 2019
--- Date        : Sun Nov  3 22:08:00 2019
+-- Date        : Wed Nov 13 02:06:53 2019
 -- Host        : austin-ubuntu running 64-bit Ubuntu 18.04.3 LTS
 -- Command     : write_vhdl -force -mode funcsim
 --               /home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/ip/img_proc_axis_subset_converter_0_0/img_proc_axis_subset_converter_0_0_sim_netlist.vhdl
@@ -119,9 +119,8 @@ begin
   \^s_axis_tlast\ <= s_axis_tlast;
   \^s_axis_tuser\(0) <= s_axis_tuser(0);
   \^s_axis_tvalid\ <= s_axis_tvalid;
-  m_axis_tdata(23 downto 16) <= \^s_axis_tdata\(23 downto 16);
-  m_axis_tdata(15 downto 8) <= \^s_axis_tdata\(7 downto 0);
-  m_axis_tdata(7 downto 0) <= \^s_axis_tdata\(15 downto 8);
+  m_axis_tdata(23 downto 8) <= \^s_axis_tdata\(15 downto 0);
+  m_axis_tdata(7 downto 0) <= \^s_axis_tdata\(23 downto 16);
   m_axis_tdest(0) <= \<const0>\;
   m_axis_tid(0) <= \<const0>\;
   m_axis_tkeep(2) <= \<const0>\;

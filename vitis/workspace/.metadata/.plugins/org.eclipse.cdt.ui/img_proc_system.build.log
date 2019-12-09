@@ -1,10 +1,11 @@
-02:48:32 **** Incremental Build of configuration Debug for project img_proc_system ****
+18:05:01 **** Incremental Build of configuration Debug for project img_proc_system ****
 make all 
 Generating bif file for the system project
 Executing command '::scw::generate_bif -xpfm /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/export/img_proc_bsp/img_proc_bsp.xpfm -domains linux_domain -bifpath /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_system/Debug/system.bif' on XSCT
 sdcard_gen --xpfm /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_bsp/export/img_proc_bsp/img_proc_bsp.xpfm --sys_config img_proc_bsp --bif /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_system/Debug/system.bif --bitstream /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc/_ide/bitstream/img_proc_wrapper.bit --sd_file /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc/Debug/img_proc.elf
-creating BOOT.BIN using /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc/_ide/bitstream/img_proc_wrapper.bit
-Running /tools/Xilinx/Vitis/2019.2/bin/bootgen  -image /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
+SD data file does not exist: /home/austin/Desktop/projects/zybo/zybo_img_proc/vitis/workspace/img_proc/Debug/img_proc.elf
+makefile:37: recipe for target 'sd_card' failed
+make: *** [sd_card] Error 1
 
-02:48:39 Build Finished (took 6s.535ms)
+18:05:06 Build Finished (took 5s.183ms)
 

@@ -2,8 +2,8 @@
 # Vivado v2019.2 (64-bit)
 # SW Build 2700185 on Thu Oct 24 18:45:48 MDT 2019
 # IP Build 2699827 on Thu Oct 24 21:16:38 MDT 2019
-# Start of session at: Wed Nov 13 00:28:07 2019
-# Process ID: 6489
+# Start of session at: Sun Dec  8 17:20:42 2019
+# Process ID: 23204
 # Current directory: /home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/img_proc_xbar_3_synth_1
 # Command line: vivado -log img_proc_xbar_3.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source img_proc_xbar_3.tcl
 # Log file: /home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/img_proc_xbar_3_synth_1/img_proc_xbar_3.vds
@@ -12,6 +12,7 @@
 source img_proc_xbar_3.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/austin/Desktop/projects/zybo/zybo_img_proc/vhdl/digilent/vivado-library'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/austin/Desktop/projects/custom_ip_cores/video_stream_mux'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2019.2/data/ip'.
 Command: synth_design -top img_proc_xbar_3 -part xc7z020clg400-1 -mode out_of_context
 Starting synth_design
@@ -19,9 +20,9 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 6537 
+INFO: Helper process launched with PID 23321 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:14 . Memory (MB): peak = 2016.359 ; gain = 202.715 ; free physical = 17115 ; free virtual = 24299
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 2016.324 ; gain = 200.715 ; free physical = 5326 ; free virtual = 14141
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'img_proc_xbar_3' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/ip/img_proc_xbar_3/synth/img_proc_xbar_3.v:59]
 INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_21_axi_crossbar' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/ipshared/6b0d/hdl/axi_crossbar_v2_1_vl_rfs.v:4884]
@@ -949,7 +950,7 @@ WARNING: [Synth 8-3331] design axi_crossbar_v2_1_21_axi_crossbar has unconnected
 WARNING: [Synth 8-3331] design axi_crossbar_v2_1_21_axi_crossbar has unconnected port s_axi_araddr[60]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:24 . Memory (MB): peak = 2175.047 ; gain = 361.402 ; free physical = 16600 ; free virtual = 23825
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:20 . Memory (MB): peak = 2176.012 ; gain = 360.402 ; free physical = 4127 ; free virtual = 12960
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -962,12 +963,12 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:25 . Memory (MB): peak = 2175.047 ; gain = 361.402 ; free physical = 16549 ; free virtual = 23775
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:21 . Memory (MB): peak = 2176.012 ; gain = 360.402 ; free physical = 4479 ; free virtual = 13310
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:25 . Memory (MB): peak = 2175.047 ; gain = 361.402 ; free physical = 16549 ; free virtual = 23775
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:21 . Memory (MB): peak = 2176.012 ; gain = 360.402 ; free physical = 4479 ; free virtual = 13310
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2175.047 ; gain = 0.000 ; free physical = 16466 ; free virtual = 23694
+Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2176.012 ; gain = 0.000 ; free physical = 4649 ; free virtual = 13483
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -978,27 +979,27 @@ Parsing XDC File [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_pr
 Finished Parsing XDC File [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/img_proc_xbar_3_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2314.891 ; gain = 0.000 ; free physical = 16557 ; free virtual = 23795
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2319.855 ; gain = 0.000 ; free physical = 4646 ; free virtual = 13485
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2314.891 ; gain = 0.000 ; free physical = 16555 ; free virtual = 23793
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2319.855 ; gain = 0.000 ; free physical = 4617 ; free virtual = 13456
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:30 . Memory (MB): peak = 2314.891 ; gain = 501.246 ; free physical = 16889 ; free virtual = 24150
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:27 . Memory (MB): peak = 2319.855 ; gain = 504.246 ; free physical = 6478 ; free virtual = 15311
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:30 . Memory (MB): peak = 2314.891 ; gain = 501.246 ; free physical = 16889 ; free virtual = 24150
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:27 . Memory (MB): peak = 2319.855 ; gain = 504.246 ; free physical = 6476 ; free virtual = 15309
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 Applied set_property DONT_TOUCH = true for inst. (constraint file  /home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/img_proc_xbar_3_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:30 . Memory (MB): peak = 2314.891 ; gain = 501.246 ; free physical = 16888 ; free virtual = 24149
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:27 . Memory (MB): peak = 2319.855 ; gain = 504.246 ; free physical = 6477 ; free virtual = 15310
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-4471] merging register 'gen_axi.s_axi_rvalid_i_reg' into 'gen_axi.read_cs_reg[0:0]' [/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/ipshared/6b0d/hdl/axi_crossbar_v2_1_vl_rfs.v:3669]
 INFO: [Synth 8-802] inferred FSM for state register 'gen_axi.write_cs_reg' in module 'axi_crossbar_v2_1_21_decerr_slave'
@@ -1043,7 +1044,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'axi_data_fifo_v2_1_19_axic_reg_srl_fifo__parameterized1'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:31 . Memory (MB): peak = 2314.891 ; gain = 501.246 ; free physical = 16831 ; free virtual = 24098
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:28 . Memory (MB): peak = 2319.855 ; gain = 504.246 ; free physical = 6549 ; free virtual = 15395
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1326,7 +1327,7 @@ INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/gen_slave_slots[
 INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/gen_master_slots[0].gen_mi_write.wdata_mux_w/gen_wmux.wmux_aw_fifo/FSM_onehot_state_reg[2]) is unused and will be removed from module axi_crossbar_v2_1_21_axi_crossbar.
 INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/gen_master_slots[1].gen_mi_write.wdata_mux_w/gen_wmux.wmux_aw_fifo/FSM_onehot_state_reg[2]) is unused and will be removed from module axi_crossbar_v2_1_21_axi_crossbar.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:33 . Memory (MB): peak = 2314.891 ; gain = 501.246 ; free physical = 16749 ; free virtual = 24039
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:30 . Memory (MB): peak = 2319.855 ; gain = 504.246 ; free physical = 7170 ; free virtual = 16026
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1338,13 +1339,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:38 . Memory (MB): peak = 2314.891 ; gain = 501.246 ; free physical = 17207 ; free virtual = 24555
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:35 . Memory (MB): peak = 2319.855 ; gain = 504.246 ; free physical = 6640 ; free virtual = 15506
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:39 . Memory (MB): peak = 2314.891 ; gain = 501.246 ; free physical = 17248 ; free virtual = 24602
+Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:36 . Memory (MB): peak = 2319.855 ; gain = 504.246 ; free physical = 6544 ; free virtual = 15411
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1356,7 +1357,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:39 . Memory (MB): peak = 2314.891 ; gain = 501.246 ; free physical = 17226 ; free virtual = 24581
+Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:36 . Memory (MB): peak = 2319.855 ; gain = 504.246 ; free physical = 6543 ; free virtual = 15410
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1380,13 +1381,13 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:42 . Memory (MB): peak = 2314.891 ; gain = 501.246 ; free physical = 17296 ; free virtual = 24659
+Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:00:39 . Memory (MB): peak = 2319.855 ; gain = 504.246 ; free physical = 6881 ; free virtual = 15746
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:42 . Memory (MB): peak = 2314.891 ; gain = 501.246 ; free physical = 17296 ; free virtual = 24659
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:00:39 . Memory (MB): peak = 2319.855 ; gain = 504.246 ; free physical = 6881 ; free virtual = 15746
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1405,25 +1406,25 @@ Report Check Netlist:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:42 . Memory (MB): peak = 2314.891 ; gain = 501.246 ; free physical = 17315 ; free virtual = 24678
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:00:39 . Memory (MB): peak = 2319.855 ; gain = 504.246 ; free physical = 6881 ; free virtual = 15746
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:42 . Memory (MB): peak = 2314.891 ; gain = 501.246 ; free physical = 17315 ; free virtual = 24678
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:27 ; elapsed = 00:00:39 . Memory (MB): peak = 2319.855 ; gain = 504.246 ; free physical = 6881 ; free virtual = 15746
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:42 . Memory (MB): peak = 2314.891 ; gain = 501.246 ; free physical = 17315 ; free virtual = 24679
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:39 . Memory (MB): peak = 2319.855 ; gain = 504.246 ; free physical = 6880 ; free virtual = 15745
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:42 . Memory (MB): peak = 2314.891 ; gain = 501.246 ; free physical = 17315 ; free virtual = 24679
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:27 ; elapsed = 00:00:39 . Memory (MB): peak = 2319.855 ; gain = 504.246 ; free physical = 6880 ; free virtual = 15745
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -1486,33 +1487,35 @@ Report Instance Areas:
 |30    |      splitter_aw_mi                                     |axi_crossbar_v2_1_21_splitter_4                                  |     6|
 +------+---------------------------------------------------------+-----------------------------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:42 . Memory (MB): peak = 2314.891 ; gain = 501.246 ; free physical = 17315 ; free virtual = 24679
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:00:39 . Memory (MB): peak = 2319.855 ; gain = 504.246 ; free physical = 6880 ; free virtual = 15745
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 153 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:40 . Memory (MB): peak = 2314.891 ; gain = 361.402 ; free physical = 17365 ; free virtual = 24729
-Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:42 . Memory (MB): peak = 2314.891 ; gain = 501.246 ; free physical = 17364 ; free virtual = 24727
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:37 . Memory (MB): peak = 2319.855 ; gain = 360.402 ; free physical = 6909 ; free virtual = 15773
+Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:00:39 . Memory (MB): peak = 2319.855 ; gain = 504.246 ; free physical = 6909 ; free virtual = 15773
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2314.891 ; gain = 0.000 ; free physical = 17438 ; free virtual = 24803
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2319.855 ; gain = 0.000 ; free physical = 7000 ; free virtual = 15865
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2314.891 ; gain = 0.000 ; free physical = 17361 ; free virtual = 24730
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2319.855 ; gain = 0.000 ; free physical = 7123 ; free virtual = 15990
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-145 Infos, 118 Warnings, 0 Critical Warnings and 0 Errors encountered.
+146 Infos, 118 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:52 . Memory (MB): peak = 2314.891 ; gain = 754.812 ; free physical = 17498 ; free virtual = 24868
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2314.891 ; gain = 0.000 ; free physical = 17498 ; free virtual = 24868
+synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:47 . Memory (MB): peak = 2319.855 ; gain = 759.781 ; free physical = 7239 ; free virtual = 16104
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.collectionResultDisplayLimit
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2319.855 ; gain = 0.000 ; free physical = 7238 ; free virtual = 16103
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint '/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/img_proc_xbar_3_synth_1/img_proc_xbar_3.dcp' has been generated.
 WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP img_proc_xbar_3, cache-ID = 306caff082ffef15
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP img_proc_xbar_3, cache-ID = 302081e2fa9001d8
 INFO: [Coretcl 2-1174] Renamed 29 cell refs.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2338.902 ; gain = 0.000 ; free physical = 17489 ; free virtual = 24862
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2343.867 ; gain = 0.000 ; free physical = 7360 ; free virtual = 16230
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint '/home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.runs/img_proc_xbar_3_synth_1/img_proc_xbar_3.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file img_proc_xbar_3_utilization_synth.rpt -pb img_proc_xbar_3_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Nov 13 00:29:08 2019...
+INFO: [Common 17-206] Exiting Vivado at Sun Dec  8 17:21:38 2019...

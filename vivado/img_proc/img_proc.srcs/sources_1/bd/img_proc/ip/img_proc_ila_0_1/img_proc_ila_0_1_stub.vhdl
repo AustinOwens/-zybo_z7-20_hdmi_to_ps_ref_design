@@ -1,11 +1,11 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.2 (lin64) Build 2700185 Thu Oct 24 18:45:48 MDT 2019
--- Date        : Mon Nov  4 00:17:19 2019
+-- Date        : Sun Dec  8 17:22:19 2019
 -- Host        : austin-ubuntu running 64-bit Ubuntu 18.04.3 LTS
--- Command     : write_vhdl -force -mode synth_stub -rename_top img_proc_ila_0_1 -prefix
---               img_proc_ila_0_1_ img_proc_ila_2_0_stub.vhdl
--- Design      : img_proc_ila_2_0
+-- Command     : write_vhdl -force -mode synth_stub
+--               /home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/ip/img_proc_ila_0_1/img_proc_ila_0_1_stub.vhdl
+-- Design      : img_proc_ila_0_1
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z020clg400-1
 -- --------------------------------------------------------------------------------

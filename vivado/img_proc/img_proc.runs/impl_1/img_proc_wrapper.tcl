@@ -60,6 +60,7 @@ proc step_failed { step } {
   close $ch
 }
 
+set_msg_config -id {Common 17-41} -limit 10000000
 
 start_step init_design
 set ACTIVE_STEP init_design
@@ -74,7 +75,10 @@ set rc [catch {
   set_param project.singleFileAddWarning.threshold 0
   set_property webtalk.parent_dir /home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.cache/wt [current_project]
   set_property parent.project_path /home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.xpr [current_project]
-  set_property ip_repo_paths /home/austin/Desktop/projects/zybo/zybo_img_proc/vhdl/digilent/vivado-library [current_project]
+  set_property ip_repo_paths {
+  /home/austin/Desktop/projects/zybo/zybo_img_proc/vhdl/digilent/vivado-library
+  /home/austin/Desktop/projects/custom_ip_cores/video_stream_mux
+} [current_project]
   update_ip_catalog
   set_property ip_output_repo /home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]

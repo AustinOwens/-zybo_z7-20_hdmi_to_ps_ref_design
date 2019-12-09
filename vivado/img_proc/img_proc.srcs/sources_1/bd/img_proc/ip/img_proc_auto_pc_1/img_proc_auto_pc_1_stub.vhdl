@@ -1,11 +1,11 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.2 (lin64) Build 2700185 Thu Oct 24 18:45:48 MDT 2019
--- Date        : Sun Nov  3 22:08:18 2019
+-- Date        : Sun Dec  8 17:21:36 2019
 -- Host        : austin-ubuntu running 64-bit Ubuntu 18.04.3 LTS
 -- Command     : write_vhdl -force -mode synth_stub -rename_top img_proc_auto_pc_1 -prefix
---               img_proc_auto_pc_1_ img_proc_auto_pc_6_stub.vhdl
--- Design      : img_proc_auto_pc_6
+--               img_proc_auto_pc_1_ img_proc_auto_pc_1_stub.vhdl
+-- Design      : img_proc_auto_pc_1
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z020clg400-1
 -- --------------------------------------------------------------------------------

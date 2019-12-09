@@ -1,71 +1,91 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"0.548667",
-   "Default View_TopLeft":"-106,-215",
+   "Default View_ScaleFactor":"1.14295",
+   "Default View_TopLeft":"388,710",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.0.21  2019-05-29 bk=1.5064 VDI=41 GEI=36 GUI=JA:9.0 TLS
 #  -string -flagsOSRD
-preplace port hdmi_in -pg 1 -lvl 0 -x 0 -y 890 -defaultsOSRD
-preplace port hdmi_in_ddc -pg 1 -lvl 4 -x 3090 -y 900 -defaultsOSRD
-preplace port DDR -pg 1 -lvl 4 -x 3090 -y 60 -defaultsOSRD
-preplace port FIXED_IO -pg 1 -lvl 4 -x 3090 -y 80 -defaultsOSRD
-preplace port led -pg 1 -lvl 4 -x 3090 -y 490 -defaultsOSRD
-preplace portBus hdmi_in_hpd -pg 1 -lvl 4 -x 3090 -y 710 -defaultsOSRD
-preplace inst processing_system7_0 -pg 1 -lvl 3 -x 2070 -y 110 -defaultsOSRD
-preplace inst proc_sys_reset_0 -pg 1 -lvl 1 -x 210 -y 1040 -defaultsOSRD
-preplace inst xlconstant_0 -pg 1 -lvl 2 -x 680 -y 1100 -defaultsOSRD
-preplace inst hdmi_decode -pg 1 -lvl 3 -x 2070 -y 810 -defaultsOSRD
-preplace inst vdma -pg 1 -lvl 2 -x 680 -y 380 -defaultsOSRD
-preplace inst hdmi_decode|v_vid_in_axi4s_0 -pg 1 -lvl 2 -x 2430 -y 1050 -defaultsOSRD
-preplace inst hdmi_decode|axis_subset_converter_0 -pg 1 -lvl 3 -x 2740 -y 1030 -defaultsOSRD
-preplace inst hdmi_decode|ila_0 -pg 1 -lvl 2 -x 2430 -y 820 -defaultsOSRD
-preplace inst hdmi_decode|dvi2rgb_0 -pg 1 -lvl 1 -x 2120 -y 920 -defaultsOSRD
-preplace inst vdma|axi_vdma_0 -pg 1 -lvl 2 -x 1140 -y 590 -defaultsOSRD
-preplace inst vdma|axi_interconnect_0 -pg 1 -lvl 1 -x 770 -y 460 -defaultsOSRD
-preplace inst vdma|axi_interconnect_1 -pg 1 -lvl 3 -x 1510 -y 700 -defaultsOSRD
-preplace inst vdma|axi_gpio_1 -pg 1 -lvl 3 -x 1510 -y 490 -defaultsOSRD
-preplace netloc processing_system7_0_FCLK_CLK0 1 0 4 20 480 390 240 1790 230 3060
-preplace netloc proc_sys_reset_0_peripheral_aresetn 1 1 2 400 930 NJ
-preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 4 30 870 NJ 870 1780J 700 3050
-preplace netloc xlconstant_0_dout 1 1 3 420 880 1800 710 NJ
-preplace netloc proc_sys_reset_0_peripheral_reset 1 1 2 N 1040 NJ
-preplace netloc proc_sys_reset_0_interconnect_aresetn 1 1 1 410 500n
-preplace netloc hdmi_input_hdmi_in_ddc 1 3 1 NJ 900
-preplace netloc processing_system7_0_M_AXI_GP0 1 1 3 400 220 NJ 220 3070
-preplace netloc vdma_M00_AXI 1 2 1 1780 100n
-preplace netloc hdmi_in_1 1 0 3 NJ 890 NJ 890 NJ
-preplace netloc processing_system7_0_FIXED_IO 1 3 1 NJ 80
-preplace netloc hdmi_decode_M_AXIS 1 1 3 420 250 NJ 250 3040
-preplace netloc processing_system7_0_DDR 1 3 1 NJ 60
-preplace netloc vdma_GPIO 1 2 2 NJ 490 NJ
-preplace netloc hdmi_decode|aRst_1 1 0 3 2000 820 2240 1190 2580J
-preplace netloc hdmi_decode|dvi2rgb_0_PixelClk 1 1 1 2260 920n
-preplace netloc hdmi_decode|RefClk_1 1 0 3 1990 810 2270 1180 2570J
-preplace netloc hdmi_decode|vid_io_in_reset_1 1 0 2 NJ 1040 NJ
-preplace netloc hdmi_decode|aclken_1 1 0 2 NJ 1060 2250
-preplace netloc hdmi_decode|dvi2rgb_0_aPixelClkLckd 1 1 1 2250 820n
-preplace netloc hdmi_decode|dvi2rgb_0_pLocked 1 1 1 2280 840n
-preplace netloc hdmi_decode|v_vid_in_axi4s_0_video_out 1 2 1 N 1010
-preplace netloc hdmi_decode|axis_subset_converter_0_M_AXIS 1 3 1 N 1030
-preplace netloc hdmi_decode|Conn1 1 0 1 N 890
-preplace netloc hdmi_decode|Conn2 1 1 3 N 900 NJ 900 NJ
-preplace netloc hdmi_decode|dvi2rgb_0_RGB 1 1 1 2290 880n
-preplace netloc vdma|axi_resetn_1 1 0 3 610 600 920 720 1360
-preplace netloc vdma|m_axi_mm2s_aclk_1 1 0 3 620 310 940 460 1350
-preplace netloc vdma|ARESETN_1 1 0 3 600 710 NJ 710 1340J
-preplace netloc vdma|S_AXIS_S2MM_1 1 0 2 NJ 320 930
-preplace netloc vdma|Conn8 1 0 1 N 380
-preplace netloc vdma|axi_vdma_0_M_AXI_S2MM 1 2 1 1340 570n
-preplace netloc vdma|Conn3 1 3 1 N 490
-preplace netloc vdma|axi_interconnect_0_M00_AXI 1 1 1 920 450n
-preplace netloc vdma|Conn1 1 3 1 1660 470n
-preplace netloc vdma|axi_interconnect_0_M01_AXI 1 1 2 NJ 470 NJ
-levelinfo -pg 1 0 210 680 2070 3090
-levelinfo -hier hdmi_decode * 2120 2430 2740 *
-levelinfo -hier vdma * 770 1140 1510 *
-pagesize -pg 1 -db -bbox -sgen -110 0 3270 1220
-pagesize -hier hdmi_decode -db -bbox -sgen 1960 740 2930 1200
-pagesize -hier vdma -db -bbox -sgen 570 300 1690 850
+preplace port hdmi_in -pg 1 -lvl 0 -x 0 -y 350 -defaultsOSRD
+preplace port hdmi_in_ddc -pg 1 -lvl 5 -x 3820 -y 320 -defaultsOSRD
+preplace port DDR -pg 1 -lvl 5 -x 3820 -y 60 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 5 -x 3820 -y 80 -defaultsOSRD
+preplace port led -pg 1 -lvl 5 -x 3820 -y 1450 -defaultsOSRD
+preplace port ext_reset_in -pg 1 -lvl 0 -x 0 -y 470 -defaultsOSRD
+preplace port ctl -pg 1 -lvl 0 -x 0 -y 1280 -defaultsOSRD
+preplace portBus hdmi_in_hpd -pg 1 -lvl 5 -x 3820 -y 250 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 4 -x 2790 -y 110 -defaultsOSRD
+preplace inst proc_sys_reset_0 -pg 1 -lvl 2 -x 510 -y 490 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 3 -x 1060 -y 430 -defaultsOSRD
+preplace inst hdmi_decode -pg 1 -lvl 4 -x 2790 -y 360 -defaultsOSRD
+preplace inst vdma -pg 1 -lvl 3 -x 1060 -y 640 -defaultsOSRD
+preplace inst util_vector_logic_0 -pg 1 -lvl 1 -x 170 -y 470 -defaultsOSRD
+preplace inst hdmi_decode|v_vid_in_axi4s_0 -pg 1 -lvl 2 -x 3120 -y 610 -defaultsOSRD
+preplace inst hdmi_decode|axis_subset_converter_0 -pg 1 -lvl 3 -x 3430 -y 580 -defaultsOSRD
+preplace inst hdmi_decode|ila_0 -pg 1 -lvl 2 -x 3120 -y 400 -defaultsOSRD
+preplace inst hdmi_decode|dvi2rgb_0 -pg 1 -lvl 1 -x 2820 -y 380 -defaultsOSRD
+preplace inst vdma|axi_vdma_0 -pg 1 -lvl 2 -x 1650 -y 900 -defaultsOSRD
+preplace inst vdma|axi_interconnect_0 -pg 1 -lvl 1 -x 1190 -y 1220 -defaultsOSRD
+preplace inst vdma|axi_interconnect_1 -pg 1 -lvl 3 -x 2130 -y 920 -defaultsOSRD
+preplace inst vdma|axi_gpio_1 -pg 1 -lvl 3 -x 2130 -y 1450 -defaultsOSRD
+preplace inst vdma|v_tpg_0 -pg 1 -lvl 2 -x 1650 -y 1290 -defaultsOSRD
+preplace inst vdma|video_stream_mux_0 -pg 1 -lvl 1 -x 1190 -y 800 -defaultsOSRD
+preplace netloc processing_system7_0_FCLK_CLK0 1 1 4 330 590 700 360 2490 220 3760
+preplace netloc proc_sys_reset_0_peripheral_aresetn 1 2 2 710 370 2480J
+preplace netloc xlconstant_0_dout 1 3 2 2450 780 3800J
+preplace netloc proc_sys_reset_0_peripheral_reset 1 2 2 NJ 490 2440
+preplace netloc proc_sys_reset_0_interconnect_aresetn 1 2 1 690 510n
+preplace netloc hdmi_decode_m_axis_tdata1 1 2 3 750 1550 NJ 1550 3780
+preplace netloc hdmi_decode_m_axis_tlast1 1 2 3 760 1560 NJ 1560 3770
+preplace netloc m_axis_tready1_1 1 3 1 2490 640n
+preplace netloc hdmi_decode_m_axis_tuser1 1 2 3 740 250 NJ 250 3760
+preplace netloc hdmi_decode_m_axis_tvalid1 1 2 3 770 1570 NJ 1570 3760
+preplace netloc ctl_1 1 0 3 20J 1070 NJ 1070 NJ
+preplace netloc ext_reset_in_1 1 0 1 NJ 470
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 1 4 320 340 NJ 340 2470J 790 3790
+preplace netloc vdma_M00_AXI 1 3 1 2460 100n
+preplace netloc hdmi_in_1 1 0 4 NJ 350 NJ 350 NJ 350 NJ
+preplace netloc vdma_GPIO 1 3 2 NJ 1450 NJ
+preplace netloc processing_system7_0_FIXED_IO 1 4 1 NJ 80
+preplace netloc hdmi_input_hdmi_in_ddc 1 4 1 NJ 320
+preplace netloc processing_system7_0_M_AXI_GP0 1 2 3 720 230 NJ 230 3770
+preplace netloc processing_system7_0_DDR 1 4 1 NJ 60
+preplace netloc hdmi_decode_M_AXIS 1 2 3 730 240 NJ 240 3770
+preplace netloc hdmi_decode|aRst_1 1 0 3 2700 490 2940 750 3270J
+preplace netloc hdmi_decode|RefClk_1 1 0 3 2690 480 2960 740 3260
+preplace netloc hdmi_decode|vid_io_in_reset_1 1 0 2 NJ 600 NJ
+preplace netloc hdmi_decode|aclken_1 1 0 2 NJ 620 2950
+preplace netloc hdmi_decode|dvi2rgb_0_PixelClk 1 1 1 2950 380n
+preplace netloc hdmi_decode|dvi2rgb_0_aPixelClkLckd 1 1 1 N 400
+preplace netloc hdmi_decode|dvi2rgb_0_pLocked 1 1 1 N 420
+preplace netloc hdmi_decode|v_vid_in_axi4s_0_video_out 1 2 1 3260 560n
+preplace netloc hdmi_decode|hdmi_in_1 1 0 1 N 350
+preplace netloc hdmi_decode|dvi2rgb_0_DDC 1 1 3 2940 320 NJ 320 NJ
+preplace netloc hdmi_decode|dvi2rgb_0_RGB 1 1 1 2970 340n
+preplace netloc hdmi_decode|axis_subset_converter_0_M_AXIS 1 3 1 3590 560n
+preplace netloc vdma|axi_resetn_1 1 0 3 970 930 1350 1110 1900
+preplace netloc vdma|m_axi_mm2s_aclk_1 1 0 3 1010 900 1370 1080 1890
+preplace netloc vdma|ARESETN_1 1 0 3 990 970 1390J 1090 1870
+preplace netloc vdma|v_tpg_0_m_axis_video_TDEST 1 2 1 N 1260
+preplace netloc vdma|v_tpg_0_m_axis_video_TID 1 2 1 N 1280
+preplace netloc vdma|v_tpg_0_m_axis_video_TSTRB 1 2 1 N 1300
+preplace netloc vdma|ctl_1 1 0 1 1000 840n
+preplace netloc vdma|video_stream_mux_0_m_axis_s2mm_aclk 1 1 1 1400 810n
+preplace netloc vdma|Conn8 1 0 1 980 740n
+preplace netloc vdma|axi_interconnect_0_M01_AXI 1 1 2 1400 1180 1880J
+preplace netloc vdma|axi_interconnect_0_M00_AXI 1 1 1 1380 780n
+preplace netloc vdma|Conn1 1 3 1 N 920
+preplace netloc vdma|Conn3 1 3 1 N 1450
+preplace netloc vdma|axi_vdma_0_M_AXI_S2MM 1 2 1 1870 850n
+preplace netloc vdma|axi_interconnect_0_M02_AXI 1 1 1 1340 1240n
+preplace netloc vdma|v_tpg_0_m_axis_video 1 0 3 1020 980 1360J 1100 1870
+preplace netloc vdma|S_AXIS_S2MM_1 1 0 1 N 760
+preplace netloc vdma|video_stream_mux_0_m_axis_s2mm 1 1 1 1400 790n
+levelinfo -pg 1 0 170 510 1060 2790 3820
+levelinfo -hier hdmi_decode * 2820 3120 3430 *
+levelinfo -hier vdma * 1190 1650 2130 *
+pagesize -pg 1 -db -bbox -sgen -140 0 4000 1670
+pagesize -hier hdmi_decode -db -bbox -sgen 2660 280 3620 760
+pagesize -hier vdma -db -bbox -sgen 940 520 2310 1530
 "
 }
 {

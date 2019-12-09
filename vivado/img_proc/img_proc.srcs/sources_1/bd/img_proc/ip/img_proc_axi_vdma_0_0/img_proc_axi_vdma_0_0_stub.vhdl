@@ -1,7 +1,7 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.2 (lin64) Build 2700185 Thu Oct 24 18:45:48 MDT 2019
--- Date        : Wed Nov 13 00:53:44 2019
+-- Date        : Sun Dec  8 19:56:06 2019
 -- Host        : austin-ubuntu running 64-bit Ubuntu 18.04.3 LTS
 -- Command     : write_vhdl -force -mode synth_stub
 --               /home/austin/Desktop/projects/zybo/zybo_img_proc/vivado/img_proc/img_proc.srcs/sources_1/bd/img_proc/ip/img_proc_axi_vdma_0_0/img_proc_axi_vdma_0_0_stub.vhdl
